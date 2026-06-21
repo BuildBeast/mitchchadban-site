@@ -1,0 +1,235 @@
+---
+---
+
+<div class="c2-hero" id="c2Hero">
+  <!--  Lava lamp canvas (single)  -->
+  <canvas aria-hidden="true" height="1464" id="mcLava" style="width: 1339px; height: 732px;" width="2678"></canvas>
+
+  <!--  Optional: extra “mouse halo” layer (driven by CSS vars)  -->
+  <div aria-hidden="true" class="lava-follow" style="--mx: 644.1328125000003px; --my: 220.92187500000009px;">    </div>
+
+  <div class="c2-hero__inner">
+    <div class="c2-hero__top">
+      <h1 class="c2-hero__pill">Mitch Chadban</h1>
+      <div class="c2-hero__who">Design + marketing for brands across AEST, CET, and GMT.</div>
+
+      <!--  ✅ Featured tile (NOW uses the exact same card markup as 04/05)  -->
+      <a class="c2-hero__item c2-hero__item--featured" href="/tribal-habits/">
+        <span class="c2-hero__num">00</span>
+        <span class="c2-hero__title">Featured</span>
+        <span class="c2-hero__desc"><strong>Tribal Habits</strong> — SEO + AEO for an Australian SAAS brand</span>
+      </a>
+    </div>
+
+    <nav aria-label="Main" class="c2-hero__nav">
+      <a class="c2-hero__item" href="/portfolio-1/">
+        <span class="c2-hero__num">01</span>
+        <span class="c2-hero__title">Portfolio</span>
+        <span class="c2-hero__desc">Selected work</span>
+      </a>
+
+      <a class="c2-hero__item" href="/archive/">
+        <span class="c2-hero__num">02</span>
+        <span class="c2-hero__title">Archive</span>
+        <span class="c2-hero__desc">Deep cuts</span>
+      </a>
+
+      <a class="c2-hero__item" href="/blogs-resources/">
+        <span class="c2-hero__num">03</span>
+        <span class="c2-hero__title">Blog</span>
+        <span class="c2-hero__desc">Notes + process</span>
+      </a>
+
+      <a class="c2-hero__item" href="/services-main/">
+        <span class="c2-hero__num">04</span>
+        <span class="c2-hero__title">Services</span>
+        <span class="c2-hero__desc">What I do</span>
+      </a>
+
+      <a class="c2-hero__item" href="/about/">
+        <span class="c2-hero__num">05</span>
+        <span class="c2-hero__title">About</span>
+        <span class="c2-hero__desc">The story</span>
+      </a>
+    </nav>
+
+<div class="c2-hero__bottom">
+  <a class="c2-hero__cta c2-hero__cta--secondary" href="servicios-de-diseño,-seo-y-marketing-en-españa" lang="es" >Español</a>
+  <a class="c2-hero__cta" href="/contact-form/">Email me</a>
+</div>
+  </div>
+
+  <script>
+    (() => {
+      // Remove any legacy full-page wrapper you no longer use
+      const oldBg = document.getElementById("mc-bg");
+      if (oldBg) oldBg.remove();
+
+      const hero = document.getElementById("c2Hero");
+      const c = document.getElementById("mcLava");
+      if (!hero || !c) return;
+
+      // Respect reduced motion
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+      const ctx = c.getContext("2d", { alpha: true });
+      let w = 0, h = 0, dpr = 1;
+
+      function resize(){
+        dpr = Math.max(1, Math.min(2, window.devicePixelRatio || 1));
+        w = hero.clientWidth;
+        h = hero.clientHeight;
+
+        c.width  = Math.floor(w * dpr);
+        c.height = Math.floor(h * dpr);
+        c.style.width = w + "px";
+        c.style.height = h + "px";
+
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      }
+
+      const ro = new ResizeObserver(resize);
+      ro.observe(hero);
+      window.addEventListener("resize", resize, { passive:true });
+      resize();
+
+      // Mouse tracking relative to hero
+      const mouse = { x: w*0.5, y: h*0.5, tx: w*0.5, ty: h*0.5, active:false };
+
+      function setMouse(e){
+        const r = hero.getBoundingClientRect();
+        mouse.tx = e.clientX - r.left;
+        mouse.ty = e.clientY - r.top;
+        mouse.active = true;
+      }
+
+      hero.addEventListener("pointermove", setMouse, { passive:true });
+      hero.addEventListener("pointerenter", setMouse, { passive:true });
+      hero.addEventListener("pointerleave", () => { mouse.active = false; }, { passive:true });
+
+      // Blobs
+      const GREEN = "rgba(0,200,83,";
+      const blobCount = 10;
+
+      function rand(min,max){ return min + Math.random()*(max-min); }
+
+      const blobs = Array.from({length: blobCount}, () => {
+        const r = rand(Math.min(w,h)*0.10, Math.min(w,h)*0.20);
+        return {
+          x: rand(0,w), y: rand(0,h),
+          vx: rand(-0.35,0.35), vy: rand(-0.35,0.35),
+          r,
+          seed: Math.random()*1000
+        };
+      });
+
+      function drawBlob(x,y,r,alpha){
+        const g = ctx.createRadialGradient(x,y, r*0.10, x,y, r);
+        g.addColorStop(0, `${GREEN}${alpha})`);
+        g.addColorStop(1, `${GREEN}0)`);
+        ctx.fillStyle = g;
+        ctx.beginPath();
+        ctx.arc(x,y,r,0,Math.PI*2);
+        ctx.fill();
+      }
+
+      let t = 0;
+
+      function tick(){
+        t += 0.008;
+
+        // Ease mouse for nicer lag
+        mouse.x += (mouse.tx - mouse.x) * 0.08;
+        mouse.y += (mouse.ty - mouse.y) * 0.08;
+
+        ctx.clearRect(0,0,w,h);
+
+        // Soft base haze
+        ctx.globalCompositeOperation = "source-over";
+        drawBlob(w*0.35, h*0.55, Math.min(w,h)*0.42, 0.10);
+        drawBlob(w*0.72, h*0.45, Math.min(w,h)*0.38, 0.08);
+
+        // Blobs: additive + blur to merge
+        ctx.globalCompositeOperation = "screen";
+        ctx.filter = "blur(18px)";
+
+        for (const b of blobs){
+          // organic drift
+          b.x += b.vx + Math.sin(t + b.seed) * 0.12;
+          b.y += b.vy + Math.cos(t + b.seed) * 0.12;
+
+          // wrap edges
+          if (b.x < -b.r) b.x = w + b.r;
+          if (b.x > w + b.r) b.x = -b.r;
+          if (b.y < -b.r) b.y = h + b.r;
+          if (b.y > h + b.r) b.y = -b.r;
+
+          // attraction to mouse (only when active)
+          if (mouse.active){
+            const dx = mouse.x - b.x;
+            const dy = mouse.y - b.y;
+            const dist = Math.hypot(dx,dy) || 1;
+
+            const pullRadius = 520;
+            if (dist < pullRadius){
+              const pull = (1 - dist/pullRadius) * 0.22;
+              b.vx += (dx / dist) * pull * 0.02;
+              b.vy += (dy / dist) * pull * 0.02;
+            }
+          }
+
+          // damping
+          b.vx *= 0.985;
+          b.vy *= 0.985;
+
+          // draw
+          const pulse = 1 + Math.sin(t*1.8 + b.seed) * 0.05;
+          drawBlob(b.x, b.y, b.r * pulse, 0.22);
+        }
+
+        ctx.filter = "none";
+        ctx.globalCompositeOperation = "source-over";
+
+        requestAnimationFrame(tick);
+      }
+
+      requestAnimationFrame(tick);
+    })();
+
+    // Mouse halo for .lava-follow (optional)
+    (() => {
+      const el = document.querySelector('#c2Hero .lava-follow');
+      if (!el) return;
+
+      let targetX = window.innerWidth * 0.5;
+      let targetY = window.innerHeight * 0.5;
+      let currentX = targetX;
+      let currentY = targetY;
+
+      const ease = 0.14;
+
+      function animate(){
+        currentX += (targetX - currentX) * ease;
+        currentY += (targetY - currentY) * ease;
+
+        el.style.setProperty('--mx', currentX + 'px');
+        el.style.setProperty('--my', currentY + 'px');
+
+        requestAnimationFrame(animate);
+      }
+      animate();
+
+      window.addEventListener('pointermove', (e) => {
+        targetX = e.clientX;
+        targetY = e.clientY;
+      }, { passive: true });
+
+      window.addEventListener('resize', () => {
+        targetX = window.innerWidth * 0.5;
+        targetY = window.innerHeight * 0.5;
+      });
+    })();
+  </script>
+  <br />
+  <br />
+</div>

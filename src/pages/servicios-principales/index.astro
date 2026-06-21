@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const pageContent = "<div class=\"c2-hero\" id=\"c2Hero\">\n  <canvas aria-hidden=\"true\" height=\"1364\" id=\"mcLava\" style=\"width: 1339px; height: 682px;\" width=\"2678\"></canvas>\n  <div aria-hidden=\"true\" class=\"lava-follow\" style=\"--mx: 620.5585937500003px; --my: 13.058593749999995px;\"></div>\n\n  <div class=\"c2-hero__inner\">\n    <div class=\"c2-hero__top\">\n      <h1 class=\"c2-hero__pill\">Servicios</h1>\n      <div class=\"c2-hero__who\">Lo que hago</div>\n    </div>\n\n    <nav aria-label=\"Servicios\" class=\"c2-hero__nav\">\n      <a class=\"c2-hero__item\" href=\"/ilustración-comercial-(digital-y-impresa)/\" >\n        <span class=\"c2-hero__num\">01</span>\n        <span class=\"c2-hero__title\">Ilustración</span>\n        <span class=\"c2-hero__desc\">Digital + impresa</span>\n      </a>\n\n      <a class=\"c2-hero__item\" href=\"/diseño-gráfico-para-empresas-(limpio,-premium-y-listo-para-usar)/\" >\n        <span class=\"c2-hero__num\">02</span>\n        <span class=\"c2-hero__title\">Diseño</span>\n        <span class=\"c2-hero__desc\">Web + recursos</span>\n      </a>\n\n      <a class=\"c2-hero__item\" href=\"/diseñador-freelance-de-marcas-y-diseño-de-logotipos/\" >\n        <span class=\"c2-hero__num\">03</span>\n        <span class=\"c2-hero__title\">Branding</span>\n        <span class=\"c2-hero__desc\">Sistemas de identidad</span>\n      </a>\n\n      <a class=\"c2-hero__item\" href=\"/growth-marketing-para-saas-y-startups-(estrategia-+-ejecución)/\" >\n        <span class=\"c2-hero__num\">04</span>\n        <span class=\"c2-hero__title\">Marketing</span>\n        <span class=\"c2-hero__desc\">Estrategia de crecimiento</span>\n      </a>\n\n      <a class=\"c2-hero__item\" href=\"/consultor-seo-para-saas-en-espana-—-pensado-para-pipeline,-no-solo-para-rankings/\" >\n        <span class=\"c2-hero__num\">05</span>\n        <span class=\"c2-hero__title\">SEO</span>\n        <span class=\"c2-hero__desc\">Búsqueda + contenido</span>\n      </a>\n    </nav>\n\n    <div class=\"c2-hero__bottom\">\n      <a class=\"c2-hero__cta\" href=\"/contact-form/\" >Solicitar presupuesto</a>\n    </div>\n  </div>\n</div>";
+---
+
+<BaseLayout
+  title="Servicios Principales | Mitch Chadban"
+  description="Design, SEO and marketing for brands, SaaS companies and service businesses that need sharper websites, stronger content and cleaner growth systems."
+  canonical="https://mitchchadban.com/servicios-principales/"
+>
+  <Fragment set:html={pageContent} />
+</BaseLayout>

@@ -1,0 +1,50 @@
+---
+import '../styles/cargo.css';
+import '../styles/migration-overrides.css';
+import CargoHeader from '../components/CargoHeader.astro';
+import CargoFooter from '../components/CargoFooter.astro';
+
+type Props = {
+  title?: string;
+  description?: string;
+  canonical?: string;
+};
+
+const {
+  title = 'Mitch Chadban | Design, SEO and Marketing Services Australia',
+  description = 'Design, SEO and marketing for brands, SaaS companies and service businesses that need sharper websites, stronger content and cleaner growth systems.',
+  canonical = 'https://mitchchadban.com/'
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <slot name="head" />
+    <script is:inline src="/src/scripts-cursor.js"></script>
+  </head>
+
+  <body>
+    <CargoHeader />
+
+    <main id="main">
+      <slot />
+    </main>
+
+    <CargoFooter />
+  </body>
+</html>

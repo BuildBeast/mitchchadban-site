@@ -1,0 +1,73 @@
+---
+---
+
+<header class="header-web" role="banner">
+  <div class="header-web__inner">
+    <a class="header-web__brand" href="/">MITCH CHADBAN</a>
+
+    <nav aria-label="Primary" class="header-web__nav">
+      <a class="header-web__link" href="/portfolio-1/">PORTFOLIO</a>
+      <a class="header-web__link" href="/services-main/">SERVICES</a>
+      <a class="header-web__link" href="/blogs-resources/">BLOG</a>
+    </nav>
+
+    <div class="header-web__meta">
+      <a class="header-web__link header-web__link--muted" href="/contact-form/">EMAIL</a>
+      <a class="header-web__link header-web__link--muted" href="https://www.instagram.com/mitch_chadban/?hl=en" rel="noopener" target="_blank">INSTAGRAM</a>
+    </div>
+  </div>
+</header>
+
+<hr class="header-rule" />
+
+<header class="header-mob" role="banner">
+  <details class="mobnav">
+    <summary class="mobnav__bar">
+      <a class="mobnav__brand" href="/">MITCH CHADBAN</a>
+
+      <span aria-hidden="true" class="mobnav__btn">
+        <span class="mobnav__icon"></span>
+        <span class="mobnav__label">MENU</span>
+      </span>
+
+      <span aria-hidden="true" class="mobnav__x">✕</span>
+    </summary>
+
+    <div aria-hidden="true" class="mobnav__overlay"></div>
+
+    <div aria-label="Mobile menu" class="mobnav__panel">
+      <nav class="mobnav__links">
+        <a href="/portfolio-1/">Portfolio</a>
+        <a href="/services-main/">Services</a>
+        <a href="/blogs-resources/">Blog</a>
+        <a href="/contact-form/">Email</a>
+        <a href="https://www.instagram.com/mitch_chadban/?hl=en" rel="noopener" target="_blank">Instagram</a>
+      </nav>
+
+      <div class="mobnav__note">New work, new posts, no fluff.</div>
+    </div>
+  </details>
+</header>
+
+<hr class="header-rule" />
+
+<script>
+(function () {
+
+  function closeMobileMenus() {
+    document.querySelectorAll(".mobnav").forEach((nav) => {
+      nav.removeAttribute("open");
+    });
+  }
+
+  // Close immediately
+  closeMobileMenus();
+
+  // Close after DOM ready
+  document.addEventListener("DOMContentLoaded", closeMobileMenus);
+
+  // Safari back/forward cache weirdness
+  window.addEventListener("pageshow", closeMobileMenus);
+
+})();
+</script>
