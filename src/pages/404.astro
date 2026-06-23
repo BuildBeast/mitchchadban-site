@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Page Not Found (404) | Mitch Chadban"
+  description="The page you're looking for doesn't exist or has moved."
+  canonical="https://mitchchadban.com/404/"
+  noindex={true}
+>
+  <section style="max-width: 720px; margin: 0 auto; padding: 6rem 1.5rem; text-align: center;">
+    <h1>Page not found</h1>
+    <p>The page you're looking for doesn't exist or may have moved.</p>
+    <p style="margin-top: 2rem;">
+      <a href="/">Back to home</a> &nbsp;·&nbsp;
+      <a href="/blogs-resources/">Blog &amp; resources</a> &nbsp;·&nbsp;
+      <a href="/services-main/">Services</a> &nbsp;·&nbsp;
+      <a href="/contact-form/">Contact</a>
+    </p>
+  </section>
+</BaseLayout>

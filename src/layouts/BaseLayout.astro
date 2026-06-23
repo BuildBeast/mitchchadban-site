@@ -8,17 +8,30 @@ type Props = {
   title?: string;
   description?: string;
   canonical?: string;
+  ogImage?: string;
+  ogType?: 'website' | 'article';
+  lang?: string;
+  noindex?: boolean;
 };
 
 const {
   title = 'Mitch Chadban | Design, SEO and Marketing Services Australia',
   description = 'Design, SEO and marketing for brands, SaaS companies and service businesses that need sharper websites, stronger content and cleaner growth systems.',
-  canonical = 'https://mitchchadban.com/'
+  canonical = 'https://mitchchadban.com/',
+  ogImage = 'https://mitchchadban.com/images/og-default.jpg',
+  ogType = 'website',
+  lang = 'en-AU',
+  noindex = false
 } = Astro.props;
+
+// Ensure absolute URL for OG image
+const ogImageUrl = ogImage.startsWith('http')
+  ? ogImage
+  : new URL(ogImage, 'https://mitchchadban.com').href;
 ---
 
 <!doctype html>
-<html lang="en-AU">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,13 +39,19 @@ const {
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
 
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:site_name" content="Mitch Chadban" />
 
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
 
     <slot name="head" />
     <script is:inline src="/src/scripts-cursor.js"></script>
