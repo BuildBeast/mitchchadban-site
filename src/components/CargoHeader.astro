@@ -1,4 +1,22 @@
 ---
+type Props = { lang?: string };
+const { lang = 'en-AU' } = Astro.props;
+const isEs = lang.startsWith('es');
+
+const nav = isEs
+  ? {
+      portfolio: { href: '/portfolio-1/', label: 'TRABAJO' },
+      services: { href: '/servicios-principales/', label: 'SERVICIOS' },
+      blog: { href: '/próximamente/', label: 'BLOG' },
+      contact: { href: '/contacto/', label: 'CONTACTO' }
+    }
+  : {
+      portfolio: { href: '/portfolio-1/', label: 'PORTFOLIO' },
+      services: { href: '/services-main/', label: 'SERVICES' },
+      blog: { href: '/blogs-resources/', label: 'BLOG' },
+      contact: { href: '/contact-form/', label: 'EMAIL' }
+    };
+const instagram = 'https://www.instagram.com/mitch_chadban/?hl=en';
 ---
 
 <header class="header-web" role="banner">
@@ -6,14 +24,14 @@
     <a class="header-web__brand" href="/">MITCH CHADBAN</a>
 
     <nav aria-label="Primary" class="header-web__nav">
-      <a class="header-web__link" href="/portfolio-1/">PORTFOLIO</a>
-      <a class="header-web__link" href="/services-main/">SERVICES</a>
-      <a class="header-web__link" href="/blogs-resources/">BLOG</a>
+      <a class="header-web__link" href={nav.portfolio.href}>{nav.portfolio.label}</a>
+      <a class="header-web__link" href={nav.services.href}>{nav.services.label}</a>
+      <a class="header-web__link" href={nav.blog.href}>{nav.blog.label}</a>
     </nav>
 
     <div class="header-web__meta">
-      <a class="header-web__link header-web__link--muted" href="/contact-form/">EMAIL</a>
-      <a class="header-web__link header-web__link--muted" href="https://www.instagram.com/mitch_chadban/?hl=en" rel="noopener" target="_blank">INSTAGRAM</a>
+      <a class="header-web__link header-web__link--muted" href={nav.contact.href}>{nav.contact.label}</a>
+      <a class="header-web__link header-web__link--muted" href={instagram} rel="noopener" target="_blank">INSTAGRAM</a>
     </div>
   </div>
 </header>
@@ -37,14 +55,14 @@
 
     <div aria-label="Mobile menu" class="mobnav__panel">
       <nav class="mobnav__links">
-        <a href="/portfolio-1/">Portfolio</a>
-        <a href="/services-main/">Services</a>
-        <a href="/blogs-resources/">Blog</a>
-        <a href="/contact-form/">Email</a>
-        <a href="https://www.instagram.com/mitch_chadban/?hl=en" rel="noopener" target="_blank">Instagram</a>
+        <a href={nav.portfolio.href}>{isEs ? 'Trabajo' : 'Portfolio'}</a>
+        <a href={nav.services.href}>{isEs ? 'Servicios' : 'Services'}</a>
+        <a href={nav.blog.href}>Blog</a>
+        <a href={nav.contact.href}>{isEs ? 'Contacto' : 'Email'}</a>
+        <a href={instagram} rel="noopener" target="_blank">Instagram</a>
       </nav>
 
-      <div class="mobnav__note">New work, new posts, no fluff.</div>
+      <div class="mobnav__note">{isEs ? 'Trabajo nuevo, posts nuevos, sin relleno.' : 'New work, new posts, no fluff.'}</div>
     </div>
   </details>
 </header>

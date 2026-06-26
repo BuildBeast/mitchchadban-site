@@ -4,6 +4,8 @@ import '../styles/migration-overrides.css';
 import CargoHeader from '../components/CargoHeader.astro';
 import CargoFooter from '../components/CargoFooter.astro';
 
+type Alternate = { lang: string; href: string };
+
 type Props = {
   title?: string;
   description?: string;
@@ -12,6 +14,7 @@ type Props = {
   ogType?: 'website' | 'article';
   lang?: string;
   noindex?: boolean;
+  alternates?: Alternate[];
 };
 
 const {
@@ -21,7 +24,8 @@ const {
   ogImage = 'https://mitchchadban.com/images/og-default.jpg',
   ogType = 'website',
   lang = 'en-AU',
-  noindex = false
+  noindex = false,
+  alternates = []
 } = Astro.props;
 
 // Ensure absolute URL for OG image
@@ -44,6 +48,10 @@ const ogImageUrl = ogImage.startsWith('http')
     <link rel="canonical" href={canonical} />
     {noindex && <meta name="robots" content="noindex, nofollow" />}
 
+    {alternates.map((alt) => (
+      <link rel="alternate" hreflang={alt.lang} href={alt.href} />
+    ))}
+
     <meta property="og:type" content={ogType} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -63,12 +71,12 @@ const ogImageUrl = ogImage.startsWith('http')
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <CargoHeader />
+    <CargoHeader lang={lang} />
 
     <main id="main">
       <slot />
     </main>
 
-    <CargoFooter />
+    <CargoFooter lang={lang} />
   </body>
 </html>

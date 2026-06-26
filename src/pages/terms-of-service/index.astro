@@ -8,6 +8,11 @@ const pageContent = "<div class=\"mc-about\">\n\n  <h1>Terms of Service (Service
   title="Terms of Service | Mitch Chadban"
   description="Terms of Service for mitchchadban.com design, SEO and marketing work: scope, quotes, payment, revisions, IP ownership, cancellations and governing law."
   canonical="https://mitchchadban.com/terms-of-service/"
+  alternates={[
+    { lang: 'en-AU', href: 'https://mitchchadban.com/terms-of-service/' },
+    { lang: 'es', href: 'https://mitchchadban.com/términos-de-servicio/' },
+    { lang: 'x-default', href: 'https://mitchchadban.com/terms-of-service/' }
+  ]}
 >
   <Fragment set:html={pageContent} />
 </BaseLayout>

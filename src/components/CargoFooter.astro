@@ -1,4 +1,66 @@
 ---
+type Props = { lang?: string };
+const { lang = 'en-AU' } = Astro.props;
+const isEs = lang.startsWith('es');
+
+const instagram = 'https://www.instagram.com/mitch_chadban/?hl=en';
+const t = isEs
+  ? {
+      tagline: 'Diseño, SEO y marketing para marcas que quieren destacar.',
+      explore: 'EXPLORAR',
+      portfolio: 'Trabajo',
+      archive: 'Archivo',
+      services: 'Servicios',
+      blog: 'Blog',
+      work: 'TRABAJO',
+      contact: 'Contacto',
+      pricing: 'Precios',
+      about: 'Sobre mí',
+      connect: 'CONECTAR',
+      email: 'Email',
+      privacy: 'Privacidad',
+      terms: 'Términos',
+      links: {
+        portfolio: '/portfolio-1/',
+        archive: '/archive/',
+        services: '/servicios-principales/',
+        blog: '/próximamente/',
+        contact: '/contacto/',
+        pricing: '/precios-y-paquetes/',
+        about: '/acerca-de/',
+        email: 'mailto:mitch.chadban@hotmail.com',
+        privacy: '/política-de-privacidad-1/',
+        terms: '/términos-de-servicio/'
+      }
+    }
+  : {
+      tagline: 'Design + marketing for brands that want to stand out.',
+      explore: 'EXPLORE',
+      portfolio: 'Portfolio',
+      archive: 'Archive',
+      services: 'Services',
+      blog: 'Blog',
+      work: 'WORK',
+      contact: 'Contact',
+      pricing: 'Pricing',
+      about: 'About',
+      connect: 'CONNECT',
+      email: 'Email',
+      privacy: 'Privacy',
+      terms: 'Terms',
+      links: {
+        portfolio: '/portfolio-1/',
+        archive: '/archive/',
+        services: '/services-main/',
+        blog: '/blogs-resources/',
+        contact: '/contact-form/',
+        pricing: '/pricing-and-packages/',
+        about: '/about/',
+        email: 'mailto:mitch.chadban@hotmail.com',
+        privacy: '/privacy-policy/',
+        terms: '/terms-of-service/'
+      }
+    };
 ---
 
 <footer class="footer-ctm" role="contentinfo">
@@ -6,37 +68,37 @@
 
     <div class="footer-ctm__brand">
       <div class="footer-ctm__name">MITCH CHADBAN</div>
-      <div class="footer-ctm__tagline">Design + marketing for brands that want to stand out.</div>
+      <div class="footer-ctm__tagline">{t.tagline}</div>
     </div>
 
     <nav aria-label="Footer" class="footer-ctm__cols">
       <div class="footer-ctm__col">
-        <div class="footer-ctm__label">EXPLORE</div>
-        <a class="" href="/portfolio-1/">Portfolio</a>
-        <a class="" href="/archive/">Archive</a>
-        <a class="" href="/services-main/">Services</a>
-        <a class="" href="/blogs-resources/">Blog</a>
+        <div class="footer-ctm__label">{t.explore}</div>
+        <a class="" href={t.links.portfolio}>{t.portfolio}</a>
+        <a class="" href={t.links.archive}>{t.archive}</a>
+        <a class="" href={t.links.services}>{t.services}</a>
+        <a class="" href={t.links.blog}>{t.blog}</a>
       </div>
 
       <div class="footer-ctm__col">
-        <div class="footer-ctm__label">WORK</div>
-        <a href="/contact-form/">Contact</a>
-        <a class="" href="/pricing-and-packages/">Pricing</a>
-        <a class="" href="/about/">About</a>
+        <div class="footer-ctm__label">{t.work}</div>
+        <a href={t.links.contact}>{t.contact}</a>
+        <a class="" href={t.links.pricing}>{t.pricing}</a>
+        <a class="" href={t.links.about}>{t.about}</a>
       </div>
 
       <div class="footer-ctm__col">
-        <div class="footer-ctm__label">CONNECT</div>
-        <a href="/contact-form/">Email</a>
-        <a href="https://www.instagram.com/mitch_chadban/?hl=en" rel="noopener" target="_blank">Instagram</a>
+        <div class="footer-ctm__label">{t.connect}</div>
+        <a href={t.links.email}>{t.email}</a>
+        <a href={instagram} rel="noopener" target="_blank">Instagram</a>
       </div>
     </nav>
 
     <div class="footer-ctm__bottom">
       <div>© 2026 Mitch Chadban</div>
       <div class="footer-ctm__legal">
-        <a href="/privacy-policy/">Privacy</a>
-        <a href="/terms-of-service/">Terms</a>
+        <a href={t.links.privacy}>{t.privacy}</a>
+        <a href={t.links.terms}>{t.terms}</a>
       </div>
     </div>
 
