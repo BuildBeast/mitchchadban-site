@@ -3,172 +3,342 @@
   "trailingSlash": true,
   "redirects": [
     {
-      "source": "/portfolio/?",
+      "source": "/portfolio",
       "destination": "/portfolio-1/",
       "permanent": true
     },
     {
-      "source": "/ai-seo-vs-traditional-seo-what's-changed/?",
+      "source": "/portfolio/",
+      "destination": "/portfolio-1/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-seo-vs-traditional-seo-what's-changed",
       "destination": "/ai-seo-vs-traditional-seo-whats-changed/",
       "permanent": true
     },
     {
-      "source": "/best-growth-marketing-channels-for-2026-\\(australia\\)/?",
+      "source": "/ai-seo-vs-traditional-seo-what's-changed/",
+      "destination": "/ai-seo-vs-traditional-seo-whats-changed/",
+      "permanent": true
+    },
+    {
+      "source": "/best-growth-marketing-channels-for-2026-\\(australia\\)",
       "destination": "/best-growth-marketing-channels-for-2026-australia/",
       "permanent": true
     },
     {
-      "source": "/best-seo-\\+-ai-workflow-for-2026/?",
+      "source": "/best-growth-marketing-channels-for-2026-\\(australia\\)/",
+      "destination": "/best-growth-marketing-channels-for-2026-australia/",
+      "permanent": true
+    },
+    {
+      "source": "/best-seo-\\+-ai-workflow-for-2026",
       "destination": "/best-seo-and-ai-workflow-for-2026/",
       "permanent": true
     },
     {
-      "source": "/branding-designer-\\(logos-\\+-visual-identity\\)/?",
+      "source": "/best-seo-\\+-ai-workflow-for-2026/",
+      "destination": "/best-seo-and-ai-workflow-for-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/branding-designer-\\(logos-\\+-visual-identity\\)",
       "destination": "/branding-designer-logos-and-visual-identity/",
       "permanent": true
     },
     {
-      "source": "/commercial-illustration-\\(digital-\\+-print\\)/?",
+      "source": "/branding-designer-\\(logos-\\+-visual-identity\\)/",
+      "destination": "/branding-designer-logos-and-visual-identity/",
+      "permanent": true
+    },
+    {
+      "source": "/commercial-illustration-\\(digital-\\+-print\\)",
       "destination": "/commercial-illustration-digital-and-print/",
       "permanent": true
     },
     {
-      "source": "/custom-pet-portraits-\\(digital-\\+-print\\)/?",
+      "source": "/commercial-illustration-\\(digital-\\+-print\\)/",
+      "destination": "/commercial-illustration-digital-and-print/",
+      "permanent": true
+    },
+    {
+      "source": "/custom-pet-portraits-\\(digital-\\+-print\\)",
       "destination": "/custom-pet-portraits-digital-and-print/",
       "permanent": true
     },
     {
-      "source": "/design,-seo-and-marketing-services-australia/?",
+      "source": "/custom-pet-portraits-\\(digital-\\+-print\\)/",
+      "destination": "/custom-pet-portraits-digital-and-print/",
+      "permanent": true
+    },
+    {
+      "source": "/design,-seo-and-marketing-services-australia",
       "destination": "/design-seo-and-marketing-services-australia/",
       "permanent": true
     },
     {
-      "source": "/how-perplexity-chooses-sources-\\(and-how-to-get-cited-more-often\\)/?",
+      "source": "/design,-seo-and-marketing-services-australia/",
+      "destination": "/design-seo-and-marketing-services-australia/",
+      "permanent": true
+    },
+    {
+      "source": "/how-perplexity-chooses-sources-\\(and-how-to-get-cited-more-often\\)",
       "destination": "/how-perplexity-chooses-sources/",
       "permanent": true
     },
     {
-      "source": "/how-to-brief-an-seo-consultant-\\(and-actually-get-results\\)/?",
+      "source": "/how-perplexity-chooses-sources-\\(and-how-to-get-cited-more-often\\)/",
+      "destination": "/how-perplexity-chooses-sources/",
+      "permanent": true
+    },
+    {
+      "source": "/how-to-brief-an-seo-consultant-\\(and-actually-get-results\\)",
       "destination": "/how-to-brief-an-seo-consultant/",
       "permanent": true
     },
     {
-      "source": "/portrait-commissions-\\(digital-\\+-print\\)/?",
+      "source": "/how-to-brief-an-seo-consultant-\\(and-actually-get-results\\)/",
+      "destination": "/how-to-brief-an-seo-consultant/",
+      "permanent": true
+    },
+    {
+      "source": "/portrait-commissions-\\(digital-\\+-print\\)",
       "destination": "/portrait-commissions-digital-and-print/",
       "permanent": true
     },
     {
-      "source": "/positioning-vs-messaging-why-your-ads-aren’t-working/?",
+      "source": "/portrait-commissions-\\(digital-\\+-print\\)/",
+      "destination": "/portrait-commissions-digital-and-print/",
+      "permanent": true
+    },
+    {
+      "source": "/positioning-vs-messaging-why-your-ads-aren’t-working",
       "destination": "/positioning-vs-messaging-why-your-ads-arent-working/",
       "permanent": true
     },
     {
-      "source": "/seo-for-professional-services-in-australia-what’s-different-about-ranking-when-you-sell-expertise/?",
+      "source": "/positioning-vs-messaging-why-your-ads-aren’t-working/",
+      "destination": "/positioning-vs-messaging-why-your-ads-arent-working/",
+      "permanent": true
+    },
+    {
+      "source": "/seo-for-professional-services-in-australia-what’s-different-about-ranking-when-you-sell-expertise",
       "destination": "/seo-for-professional-services-in-australia-whats-different-about-ranking-when-you-sell-expertise/",
       "permanent": true
     },
     {
-      "source": "/social-media-design-that-doesn’t-look-like-everyone-else/?",
+      "source": "/seo-for-professional-services-in-australia-what’s-different-about-ranking-when-you-sell-expertise/",
+      "destination": "/seo-for-professional-services-in-australia-whats-different-about-ranking-when-you-sell-expertise/",
+      "permanent": true
+    },
+    {
+      "source": "/social-media-design-that-doesn’t-look-like-everyone-else",
       "destination": "/social-media-design-that-doesnt-look-like-everyone-else/",
       "permanent": true
     },
     {
-      "source": "/technical-seo-checklist-\\(plain-english\\)/?",
+      "source": "/social-media-design-that-doesn’t-look-like-everyone-else/",
+      "destination": "/social-media-design-that-doesnt-look-like-everyone-else/",
+      "permanent": true
+    },
+    {
+      "source": "/technical-seo-checklist-\\(plain-english\\)",
       "destination": "/technical-seo-checklist-plain-english/",
       "permanent": true
     },
     {
-      "source": "/the-complete-ai-search-strategy-guide-\\(2026\\)/?",
+      "source": "/technical-seo-checklist-\\(plain-english\\)/",
+      "destination": "/technical-seo-checklist-plain-english/",
+      "permanent": true
+    },
+    {
+      "source": "/the-complete-ai-search-strategy-guide-\\(2026\\)",
       "destination": "/the-complete-ai-search-strategy-guide-2026/",
       "permanent": true
     },
     {
-      "source": "/the-difference-between-mentions,-citations-and-rankings/?",
+      "source": "/the-complete-ai-search-strategy-guide-\\(2026\\)/",
+      "destination": "/the-complete-ai-search-strategy-guide-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/the-difference-between-mentions,-citations-and-rankings",
       "destination": "/the-difference-between-mentions-citations-and-rankings/",
       "permanent": true
     },
     {
-      "source": "/the-marketing-collateral-checklist-what-you-need!/?",
+      "source": "/the-difference-between-mentions,-citations-and-rankings/",
+      "destination": "/the-difference-between-mentions-citations-and-rankings/",
+      "permanent": true
+    },
+    {
+      "source": "/the-marketing-collateral-checklist-what-you-need!",
       "destination": "/the-marketing-collateral-checklist-what-you-need/",
       "permanent": true
     },
     {
-      "source": "/why-some-brands-get-mentioned-by-ai-and-others-don't/?",
+      "source": "/the-marketing-collateral-checklist-what-you-need!/",
+      "destination": "/the-marketing-collateral-checklist-what-you-need/",
+      "permanent": true
+    },
+    {
+      "source": "/why-some-brands-get-mentioned-by-ai-and-others-don't",
       "destination": "/why-some-brands-get-mentioned-by-ai-and-others-dont/",
       "permanent": true
     },
     {
-      "source": "/why-you’re-stuck-on-page-2-the-5-seo-problems-keeping-good-pages-off-page-1/?",
+      "source": "/why-some-brands-get-mentioned-by-ai-and-others-don't/",
+      "destination": "/why-some-brands-get-mentioned-by-ai-and-others-dont/",
+      "permanent": true
+    },
+    {
+      "source": "/why-you’re-stuck-on-page-2-the-5-seo-problems-keeping-good-pages-off-page-1",
       "destination": "/why-youre-stuck-on-page-2-the-5-seo-problems-keeping-good-pages-off-page-1/",
       "permanent": true
     },
     {
-      "source": "/consultor-seo-para-saas-en-espana-—-pensado-para-pipeline,-no-solo-para-rankings/?",
+      "source": "/why-you’re-stuck-on-page-2-the-5-seo-problems-keeping-good-pages-off-page-1/",
+      "destination": "/why-youre-stuck-on-page-2-the-5-seo-problems-keeping-good-pages-off-page-1/",
+      "permanent": true
+    },
+    {
+      "source": "/consultor-seo-para-saas-en-espana-—-pensado-para-pipeline,-no-solo-para-rankings",
       "destination": "/consultor-seo-para-saas-en-espana/",
       "permanent": true
     },
     {
-      "source": "/diseñador-freelance-de-marcas-y-diseño-de-logotipos/?",
+      "source": "/consultor-seo-para-saas-en-espana-—-pensado-para-pipeline,-no-solo-para-rankings/",
+      "destination": "/consultor-seo-para-saas-en-espana/",
+      "permanent": true
+    },
+    {
+      "source": "/diseñador-freelance-de-marcas-y-diseño-de-logotipos",
       "destination": "/disenador-freelance-de-marcas-y-diseno-de-logotipos/",
       "permanent": true
     },
     {
-      "source": "/diseño-gráfico-para-empresas-\\(limpio,-premium-y-listo-para-usar\\)/?",
+      "source": "/diseñador-freelance-de-marcas-y-diseño-de-logotipos/",
+      "destination": "/disenador-freelance-de-marcas-y-diseno-de-logotipos/",
+      "permanent": true
+    },
+    {
+      "source": "/diseño-gráfico-para-empresas-\\(limpio,-premium-y-listo-para-usar\\)",
       "destination": "/diseno-grafico-para-empresas/",
       "permanent": true
     },
     {
-      "source": "/growth-marketing-para-saas-y-startups-\\(estrategia-\\+-ejecución\\)/?",
+      "source": "/diseño-gráfico-para-empresas-\\(limpio,-premium-y-listo-para-usar\\)/",
+      "destination": "/diseno-grafico-para-empresas/",
+      "permanent": true
+    },
+    {
+      "source": "/growth-marketing-para-saas-y-startups-\\(estrategia-\\+-ejecución\\)",
       "destination": "/growth-marketing-para-saas-y-startups/",
       "permanent": true
     },
     {
-      "source": "/ilustración-comercial-\\(digital-y-impresa\\)/?",
+      "source": "/growth-marketing-para-saas-y-startups-\\(estrategia-\\+-ejecución\\)/",
+      "destination": "/growth-marketing-para-saas-y-startups/",
+      "permanent": true
+    },
+    {
+      "source": "/ilustración-comercial-\\(digital-y-impresa\\)",
       "destination": "/ilustracion-comercial-digital-y-impresa/",
       "permanent": true
     },
     {
-      "source": "/política-de-privacidad-1/?",
+      "source": "/ilustración-comercial-\\(digital-y-impresa\\)/",
+      "destination": "/ilustracion-comercial-digital-y-impresa/",
+      "permanent": true
+    },
+    {
+      "source": "/política-de-privacidad-1",
       "destination": "/politica-de-privacidad/",
       "permanent": true
     },
     {
-      "source": "/próximamente/?",
+      "source": "/política-de-privacidad-1/",
+      "destination": "/politica-de-privacidad/",
+      "permanent": true
+    },
+    {
+      "source": "/próximamente",
       "destination": "/proximamente/",
       "permanent": true
     },
     {
-      "source": "/servicios-de-diseño,-seo-y-marketing-en-españa/?",
+      "source": "/próximamente/",
+      "destination": "/proximamente/",
+      "permanent": true
+    },
+    {
+      "source": "/servicios-de-diseño,-seo-y-marketing-en-españa",
       "destination": "/servicios-de-diseno-seo-y-marketing-en-espana/",
       "permanent": true
     },
     {
-      "source": "/términos-de-servicio/?",
+      "source": "/servicios-de-diseño,-seo-y-marketing-en-españa/",
+      "destination": "/servicios-de-diseno-seo-y-marketing-en-espana/",
+      "permanent": true
+    },
+    {
+      "source": "/términos-de-servicio",
       "destination": "/terminos-de-servicio/",
       "permanent": true
     },
     {
-      "source": "/AEO-Explained-How-to-Rank-in-AI-Answers/?",
+      "source": "/términos-de-servicio/",
+      "destination": "/terminos-de-servicio/",
+      "permanent": true
+    },
+    {
+      "source": "/AEO-Explained-How-to-Rank-in-AI-Answers",
       "destination": "/aeo-explained-how-to-rank-in-ai-answers/",
       "permanent": true
     },
     {
-      "source": "/Best-Growth-Marketing-Channels-for-2026-Australia/?",
+      "source": "/AEO-Explained-How-to-Rank-in-AI-Answers/",
+      "destination": "/aeo-explained-how-to-rank-in-ai-answers/",
+      "permanent": true
+    },
+    {
+      "source": "/Best-Growth-Marketing-Channels-for-2026-Australia",
       "destination": "/best-growth-marketing-channels-for-2026-australia/",
       "permanent": true
     },
     {
-      "source": "/From-Traffic-to-Demos-A-Practical-Funnel-for-B2B-SaaS/?",
+      "source": "/Best-Growth-Marketing-Channels-for-2026-Australia/",
+      "destination": "/best-growth-marketing-channels-for-2026-australia/",
+      "permanent": true
+    },
+    {
+      "source": "/From-Traffic-to-Demos-A-Practical-Funnel-for-B2B-SaaS",
       "destination": "/from-traffic-to-demos-a-practical-funnel-for-b2b-saas/",
       "permanent": true
     },
     {
-      "source": "/Canva-vs-Designer-When-DIY-Starts-Costing-You/?",
+      "source": "/From-Traffic-to-Demos-A-Practical-Funnel-for-B2B-SaaS/",
+      "destination": "/from-traffic-to-demos-a-practical-funnel-for-b2b-saas/",
+      "permanent": true
+    },
+    {
+      "source": "/Canva-vs-Designer-When-DIY-Starts-Costing-You",
       "destination": "/canva-vs-designer-when-diy-starts-costing-you/",
       "permanent": true
     },
     {
-      "source": "/About/?",
+      "source": "/Canva-vs-Designer-When-DIY-Starts-Costing-You/",
+      "destination": "/canva-vs-designer-when-diy-starts-costing-you/",
+      "permanent": true
+    },
+    {
+      "source": "/About",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/About/",
       "destination": "/about/",
       "permanent": true
     }
