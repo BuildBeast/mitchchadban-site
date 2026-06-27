@@ -4,6 +4,7 @@ import '../styles/migration-overrides.css';
 import CargoHeader from '../components/CargoHeader.astro';
 import CargoFooter from '../components/CargoFooter.astro';
 import SpeedInsights from '@vercel/speed-insights/astro';
+import Analytics from '@vercel/analytics/astro';
 
 type Alternate = { lang: string; href: string };
 
@@ -81,5 +82,6 @@ const ogImageUrl = ogImage.startsWith('http')
     <CargoFooter lang={lang} />
 
     <SpeedInsights />
+    <Analytics />
   </body>
 </html>
