@@ -1096,6 +1096,10 @@ body,
   pointer-events:none;
   z-index:0;
   opacity:.9;
+  /* Feather the canvas edges so green blobs fade out instead of being
+     hard-clipped into a rectangle by #c2Hero{overflow:hidden}. */
+  -webkit-mask-image: radial-gradient(125% 125% at 50% 42%, #000 60%, transparent 100%);
+  mask-image: radial-gradient(125% 125% at 50% 42%, #000 60%, transparent 100%);
 }
 
 #c2Hero .c2-hero__inner{ position:relative; z-index:2; }
@@ -1205,10 +1209,15 @@ footer::before,
   position: absolute;
   left: 0;
   right: 0;
-  top: -140px;
-  height: 140px;
+  top: -220px;
+  height: 220px;
   pointer-events: none;
-  background: linear-gradient(to bottom, rgba(255,255,255,0), var(--mc-green));
+  background: linear-gradient(
+    to bottom,
+    rgba(0,200,83,0),
+    rgba(0,200,83,.35) 62%,
+    var(--mc-green)
+  );
 }
 
 footer *,
@@ -1979,6 +1988,9 @@ a:active .custom-btn{
   max-width: 70ch;
   opacity: .95;
   display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
@@ -2404,6 +2416,28 @@ a:active .custom-btn{
   .further-reading-ctm > .further-reading-ctm__title{
     padding: 26px 24px 18px !important;
     font-size: clamp(18px, 1.8vw, 24px) !important;
+  }
+
+  /* Keep Further Reading a clean rounded card on desktop: the general
+     blog body list rules (.service-ctm__body ul/ol/li) have higher
+     specificity and otherwise leak a left indent and list marker/rail
+     into this list. Re-assert the intended card layout here. */
+  .service-ctm.blog-ctm .service-ctm__body ul.further-reading-ctm__list{
+    margin: 0;
+    padding: 16px 18px 18px;
+    list-style: none;
+    display: grid;
+    gap: 14px;
+  }
+
+  .service-ctm.blog-ctm .service-ctm__body .further-reading-ctm__list li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .service-ctm.blog-ctm .service-ctm__body .further-reading-ctm__list li::marker{
+    content: "";
   }
 }
 
