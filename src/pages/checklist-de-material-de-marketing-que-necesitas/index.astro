@@ -1,0 +1,735 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const pageContent = `<!--  SCHEMA  -->
+<!-- <script>
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://mitchchadban.com/checklist-de-material-de-marketing-que-necesitas/#article",
+      "headline": "Checklist de Material de Marketing: Los 10 Activos Imprescindibles (Guía 2026)",
+      "description": "Un checklist práctico de material de marketing para 2026. Cubre el Sistema de 3 Capas (Fundación, Conversión, Distribución), los 10 activos imprescindibles, mapeo por etapa de embudo, orden de construcción según el tipo de negocio y errores frecuentes.",
+      "image": "https://mitchchadban.com/path-to-hero-image.jpg",
+      "datePublished": "2025-11-01",
+      "dateModified": "2026-04-05",
+      "inLanguage": "es-ES",
+      "author": {
+        "@type": "Person",
+        "name": "Mitch Chadban",
+        "url": "https://mitchchadban.com/about",
+        "jobTitle": "Diseñador y Especialista en Marketing",
+        "sameAs": ["https://www.linkedin.com/in/mitchchadban"]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "Mitch Chadban",
+        "url": "https://mitchchadban.com"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://mitchchadban.com/checklist-de-material-de-marketing-que-necesitas/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué es el material de marketing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El material de marketing es cualquier activo de marca —digital o físico— utilizado para comunicar tu oferta, generar credibilidad y acercar al comprador a la decisión de compra. Incluye sitios web, páginas de aterrizaje, dossiers, casos de éxito, presentaciones comerciales, propuestas, plantillas de redes sociales, creatividades publicitarias, folletos y activos de email. El término hacía referencia históricamente a los materiales impresos de apoyo a ventas, pero hoy abarca todo el espectro de activos digitales y físicos que una empresa utiliza para atraer y convertir clientes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuáles son los activos de material de marketing más importantes para una pequeña empresa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Para la mayoría de las pequeñas empresas, los activos de mayor impacto, en orden de prioridad, son: un sitio web sólido con páginas de servicio claras, un dossier o ficha de empresa, entre 1 y 3 casos de éxito con resultados medibles, una plantilla de página de aterrizaje para campañas y un sistema consistente de plantillas para redes sociales. Estos cinco activos cubren concienciación, consideración y decisión: las tres etapas donde las pequeñas empresas pierden más oportunidades."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuál es la diferencia entre material de marketing y material de ventas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El material de marketing atrae la atención y alimenta el interés: actúa en la parte superior e intermedia del embudo (sitios web, artículos de blog, contenido en redes sociales, lead magnets). El material de ventas ayuda a cerrar acuerdos: actúa en la parte inferior del embudo (propuestas, dossiers, casos de éxito, tablas de precios). En la práctica, muchos activos cumplen ambas funciones. Un caso de éxito bien construido funciona tanto como activo de marketing publicado en tu web como activo de ventas enviado durante una conversación de propuesta."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué material de marketing genera leads más rápido?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Los tres activos que generan de forma consistente más consultas directas son: el dossier o ficha de empresa (utilizado en conversaciones de prospección y referidos), el caso de éxito (convierte leads templados que están comparando opciones) y la página de aterrizaje con una oferta clara (el punto de entrada para el tráfico de pago y orgánico). Si no tienes ninguno de estos y solo puedes construir uno, empieza por la página de aterrizaje."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Con qué frecuencia debo actualizar mi material de marketing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Los activos de conversión —propuestas, dossiers, casos de éxito— deben revisarse cada 6 meses o cuando cambien tu oferta, precios o pruebas. Los activos de distribución —plantillas de redes sociales, creatividades publicitarias— necesitan renovarse cada 8-12 semanas por razones de rendimiento. Tu base de marca —logotipo, manual de marca, guía de estilo— debe permanecer estable entre 2 y 5 años salvo que estés haciendo un rebranding deliberado."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Sigo necesitando material de marketing impreso en 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Solo si tus clientes lo encontrarán en un contexto donde tiene relevancia: ferias comerciales, eventos locales, punto de venta, o sectores donde la credibilidad impresa aún tiene peso, como la construcción, el ámbito legal o el sanitario. Para la mayoría de los negocios de servicios y SaaS, el material impreso tiene un ROI significativamente inferior al de su equivalente digital."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://mitchchadban.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog y recursos",
+          "item": "https://mitchchadban.com/blog-y-recursos/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Checklist de material de marketing: qué necesitas",
+          "item": "https://mitchchadban.com/checklist-de-material-de-marketing-que-necesitas/"
+        }
+      ]
+    }
+  ]
+}
+</script> -->
+
+_______________________________________________________
+
+<div class="service-ctm blog-ctm">
+  <div class="service-ctm__body">
+
+        <!--  BYLINE — add before H1, or position via CSS to suit your layout  -->
+    <p style="font-size: 13px; color: #888; margin: 0 0 12px; letter-spacing: 0.02em;">
+Por <strong>Mitch Chadban</strong> — Estratega de SEO y Marketing, España  |  Actualizado en abril de 2026
+    </p>
+
+    <h1>Checklist de Material de Marketing: Los 10 Activos Imprescindibles (Guía 2026)</h1>
+    <br />
+
+    <p><strong>El material de marketing es cualquier activo de marca —digital o físico— utilizado para atraer, educar y convertir clientes.</strong> El checklist de lo que tu negocio realmente necesita es mucho más corto de lo que sugieren la mayoría de las listas: 10 activos clave, construidos en el orden correcto, superan a una biblioteca de 70 que nadie usa.</p>
+
+    <p>La mayoría de las empresas no tienen un problema de material de marketing. Tienen un problema de priorización. O están:</p>
+
+    <ul>
+      <li>creando demasiados activos que no apoyan las ventas, o</li>
+      <li>sin los pocos activos que realmente generan confianza y convierten leads.</li>
+    </ul>
+
+    <br />
+
+    <p>Esta guía te ofrece un checklist práctico de material de marketing —dividido en imprescindibles frente a opcionales, mapeado a tu etapa de embudo y tipo de negocio, con un orden de construcción claro y ejemplos reales de cómo es «lo bueno».</p>
+
+    <p>Al final, sabrás:</p>
+
+    <ul>
+      <li>qué material necesitas ahora mismo (según tu etapa y modelo de negocio)</li>
+      <li>qué crear a continuación (en orden)</li>
+      <li>qué omitir</li>
+      <li>y cómo mantenerlo consistente sin convertir cada activo en un nuevo proyecto de diseño</li>
+    </ul>
+
+    <br />
+
+    <div class="img-full-ctm">
+      <div class="img-full-ctm">
+        <img class="zoomable" src="/images/Collateral-Warehouse-Too-Much-Stuff.jpeg" alt="" loading="lazy" decoding="async" width="800" height="450">
+      </div>
+    </div>
+
+    <details class="blog-menu" open="">
+      <summary class="blog-menu__header">
+        <span class="blog-menu__title">En esta página</span>
+        <span aria-hidden="true" class="blog-menu__toggle"></span>
+      </summary>
+      <div class="blog-menu__body">
+        <a class="blog-menu__item" href="#why-lists-fail" onclick="location.hash='why-lists-fail'; return false;">Por qué la mayoría de los checklists de material de marketing no sirven</a>
+        <a class="blog-menu__item" href="#collateral" onclick="location.hash='collateral'; return false;">¿Qué es el material de marketing?</a>
+        <a class="blog-menu__item" href="#3-layer" onclick="location.hash='3-layer'; return false;">El Sistema de 3 Capas</a>
+        <a class="blog-menu__item" href="#master" onclick="location.hash='master'; return false;">El checklist maestro de material de marketing</a>
+        <a class="blog-menu__item" href="#depends" onclick="location.hash='depends'; return false;">Material de marketing opcional (según tu modelo)</a>
+        <a class="blog-menu__item" href="#funnel" onclick="location.hash='funnel'; return false;">Material de marketing por etapa de embudo</a>
+        <a class="blog-menu__item" href="#good" onclick="location.hash='good'; return false;">Ejemplos de material de marketing (cómo es «lo bueno»)</a>
+        <a class="blog-menu__item" href="#first" onclick="location.hash='first'; return false;">Qué construir primero (según tu tipo de negocio)</a>
+        <a class="blog-menu__item" href="#avoid" onclick="location.hash='avoid'; return false;">Errores frecuentes (y cómo evitarlos)</a>
+        <a class="blog-menu__item" href="#faq" onclick="location.hash='faq'; return false;">Preguntas frecuentes: checklist de material de marketing</a>
+      </div>
+    </details>
+
+    <!--  NEW: Why long lists fail + How to use this checklist  -->
+
+    <h2 id="why-lists-fail">Por qué la mayoría de los checklists de material de marketing no sirven</h2>
+    <br />
+Busca «checklist de material de marketing» y encontrarás listas de 50, 60 o incluso más de 73 activos. Folletos, papel de carta corporativo, banners para ferias, rotulación de vehículos, packs de selección de personal, dossiers para inversores, memorias USB personalizadas... todos tratados como igualmente importantes, todos presentados sin contexto.<br />
+    <br />
+El problema: una lista que te dice todo lo que <em>podría</em> existir no te da ninguna orientación sobre lo que realmente necesitas <em>ahora mismo</em>. Es un catálogo, no un checklist.<br />
+    <br />
+
+    <div class="blog-menu" style="border-radius:22px; padding:0;">
+      <div class="blog-menu__body" style="padding:22px 24px;">
+        <p style="margin:0; font-size:var(--t-lg); line-height:1.35;"><strong>Una lista que te dice lo que existe es un catálogo. Un checklist te dice qué construir a continuación —y en qué orden. Son cosas fundamentalmente distintas.</strong></p>
+      </div>
+    </div><br />
+La mayoría de las empresas que llegan a mí con un «problema de material» no necesitan más activos. Necesitan menos y mejores —construidos en la secuencia correcta para su modelo de negocio y etapa de crecimiento.<br />
+    <br />
+Eso es exactamente lo que hace este checklist. Así es como usarlo:<br />
+    <br />
+
+    <div style="border:2px solid rgba(0,255,80,.18); border-radius:22px; background:rgba(0,255,80,.03); overflow:hidden;">
+
+      <a href="#first" style="display:grid; grid-template-columns:64px 1fr; text-decoration:none; border-bottom:2px solid rgba(0,255,80,.12);">
+        <div style="display:flex; align-items:center; justify-content:center; border-right:2px solid rgba(0,255,80,.12); font-family:var(--font-display); font-weight:900; font-size:32px; letter-spacing:-0.04em; color:var(--mc-green);">1</div>
+        <div style="padding:18px 20px;">
+          <p style="font-family:var(--font-mono); font-size:11px; font-weight:800; letter-spacing:.16em; text-transform:uppercase; margin:0 0 5px; opacity:.65;">Paso uno</p>
+          <p style="margin:0 0 5px; font-weight:700; font-size:var(--t-md);">Identifica tu tipo de negocio</p>
+          <p style="margin:0; font-size:var(--t-sm); opacity:.80; line-height:1.45;">Servicios, SaaS, eCommerce o local: cada uno tiene un orden de construcción diferente. Salta a la <span style="text-decoration:underline;">sección de orden de construcción</span> para encontrar el tuyo.</p>
+        </div>
+      </a>
+
+      <a href="#master" style="display:grid; grid-template-columns:64px 1fr; text-decoration:none; border-bottom:2px solid rgba(0,255,80,.12);">
+        <div style="display:flex; align-items:center; justify-content:center; border-right:2px solid rgba(0,255,80,.12); font-family:var(--font-display); font-weight:900; font-size:32px; letter-spacing:-0.04em; color:var(--mc-green);">2</div>
+        <div style="padding:18px 20px;">
+          <p style="font-family:var(--font-mono); font-size:11px; font-weight:800; letter-spacing:.16em; text-transform:uppercase; margin:0 0 5px; opacity:.65;">Paso dos</p>
+          <p style="margin:0 0 5px; font-weight:700; font-size:var(--t-md);">Compara la lista de imprescindibles con lo que tienes</p>
+          <p style="margin:0; font-size:var(--t-sm); opacity:.80; line-height:1.45;">Revisa el <span style="text-decoration:underline;">checklist maestro</span>. Cualquier elemento que falte en la columna de imprescindibles es una carencia que vale la pena subsanar antes de construir cualquier otra cosa.</p>
+        </div>
+      </a>
+
+      <a href="#3-layer" style="display:grid; grid-template-columns:64px 1fr; text-decoration:none;">
+        <div style="display:flex; align-items:center; justify-content:center; border-right:2px solid rgba(0,255,80,.12); font-family:var(--font-display); font-weight:900; font-size:32px; letter-spacing:-0.04em; color:var(--mc-green);">3</div>
+        <div style="padding:18px 20px;">
+          <p style="font-family:var(--font-mono); font-size:11px; font-weight:800; letter-spacing:.16em; text-transform:uppercase; margin:0 0 5px; opacity:.65;">Paso tres</p>
+          <p style="margin:0 0 5px; font-weight:700; font-size:var(--t-md);">Construye en secuencia, no en paralelo</p>
+          <p style="margin:0; font-size:var(--t-sm); opacity:.80; line-height:1.45;">Usa el <span style="text-decoration:underline;">Sistema de 3 Capas</span> para secuenciar tu construcción. Primero la fundación, luego los activos de conversión, luego la distribución. No lo inviertas.</p>
+        </div>
+      </a>
+
+    </div>
+
+    <h2 id="collateral">¿Qué es el material de marketing?</h2>
+    <br />
+El material de marketing es cualquier material de marca utilizado para comunicar tu oferta, generar confianza y ayudar a los clientes a entender (y elegir) tu negocio —en línea o fuera de línea.<br />
+    <br />
+Por ejemplo: sitios web, páginas de aterrizaje, dossiers, casos de éxito, folletos, presentaciones, plantillas de redes sociales, anuncios y activos de email.<br />
+
+    <h3>Material de marketing frente a material de ventas (distinción rápida)</h3>
+    <ul>
+      <li>Material de marketing: atrae la atención y alimenta el interés (parte superior e intermedia del embudo)</li>
+      <li>Material de ventas: ayuda a cerrar acuerdos (parte intermedia e inferior del embudo)</li>
+    </ul>
+
+    <br />En la práctica, se solapan en gran medida. Lo que importa es si un activo apoya un paso real del proceso de compra.<br />
+
+    <!--  NEW: Expanded 3-Layer Collateral Stack  -->
+
+    <h2 id="3-layer">El Sistema de 3 Capas</h2>
+    <br />
+La mayoría de las listas de material fallan porque tratan todo con la misma prioridad. No es así. Usa este marco para secuenciar lo que construyes —y evitar la trampa de crear activos de Capa 3 antes de que exista tu fundación de Capa 1.<br />
+    <br />
+
+    <div class="blog-menu" style="border-radius:22px; padding:0;">
+      <div class="blog-menu__body" style="padding:22px 24px;">
+        <p style="font-family:var(--font-mono); font-size:11px; font-weight:800; letter-spacing:.18em; text-transform:uppercase; opacity:.7; margin:0 0 10px;">Marco de trabajo</p>
+        <p style="font-size:var(--t-lg); font-weight:700; line-height:1.2; margin:0 0 6px;">El Sistema de 3 Capas™</p>
+        <p style="margin:0; opacity:.85;">La mayoría de las empresas se saltan la Capa 1 y no entienden por qué la Capa 3 nunca tiene un aspecto coherente. Construye de abajo hacia arriba —siempre.</p>
+      </div>
+    </div>
+
+    <br />
+
+    <table class="table-ctm">
+      <thead>
+        <tr>
+          <th>Capa</th>
+          <th>Nombre</th>
+          <th>Qué hace</th>
+          <th>Activos clave</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>1</strong></td>
+          <td><strong>Capa de Fundación</strong></td>
+          <td>Establece las bases de tu marca para que todos los activos futuros parezcan pertenecer a la misma marca</td>
+          <td>Paquete de logotipo, manual de marca básico, paleta de colores, reglas tipográficas, guía de estilo de imagen</td>
+        </tr>
+        <tr>
+          <td><strong>2</strong></td>
+          <td><strong>Capa de Conversión</strong></td>
+          <td>Los activos críticos para el negocio que influyen directamente en leads, demos y consultas</td>
+          <td>Páginas de servicio del sitio web, plantilla de página de aterrizaje, dossier, casos de éxito, plantilla de propuesta</td>
+        </tr>
+        <tr>
+          <td><strong>3</strong></td>
+          <td><strong>Capa de Distribución</strong></td>
+          <td>Formatos repetibles que mantienen el marketing en movimiento —construidos sobre el sistema que ya tienes establecido</td>
+          <td>Plantillas de redes sociales, sistema de creatividades publicitarias, activos de email, materiales para eventos</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+La razón por la que este orden importa: sin la Capa 1, cada activo de Capa 3 se convierte en un trabajo de diseño individual, tu marca se dispersa y la confianza se erosiona. Sin la Capa 2, tu distribución de Capa 3 trabaja duro para llevar tráfico a un sitio que no puede convertirlo.<br />
+    <br />
+    <strong>El mayor error de material que veo:</strong> empresas que gastan en contenido de redes sociales y anuncios de pago (Capa 3) antes de tener una página de aterrizaje que convierte o un dossier que un comercial pueda usar realmente (Capa 2). El sistema solo funciona en secuencia.<br />
+    <br />
+
+    <div class="img-full-ctm">
+      <div class="img-full-ctm">
+        <img class="zoomable" src="/images/Conversion-Assets-Emergency-Room.jpeg" alt="" loading="lazy" decoding="async" width="800" height="450">
+      </div>
+    </div>
+
+    <h2>Soporte de diseño mensual (para que tu material se mantenga coherente y se publique)</h2>
+    <br />
+Si miras este checklist y piensas, <i>«Sí… necesitamos todo eso, pero no tenemos tiempo para construirlo como es debido»,</i> eso es exactamente para lo que existe el soporte de diseño mensual.<br />
+    <br />
+Con el soporte de diseño mensual obtienes:<br />
+
+    <ul>
+      <li>un sistema de marca y plantillas coherente</li>
+      <li>nuevos activos de campaña publicados cada mes (anuncios, redes sociales, dossiers, presentaciones)</li>
+      <li>actualizaciones continuas para mantener el material preciso y al día</li>
+      <li>alguien que se asegura de que tu marca no derive hacia el caos</li>
+    </ul>
+
+    <br />
+Si quieres que tu material se construya (y se mantenga) sin proyectos puntuales constantes,
+  <a href="mailto:mitch.chadban@hotmail.com" ><div class="custom-btn"><b>Escríbeme</b></div></a>
+ y pregunta por el soporte de diseño mensual.
+     <br /><br /><br />
+
+    <h2 id="master">El checklist maestro de material de marketing</h2>
+    <br />
+A continuación, el listado práctico de material de marketing que la mayoría de las empresas realmente necesitan —dividido en Imprescindible y Opcional.
+
+                  <div class="img-full-ctm">
+      <div class="img-full-ctm">
+        <img class="zoomable" src="/images/Must-Have-vs-Nice-To-Have-Sorting-Table.jpeg" alt="" loading="lazy" decoding="async" width="800" height="450">
+      </div>
+    </div>
+
+    <h3>Material de marketing imprescindible (para la mayoría de los negocios)</h3>
+
+    <h4>1) Paquete de logotipo + reglas básicas de uso</h4>
+Qué es: Tu logotipo en los formatos que realmente usarás.<br />
+Qué incluye «lo bueno»:<br />
+
+    <ul>
+      <li>versiones horizontal y apilada</li>
+      <li>versión solo con icono (uso en redes sociales y perfiles)</li>
+      <li>archivos: SVG + PDF + PNG (fondo transparente) + EPS/AI si haces impresión</li>
+    </ul>
+
+    <h4>2) Manual de marca básico (imprescindible)</h4>
+Qué es: Las reglas de tu marca en formato utilizable.<br />Qué incluye «lo bueno»:<br />
+
+    <ul>
+      <li>paleta de colores (HEX + RGB)</li>
+      <li>reglas tipográficas (combinación de fuentes + tamaños)</li>
+      <li>reglas de espaciado (lo que se debe y no se debe hacer)</li>
+      <li>guía de estilo de imagen (dirección de fotografía/ilustración)</li>
+    </ul>
+
+    <br />
+Esto es lo que facilita todos los activos futuros.<br />
+
+    <h4>3) Páginas principales del sitio web (o un sistema de páginas de aterrizaje)</h4>
+Qué es: Las páginas que explican tu oferta y convierten la intención en consultas.<br />
+Conjunto mínimo:<br />
+
+    <ul>
+      <li>página de inicio</li>
+      <li>páginas de producto/servicio</li>
+      <li>acerca de (con pruebas, no palabrería)</li>
+      <li>página de contacto/CTA</li>
+      <li>preguntas frecuentes (o FAQs integradas)</li>
+    </ul>
+
+    <br />
+Si tu sitio web es débil, ningún «material» lo compensará.<br />
+
+    <h4>4) Plantilla de página de aterrizaje (para campañas)</h4>Qué es: Una estructura reutilizable para ofertas, anuncios, colaboraciones y promociones.<br />
+Qué incluye «lo bueno»:<br />
+
+    <ul>
+      <li>titular que expresa el resultado</li>
+      <li>prueba social (logotipos, testimonios, cifras)</li>
+      <li>objeciones resueltas (preguntas frecuentes)</li>
+      <li>un CTA claro</li>
+    </ul>
+
+    <h4>5) Dossier / ficha de empresa</h4>
+Qué es: Un documento breve que explica qué haces y por qué eres una opción segura.<br />
+Qué incluye «lo bueno»:<br />
+
+    <ul>
+      <li>a quién ayudas + resultados</li>
+      <li>tu oferta (alcance claro)</li>
+      <li>credibilidad (logotipos, estadísticas, ejemplos)</li>
+      <li>proceso (pasos simples)</li>
+      <li>CTA (reservar / consultar)</li>
+    </ul>
+
+    <h4>6) Plantilla de caso de éxito + 1-3 casos de éxito</h4>Qué es: Prueba de que puedes entregar resultados.<br />
+Qué incluye «lo bueno»:<br />
+
+    <ul>
+      <li>problema → enfoque → resultado</li>
+      <li>resultados medibles (aunque sean simples)</li>
+      <li>una cita/testimonio</li>
+      <li>imágenes/capturas si son relevantes</li>
+    </ul>
+
+    <br />
+Si no tienes casos de éxito, no puedes «diseñar» la confianza.<br />
+
+    <h4>7) Plantilla de presentación (ventas / pitch / talleres)</h4>
+Qué es: Un formato de presentación que puedes reutilizar sin rediseñar cada vez.<br />
+Qué incluye «lo bueno»:<br />
+
+    <ul>
+      <li>portada consistente, diapositivas de sección y de contenido</li>
+      <li>diseños de gráficos y comparativas</li>
+      <li>diseños de diapositivas de prueba</li>
+      <li>diapositiva de CTA / próximos pasos</li>
+    </ul>
+
+    <h4>8) Plantilla de propuesta (sí, cuenta como material)</h4>
+Qué es: El documento que a menudo decide el acuerdo.<br />
+Qué incluye «lo bueno»:<br />
+
+    <ul>
+      <li>alcance + entregables + calendario</li>
+      <li>pruebas + casos de éxito</li>
+      <li>precios y condiciones claros</li>
+      <li>próximos pasos + listo para firmar</li>
+    </ul>
+
+    <h4>9) Plantillas de redes sociales (3-5 diseños como máximo)</h4>
+Qué es: Un pequeño conjunto de plantillas utilizadas de forma consistente.<br />
+Qué incluye «lo bueno»:<br />
+
+    <ul>
+      <li>estilos de publicación: educativo, prueba, anuncio, oferta</li>
+      <li>reglas tipográficas estrictas</li>
+      <li>espacio para CTA y enlaces</li>
+    </ul>
+
+    <br />Más plantillas ≠ mejor. La consistencia gana.<br />
+
+    <h4>10) Sistema de plantillas de creatividades publicitarias (si haces pago)</h4>
+Qué es: Formatos repetibles para anuncios de rendimiento.<br />
+Qué incluye «lo bueno»:<br />
+
+    <ul>
+      <li>3-6 formatos construidos en torno a ángulos de mensaje</li>
+      <li>jerarquía clara (gancho → prueba → CTA)</li>
+      <li>variantes para diferentes ubicaciones (feed/historia)</li>
+    </ul>
+
+    <h2 id="depends">Material de marketing opcional (según tu modelo)</h2>
+    <ul>
+      <li>folleto / díptico (funciona para negocios locales y eventos)</li>
+      <li>kit para ferias comerciales (banners, señalización de stand, material de mano)</li>
+      <li>lead magnet (solo si apoya un embudo real)</li>
+      <li>gráficos para vídeo explicativo / plantillas de movimiento</li>
+      <li>pack de selección de personal (si contratas con frecuencia)</li>
+      <li>informe anual / memoria de impacto (para ONG)</li>
+      <li>presentación de historia de marca (para alineación interna y colaboraciones)</li>
+      <li>dossier para inversores (si estás en fase de financiación)</li>
+    </ul>
+
+    <h2 id="funnel">Material de marketing por etapa de embudo</h2>Aquí es donde la mayoría de las empresas pierden el tiempo: creando activos que no encajan con el recorrido del comprador.<br />
+
+    <h3>Concienciación (personas que te descubren)</h3>
+    <ul>
+      <li>plantillas de redes sociales</li>
+      <li>página de historia de marca (o sección «por qué nosotros»)</li>
+      <li>contenido de blog que genera autoridad</li>
+      <li>visuales simples de «cómo funciona»</li>
+    </ul>
+
+    <h3>Consideración (están comparando opciones)</h3>
+    <ul>
+      <li>páginas de servicio/producto</li>
+      <li>dossiers / fichas de empresa</li>
+      <li>comparativas («nosotros vs. alternativas»)</li>
+      <li>páginas de preguntas frecuentes y gestión de objeciones</li>
+      <li>casos de éxito</li>
+    </ul>
+
+    <h3>Decisión (están eligiendo)</h3>
+    <ul>
+      <li>plantilla de propuesta</li>
+      <li>tabla de precios / página de precios</li>
+      <li>resumen de implementación/onboarding</li>
+      <li>dossier «qué ocurre a continuación»</li>
+    </ul>
+
+    <h3>Retención (fidelizar clientes y crecer con ellos)</h3>
+    <ul>
+      <li>materiales de onboarding</li>
+      <li>plantillas de comunicación con clientes</li>
+      <li>gráficos de actualización de producto</li>
+      <li>recursos de formación</li>
+      <li>activos de referidos (si tienes un programa)</li>
+    </ul>
+
+    <div class="img-full-ctm">
+      <div class="img-full-ctm">
+        <img class="zoomable" src="/images/Funnel-Stage-Costume-Party.jpeg" alt="" loading="lazy" decoding="async" width="800" height="450">
+      </div>
+    </div>
+
+    <h2 id="good">Ejemplos de material de marketing (cómo es «lo bueno»)</h2>
+    <br />Aquí tienes ejemplos prácticos que puedes tomar como referencia.<br />
+
+    <h3>Ejemplo 1: Dossier / ficha de empresa</h3>
+      Un buen dossier incluye:<br />
+
+    <ul>
+      <li>titular: orientado al resultado («Reduce el tiempo de incorporación un 50%»)</li>
+      <li>a quién va dirigido (perfil de cliente ideal)</li>
+      <li>tu oferta (3-6 puntos como máximo)</li>
+      <li>prueba de credibilidad (logotipos, estadísticas, testimonios)</li>
+      <li>proceso (3 pasos)</li>
+      <li>CTA («Reserva una llamada»)</li>
+    </ul>
+
+    <h3>Ejemplo 2: Caso de éxito</h3>
+      Un buen caso de éxito incluye:<br />
+
+    <ul>
+      <li>contexto (sector, tamaño, reto)</li>
+      <li>el «antes» (qué no funcionaba)</li>
+      <li>qué cambiaste</li>
+      <li>resultados (con cifras si es posible)</li>
+      <li>cita de testimonio</li>
+      <li>CTA de siguiente paso</li>
+    </ul>
+
+    <h3>Ejemplo 3: Página de aterrizaje</h3>
+      Las páginas de aterrizaje de alto rendimiento suelen tener:<br />
+
+    <ul>
+      <li>una oferta, un objetivo</li>
+      <li>prueba social por encima del pliegue</li>
+      <li>objeciones resueltas en la parte media de la página</li>
+      <li>un CTA repetido (arriba/en medio/abajo)</li>
+      <li>sección corta de preguntas frecuentes</li>
+    </ul>
+
+    <h3>Ejemplo 4: Presentación de pitch</h3>
+      Una estructura de deck limpia:<br />
+
+    <ol>
+      <li>el problema</li>
+      <li>por qué importa</li>
+      <li>tu solución</li>
+      <li>prueba (clientes/resultados)</li>
+      <li>cómo funciona</li>
+      <li>precios o modelo de contratación</li>
+      <li>próximos pasos</li>
+    </ol>
+
+    <h3>Ejemplo 5: Sistema de plantillas de redes sociales</h3>
+      Un sistema utilizable incluye:<br />
+
+    <ul>
+      <li>3-5 diseños consistentes</li>
+      <li>reglas de jerarquía tipográfica</li>
+      <li>reglas de espaciado y ubicación del CTA</li>
+      <li>una «firma visual» consistente (bloques de color, estilo de icono, tratamiento de foto)</li>
+    </ul>
+
+    <h3>Ejemplo 6: Plantilla de creatividad publicitaria</h3>
+      Una buena plantilla de anuncio incluye:<br />
+
+    <ul>
+      <li>un gancho potente</li>
+      <li>un punto de prueba de apoyo</li>
+      <li>un CTA claro</li>
+      <li>el mínimo desorden posible<br />Los anuncios necesitan jerarquía, no decoración</li>
+    </ul><br />
+
+    <h2 id="first">Qué construir primero (según tu tipo de negocio)</h2>
+
+    <h3>Si eres un negocio de servicios</h3>
+      Construye en este orden:<br />
+
+    <ol>
+      <li>páginas de servicio del sitio web + plantilla de página de aterrizaje</li>
+      <li>ficha de empresa / dossier</li>
+      <li>casos de éxito</li>
+      <li>plantilla de propuesta</li>
+      <li>plantillas de redes sociales y anuncios</li>
+    </ol>
+
+    <h3>Si eres SaaS</h3>
+      Construye en este orden:<br />
+
+    <ol>
+      <li>página de inicio + páginas de aterrizaje clave</li>
+      <li>páginas de comparativa/alternativas + casos de éxito</li>
+      <li>flujos de onboarding (email + visuales in-app)</li>
+      <li>plantilla de presentación (ventas y colaboraciones)</li>
+      <li>sistema de plantillas de anuncios</li>
+    </ol>
+
+    <h3>Si eres eCommerce</h3>
+      Construye en este orden:<br />
+
+    <ol>
+      <li>consistencia en la plantilla de páginas de producto</li>
+      <li>flujos de email (bienvenida, carrito abandonado, post-compra)</li>
+      <li>formatos de creatividad publicitaria + estructura de UGC</li>
+      <li>manual de marca + sistema para redes sociales</li>
+      <li>kits de promociones de temporada</li>
+    </ol>
+
+    <h3>Si eres local (oficios, clínicas, hostelería)</h3>
+      Construye en este orden:<br />
+
+    <ol>
+      <li>páginas de servicio del sitio web + página de aterrizaje de oferta</li>
+      <li>visuales de reseñas + activos de confianza</li>
+      <li>folletos / señalización (si procede)</li>
+      <li>plantillas de redes sociales</li>
+      <li>activos promocionales de «oferta para nuevos clientes»</li>
+    </ol>
+
+    <br /><br />
+
+    <h2 id="avoid">Errores frecuentes (y cómo evitarlos)</h2>
+    <h3>Error 1: Crear demasiado demasiado pronto</h3>
+      No necesitas 30 activos. Necesitas 6-10 que realmente se usen.<br />
+
+    <h3>Error 2: Sin plantillas, cada solicitud se convierte en un trabajo de diseño</h3>
+      Las plantillas reducen el coste y el estrés. Sin ellas, el marketing se ralentiza.<br />
+
+    <h3>Error 3: Material que tiene buen aspecto pero no convierte</h3>
+      Si no hay un CTA claro, ni prueba, ni claridad en el mensaje, es decoración.<br />
+
+    <h3>Error 4: Identidad de marca inconsistente en todos los canales</h3>
+      Cuando tu sitio web, redes sociales, propuestas y anuncios se perciben como cosas distintas, la confianza cae.<br />
+
+    <br /><br /><br />
+
+    <h2 id="faq">Preguntas frecuentes: checklist de material de marketing</h2>
+
+    <h3>¿Qué es el material de marketing?</h3>
+      El material de marketing es cualquier activo de marca —digital o físico— utilizado para comunicar tu oferta, generar credibilidad y acercar al comprador a la decisión de compra. Incluye sitios web, páginas de aterrizaje, dossiers, casos de éxito, presentaciones de pitch, propuestas, plantillas de redes sociales, creatividades publicitarias, folletos y activos de email. El término hacía referencia históricamente a los materiales impresos de apoyo a ventas, pero hoy abarca todo el espectro de activos digitales y físicos que una empresa utiliza para atraer y convertir clientes.<br />
+
+    <h3>¿Cuáles son los activos de material de marketing más importantes para una pequeña empresa?</h3>
+      Para la mayoría de las pequeñas empresas, los activos de mayor impacto, en orden de prioridad, son: un sitio web sólido con páginas de servicio claras, un dossier o ficha de empresa, entre 1 y 3 casos de éxito con resultados medibles, una plantilla de página de aterrizaje para campañas y un sistema consistente de plantillas para redes sociales. Estos cinco activos cubren concienciación, consideración y decisión: las tres etapas donde las pequeñas empresas pierden más oportunidades.<br />
+
+    <h3>¿Qué es el material de marketing B2B?</h3>
+      El material de marketing B2B incluye cualquier activo utilizado para atraer, educar o convertir a compradores empresariales. El material B2B más efectivo suele ser los casos de éxito (prueba de resultados), las fichas de empresa (alcance y credibilidad), las presentaciones de pitch (para reuniones y propuestas), las páginas de comparativa (posicionamiento frente a alternativas) y los dossiers técnicos (para productos o servicios complejos). Un buen caso de éxito supera a diez folletos genéricos.<br />
+
+    <h3>¿Cuál es la diferencia entre material de marketing y material de ventas?</h3>
+      El material de marketing atrae la atención y alimenta el interés: actúa en la parte superior e intermedia del embudo (sitios web, artículos de blog, contenido en redes sociales, lead magnets). El material de ventas ayuda a cerrar acuerdos: actúa en la parte inferior del embudo (propuestas, dossiers, casos de éxito, tablas de precios). En la práctica, muchos activos cumplen ambas funciones. Un caso de éxito bien construido funciona tanto como activo de marketing (publicado en tu web) como activo de ventas (enviado durante una conversación de propuesta).<br />
+
+    <h3>¿Qué es el material de marketing digital?</h3>
+      El material de marketing digital hace referencia a los activos de marca en línea utilizados para marketing y ventas: sitios web, páginas de aterrizaje, plantillas de email, gráficos para redes sociales, anuncios digitales, dossiers en PDF, casos de éxito en línea y activos de vídeo. Para la mayoría de las empresas en 2026, el material digital ofrece un ROI por activo significativamente superior al de su equivalente impreso.<br />
+
+    <h3>¿Cuál es la diferencia entre un dossier y un folleto?</h3>
+      Un dossier es un documento de ventas enfocado, de una sola página, que comunica una oferta a un público concreto: se utiliza habitualmente en conversaciones directas de venta B2B. Un folleto es una pieza de marketing más amplia diseñada para distribución general, que cubre la gama completa de productos o servicios de una empresa. Los dossiers convierten mejor en contextos de venta directa porque son específicos y orientados a la acción. Si solo puedes crear uno, crea el dossier.<br />
+
+    <h3>¿Con qué frecuencia debo actualizar mi material de marketing?</h3>
+      Los activos de conversión (propuestas, dossiers, casos de éxito) deben revisarse cada 6 meses o cuando cambien tu oferta, precios o pruebas. Los activos de distribución (plantillas de redes sociales, creatividades publicitarias) necesitan renovarse cada 8-12 semanas por razones de rendimiento. Tu base de marca (logotipo, manual de marca, guía de estilo) debe permanecer estable entre 2 y 5 años salvo que estés haciendo un rebranding deliberado. El mayor error de mantenimiento es dejar que los casos de éxito queden obsoletos: una prueba desactualizada es peor que ninguna prueba.<br />
+
+    <h3>¿Qué material de marketing necesito antes del lanzamiento de un producto?</h3>
+      Antes del lanzamiento, necesitas como mínimo: una página de aterrizaje dedicada al producto, un dossier o ficha de producto, una secuencia de email de anuncio y entre 3 y 5 gráficos de lanzamiento para redes sociales. Si vendes en B2B, añade una presentación de pitch. Si vas a hacer tráfico de pago, necesitas creatividades publicitarias en al menos 3 variantes de formato antes del primer día. El activo que la mayoría de las empresas omite —y no debería— es una página de preguntas frecuentes bien redactada, que gestiona las objeciones de forma pasiva y reduce la carga de ventas desde el primer día.<br />
+
+    <h3>¿Qué material de marketing genera leads más rápido?</h3>
+      Basándome en mi experiencia trabajando con pymes españolas en modelos de servicios, SaaS y negocios locales, los tres activos que generan de forma consistente más consultas directas son: el dossier o ficha de empresa (utilizado en conversaciones de prospección y referidos), el caso de éxito (convierte leads templados que están comparando opciones) y la página de aterrizaje con una oferta clara (el punto de entrada para el tráfico de pago y orgánico). Si no tienes ninguno de estos y solo puedes construir uno, empieza por la página de aterrizaje.<br />
+
+    <h3>¿Sigo necesitando material de marketing impreso en 2026?</h3>
+      Solo si tus clientes lo encontrarán en un contexto donde tiene relevancia: ferias comerciales, eventos locales, punto de venta, o sectores donde la credibilidad impresa aún tiene peso (construcción, legal, sanitario). Para la mayoría de los negocios de servicios y SaaS, el material impreso tiene un ROI significativamente inferior al de su equivalente digital. La excepción es la tarjeta de visita: un buen diseño de presentación que refuerza la calidad de marca en una reunión presencial sigue siendo muy efectivo en B2B.<br />
+
+    <h3>¿Qué es el material de capacitación de ventas?</h3>
+      El material de capacitación de ventas es cualquier activo diseñado específicamente para ayudar a los comerciales a cerrar acuerdos: propuestas, dossiers, casos de éxito, guías de gestión de objeciones, tablas de precios, documentos de comparativa competitiva y presentaciones de demostración. La diferencia respecto al material de marketing general es la intención: los activos de capacitación de ventas se construyen para un momento específico de la conversación comercial, no para distribución general. Un buen material de capacitación de ventas acorta el ciclo de venta porque anticipa las preguntas que los compradores hacen en cada acuerdo.<br />
+
+    <h3>¿Cómo creo material de marketing con un presupuesto reducido?</h3>
+      Prioriza los activos en orden de impacto en los ingresos, no de valor de producción. Empieza con un dossier, luego un caso de éxito (un documento Word bien estructurado es válido para empezar), y después una página de aterrizaje. Usa un manual de marca básico para garantizar la consistencia: fuentes y colores coherentes en un diseño simple superan un diseño elaborado sobre una marca inconsistente. El mayor error presupuestario es gastar en diseño profesional antes de que el mensaje esté claro. Escribe el texto primero; diseña después.<br />
+
+    <br /><br /><br />
+
+    <h2>Soporte de diseño mensual (para que tu material se mantenga coherente y se publique)</h2>
+    <br />
+    Si miras este checklist y piensas, <i>«Sí… necesitamos todo eso, pero no tenemos tiempo para construirlo como es debido»,</i> eso es exactamente para lo que existe el soporte de diseño mensual.<br />
+    <br />
+      Con el soporte de diseño mensual obtienes:<br />
+
+    <ul>
+      <li>un sistema de marca y plantillas coherente</li>
+      <li>nuevos activos de campaña publicados cada mes (anuncios, redes sociales, dossiers, presentaciones)</li>
+      <li>actualizaciones continuas para mantener el material preciso y al día</li>
+      <li>alguien que se asegura de que tu marca no derive hacia el caos</li>
+    </ul>
+
+    <br />
+      Si quieres que tu material se construya (y se mantenga) sin proyectos puntuales constantes,
+     <a href="mailto:mitch.chadban@hotmail.com" ><div class="custom-btn"><b>Escríbeme</b></div></a>
+     y pregunta por el soporte de diseño mensual.<br />
+    <br />
+
+    <div class="further-reading-ctm">
+      <h4 class="further-reading-ctm__title">Más lecturas</h4>
+      <ul class="further-reading-ctm__list">
+        <li class="further-reading-ctm__item">
+          <a class="further-reading-ctm__link" href="/checklist-de-coherencia-de-marca-12-puntos/" >El Checklist de Coherencia de Marca de 12 Puntos (Para Que Tu Marca Deje de Parecer Aleatoria)</a>
+        </li>
+        <li class="further-reading-ctm__item">
+          <a class="further-reading-ctm__link" href="/diseno-para-redes-sociales-que-destaca/" >Diseño para Redes Sociales Que No Se Parece a Todo lo Demás</a>
+        </li>
+        <li class="further-reading-ctm__item">
+          <a class="further-reading-ctm__link" href="/canva-vs-disenador-cuando-el-diy-te-cuesta-dinero/" >Canva vs Diseñador: Cuándo el DIY Empieza a Costarte Clientes</a>
+        </li>
+        <li class="further-reading-ctm__item">
+          <a class="further-reading-ctm__link" href="/freelance-vs-agencia-como-elegir/" >Cómo Elegir Entre Freelance y Agencia (Coste, Velocidad, Calidad)</a>
+        </li>
+        <li class="further-reading-ctm__item">
+          <a class="further-reading-ctm__link" href="/cuanto-cuesta-un-logo-en-espana-que-incluye/" >Cuánto Cuesta un Logo en España: Qué Obtienes en Cada Rango de Precio</a>
+        </li>
+        <li class="further-reading-ctm__item">
+          <a class="further-reading-ctm__link" href="/mejor-contenido-de-demand-gen-para-2026/" >El Mejor Contenido de Demand Gen para 2026: Qué Publicar para Conseguir Leads</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>`;
+---
+
+<BaseLayout lang="es" ogType="article"
+  title="Checklist de Material de Marketing: Los 10 Activos que Necesitas | Mitch Chadban"
+  description="Checklist práctico de material de marketing para 2026: 10 activos imprescindibles, mapeados a tu embudo y construidos en el orden correcto para convertir leads."
+  canonical="https://mitchchadban.com/checklist-de-material-de-marketing-que-necesitas/"
+  alternates={[
+    { lang: 'en-AU', href: 'https://mitchchadban.com/the-marketing-collateral-checklist-what-you-need/' },
+    { lang: 'es', href: 'https://mitchchadban.com/checklist-de-material-de-marketing-que-necesitas/' },
+    { lang: 'x-default', href: 'https://mitchchadban.com/the-marketing-collateral-checklist-what-you-need/' }
+  ]}
+>
+  <Fragment set:html={pageContent} />
+</BaseLayout>

@@ -1,0 +1,240 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const pageContent = `<!--  ARCHIVO DEL BLOG (ESPAÑOL — REFLEJA /blogs-resources/)  -->
+<section class="blog-ctm portfolio-ctm" id="blogArchive">
+  <div class="portfolio-ctm__inner" style="padding-top:72px;">
+
+    <div class="blog-ctm__head portfolio-ctm__head" style="margin-top:0;">
+      <h1 style="margin:0 0 18px; font-size:clamp(78px,10vw,132px); line-height:0.9;">Blog</h1>
+      <p class="blog-ctm__sub" style="margin:0;">Elige un tema. Encuentra el manual. Avanza más rápido.</p>
+    </div>
+
+    <div aria-label="Filtros del blog" class="blog-ctm__controls">
+      <div aria-label="Filtrar por etiqueta" class="blog-ctm__tags" id="blogTags">
+        <button class="blog-ctm__tagbtn is-active" data-tag="All" type="button">Todos</button>
+        <button class="blog-ctm__tagbtn" data-tag="2026" type="button">2026</button>
+        <button class="blog-ctm__tagbtn" data-tag="Branding" type="button">Branding</button>
+        <button class="blog-ctm__tagbtn" data-tag="Diseño" type="button">Diseño</button>
+        <button class="blog-ctm__tagbtn" data-tag="España" type="button">España</button>
+        <button class="blog-ctm__tagbtn" data-tag="IA" type="button">IA</button>
+        <button class="blog-ctm__tagbtn" data-tag="Marketing" type="button">Marketing</button>
+        <button class="blog-ctm__tagbtn" data-tag="SaaS" type="button">SaaS</button>
+        <button class="blog-ctm__tagbtn" data-tag="SEO" type="button">SEO</button>
+      </div>
+    </div>
+
+    <div class="blog-ctm__list" id="blogList">
+      <a class="post-ctm c2-card" href="/mejor-flujo-de-trabajo-seo-con-ia-2026/" aria-label="Leer: El Mejor Flujo de Trabajo SEO + IA para 2026">
+        <div class="post-ctm__top">
+          <h2 class="post-ctm__h">El Mejor Flujo de Trabajo SEO + IA para 2026</h2>
+          <div class="post-ctm__meta">
+            <span class="post-ctm__pill">SEO</span><span class="post-ctm__pill">IA</span><span class="post-ctm__pill">2026</span>
+          </div>
+        </div>
+        <p class="post-ctm__p">Un manual práctico paso a paso para hacer SEO con IA en 2026 sin publicar contenido genérico: flujo de 8 etapas, prompts y reglas editoriales.</p>
+        <span class="post-ctm__link">
+          <span class="post-ctm__read">Leer más</span><span class="post-ctm__arrow">↗</span>
+        </span>
+      </a>
+
+      <a class="post-ctm c2-card" href="/seo-para-saas-en-espana-que-funciona-en-2026/" aria-label="Leer: SEO para SaaS en España: Qué Funciona en 2026">
+        <div class="post-ctm__top">
+          <h2 class="post-ctm__h">SEO para SaaS en España: Qué Funciona en 2026</h2>
+          <div class="post-ctm__meta">
+            <span class="post-ctm__pill">SEO</span><span class="post-ctm__pill">SaaS</span><span class="post-ctm__pill">2026</span>
+          </div>
+        </div>
+        <p class="post-ctm__p">Manual práctico de SEO para equipos SaaS en España en 2026: páginas money, clusters temáticos, señales de confianza, SEO técnico y distribución + 30/60/90.</p>
+        <span class="post-ctm__link">
+          <span class="post-ctm__read">Leer más</span><span class="post-ctm__arrow">↗</span>
+        </span>
+      </a>
+
+      <a class="post-ctm c2-card" href="/estrategia-de-growth-marketing-para-saas/" aria-label="Leer: Estrategia de Growth Marketing para SaaS">
+        <div class="post-ctm__top">
+          <h2 class="post-ctm__h">Estrategia de Growth Marketing para SaaS</h2>
+          <div class="post-ctm__meta">
+            <span class="post-ctm__pill">Marketing</span><span class="post-ctm__pill">SaaS</span>
+          </div>
+        </div>
+        <p class="post-ctm__p">Un sistema de growth marketing para SaaS: un objetivo claro, experimentos sensatos, cadencia semanal y las pocas métricas que importan, con un plan a 30/60/90 días.</p>
+        <span class="post-ctm__link">
+          <span class="post-ctm__read">Leer más</span><span class="post-ctm__arrow">↗</span>
+        </span>
+      </a>
+
+      <a class="post-ctm c2-card" href="/cuanto-cuesta-un-logo-en-espana-que-incluye/" aria-label="Leer: ¿Cuánto Cuesta un Logo en España? Qué Incluye Según el Precio">
+        <div class="post-ctm__top">
+          <h2 class="post-ctm__h">¿Cuánto Cuesta un Logo en España? Qué Incluye Según el Precio</h2>
+          <div class="post-ctm__meta">
+            <span class="post-ctm__pill">Branding</span><span class="post-ctm__pill">Diseño</span><span class="post-ctm__pill">España</span>
+          </div>
+        </div>
+        <p class="post-ctm__p">Precios de logotipos en España por nivel: qué incluye cada rango, costes ocultos, licencias y las preguntas que evitan pagar dos veces.</p>
+        <span class="post-ctm__link">
+          <span class="post-ctm__read">Leer más</span><span class="post-ctm__arrow">↗</span>
+        </span>
+      </a>
+
+      <a class="post-ctm c2-card" href="/canva-vs-disenador-cuando-el-diy-te-cuesta-dinero/" aria-label="Leer: Canva vs Diseñador: Cuándo el DIY te Empieza a Costar Dinero">
+        <div class="post-ctm__top">
+          <h2 class="post-ctm__h">Canva vs Diseñador: Cuándo el DIY te Empieza a Costar Dinero</h2>
+          <div class="post-ctm__meta">
+            <span class="post-ctm__pill">Branding</span><span class="post-ctm__pill">Diseño</span><span class="post-ctm__pill">España</span>
+          </div>
+        </div>
+        <p class="post-ctm__p">Un test de realidad sobre Canva vs contratar a un diseñador: el punto en el que el DIY empieza a costarte leads, confianza y tiempo (y qué hacer en su lugar).</p>
+        <span class="post-ctm__link">
+          <span class="post-ctm__read">Leer más</span><span class="post-ctm__arrow">↗</span>
+        </span>
+      </a>
+
+      <a class="post-ctm c2-card" href="/checklist-de-material-de-marketing-que-necesitas/" aria-label="Leer: Checklist de Material de Marketing: Los 10 Activos que Necesitas">
+        <div class="post-ctm__top">
+          <h2 class="post-ctm__h">Checklist de Material de Marketing: Los 10 Activos que Necesitas</h2>
+          <div class="post-ctm__meta">
+            <span class="post-ctm__pill">Branding</span><span class="post-ctm__pill">Diseño</span><span class="post-ctm__pill">Marketing</span>
+          </div>
+        </div>
+        <p class="post-ctm__p">Un checklist sencillo del material de marketing que toda empresa necesita: qué priorizar primero y qué puedes dejar para después.</p>
+        <span class="post-ctm__link">
+          <span class="post-ctm__read">Leer más</span><span class="post-ctm__arrow">↗</span>
+        </span>
+      </a>
+
+      <a class="post-ctm c2-card" href="/freelance-vs-agencia-como-elegir/" aria-label="Leer: Freelance vs Agencia: Cómo Elegir la Opción Correcta">
+        <div class="post-ctm__top">
+          <h2 class="post-ctm__h">Freelance vs Agencia: Cómo Elegir la Opción Correcta</h2>
+          <div class="post-ctm__meta">
+            <span class="post-ctm__pill">Branding</span><span class="post-ctm__pill">Diseño</span><span class="post-ctm__pill">España</span>
+          </div>
+        </div>
+        <p class="post-ctm__p">Guía práctica para elegir entre freelance y agencia según coste, velocidad y calidad, y lo que tu proyecto realmente necesita.</p>
+        <span class="post-ctm__link">
+          <span class="post-ctm__read">Leer más</span><span class="post-ctm__arrow">↗</span>
+        </span>
+      </a>
+
+      <div class="blog-ctm__empty" id="blogEmpty" style="display:none;">No hay artículos para ese filtro.</div>
+    </div>
+
+    <div class="blog-ctm__more">
+      <button class="blog-ctm__loadBtn" id="blogLoadMore" style="display: none;" type="button">
+              Cargar más
+      </button>
+    </div>
+
+  </div>
+
+  <script>
+    (function () {
+      function initBlogArchive() {
+        const $root = document.getElementById("blogArchive");
+        const $list = document.getElementById("blogList");
+        const $tags = document.getElementById("blogTags");
+        const $moreBtn = document.getElementById("blogLoadMore");
+        const $empty = document.getElementById("blogEmpty");
+
+        if (!$root || !$list || !$tags || !$moreBtn || !$empty) return;
+        if ($root.__blogBound) return;
+        $root.__blogBound = true;
+
+        const PAGE_SIZE = 6;
+        let activeTag = "All";
+        let visibleCount = PAGE_SIZE;
+
+        const posts = Array.from($list.querySelectorAll(".post-ctm")).map((card) => {
+          const tags = Array.from(card.querySelectorAll(".post-ctm__pill"))
+            .map((pill) => (pill.textContent || "").trim())
+            .filter(Boolean);
+
+          return { card, tags };
+        });
+
+        function syncActiveTag() {
+          $tags.querySelectorAll("[data-tag]").forEach((btn) => {
+            const tag = btn.getAttribute("data-tag") || "";
+            btn.classList.toggle("is-active", tag === activeTag);
+          });
+        }
+
+        function getFilteredPosts() {
+          if (activeTag === "All") return posts;
+          return posts.filter((post) => post.tags.includes(activeTag));
+        }
+
+        function renderPosts() {
+          const filtered = getFilteredPosts();
+          const shown = filtered.slice(0, visibleCount);
+
+          posts.forEach((post) => {
+            post.card.style.display = "none";
+          });
+
+          if (!shown.length) {
+            $empty.style.display = "";
+            $moreBtn.style.display = "none";
+            return;
+          }
+
+          $empty.style.display = "none";
+
+          shown.forEach((post) => {
+            post.card.style.display = "";
+          });
+
+          $moreBtn.style.display = visibleCount >= filtered.length ? "none" : "inline-flex";
+        }
+
+        $tags.addEventListener("click", function (e) {
+          const btn = e.target.closest("[data-tag]");
+          if (!btn) return;
+
+          e.preventDefault();
+          e.stopPropagation();
+
+          activeTag = btn.getAttribute("data-tag") || "All";
+          visibleCount = PAGE_SIZE;
+
+          syncActiveTag();
+          renderPosts();
+        });
+
+        $moreBtn.addEventListener("click", function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+
+          visibleCount += PAGE_SIZE;
+          renderPosts();
+        });
+
+        syncActiveTag();
+        renderPosts();
+      }
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", initBlogArchive);
+      } else {
+        initBlogArchive();
+      }
+    })();
+  </script>
+  <br />
+  <br />
+</section>`;
+---
+
+<BaseLayout
+  lang="es"
+  title="Blog | Mitch Chadban"
+  description="Archivo del blog en español: manuales prácticos sobre SEO, AEO, búsqueda con IA, branding, diseño y growth marketing para SaaS y empresas de servicios en España."
+  canonical="https://mitchchadban.com/es/blog/"
+  alternates={[
+    { lang: 'en-AU', href: 'https://mitchchadban.com/blogs-resources/' },
+    { lang: 'es', href: 'https://mitchchadban.com/es/blog/' },
+    { lang: 'x-default', href: 'https://mitchchadban.com/blogs-resources/' }
+  ]}
+>
+  <Fragment set:html={pageContent} />
+</BaseLayout>
