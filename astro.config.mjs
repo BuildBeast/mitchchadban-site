@@ -11,8 +11,8 @@ export default defineConfig({
       // Exclude utility / non-content pages from the sitemap
       filter: (page) =>
         !page.includes('/archive/') &&
-        !page.includes('/pr%C3%B3ximamente/') &&
-        !page.includes('/próximamente/'),
+        !page.includes('/404/') &&
+        !page.includes('/proximamente/'),
     }),
   ],
 });
