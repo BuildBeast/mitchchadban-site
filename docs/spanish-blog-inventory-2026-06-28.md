@@ -4,9 +4,9 @@
 
 - English blog posts in `/blogs-resources/`: 40
 - Spanish blog posts live in `/es/blog/` before this batch: 7
-- New Spanish blog posts wired live across batches 1, 2, 3 and 4: 27
-- Spanish blog posts now live in `/es/blog/`: 34
-- English blog posts still missing a Spanish version: 6
+- New Spanish blog posts wired live across batches 1, 2, 3, 4 and 5: 33
+- Spanish blog posts now live in `/es/blog/`: 40
+- English blog posts still missing a Spanish version: 0
 
 ## Batch 1 status
 
@@ -47,6 +47,17 @@ This batch adds five more Spain-localised professional services marketing posts,
 - `Marketing for IT Service Providers: How to Generate More Qualified Leads`
 - `Marketing for Financial Advisers: How to Attract More Clients`
 
+## Batch 5 status
+
+This batch completes the Spanish blog sweep by translating every remaining missing English blog post, wiring the final six pages into `/es/blog/`, adding reciprocal `hreflang`, and replacing the remaining English fallback links in older Spanish posts where those new equivalents now exist.
+
+- `Positioning vs Messaging: Why Your Ads Aren't Working`
+- `The 12-Point Brand Consistency Checklist`
+- `SEO for Professional Services in Australia: What’s Different About Ranking When You Sell Expertise`
+- `The SEO Audit Checklist Australian Businesses Actually Need`
+- `What to Do When Your Google Rankings Drop Suddenly`
+- `Service Page SEO: The Exact Structure That Gets Enquiries`
+
 ## Inventory
 
 | English post title | English slug/path | Spanish slug/path | Status |
@@ -65,17 +76,17 @@ This batch adds five more Spain-localised professional services marketing posts,
 | Best Growth Marketing Channels for 2026 (Australia) | `/best-growth-marketing-channels-australia-2026/` | `/mejores-canales-de-growth-marketing-2026-espana/` | already translated and live |
 | Best Ways to Build E-E-A-T in 2026 | `/best-ways-to-build-e-e-a-t-in-2026/` | `/como-mejorar-el-e-e-a-t-en-2026/` | already translated and live |
 | Best Demand Gen Content for 2026 | `/best-demand-gen-content-for-2026/` | `/mejor-contenido-de-demand-gen-para-2026/` | translated and live |
-| Positioning vs Messaging: Why Your Ads Aren’t Working | `/positioning-vs-messaging-why-your-ads-arent-working/` |  | missing Spanish version |
+| Positioning vs Messaging: Why Your Ads Aren’t Working | `/positioning-vs-messaging-why-your-ads-arent-working/` | `/posicionamiento-vs-mensaje-por-que-tus-anuncios-no-funcionan/` | translated and live |
 | From Traffic to Demos: A Practical Funnel for B2B SaaS | `/from-traffic-to-demos-a-practical-funnel-for-b2b-saas/` | `/de-trafico-a-demos-embudo-practico-para-saas-b2b/` | already translated and live |
-| The 12-Point Brand Consistency Checklist | `/the-12-point-brand-consistency-checklist/` |  | missing Spanish version |
+| The 12-Point Brand Consistency Checklist | `/the-12-point-brand-consistency-checklist/` | `/checklist-de-coherencia-de-marca-de-12-puntos/` | translated and live |
 | Technical SEO Checklist (Plain English) | `/technical-seo-checklist-plain-english/` | `/checklist-de-seo-tecnico-en-lenguaje-claro/` | already translated and live |
-| SEO for Professional Services in Australia: What’s Different About Ranking When You Sell Expertise | `/seo-for-professional-services-in-australia-whats-different-about-ranking-when-you-sell-expertise/` |  | missing Spanish version |
+| SEO for Professional Services in Australia: What’s Different About Ranking When You Sell Expertise | `/seo-for-professional-services-in-australia-whats-different-about-ranking-when-you-sell-expertise/` | `/seo-para-servicios-profesionales-en-espana/` | translated and live |
 | How to Brief an SEO Consultant (And Actually Get Results) | `/how-to-brief-an-seo-consultant/` | `/como-redactar-un-brief-para-un-consultor-seo/` | already translated and live |
 | Why You’re Stuck on Page 2: The 5 SEO Problems Keeping Good Pages Off Page 1 | `/why-youre-stuck-on-page-2-the-5-seo-problems-keeping-good-pages-off-page-1/` | `/por-que-estas-atascado-en-la-pagina-2-de-google/` | already translated and live |
-| The SEO Audit Checklist Australian Businesses Actually Need | `/the-seo-audit-checklist-australian-businesses-actually-need/` |  | missing Spanish version |
-| What to Do When Your Google Rankings Drop Suddenly | `/what-to-do-when-your-google-rankings-drop-suddenly/` |  | missing Spanish version |
+| The SEO Audit Checklist Australian Businesses Actually Need | `/the-seo-audit-checklist-australian-businesses-actually-need/` | `/checklist-de-auditoria-seo-para-empresas-en-espana/` | translated and live |
+| What to Do When Your Google Rankings Drop Suddenly | `/what-to-do-when-your-google-rankings-drop-suddenly/` | `/que-hacer-cuando-tus-rankings-de-google-caen-de-repente/` | translated and live |
 | How Long Does SEO Take? (Honest Answer for Australian Businesses) | `/how-long-does-seo-take-an-honest-answer-for-australian-businesses/` | `/cuanto-tarda-el-seo-en-dar-resultados-en-espana/` | already translated and live |
-| Service Page SEO: The Exact Structure That Gets Enquiries | `/service-page-seo-the-exact-structure-that-gets-enquiries/` |  | missing Spanish version |
+| Service Page SEO: The Exact Structure That Gets Enquiries | `/service-page-seo-the-exact-structure-that-gets-enquiries/` | `/seo-para-paginas-de-servicio-estructura-que-genera-consultas/` | translated and live |
 | The Complete AI Search Strategy Guide (2026) | `/the-complete-ai-search-strategy-guide-2026/` | `/guia-completa-de-estrategia-de-busqueda-con-ia-2026/` | translated and live |
 | How ChatGPT Chooses Sources | `/how-chatgpt-chooses-sources/` | `/como-elige-chatgpt-sus-fuentes/` | already translated and live |
 | How Perplexity Chooses Sources (And How to Get Cited More Often) | `/how-perplexity-chooses-sources/` | `/como-elige-perplexity-sus-fuentes/` | translated and live |
