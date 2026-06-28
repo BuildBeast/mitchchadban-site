@@ -4,9 +4,9 @@
 
 - English blog posts in `/blogs-resources/`: 40
 - Spanish blog posts live in `/es/blog/` before this batch: 7
-- New Spanish blog posts wired live across batches 1, 2 and 3: 22
-- Spanish blog posts now live in `/es/blog/`: 29
-- English blog posts still missing a Spanish version: 11
+- New Spanish blog posts wired live across batches 1, 2, 3 and 4: 27
+- Spanish blog posts now live in `/es/blog/`: 34
+- English blog posts still missing a Spanish version: 6
 
 ## Batch 1 status
 
@@ -36,6 +36,16 @@ This batch adds five more Spain-localised AI visibility posts, replaces the batc
 - `The Difference Between Mentions, Citations and Rankings`
 - `Entity SEO and Why It Matters for AI Search`
 - `Best Demand Gen Content for 2026`
+
+## Batch 4 status
+
+This batch adds five more Spain-localised professional services marketing posts, wires them into `/es/blog/`, adds reciprocal `hreflang`, and replaces the existing Spanish fallback link to the IT services page with the new Spanish URL.
+
+- `Marketing for Consultants: How to Build a Client Pipeline`
+- `Marketing for Architects: How Architecture Firms Win Clients`
+- `Marketing for Engineers: How Technical Experts Win More Clients`
+- `Marketing for IT Service Providers: How to Generate More Qualified Leads`
+- `Marketing for Financial Advisers: How to Attract More Clients`
 
 ## Inventory
 
@@ -76,8 +86,8 @@ This batch adds five more Spain-localised AI visibility posts, replaces the batc
 | Entity SEO and Why It Matters for AI Search | `/entity-seo-and-why-it-matters-for-ai-search/` | `/seo-de-entidades-y-por-que-importa-en-la-busqueda-con-ia/` | translated and live |
 | AI Citation Tracking for Small Businesses: How to Measure AI Search Visibility | `/ai-citation-tracking-for-small-businesses-how-to-measure-ai-search-visibility/` | `/seguimiento-de-citas-de-ia-para-pequenas-empresas/` | translated and live |
 | Marketing for Accountants: The Complete Guide | `/marketing-for-accountants-the-complete-guide/` | `/marketing-para-asesorias-y-despachos-contables/` | already translated and live |
-| Marketing for Architects: How Architecture Firms Win Clients | `/marketing-for-architects-how-architecture-firms-win-clients/` |  | missing Spanish version |
-| Marketing for Consultants: How to Build a Client Pipeline | `/marketing-for-consultants-how-to-build-a-client-pipeline/` |  | missing Spanish version |
-| Marketing for Engineers: How Technical Experts Win More Clients | `/marketing-for-engineers-how-technical-experts-win-more-clients/` |  | missing Spanish version |
-| Marketing for Financial Advisers: How to Attract More Clients | `/marketing-for-financial-advisers-how-to-attract-more-clients/` |  | missing Spanish version |
-| Marketing for IT Service Providers: How to Generate More Qualified Leads | `/marketing-for-it-service-providers-how-to-generate-more-qualified-leads/` |  | missing Spanish version |
+| Marketing for Architects: How Architecture Firms Win Clients | `/marketing-for-architects-how-architecture-firms-win-clients/` | `/marketing-para-arquitectos/` | translated and live |
+| Marketing for Consultants: How to Build a Client Pipeline | `/marketing-for-consultants-how-to-build-a-client-pipeline/` | `/marketing-para-consultores/` | translated and live |
+| Marketing for Engineers: How Technical Experts Win More Clients | `/marketing-for-engineers-how-technical-experts-win-more-clients/` | `/marketing-para-ingenieros/` | translated and live |
+| Marketing for Financial Advisers: How to Attract More Clients | `/marketing-for-financial-advisers-how-to-attract-more-clients/` | `/marketing-para-asesores-financieros/` | translated and live |
+| Marketing for IT Service Providers: How to Generate More Qualified Leads | `/marketing-for-it-service-providers-how-to-generate-more-qualified-leads/` | `/marketing-para-empresas-de-servicios-it/` | translated and live |
