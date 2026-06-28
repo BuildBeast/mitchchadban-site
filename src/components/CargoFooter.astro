@@ -75,7 +75,7 @@ const t = isEs
       <div class="footer-ctm__col">
         <div class="footer-ctm__label">{t.explore}</div>
         <a class="" href={t.links.portfolio}>{t.portfolio}</a>
-        <a class="" href={t.links.archive}>{t.archive}</a>
+        {!isEs && <a class="" href={t.links.archive}>{t.archive}</a>}
         <a class="" href={t.links.services}>{t.services}</a>
         <a class="" href={t.links.blog}>{t.blog}</a>
       </div>
