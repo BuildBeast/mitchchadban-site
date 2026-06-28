@@ -4,9 +4,9 @@
 
 - English blog posts in `/blogs-resources/`: 39
 - Spanish blog posts live in `/es/blog/` before this batch: 7
-- New Spanish blog posts wired live in this batch: 12
-- Spanish blog posts now live in `/es/blog/`: 19
-- English blog posts still missing a Spanish version: 20
+- New Spanish blog posts wired live across batches 1 and 2: 17
+- Spanish blog posts now live in `/es/blog/`: 24
+- English blog posts still missing a Spanish version: 15
 
 ## Batch 1 status
 
@@ -16,6 +16,16 @@ This workspace already contained a larger in-progress Spanish batch when work re
 - added the translated set to `/es/blog/`
 - replaced broken Spanish internal links with English fallbacks where no Spanish page exists yet
 - verified the batch with `npm run build`
+
+## Batch 2 status
+
+This batch adds five more Spain-localised AI search posts, wires them into `/es/blog/`, and completes reciprocal `hreflang` for the new English/Spanish pairs:
+
+- `AEO Explained: How to Rank in AI Answers`
+- `The Complete AI Search Strategy Guide (2026)`
+- `How Google AI Overviews Choose Sources`
+- `How Perplexity Chooses Sources`
+- `How to Measure AI Search Traffic in GA4`
 
 ## Inventory
 
@@ -30,7 +40,7 @@ This workspace already contained a larger in-progress Spanish batch when work re
 | The Marketing Collateral Checklist: What Every Business Actually Needs | `/the-marketing-collateral-checklist-what-you-need/` | `/checklist-de-material-de-marketing-que-necesitas/` | already translated and live |
 | How to Choose the Right Freelancer vs Agency (Cost, Speed, Quality) | `/how-to-choose-the-right-freelancer-vs-agency/` | `/freelance-vs-agencia-como-elegir/` | already translated and live |
 | AI SEO vs Traditional SEO: What's Changed? (and What Still Works?) | `/ai-seo-vs-traditional-seo-whats-changed/` | `/seo-con-ia-vs-seo-tradicional-que-ha-cambiado/` | already translated and live |
-| AEO Explained: How to Rank in AI Answers | `/aeo-explained-how-to-rank-in-ai-answers/` |  | missing Spanish version |
+| AEO Explained: How to Rank in AI Answers | `/aeo-explained-how-to-rank-in-ai-answers/` | `/aeo-explicado-como-aparecer-en-respuestas-de-ia/` | translated and live |
 | Social Media Design That Doesn’t Look Like Everyone Else | `/social-media-design-that-doesnt-look-like-everyone-else/` | `/diseno-para-redes-sociales-que-destaca/` | already translated and live |
 | Best Growth Marketing Channels for 2026 (Australia) | `/best-growth-marketing-channels-australia-2026/` | `/mejores-canales-de-growth-marketing-2026-espana/` | already translated and live |
 | Best Ways to Build E-E-A-T in 2026 | `/best-ways-to-build-e-e-a-t-in-2026/` | `/como-mejorar-el-e-e-a-t-en-2026/` | already translated and live |
@@ -46,12 +56,12 @@ This workspace already contained a larger in-progress Spanish batch when work re
 | What to Do When Your Google Rankings Drop Suddenly | `/what-to-do-when-your-google-rankings-drop-suddenly/` |  | missing Spanish version |
 | How Long Does SEO Take? (Honest Answer for Australian Businesses) | `/how-long-does-seo-take-an-honest-answer-for-australian-businesses/` | `/cuanto-tarda-el-seo-en-dar-resultados-en-espana/` | already translated and live |
 | Service Page SEO: The Exact Structure That Gets Enquiries | `/service-page-seo-the-exact-structure-that-gets-enquiries/` |  | missing Spanish version |
-| The Complete AI Search Strategy Guide (2026) | `/the-complete-ai-search-strategy-guide-2026/` |  | missing Spanish version |
+| The Complete AI Search Strategy Guide (2026) | `/the-complete-ai-search-strategy-guide-2026/` | `/guia-completa-de-estrategia-de-busqueda-con-ia-2026/` | translated and live |
 | How ChatGPT Chooses Sources | `/how-chatgpt-chooses-sources/` | `/como-elige-chatgpt-sus-fuentes/` | already translated and live |
-| How Perplexity Chooses Sources (And How to Get Cited More Often) | `/how-perplexity-chooses-sources/` |  | missing Spanish version |
-| How Google AI Overviews Choose Sources | `/how-google-ai-overviews-choose-sources/` |  | missing Spanish version |
+| How Perplexity Chooses Sources (And How to Get Cited More Often) | `/how-perplexity-chooses-sources/` | `/como-elige-perplexity-sus-fuentes/` | translated and live |
+| How Google AI Overviews Choose Sources | `/how-google-ai-overviews-choose-sources/` | `/como-elige-google-ai-overviews-sus-fuentes/` | translated and live |
 | Why Some Brands Get Mentioned by AI and Others Don't | `/why-some-brands-get-mentioned-by-ai-and-others-dont/` |  | missing Spanish version |
-| How to Measure AI Search Traffic in GA4 | `/how-to-measure-ai-search-traffic-in-ga4/` |  | missing Spanish version |
+| How to Measure AI Search Traffic in GA4 | `/how-to-measure-ai-search-traffic-in-ga4/` | `/como-medir-el-trafico-de-busqueda-con-ia-en-ga4/` | translated and live |
 | The Difference Between Mentions, Citations and Rankings | `/the-difference-between-mentions-citations-and-rankings/` |  | missing Spanish version |
 | AI Citation Tracking for Small Businesses: How to Measure AI Search Visibility | `/ai-citation-tracking-for-small-businesses-how-to-measure-ai-search-visibility/` |  | missing Spanish version |
 | Marketing for Accountants: The Complete Guide | `/marketing-for-accountants-the-complete-guide/` | `/marketing-para-asesorias-y-despachos-contables/` | already translated and live |

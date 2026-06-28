@@ -1,0 +1,320 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const pageContent = `<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "AEO Explicado: Cómo Aparecer en Respuestas de IA",
+    "description": "Qué es el AEO, cómo funcionan las respuestas con IA y qué cambios prácticos aumentan tus opciones de aparecer citado en ChatGPT, Gemini, Perplexity y AI Overviews.",
+    "datePublished": "2026-06-28",
+    "dateModified": "2026-06-28",
+    "inLanguage": "es-ES",
+    "author": {
+      "@type": "Person",
+      "name": "Mitch Chadban",
+      "url": "https://mitchchadban.com",
+      "jobTitle": "Diseñador, Especialista en Marketing y SEO",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "ES"
+      }
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Mitch Chadban",
+      "url": "https://mitchchadban.com"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://mitchchadban.com/aeo-explicado-como-aparecer-en-respuestas-de-ia/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué es el AEO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AEO significa Answer Engine Optimisation. Es la práctica de estructurar una página para que motores de respuestas con IA como ChatGPT, Gemini, Perplexity o Google AI Overviews puedan entenderla, extraer una respuesta útil y citarla."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿AEO sustituye al SEO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. El AEO se apoya en el SEO. Sin buena rastreabilidad, señales de confianza, jerarquía clara e intención bien cubierta, es difícil que una página se cite en respuestas con IA."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué plataformas conviene priorizar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Para la mayoría de sitios, conviene trabajar ChatGPT, Perplexity, Gemini y Google AI Overviews. No funcionan igual, pero todos premian respuestas claras, estructura extraíble y contenido con prueba."
+        }
+      }
+    ]
+  }
+]
+</script>
+
+<div class="service-ctm blog-ctm">
+  <div class="service-ctm__body">
+    <p style="font-size: 13px; color: #888; margin: 0 0 12px; letter-spacing: 0.02em;">
+Por <strong>Mitch Chadban</strong> — Estratega SEO y Marketing, España  |  Actualizado junio de 2026
+    </p>
+
+    <h1>AEO Explicado: Cómo Aparecer en Respuestas de IA</h1>
+
+    <blockquote>
+      <p><strong>AEO</strong> es la disciplina de hacer que tu contenido sea fácil de recuperar, entender, citar y enlazar dentro de respuestas generadas por IA. No va de “ganar palabras clave” solamente. Va de convertirte en una fuente útil para la respuesta.</p>
+    </blockquote>
+
+    <p>La búsqueda ya no termina siempre en una lista de enlaces. Muchas consultas acaban en una respuesta resumida dentro de ChatGPT, Gemini, Perplexity o AI Overviews. Si tu página no está preparada para ese formato, puedes seguir posicionando y aun así perder visibilidad.</p>
+
+    <p>La buena noticia: no necesitas reinventar todo tu sitio. Necesitas ordenar mejor lo que ya publicas, responder con más claridad y dejar menos trabajo al sistema.</p>
+
+    <details class="blog-menu" open="">
+      <summary class="blog-menu__header">
+        <span class="blog-menu__title">En esta página</span>
+        <span aria-hidden="true" class="blog-menu__toggle"></span>
+      </summary>
+      <div class="blog-menu__body">
+        <a class="blog-menu__item" href="#por-que-importa" onclick="location.hash='por-que-importa'; return false;">Por qué el AEO importa ahora</a>
+        <a class="blog-menu__item" href="#que-es" onclick="location.hash='que-es'; return false;">Qué es el AEO</a>
+        <a class="blog-menu__item" href="#seo-vs-aeo" onclick="location.hash='seo-vs-aeo'; return false;">SEO vs AEO</a>
+        <a class="blog-menu__item" href="#rag" onclick="location.hash='rag'; return false;">Cómo eligen contenido los motores de respuesta</a>
+        <a class="blog-menu__item" href="#stack" onclick="location.hash='stack'; return false;">La pila práctica de AEO</a>
+        <a class="blog-menu__item" href="#plataformas" onclick="location.hash='plataformas'; return false;">Qué cambia según la plataforma</a>
+        <a class="blog-menu__item" href="#medicion" onclick="location.hash='medicion'; return false;">Cómo medir si funciona</a>
+        <a class="blog-menu__item" href="#faq" onclick="location.hash='faq'; return false;">FAQ</a>
+      </div>
+    </details>
+
+    <h2 id="por-que-importa">Por qué el AEO importa ahora</h2>
+
+    <p>El problema no es solo que haya menos clics. El problema es que la decisión se está desplazando hacia una capa intermedia: la IA resume, compara y recomienda antes de que el usuario visite una web.</p>
+
+    <ul>
+      <li>Las consultas son más largas y más específicas.</li>
+      <li>La respuesta mezcla varias fuentes.</li>
+      <li>Una página útil pero mal estructurada puede quedarse fuera.</li>
+      <li>Una página que responde mejor una subpregunta puede ser citada aunque no sea la número uno en todo.</li>
+    </ul>
+
+    <p>Eso hace que el contenido genérico, inflado o demasiado lento en llegar al punto pierda fuerza. Lo que gana es lo citable.</p>
+
+    <h2 id="que-es">Qué es el AEO</h2>
+
+    <p>AEO significa <em>Answer Engine Optimisation</em>. En la práctica, consiste en diseñar páginas que respondan preguntas reales con una estructura que la IA pueda trocear sin esfuerzo.</p>
+
+    <p>Una buena página para AEO suele tener:</p>
+
+    <ul>
+      <li>una definición o respuesta corta al principio,</li>
+      <li>bloques con subtítulos muy claros,</li>
+      <li>listas, pasos, tablas y FAQs,</li>
+      <li>prueba, ejemplos o experiencia real,</li>
+      <li>y señales de confianza suficientes para justificar la cita.</li>
+    </ul>
+
+    <p>Si quieres la versión más localizada para mercado español, empieza también por <a href="/aeo-espana-como-aparecer-en-respuestas-de-ia/">esta guía de AEO en España</a>.</p>
+
+    <h2 id="seo-vs-aeo">SEO vs AEO: qué cambia y qué no</h2>
+
+    <table class="table-ctm">
+      <thead>
+        <tr>
+          <th>Área</th>
+          <th>SEO</th>
+          <th>AEO</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Objetivo</td>
+          <td>Posicionar y atraer clics</td>
+          <td>Ser seleccionado y citado en una respuesta</td>
+        </tr>
+        <tr>
+          <td>Unidad de optimización</td>
+          <td>La página entera</td>
+          <td>El bloque, la definición o la afirmación clave</td>
+        </tr>
+        <tr>
+          <td>Formato</td>
+          <td>Contenido útil por intención</td>
+          <td>Contenido útil y además fácilmente extraíble</td>
+        </tr>
+        <tr>
+          <td>Medición</td>
+          <td>Rankings, clics, tráfico</td>
+          <td>Citas, menciones, tráfico asistido y conversiones</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>El AEO no reemplaza al SEO técnico ni a la autoridad. Los convierte en base mínima. Si tu rastreabilidad es floja o tu contenido es intercambiable, lo normal es que otro se lleve la cita.</p>
+
+    <h2 id="rag">Cómo eligen contenido los motores de respuesta</h2>
+
+    <p>La mayoría usa alguna forma de recuperación + generación. No importa tanto el nombre técnico como el patrón:</p>
+
+    <h3>1. Interpretación de la consulta</h3>
+    <p>El sistema intenta entender qué pregunta real hay detrás, qué contexto hace falta y qué subpreguntas conviene resolver.</p>
+
+    <h3>2. Recuperación</h3>
+    <p>Busca páginas candidatas. Si tus bots están bloqueados, si la página es inaccesible o si la respuesta está enterrada, ya llegas tarde.</p>
+
+    <h3>3. Selección</h3>
+    <p>Aquí pesan la relevancia, la claridad, la frescura, la estructura y la confianza. No basta con “hablar del tema”. Hay que responderlo mejor.</p>
+
+    <h3>4. Síntesis</h3>
+    <p>La IA compone una respuesta con fragmentos de varias fuentes. Las secciones limpias, concretas y bien etiquetadas suelen sobrevivir mejor a ese proceso.</p>
+
+    <h3>5. Cita</h3>
+    <p>Cuando la plataforma decide citar, tiende a favorecer páginas que aportan la pieza exacta de información que necesitaba. Definiciones, comparativas y marcos prácticos funcionan especialmente bien.</p>
+
+    <h2 id="stack">La pila práctica de AEO</h2>
+
+    <h3>1. Acceso</h3>
+    <p>Confirma que las páginas importantes son públicas, rápidas y rastreables. Antes de hablar de IA, arregla el acceso.</p>
+
+    <h3>2. Respuesta</h3>
+    <p>Abre con una respuesta directa. Después amplía. El error típico es escribir 400 palabras antes de decir algo útil.</p>
+
+    <h3>3. Autoridad</h3>
+    <p>Añade experiencia real, ejemplos, comparativas propias, capturas, metodología o datos observados. Sin eso, suena a copia de copia.</p>
+
+    <h3>4. Atribución</h3>
+    <p>Haz visibles el autor, la fecha, la especialización y el contexto. Si quieres trabajar E-E-A-T en serio, esta guía ayuda: <a href="/como-mejorar-el-e-e-a-t-en-2026/">cómo mejorar el E-E-A-T en 2026</a>.</p>
+
+    <h3>5. Amplificación</h3>
+    <p>Las mejores páginas no viven aisladas. Se apoyan con enlaces internos, menciones de marca, páginas hermanas y distribución externa.</p>
+
+    <h3>Checklist mínimo</h3>
+    <ul>
+      <li>Respuesta corta al principio.</li>
+      <li>Jerarquía clara con H2 y H3 descriptivos.</li>
+      <li>Tablas o listas donde aporten claridad.</li>
+      <li>FAQ para consultas cercanas.</li>
+      <li>Enlazado interno a páginas de soporte.</li>
+      <li>Actualización visible cuando el tema cambia rápido.</li>
+    </ul>
+
+    <h2 id="plataformas">Qué cambia según la plataforma</h2>
+
+    <table class="table-ctm">
+      <thead>
+        <tr>
+          <th>Plataforma</th>
+          <th>Suele premiar</th>
+          <th>Qué revisar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>ChatGPT</td>
+          <td>Respuestas claras y material explicativo</td>
+          <td><a href="/como-elige-chatgpt-sus-fuentes/">Cómo elige ChatGPT sus fuentes</a></td>
+        </tr>
+        <tr>
+          <td>Perplexity</td>
+          <td>Estructura, frescura y citas visibles</td>
+          <td><a href="/como-elige-perplexity-sus-fuentes/">Cómo elige Perplexity sus fuentes</a></td>
+        </tr>
+        <tr>
+          <td>Gemini / Google</td>
+          <td>Relevancia, confianza y cobertura</td>
+          <td><a href="/como-elige-google-ai-overviews-sus-fuentes/">Cómo elige Google AI Overviews sus fuentes</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Si quieres la foto completa, enlaza esta página con la <a href="/guia-completa-de-estrategia-de-busqueda-con-ia-2026/">guía completa de estrategia de búsqueda con IA</a>.</p>
+
+    <h2 id="medicion">Cómo medir si funciona</h2>
+
+    <p>No midas solo clics orgánicos. Ese cuadro ya se ha quedado corto.</p>
+
+    <ul>
+      <li>Tráfico referido desde plataformas con IA.</li>
+      <li>Crecimiento de búsquedas de marca.</li>
+      <li>Páginas que empiezan a concentrar visitas asistidas.</li>
+      <li>Menciones o citas en prompts de control mensual.</li>
+      <li>Conversiones de sesiones influenciadas por IA.</li>
+    </ul>
+
+    <p>Para la parte de analítica, esta pieza entra al detalle en GA4: <a href="/como-medir-el-trafico-de-busqueda-con-ia-en-ga4/">cómo medir el tráfico de búsqueda con IA en GA4</a>.</p>
+
+    <h2>¿Por dónde empezar si hoy vas tarde?</h2>
+
+    <ol>
+      <li>Elige 5 páginas estratégicas con intención alta.</li>
+      <li>Reescribe la apertura para responder antes y mejor.</li>
+      <li>Añade tablas, FAQs y pruebas.</li>
+      <li>Refuerza enlaces internos alrededor del tema.</li>
+      <li>Haz un control mensual de citas y tráfico asistido.</li>
+    </ol>
+
+    <p>Es mucho más útil arreglar cinco páginas con intención comercial real que publicar veinte artículos blandos para “estar en IA”.</p>
+
+    <h2 id="faq">FAQ: AEO explicado</h2>
+
+    <h3>¿Qué es el AEO en una frase?</h3>
+    <p>Es optimizar contenido para que una IA pueda usarlo como respuesta y citarlo.</p>
+
+    <h3>¿Hace falta rehacer todo el blog?</h3>
+    <p>No. Normalmente compensa empezar por páginas con negocio detrás y estructuras fáciles de mejorar.</p>
+
+    <h3>¿El contenido escrito con IA puede posicionar en AEO?</h3>
+    <p>Puede, pero el contenido genérico suele quedarse fuera. Lo que marca la diferencia es la claridad, la experiencia y la utilidad real.</p>
+
+    <h3>¿Qué tipo de páginas se citan más?</h3>
+    <p>Definiciones, comparativas, guías prácticas, páginas con metodología clara y piezas que responden una duda concreta sin rodeos.</p>
+
+    <div class="further-reading-ctm">
+      <h4 class="further-reading-ctm__title">Lecturas relacionadas</h4>
+      <ul class="further-reading-ctm__list">
+        <li class="further-reading-ctm__item"><a class="further-reading-ctm__link" href="/guia-completa-de-estrategia-de-busqueda-con-ia-2026/">Guía Completa de Estrategia de Búsqueda con IA (2026)</a></li>
+        <li class="further-reading-ctm__item"><a class="further-reading-ctm__link" href="/seo-con-ia-vs-seo-tradicional-que-ha-cambiado/">SEO con IA vs SEO Tradicional: Qué Ha Cambiado</a></li>
+        <li class="further-reading-ctm__item"><a class="further-reading-ctm__link" href="/como-mejorar-el-e-e-a-t-en-2026/">Cómo Mejorar el E-E-A-T en 2026</a></li>
+        <li class="further-reading-ctm__item"><a class="further-reading-ctm__link" href="/checklist-de-seo-tecnico-en-lenguaje-claro/">Checklist de SEO Técnico en Lenguaje Claro</a></li>
+        <li class="further-reading-ctm__item"><a class="further-reading-ctm__link" href="/best-demand-gen-content-for-2026/">Best Demand Gen Content for 2026</a></li>
+      </ul>
+    </div>
+  </div>
+  <br />
+  <br />
+</div>`;
+---
+
+<BaseLayout
+  lang="es"
+  ogType="article"
+  title="AEO Explicado: Cómo Aparecer en Respuestas de IA | Mitch Chadban"
+  description="Qué es el AEO, cómo funcionan las respuestas con IA y qué cambios prácticos aumentan tus opciones de aparecer citado en ChatGPT, Gemini, Perplexity y AI Overviews."
+  canonical="https://mitchchadban.com/aeo-explicado-como-aparecer-en-respuestas-de-ia/"
+  alternates={[
+    {
+      lang: 'en-AU',
+      href: 'https://mitchchadban.com/aeo-explained-how-to-rank-in-ai-answers/',
+    },
+    {
+      lang: 'es',
+      href: 'https://mitchchadban.com/aeo-explicado-como-aparecer-en-respuestas-de-ia/',
+    },
+    {
+      lang: 'x-default',
+      href: 'https://mitchchadban.com/aeo-explained-how-to-rank-in-ai-answers/',
+    },
+  ]}
+>
+  <Fragment set:html={pageContent} />
+</BaseLayout>

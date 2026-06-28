@@ -1,0 +1,250 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const pageContent = `<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Cómo Medir el Tráfico de Búsqueda con IA en GA4",
+    "description": "Cómo detectar tráfico desde ChatGPT, Perplexity o Gemini en GA4 y cómo medir también la influencia de la búsqueda con IA más allá del clic directo.",
+    "datePublished": "2026-06-28",
+    "dateModified": "2026-06-28",
+    "inLanguage": "es-ES",
+    "author": {
+      "@type": "Person",
+      "name": "Mitch Chadban"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://mitchchadban.com/como-medir-el-trafico-de-busqueda-con-ia-en-ga4/"
+    }
+  }
+]
+</script>
+
+<div class="service-ctm blog-ctm">
+  <div class="service-ctm__body">
+    <p style="font-size: 13px; color: #888; margin: 0 0 12px; letter-spacing: 0.02em;">
+Por <strong>Mitch Chadban</strong> — Estratega SEO y Marketing, España  |  Actualizado junio de 2026
+    </p>
+
+    <h1>Cómo Medir el Tráfico de Búsqueda con IA en GA4</h1>
+
+    <blockquote>
+      <p>GA4 no trae una vista nativa de “AI Search”. Si quieres medir tráfico desde ChatGPT, Perplexity, Gemini o señales asistidas por IA, tienes que construir la capa de análisis tú mismo.</p>
+    </blockquote>
+
+    <p>Aquí está el problema: mucha gente busca tráfico de IA, ve números pequeños y concluye que todavía no importa. Normalmente esa lectura es pobre. La IA influye de varias formas y no todas llegan como una referencia limpia con lacito.</p>
+
+    <details class="blog-menu" open="">
+      <summary class="blog-menu__header">
+        <span class="blog-menu__title">En esta página</span>
+        <span aria-hidden="true" class="blog-menu__toggle"></span>
+      </summary>
+      <div class="blog-menu__body">
+        <a class="blog-menu__item" href="#que-medir" onclick="location.hash='que-medir'; return false;">Qué conviene medir</a>
+        <a class="blog-menu__item" href="#informes" onclick="location.hash='informes'; return false;">Dónde mirarlo en GA4</a>
+        <a class="blog-menu__item" href="#segmento" onclick="location.hash='segmento'; return false;">Cómo crear un segmento de IA</a>
+        <a class="blog-menu__item" href="#dashboard" onclick="location.hash='dashboard'; return false;">Qué incluir en un dashboard</a>
+        <a class="blog-menu__item" href="#mas-alla" onclick="location.hash='mas-alla'; return false;">Medir influencia más allá del clic</a>
+        <a class="blog-menu__item" href="#faq" onclick="location.hash='faq'; return false;">FAQ</a>
+      </div>
+    </details>
+
+    <h2 id="que-medir">Qué conviene medir de verdad</h2>
+
+    <h3>1. Referencias directas desde plataformas con IA</h3>
+    <p>Es la señal más obvia: sesiones que llegan desde dominios como <code>chatgpt.com</code> o <code>perplexity.ai</code>.</p>
+
+    <h3>2. Descubrimiento asistido por IA</h3>
+    <p>La IA también empuja búsquedas de marca, visitas directas o segundas visitas por otros canales. Eso no se ve en un único informe.</p>
+
+    <h3>3. Calidad del tráfico</h3>
+    <p>Engagement, páginas de destino, conversiones y valor. No te quedes en “ha entrado tráfico”.</p>
+
+    <h2 id="informes">Dónde mirarlo en GA4</h2>
+
+    <h3>Opción 1: Adquisición de tráfico</h3>
+    <p>Empieza con <strong>Traffic acquisition</strong> y revisa <strong>Session source</strong> o <strong>Session source / medium</strong>.</p>
+
+    <p>Filtra por patrones como:</p>
+
+    <pre><code>chatgpt|openai|perplexity|gemini|claude|anthropic|copilot|you\.com|phind</code></pre>
+
+    <h3>Opción 2: Explore</h3>
+    <p>En una exploración libre, combina:</p>
+
+    <ul>
+      <li><strong>Session source</strong></li>
+      <li><strong>Session source / medium</strong></li>
+      <li><strong>Landing page + query string</strong></li>
+      <li><strong>Sessions</strong>, <strong>Engaged sessions</strong> y <strong>Conversions</strong></li>
+    </ul>
+
+    <h3>Opción 3: Landing pages</h3>
+    <p>Cuando detectes tráfico desde IA, mira qué páginas reciben esas sesiones. Suelen ser piezas explicativas, comparativas o páginas muy concretas.</p>
+
+    <h2 id="segmento">Cómo crear un segmento de tráfico con IA</h2>
+
+    <p>El objetivo es aislar fuentes conocidas para comparar comportamiento y resultados.</p>
+
+    <h3>Regex recomendada para empezar</h3>
+
+    <pre><code>(chatgpt|openai|perplexity|gemini|copilot|claude|anthropic|you\.com|phind|poe|mistral)</code></pre>
+
+    <p>Puedes usarla sobre:</p>
+
+    <ul>
+      <li><strong>Session source</strong></li>
+      <li><strong>Session source / medium</strong></li>
+      <li><strong>Page referrer</strong></li>
+    </ul>
+
+    <p>No es perfecta. Tampoco lo pretende. Sirve para construir una línea base realista.</p>
+
+    <h3>Métricas que sí compararía</h3>
+
+    <table class="table-ctm">
+      <thead>
+        <tr>
+          <th>Métrica</th>
+          <th>Por qué importa</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sessions</td>
+          <td>Volumen bruto</td>
+        </tr>
+        <tr>
+          <td>Engaged sessions</td>
+          <td>Calidad mínima</td>
+        </tr>
+        <tr>
+          <td>Engagement rate</td>
+          <td>Comparación con orgánico y referral</td>
+        </tr>
+        <tr>
+          <td>Landing pages</td>
+          <td>Qué contenido está funcionando</td>
+        </tr>
+        <tr>
+          <td>Conversions</td>
+          <td>Valor comercial</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="dashboard">Qué incluir en un dashboard útil</h2>
+
+    <h3>Volumen</h3>
+    <ul>
+      <li>Sesiones desde IA</li>
+      <li>Usuarios</li>
+      <li>Crecimiento mes contra mes</li>
+    </ul>
+
+    <h3>Calidad</h3>
+    <ul>
+      <li>Engagement rate</li>
+      <li>Tiempo de interacción</li>
+      <li>Vistas por sesión</li>
+    </ul>
+
+    <h3>Páginas de destino</h3>
+    <ul>
+      <li>Top landing pages desde IA</li>
+      <li>Conversiones por página</li>
+      <li>Temas con mayor atracción</li>
+    </ul>
+
+    <h3>Resultado de negocio</h3>
+    <ul>
+      <li>Leads</li>
+      <li>Reservas</li>
+      <li>Ventas</li>
+      <li>Valor generado</li>
+    </ul>
+
+    <h2 id="mas-alla">Cómo medir la influencia más allá del clic</h2>
+
+    <p>Aquí es donde la mayoría se queda corta.</p>
+
+    <h3>1. Búsqueda de marca</h3>
+    <p>Revisa en Search Console si crecen consultas de marca y combinaciones como servicio + marca.</p>
+
+    <h3>2. Tráfico directo</h3>
+    <p>No es una métrica limpia, pero si sube junto con citas y búsquedas de marca, puede ser una pista útil.</p>
+
+    <h3>3. Campo “¿Cómo nos has conocido?”</h3>
+    <p>Sigue funcionando. Añade opciones como ChatGPT, Perplexity, Gemini o Google.</p>
+
+    <h3>4. Chequeos manuales de citas</h3>
+    <p>Elige prompts prioritarios y revisa mensualmente si apareces, con qué página y frente a qué competidores.</p>
+
+    <p>Si estás construyendo la base de contenido antes de medirlo, enlaza este trabajo con <a href="/guia-completa-de-estrategia-de-busqueda-con-ia-2026/">la estrategia completa de búsqueda con IA</a> y con <a href="/aeo-explicado-como-aparecer-en-respuestas-de-ia/">AEO explicado</a>.</p>
+
+    <h2>Errores comunes al reportar tráfico con IA</h2>
+
+    <ul>
+      <li>Mirar solo orgánico de Google.</li>
+      <li>Mirar solo referral.</li>
+      <li>Contar sesiones sin mirar negocio.</li>
+      <li>Ignorar páginas de destino.</li>
+      <li>Descartar la influencia porque el clic directo aún es modesto.</li>
+    </ul>
+
+    <h2 id="faq">FAQ: GA4 y búsqueda con IA</h2>
+
+    <h3>¿GA4 detecta el tráfico desde ChatGPT?</h3>
+    <p>Sí, cuando llega con un referrer identificable. Puede aparecer como <code>chatgpt.com</code>, <code>chat.openai.com</code> u otros dominios relacionados.</p>
+
+    <h3>¿Se puede medir Perplexity en GA4?</h3>
+    <p>Sí. Suele ser una de las referencias de IA más fáciles de detectar por dominio.</p>
+
+    <h3>¿Google AI Overviews sale como fuente separada?</h3>
+    <p>No normalmente. Suele mezclarse dentro de Google orgánico, por eso conviene combinar GA4 con Search Console y revisión manual.</p>
+
+    <h3>¿Qué es mejor: un informe o un segmento?</h3>
+    <p>Los dos. El segmento te sirve para comparar. El dashboard te sirve para seguir la tendencia.</p>
+
+    <div class="further-reading-ctm">
+      <h4 class="further-reading-ctm__title">Lecturas relacionadas</h4>
+      <ul class="further-reading-ctm__list">
+        <li class="further-reading-ctm__item"><a class="further-reading-ctm__link" href="/guia-completa-de-estrategia-de-busqueda-con-ia-2026/">Guía Completa de Estrategia de Búsqueda con IA</a></li>
+        <li class="further-reading-ctm__item"><a class="further-reading-ctm__link" href="/como-elige-chatgpt-sus-fuentes/">Cómo Elige ChatGPT sus Fuentes</a></li>
+        <li class="further-reading-ctm__item"><a class="further-reading-ctm__link" href="/como-elige-perplexity-sus-fuentes/">Cómo Elige Perplexity sus Fuentes</a></li>
+        <li class="further-reading-ctm__item"><a class="further-reading-ctm__link" href="/como-elige-google-ai-overviews-sus-fuentes/">Cómo Elige Google AI Overviews sus Fuentes</a></li>
+        <li class="further-reading-ctm__item"><a class="further-reading-ctm__link" href="/why-some-brands-get-mentioned-by-ai-and-others-dont/">Why Some Brands Get Mentioned by AI and Others Don’t</a></li>
+      </ul>
+    </div>
+  </div>
+  <br />
+  <br />
+</div>`;
+---
+
+<BaseLayout
+  lang="es"
+  ogType="article"
+  title="Cómo Medir el Tráfico de Búsqueda con IA en GA4 | Mitch Chadban"
+  description="Cómo detectar tráfico desde ChatGPT, Perplexity o Gemini en GA4 y cómo medir también la influencia de la búsqueda con IA más allá del clic directo."
+  canonical="https://mitchchadban.com/como-medir-el-trafico-de-busqueda-con-ia-en-ga4/"
+  alternates={[
+    {
+      lang: 'en-AU',
+      href: 'https://mitchchadban.com/how-to-measure-ai-search-traffic-in-ga4/',
+    },
+    {
+      lang: 'es',
+      href: 'https://mitchchadban.com/como-medir-el-trafico-de-busqueda-con-ia-en-ga4/',
+    },
+    {
+      lang: 'x-default',
+      href: 'https://mitchchadban.com/how-to-measure-ai-search-traffic-in-ga4/',
+    },
+  ]}
+>
+  <Fragment set:html={pageContent} />
+</BaseLayout>
