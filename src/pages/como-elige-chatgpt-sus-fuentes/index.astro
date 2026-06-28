@@ -1,0 +1,621 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const pageContent = `<div class="service-ctm blog-ctm">
+  <div class="service-ctm__body">
+
+    <p style="font-size: 13px; color: #888; margin: 0 0 12px; letter-spacing: 0.02em;">
+Por <strong>Mitch Chadban</strong> — Estratega SEO y Marketing, España  |  Actualizado junio de 2026
+    </p>
+
+    <h1>Cómo elige ChatGPT sus fuentes</h1>
+
+    <blockquote>
+      <p><strong>ChatGPT elige sus fuentes</strong> interpretando la pregunta del usuario, recuperando contenido web relevante cuando se activa la búsqueda, evaluando las fuentes candidatas en cuanto a relevancia, claridad, autoridad y utilidad, y citando las páginas que mejor respaldan la respuesta generada.</p>
+    </blockquote>
+
+    <p>ChatGPT no elige sus fuentes de la misma manera que Google ordena las páginas.</p>
+
+    <p>Ese es el primer error que comete la mayoría de la gente cuando piensa en <a href="/the-complete-ai-search-strategy-guide-2026/" >estrategia de búsqueda con IA</a>.</p>
+
+    <p>Google suele mostrar una lista ordenada de páginas. ChatGPT trata de construir una respuesta. Cuando usa la búsqueda, recupera información, evalúa las fuentes posibles, sintetiza una respuesta y puede citar las páginas que utilizó.</p>
+
+    <p>Eso significa que la pregunta real ya no es solo: <em>¿Cómo llego al número uno?</em></p>
+
+    <p>También es: <em>¿Cómo me convierto en una fuente que merece ser citada?</em></p>
+
+    <details class="blog-menu" open="">
+      <summary class="blog-menu__header">
+        <span class="blog-menu__title">En esta página</span>
+        <span aria-hidden="true" class="blog-menu__toggle"></span>
+      </summary>
+      <div class="blog-menu__body">
+        <a class="blog-menu__item" href="#busca-chatgpt" onclick="location.hash='busca-chatgpt'; return false;">¿ChatGPT busca realmente en la web?</a>
+        <a class="blog-menu__item" href="#version-simple" onclick="location.hash='version-simple'; return false;">La versión simple</a>
+        <a class="blog-menu__item" href="#interpretacion" onclick="location.hash='interpretacion'; return false;">Paso 1: Interpretación de la consulta</a>
+        <a class="blog-menu__item" href="#recuperacion" onclick="location.hash='recuperacion'; return false;">Paso 2: Recuperación de fuentes</a>
+        <a class="blog-menu__item" href="#relevancia" onclick="location.hash='relevancia'; return false;">Paso 3: Evaluación de relevancia</a>
+        <a class="blog-menu__item" href="#confianza" onclick="location.hash='confianza'; return false;">Paso 4: Evaluación de confianza</a>
+        <a class="blog-menu__item" href="#extraccion" onclick="location.hash='extraccion'; return false;">Paso 5: Extractabilidad</a>
+        <a class="blog-menu__item" href="#senales" onclick="location.hash='senales'; return false;">Señales de selección de fuentes</a>
+        <a class="blog-menu__item" href="#sitios-pequenos" onclick="location.hash='sitios-pequenos'; return false;">Por qué los sitios pequeños también pueden ser citados</a>
+        <a class="blog-menu__item" href="#checklist" onclick="location.hash='checklist'; return false;">Checklist de fuentes para ChatGPT</a>
+        <a class="blog-menu__item" href="#faq" onclick="location.hash='faq'; return false;">FAQ</a>
+      </div>
+    </details>
+
+    <h2 id="busca-chatgpt">¿ChatGPT busca realmente en la web?</h2>
+
+    <p>A veces, sí.</p>
+
+    <p>ChatGPT puede responder de distintas maneras según la pregunta, la configuración del usuario, el modelo utilizado y si se están usando herramientas de búsqueda.</p>
+
+    <p>En términos generales, hay dos modos que conviene entender.</p>
+
+    <p><strong>El primero es una respuesta normal del modelo.</strong> En este caso, ChatGPT responde a partir de los patrones y conocimientos adquiridos durante el entrenamiento, más el contexto disponible en la conversación actual. No necesariamente está consultando la web en tiempo real.</p>
+
+    <p><strong>El segundo es una respuesta asistida por búsqueda.</strong> En este caso, ChatGPT puede recuperar información actualizada de la web y proporcionar respuestas con enlaces o citas a fuentes.</p>
+
+    <p>Esta distinción importa. Si ChatGPT responde sin búsqueda, tu web no está siendo «posicionada» en ese momento. Si ChatGPT usa la búsqueda, tu web puede entrar en un proceso de selección de fuentes en tiempo real. Ahí es donde la <a href="/aeo-espana-como-aparecer-en-respuestas-de-ia/" >Optimización para Motores de Respuesta (AEO)</a> cobra sentido práctico.</p>
+
+    <h2 id="version-simple">La versión simple: cómo elige ChatGPT sus fuentes</h2>
+
+    <p>Cuando ChatGPT usa la búsqueda, el proceso funciona más o menos así:</p>
+
+    <ol>
+      <li>El usuario hace una pregunta.</li>
+      <li>ChatGPT interpreta qué quiere realmente el usuario.</li>
+      <li>Puede reescribir o ampliar la consulta.</li>
+      <li>Recupera fuentes candidatas de la web.</li>
+      <li>Evalúa cuáles son más útiles.</li>
+      <li>Genera una respuesta.</li>
+      <li>Cita o enlaza las fuentes seleccionadas cuando es relevante.</li>
+    </ol>
+
+    <p>Esto no es una página de resultados de búsqueda tradicional con una lista ordenada. Es más parecido a un asistente de investigación que decide rápidamente qué documentos son suficientemente útiles para respaldar una respuesta.</p>
+
+    <blockquote>
+      <p>El SEO ayuda a que tu contenido sea descubrible. El AEO ayuda a que sea utilizable. La autoridad ayuda a que sea confiable.</p>
+    </blockquote>
+
+    <h2 id="interpretacion">Paso 1: ChatGPT interpreta la consulta</h2>
+
+    <p>Antes de seleccionar fuentes, ChatGPT tiene que entender la pregunta.</p>
+
+    <p>Un usuario puede preguntar: <em>¿Cuáles son las mejores herramientas de gestión de proyectos para una agencia pequeña?</em></p>
+
+    <p>Pero la intención real puede incluir asequibilidad, facilidad de incorporación, colaboración con clientes, visibilidad del equipo y evitar soluciones empresariales innecesariamente complejas.</p>
+
+    <p>ChatGPT no busca solo páginas que repitan exactamente la frase «mejores herramientas de gestión de proyectos para agencias pequeñas». Intenta entender el significado detrás de la solicitud.</p>
+
+    <p>Por eso el relleno de palabras clave a la antigua es una estrategia tan débil para la búsqueda con IA. ChatGPT no está cazando frases repetidas. Está intentando relacionar significados.</p>
+
+    <h2 id="recuperacion">Paso 2: ChatGPT recupera fuentes posibles</h2>
+
+    <p>Una vez entendida la intención, ChatGPT puede recuperar páginas candidatas.</p>
+
+    <p>Aquí es donde el <a href="/seo-con-ia-vs-seo-tradicional-que-ha-cambiado/" >SEO clásico sigue importando</a>.</p>
+
+    <ul>
+      <li>Estructura limpia de la página</li>
+      <li>Contenido indexable</li>
+      <li>Carga rápida</li>
+      <li>HTML legible</li>
+      <li>Enlaces internos sólidos</li>
+      <li>Títulos descriptivos</li>
+      <li>Encabezados claros</li>
+      <li>Contenido accesible, no atrapado en scripts complejos</li>
+    </ul>
+
+    <p>La búsqueda con IA no mató el SEO técnico. Lo hizo más importante, porque el contenido oculto, desordenado o vago es más difícil de recuperar e interpretar para las máquinas.</p>
+
+    <h2 id="relevancia">Paso 3: ChatGPT evalúa la relevancia de la fuente</h2>
+
+    <p>Recuperar no es suficiente. Una página puede encontrarse, pero eso no significa que vaya a usarse.</p>
+
+    <p>La relevancia no es solo «¿esta página menciona el tema?». Es más bien:</p>
+
+    <ul>
+      <li>¿Esta página responde a la pregunta concreta?</li>
+      <li>¿Cubre el ángulo correcto?</li>
+      <li>¿La información es suficientemente clara para extraerla?</li>
+      <li>¿Encaja con el contexto implícito del usuario?</li>
+      <li>¿La respuesta está enterrada o es obvia?</li>
+      <li>¿La página aporta algo útil más allá del relleno genérico?</li>
+    </ul>
+
+    <p>Aquí es donde muchas páginas de SEO fallan. Técnicamente tratan el tema, pero no responden con claridad. Se van por las ramas. Entierran lo útil bajo 900 palabras de introducción innecesaria.</p>
+
+    <h2 id="confianza">Paso 4: ChatGPT evalúa la autoridad y la confianza</h2>
+
+    <p>ChatGPT también tiene que decidir si una fuente es lo bastante fiable para respaldar una respuesta.</p>
+
+    <p>Las señales de confianza útiles incluyen:</p>
+
+    <ul>
+      <li>Autor identificado con nombre</li>
+      <li>Experiencia relevante</li>
+      <li>Fecha de publicación visible</li>
+      <li>Fecha de actualización visible</li>
+      <li>Ejemplos originales</li>
+      <li>Experiencia de primera mano</li>
+      <li>Citas a fuentes primarias</li>
+      <li>Metodología transparente</li>
+      <li>Reputación de la empresa o del autor</li>
+      <li>Cobertura temática interna sólida</li>
+      <li>Menciones externas o backlinks</li>
+    </ul>
+
+    <p>Para temas YMYL (finanzas, salud, derecho, seguridad o cualquier cosa que pueda afectar seriamente a la vida de alguien), el listón de confianza es mucho más alto.</p>
+
+    <p>Pero para contenido práctico de B2B, SEO, SaaS, herramientas, flujos de trabajo, servicios locales o experiencia de nicho, los sitios más pequeños pueden perfectamente ser seleccionados si ofrecen información más clara y útil que los grandes medios generalistas.</p>
+
+    <h2 id="extraccion">Paso 5: ChatGPT busca información extraíble</h2>
+
+    <p>Esta es la parte que más pasa por alto la mayoría de los propietarios de webs.</p>
+
+    <p>ChatGPT no necesita tu artículo completo. Necesita fragmentos utilizables.</p>
+
+    <p>Una página se vuelve más favorable como fuente cuando contiene bloques extraíbles:</p>
+
+    <ul>
+      <li>Definiciones breves</li>
+      <li>Respuestas directas</li>
+      <li>Tablas comparativas</li>
+      <li>Pasos numerados</li>
+      <li>Reglas de decisión</li>
+      <li>Pros y contras</li>
+      <li>Preguntas frecuentes</li>
+      <li>Resúmenes concisos</li>
+      <li>Datos originales</li>
+      <li>Ejemplos claros</li>
+    </ul>
+
+    <p>Un ensayo de 4.000 palabras perfectamente redactado puede ser una fuente pésima para la IA si las afirmaciones útiles están diluidas en párrafos largos. Una página más compacta con secciones claras puede ser más fácil de citar.</p>
+
+    <h2 id="senales">¿Qué factores influyen en la selección de fuentes de ChatGPT?</h2>
+
+    <p>No existe una lista pública que diga «ChatGPT usa exactamente estos factores en este orden exacto». Pero basándose en cómo funcionan los sistemas de búsqueda y recuperación con IA, las señales prácticas de selección de fuentes son claras.</p>
+
+    <table class="table-ctm">
+      <thead>
+        <tr>
+          <th>Señal</th>
+          <th>Por qué importa</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Relevancia</td>
+          <td>La página responde directamente a la pregunta del usuario.</td>
+        </tr>
+        <tr>
+          <td>Claridad</td>
+          <td>La respuesta es fácil de extraer y resumir.</td>
+        </tr>
+        <tr>
+          <td>Autoridad</td>
+          <td>La fuente parece creíble y fiable.</td>
+        </tr>
+        <tr>
+          <td>Actualidad</td>
+          <td>El contenido está suficientemente al día para la consulta.</td>
+        </tr>
+        <tr>
+          <td>Estructura</td>
+          <td>Los encabezados, listas, tablas y el schema facilitan el análisis.</td>
+        </tr>
+        <tr>
+          <td>Especificidad</td>
+          <td>La página cubre el caso de uso exacto, no solo el tema general.</td>
+        </tr>
+        <tr>
+          <td>Evidencia</td>
+          <td>Las afirmaciones están respaldadas por ejemplos, fuentes o datos.</td>
+        </tr>
+        <tr>
+          <td>Claridad de entidades</td>
+          <td>Personas, marcas, herramientas y conceptos están claramente identificados.</td>
+        </tr>
+        <tr>
+          <td>Originalidad</td>
+          <td>La página aporta algo más allá del consejo genérico reciclado.</td>
+        </tr>
+        <tr>
+          <td>Accesibilidad</td>
+          <td>El contenido puede ser rastreado, renderizado y comprendido.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Las páginas más sólidas suelen combinar varias de estas señales. La mejor fuente es normalmente la que ofrece al sistema de IA la respuesta más limpia y fiable con el menor margen de incertidumbre.</p>
+
+    <h2>Por qué algunas páginas bien posicionadas no son citadas</h2>
+
+    <p>Posicionar bien en Google ayuda, pero no garantiza citas de ChatGPT.</p>
+
+    <p>Una página con buen ranking puede fallar como fuente de IA si es demasiado larga, difusa, genérica, desactualizada, excesivamente comercial, difícil de analizar o débil en señales de confianza del autor.</p>
+
+    <p>Una página puede ser suficientemente fuerte para posicionar gracias a sus backlinks, la autoridad del dominio y la cobertura de palabras clave, pero seguir siendo un mal candidato para ser citada.</p>
+
+    <blockquote>
+      <p>ChatGPT no solo pregunta: «¿Qué página tiene mejor posición?». Pregunta: «¿Qué fuente me ayuda a responder bien esta pregunta?»</p>
+    </blockquote>
+
+    <h2 id="sitios-pequenos">Por qué los sitios pequeños también pueden ser citados</h2>
+
+    <p>Lo esperanzador: ChatGPT puede citar sitios web pequeños cuando son útiles.</p>
+
+    <p>Un consultor de nicho, un experto independiente, una empresa SaaS o un publicador especializado puede superar en ocasiones a un gran sitio genérico porque la página más pequeña es más precisa.</p>
+
+    <p>Los sitios pequeños tienen ventajas:</p>
+
+    <ul>
+      <li>Pueden ser más directos y opinar con más claridad.</li>
+      <li>Pueden mostrar experiencia de primera mano.</li>
+      <li>Pueden profundizar en problemas de nicho.</li>
+      <li>Pueden publicar marcos de trabajo originales.</li>
+      <li>Pueden responder preguntas específicas que los sitios grandes ignoran.</li>
+      <li>Pueden construir autoridad temática en un área concreta.</li>
+    </ul>
+
+    <p>El error es intentar superar a HubSpot en su propio juego. No escribas otra guía genérica sobre «buenas prácticas SEO». Escribe la página que solo tú puedes escribir: el análisis en profundidad, el flujo de trabajo, la comparativa, el marco de decisión, el checklist original, la guía práctica desde la experiencia vivida.</p>
+
+    <h2>¿Usa ChatGPT los resultados de Google?</h2>
+
+    <p>No de la manera simple que mucha gente imagina.</p>
+
+    <p>ChatGPT Search no es simplemente «resultados de Google con cara de chatbot». El pipeline exacto de fuentes puede variar según el producto, el tipo de consulta, la ubicación, las herramientas y los acuerdos de distribución.</p>
+
+    <p>Sin embargo, la visibilidad en los buscadores tradicionales sigue ayudando de forma indirecta, porque las páginas que rinden bien en búsqueda suelen tener mejor rastreabilidad, más enlaces, mayor relevancia temática, títulos de página más claros, autoridad más consolidada y mejor estructura de contenido.</p>
+
+    <p>Por tanto, el SEO sigue importando. Pero no es el único factor en juego.</p>
+
+    <h2>El papel de la actualidad</h2>
+
+    <p>La actualidad importa más en unas consultas que en otras.</p>
+
+    <p>Para temas atemporales, una página más antigua puede seguir siendo útil si la información sigue siendo precisa. Para temas que cambian rápidamente, la actualidad se vuelve crítica.</p>
+
+    <p>Ejemplos: herramientas de IA, precios de software, leyes y normativas, requisitos de viaje, recomendaciones de productos, funcionalidades de plataformas, cambios en buscadores y estadísticas de mercado.</p>
+
+    <p>Las señales de actualidad incluyen:</p>
+
+    <ul>
+      <li>Fecha de «última actualización» visible</li>
+      <li><code>dateModified</code> correcto en el schema</li>
+      <li>Ejemplos actualizados</li>
+      <li>Capturas de pantalla vigentes</li>
+      <li>Estadísticas al día</li>
+      <li>Eliminación de afirmaciones obsoletas</li>
+      <li>Notas explicando qué ha cambiado</li>
+    </ul>
+
+    <p>No finjas actualidad. Actualiza el contenido de verdad. Cambiar la fecha en un artículo obsoleto no es estrategia. Es ponerle un sombrero nuevo a un esqueleto.</p>
+
+    <h2>El papel del schema</h2>
+
+    <p>El schema no hace que ChatGPT te cite mágicamente. Pero puede ayudar a las máquinas a entender tu contenido.</p>
+
+    <p>Para un artículo como este, los tipos de schema útiles incluyen Article, BlogPosting, FAQPage, Person, Organization y BreadcrumbList.</p>
+
+    <p>El schema ayuda a aclarar quién escribió la página, cuándo se publicó, cuándo se actualizó, de qué trata la página, qué preguntas se responden y cómo encaja la página dentro del sitio.</p>
+
+    <h2>El papel del SEO de entidades</h2>
+
+    <p>ChatGPT no solo entiende palabras clave. Entiende entidades.</p>
+
+    <p>Las entidades son cosas identificables: personas, marcas, productos, lugares, conceptos, herramientas, organizaciones e industrias.</p>
+
+    <p>Para un sitio web personal de SEO, esto importa mucho. No solo estás intentando posicionar páginas. Estás enseñando a la web a entender con qué está asociado Mitch Chadban: estrategia SEO, búsqueda con IA, AEO, GEO, sistemas de contenido, SEO técnico y estrategia digital.</p>
+
+    <p>Cuanto más claro sea ese footprint de entidad, más fácil será para los sistemas de IA asociar tu sitio con esos temas.</p>
+
+    <h2>Cómo hacer que tu contenido sea más probable de ser citado por ChatGPT</h2>
+
+    <h3>1. Responde primero</h3>
+    <p>Cada sección principal debe responder a su encabezado con rapidez. No hagas esperar al usuario.</p>
+
+    <h3>2. Usa encabezados claros</h3>
+    <p>Los encabezados deben mapear preguntas reales. Usa encabezados como «¿Cómo elige ChatGPT sus fuentes?», «¿Usa ChatGPT Google?» y «¿Pueden los sitios pequeños ser citados?»</p>
+
+    <h3>3. Añade tablas comparativas</h3>
+    <p>Las tablas organizan relaciones con claridad, lo que las hace útiles tanto para lectores como para la extracción por IA.</p>
+
+    <h3>4. Añade perspectiva original</h3>
+    <p>Si tu artículo dice lo mismo que otros 200 artículos, ¿por qué elegiría ChatGPT el tuyo? Añade un marco de trabajo, un análisis en profundidad, un checklist, un árbol de decisión, un ejemplo original o un flujo de trabajo práctico.</p>
+
+    <h3>5. Refuerza la confianza del autor</h3>
+    <p>Añade una firma de autor correcta, una bio relevante, experiencia demostrada, la fecha de actualización y enlaces a tu página Acerca de o a tus perfiles profesionales.</p>
+
+    <h3>6. Cita fuentes primarias</h3>
+    <p>Usa fuentes primarias siempre que sea posible: documentación oficial, anuncios de plataformas, investigación original y documentación directa de productos.</p>
+
+    <h3>7. Mantén el contenido actualizado</h3>
+    <p>Para este tema, revisa la página al menos cada trimestre. Actualízala cuando ChatGPT Search cambie, aparezcan nuevos datos de búsqueda con IA, cambien los controles de los editores o varíen los patrones de tráfico de referencia.</p>
+
+    <h3>8. Construye el clúster alrededor de esta página</h3>
+    <p>Esta página debe enlazar a y recibir enlaces de tu clúster de búsqueda con IA: la guía completa de estrategia de búsqueda con IA, AEO explicado, GEO explicado, SEO con IA vs SEO tradicional, SEO de entidades, E-E-A-T y páginas de auditoría de visibilidad en IA.</p>
+
+    <h2>Los mejores formatos de contenido para las citas de ChatGPT</h2>
+
+    <table class="table-ctm">
+      <thead>
+        <tr>
+          <th>Formato</th>
+          <th>Mejor caso de uso</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Definiciones</td>
+          <td>Consultas del tipo «qué es»</td>
+        </tr>
+        <tr>
+          <td>Guías paso a paso</td>
+          <td>Consultas del tipo «cómo»</td>
+        </tr>
+        <tr>
+          <td>Tablas comparativas</td>
+          <td>Consultas de decisión y evaluación</td>
+        </tr>
+        <tr>
+          <td>Preguntas frecuentes</td>
+          <td>Consultas de búsqueda conversacional</td>
+        </tr>
+        <tr>
+          <td>Marcos de trabajo originales</td>
+          <td>Liderazgo de pensamiento e ideas dignas de cita</td>
+        </tr>
+        <tr>
+          <td>Checklists</td>
+          <td>Implementación práctica</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>La Pila de Selección de Fuentes</h2>
+
+    <p>Si quieres un marco simple, usa este:</p>
+
+    <ol>
+      <li><strong>Acceso:</strong> ¿Puede ChatGPT o un sistema de búsqueda encontrar y leer la página?</li>
+      <li><strong>Relevancia:</strong> ¿La página responde a la pregunta concreta?</li>
+      <li><strong>Confianza:</strong> ¿La fuente es suficientemente creíble?</li>
+      <li><strong>Extracción:</strong> ¿Se puede extraer la información útil con facilidad?</li>
+      <li><strong>Atribución:</strong> ¿La página es suficientemente sólida para ser citada como fuente?</li>
+    </ol>
+
+    <p>La mayoría de las estrategias fallidas de búsqueda con IA se rompen en una de estas cinco capas.</p>
+
+    <h2 id="checklist">Checklist de selección de fuentes para ChatGPT</h2>
+
+    <ul>
+      <li>¿La página es indexable?</li>
+      <li>¿El título es claro?</li>
+      <li>¿La introducción responde a la consulta principal?</li>
+      <li>¿Cada H2 responde a una pregunta real del usuario?</li>
+      <li>¿Hay definiciones concisas?</li>
+      <li>¿Hay tablas comparativas?</li>
+      <li>¿Hay una sección de preguntas frecuentes?</li>
+      <li>¿El autor está claramente identificado?</li>
+      <li>¿La fecha de actualización es visible?</li>
+      <li>¿Las afirmaciones están respaldadas por fuentes?</li>
+      <li>¿Los ejemplos son específicos?</li>
+      <li>¿La página está enlazada internamente desde contenido relacionado?</li>
+      <li>¿La página enlaza a fuentes autorizadas externas?</li>
+      <li>¿Está implementado el schema?</li>
+      <li>¿La página aporta algo original?</li>
+      <li>¿Un lector real la guardaría en favoritos?</li>
+    </ul>
+
+    <blockquote>
+      <p>Si nadie guardaría la página en favoritos, ¿por qué la citaría ChatGPT?</p>
+    </blockquote>
+
+    <h2>Mitos comunes sobre las citas de ChatGPT</h2>
+
+    <h3>Mito 1: Necesitas ser un sitio enorme</h3>
+    <p>No siempre. Los sitios grandes tienen ventajas, pero los sitios de expertos más pequeños pueden ser citados cuando responden mejor a consultas de nicho.</p>
+
+    <h3>Mito 2: Estar en el número uno garantiza las citas</h3>
+    <p>No. El ranking ayuda con la visibilidad y la autoridad, pero ChatGPT puede elegir una fuente más clara o más específica.</p>
+
+    <h3>Mito 3: El schema es suficiente</h3>
+    <p>No. El schema ayuda a las máquinas a entender el contenido. No rescata un contenido débil.</p>
+
+    <h3>Mito 4: El contenido generado con IA no puede posicionar ni ser citado</h3>
+    <p>El problema no es si la IA ayudó a crearlo. El problema es si la página final es útil, precisa, original y fiable.</p>
+
+    <h3>Mito 5: Más contenido equivale a más citas</h3>
+    <p>No si el contenido es genérico. Un conjunto pequeño de activos de referencia sólidos suele superar a un aluvión de publicaciones superficiales.</p>
+
+    <h2>Para qué optimiza realmente ChatGPT</h2>
+
+    <p>ChatGPT no está intentando recompensar tu esfuerzo SEO. Está intentando responder al usuario.</p>
+
+    <p>La fuente ganadora no siempre es la página más larga, el dominio más antiguo o la página con más palabras clave.</p>
+
+    <p>La fuente ganadora es la que mejor respalda la respuesta.</p>
+
+    <ul>
+      <li>Clara</li>
+      <li>Precisa</li>
+      <li>Relevante</li>
+      <li>Actualizada</li>
+      <li>Fiable</li>
+      <li>Fácil de extraer</li>
+      <li>Específica a la pregunta</li>
+      <li>Respaldada por evidencia</li>
+    </ul>
+
+    <p>Por eso la búsqueda con IA premia el contenido genuinamente útil. No las «guías definitivas» vacías. No los 900 listicles SaaS idénticos. No el contenido escrito para satisfacer una herramienta de palabras clave en lugar de un lector.</p>
+
+    <h2>Reflexiones finales</h2>
+
+    <p>ChatGPT elige sus fuentes de forma diferente a Google porque está resolviendo un problema diferente.</p>
+
+    <p>Google posiciona páginas. ChatGPT construye respuestas.</p>
+
+    <p>Eso no hace el SEO irrelevante. Lo hace incompleto.</p>
+
+    <p>Para ganar en la búsqueda con IA, tu contenido tiene que ser descubrible, comprensible, fiable, extraíble y digno de ser citado.</p>
+
+    <p>La versión perezosa de esta estrategia es «escribe contenido para la IA».</p>
+
+    <p>La versión mejor es: escribe la página más clara, útil y digna de referencia sobre el tema.</p>
+
+    <p>Eso funciona para los humanos. Eso funciona para los buscadores. Y cada vez más, eso funciona para ChatGPT.</p>
+
+    <h2 id="faq">FAQ: Cómo elige ChatGPT sus fuentes</h2>
+
+    <h3>¿Cómo elige ChatGPT sus fuentes?</h3>
+    <p>Cuando ChatGPT usa la búsqueda, interpreta la pregunta del usuario, recupera fuentes candidatas, las evalúa en cuanto a relevancia y confianza, genera una respuesta y puede citar las fuentes que mejor respaldan la respuesta.</p>
+
+    <h3>¿ChatGPT siempre busca en la web?</h3>
+    <p>No. ChatGPT no siempre busca en la web. Algunas respuestas se generan a partir del conocimiento del modelo y el contexto de la conversación. Las respuestas asistidas por búsqueda usan información web reciente y pueden incluir citas.</p>
+
+    <h3>¿Usa ChatGPT los resultados de Google?</h3>
+    <p>ChatGPT Search no es simplemente resultados de Google dentro de un chatbot. La visibilidad SEO tradicional puede ayudar indirectamente, pero la selección de fuentes de ChatGPT se basa en recuperación, relevancia, utilidad y confianza.</p>
+
+    <h3>¿Por qué ChatGPT cita algunos sitios y no otros?</h3>
+    <p>ChatGPT tiene más probabilidades de citar páginas que responden directamente a la pregunta, aportan evidencia clara, parecen fiables, están actualizadas y presentan la información en una estructura extraíble.</p>
+
+    <h3>¿Pueden los sitios pequeños ser citados por ChatGPT?</h3>
+    <p>Sí. Los sitios más pequeños pueden ser citados cuando ofrecen información especializada, clara, fiable y útil que responde directamente a una consulta.</p>
+
+    <h3>¿Sigue importando el SEO para ChatGPT?</h3>
+    <p>Sí. El SEO sigue importando porque la rastreabilidad, la indexación, la estructura del sitio, los enlaces internos, la autoridad y la calidad del contenido influyen en si tu contenido puede ser descubierto y considerado fiable.</p>
+
+    <h3>¿Ayuda el schema a que ChatGPT elija fuentes?</h3>
+    <p>El schema puede ayudar a las máquinas a entender tu contenido, autor, fechas, preguntas frecuentes y estructura de la página. Es útil, pero no reemplaza un contenido sólido.</p>
+
+    <h3>¿Cómo aumento mis probabilidades de ser citado por ChatGPT?</h3>
+    <p>Publica respuestas claras, usa encabezados formulados como preguntas, añade evidencia, muestra experiencia del autor, actualiza el contenido con regularidad, usa formatos estructurados, construye autoridad temática y crea activos de referencia originales.</p>
+
+    <h2>¿Quieres una estrategia de búsqueda con IA que realmente consiga citas?</h2>
+
+    <p>Si quieres que tu sitio aparezca en ChatGPT, Gemini, Perplexity y los Resúmenes de IA de Google, puedo ayudarte con:</p>
+
+    <ul>
+      <li>Auditorías de visibilidad en búsqueda con IA</li>
+      <li>Estrategia de contenido AEO y GEO</li>
+      <li>SEO de entidades y planificación de autoridad temática</li>
+      <li>Actualizaciones de contenido orientadas a conseguir citas</li>
+      <li>Limpieza de SEO técnico para estar listo para la búsqueda con IA</li>
+    </ul>
+
+    <br />
+    Si te tomas en serio la búsqueda con IA,
+      <a href="mailto:mitch.chadban@hotmail.com" ><div class="custom-btn"><b>Escríbeme</b></div></a>
+      y trazaré el camino más rápido de invisible a digno de referencia.
+    <br />
+
+    <div class="further-reading-ctm">
+      <h4 class="further-reading-ctm__title">Lectura adicional</h4>
+      <ul class="further-reading-ctm__list">
+        <li class="further-reading-ctm__item">
+          <a class="further-reading-ctm__link" href="/the-complete-ai-search-strategy-guide-2026/" >La Guía Completa de Estrategia de Búsqueda con IA</a>
+        </li>
+        <li class="further-reading-ctm__item">
+          <a class="further-reading-ctm__link" href="/aeo-espana-como-aparecer-en-respuestas-de-ia/" >AEO Explicado: Cómo Aparecer en las Respuestas de la IA</a>
+        </li>
+        <li class="further-reading-ctm__item">
+          <a class="further-reading-ctm__link" href="/seo-con-ia-vs-seo-tradicional-que-ha-cambiado/" >SEO con IA vs SEO Tradicional: ¿Qué ha Cambiado?</a>
+        </li>
+        <li class="further-reading-ctm__item">
+          <a class="further-reading-ctm__link" href="/como-mejorar-el-e-e-a-t-en-2026/" >Las Mejores Formas de Mejorar el E-E-A-T en 2026</a>
+        </li>
+        <li class="further-reading-ctm__item">
+          <a class="further-reading-ctm__link" href="/checklist-de-seo-tecnico-en-lenguaje-claro/" >Checklist de SEO Técnico (en Lenguaje Claro)</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+  <br />
+  <br />
+</div>
+
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://mitchchadban.com/como-elige-chatgpt-sus-fuentes/#article",
+    "headline": "Cómo elige ChatGPT sus fuentes",
+    "description": "Guía práctica sobre cómo ChatGPT selecciona, evalúa y cita fuentes web, y cómo hacer que tu contenido tenga más probabilidades de aparecer en las respuestas de la búsqueda con IA.",
+    "datePublished": "2026-06-27",
+    "dateModified": "2026-06-27",
+    "inLanguage": "es-ES",
+    "author": {
+      "@type": "Person",
+      "name": "Mitch Chadban",
+      "url": "https://mitchchadban.com/acerca-de/",
+      "jobTitle": "Especialista en SEO y Marketing",
+      "sameAs": ["https://www.linkedin.com/in/mitchchadban"]
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Mitch Chadban",
+      "url": "https://mitchchadban.com"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://mitchchadban.com/como-elige-chatgpt-sus-fuentes/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cómo elige ChatGPT sus fuentes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cuando ChatGPT usa la búsqueda, interpreta la pregunta del usuario, recupera fuentes candidatas, las evalúa en cuanto a relevancia y confianza, genera una respuesta y puede citar las fuentes que mejor respaldan la respuesta."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿ChatGPT siempre busca en la web?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. ChatGPT no siempre busca en la web. Algunas respuestas se generan a partir del conocimiento del modelo y el contexto de la conversación. Las respuestas asistidas por búsqueda usan información web reciente y pueden incluir citas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Pueden los sitios pequeños ser citados por ChatGPT?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Los sitios más pequeños pueden ser citados cuando ofrecen información especializada, clara, fiable y útil que responde directamente a una consulta."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Sigue importando el SEO para ChatGPT?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. El SEO sigue importando porque la rastreabilidad, la indexación, la estructura del sitio, los enlaces internos, la autoridad y la calidad del contenido influyen en si tu contenido puede ser descubierto y considerado fiable."
+        }
+      }
+    ]
+  }
+]
+</script>`;
+---
+
+<BaseLayout lang="es" ogType="article"
+  title="Cómo elige ChatGPT sus fuentes | Mitch Chadban"
+  description="Aprende cómo ChatGPT selecciona, evalúa y cita fuentes, y cómo hacer que tu contenido tenga más probabilidades de aparecer en las respuestas de la búsqueda con IA."
+  canonical="https://mitchchadban.com/como-elige-chatgpt-sus-fuentes/"
+  alternates={[
+    { lang: 'en-AU', href: 'https://mitchchadban.com/how-chatgpt-chooses-sources/' },
+    { lang: 'es', href: 'https://mitchchadban.com/como-elige-chatgpt-sus-fuentes/' },
+    { lang: 'x-default', href: 'https://mitchchadban.com/how-chatgpt-chooses-sources/' }
+  ]}
+>
+  <Fragment set:html={pageContent} />
+</BaseLayout>

@@ -1,0 +1,828 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const pageContent = `<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "AEO en España: Cómo Aparecer en las Respuestas de IA (ChatGPT, Gemini, Perplexity)",
+    "description": "Una guía práctica de AEO para empresas que operan en España. Cubre ChatGPT, las funciones de IA de Google y Perplexity — con configuración de hreflang, estrategia de localización, controles de acceso para bots y plantillas de contenido para citaciones de IA.",
+    "datePublished": "2026-01-01",
+    "dateModified": "2026-04-05",
+    "inLanguage": "es-ES",
+    "author": {
+      "@type": "Person",
+      "name": "Mitch Chadban",
+      "url": "https://mitchchadban.com",
+      "jobTitle": "Diseñador, Especialista en Marketing y SEO",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "ES"
+      }
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Mitch Chadban",
+      "url": "https://mitchchadban.com"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://mitchchadban.com/aeo-espana-como-aparecer-en-respuestas-de-ia/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué es el AEO (Optimización para Motores de Respuesta)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El AEO consiste en optimizar el contenido y las señales de tu sitio para que sean citados y enlazados dentro de las respuestas generadas por IA — de ChatGPT, las funciones de IA de Google y Perplexity — en lugar de limitarse a posicionar en los resultados de búsqueda tradicionales. Se centra en la estructura del contenido, las señales de confianza y el acceso a los rastreadores, junto con los fundamentos del SEO convencional."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿El AEO está reemplazando al SEO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. El AEO se construye sobre el SEO. Los fundamentos técnicos y el contenido útil siguen importando — el AEO añade el foco en la estructura citable, la confianza y la localización correcta. Las mismas señales que te ayudan a posicionar en Google también aumentan tus posibilidades de ser citado en las respuestas de IA. Arregla el SEO primero; el AEO viene después."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo aparecer en las respuestas de ChatGPT?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Publica páginas rastreables y públicas estructuradas para la citación (definiciones, pasos, comparativas con enlaces a fuentes primarias) y confirma que no estás bloqueando OAI-SearchBot en robots.txt. La experiencia de búsqueda de ChatGPT cita contenido específico y respaldado por fuentes — las páginas vagas o pobres en contenido rara vez pasan el corte."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Perplexity respeta el robots.txt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Perplexity indica que PerplexityBot respeta las directivas de robots.txt para indexar contenido completo o parcial, pero puede seguir indexando el dominio, el titular y un breve resumen factual aunque esté bloqueado. Para el AEO, permite que tus páginas de citación públicas sean rastreadas. Para contenido genuinamente privado, usa autenticación — no confíes solo en robots.txt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo estructurar un sitio para España?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Utiliza estructuras de URL distintas para cada mercado (subcarpetas como /es/) e implementa anotaciones hreflang para que los sistemas sirvan y citen la versión en el idioma correcto. Trata el contenido de cada mercado como un proyecto editorial independiente — las páginas en español construidas para lectores españoles."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuál es el mayor error de AEO para sitios orientados a España?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bloquear los rastreadores de IA sin darse cuenta. Muchos sitios añadieron reglas agresivas de bloqueo de bots en 2024–2025 para detener los scrapers de entrenamiento de IA, pero sin querer también bloquearon los rastreadores de búsqueda (OAI-SearchBot, PerplexityBot) que impulsan la visibilidad en citaciones. Revisa tu robots.txt y la configuración del WAF antes que cualquier otra cosa."
+        }
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Cómo configurar el AEO para España",
+    "description": "Guía paso a paso para implementar el AEO en un sitio web orientado al mercado español.",
+    "author": {
+      "@type": "Person",
+      "name": "Mitch Chadban"
+    },
+    "step": [
+      {
+        "@type": "HowToStep",
+        "name": "Audita el acceso de los bots",
+        "text": "Revisa el robots.txt y las reglas del WAF para confirmar que OAI-SearchBot y PerplexityBot pueden acceder a las páginas que quieres que sean citadas. Muchos sitios bloquean estos rastreadores por error."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Configura tu estructura de URL internacional",
+        "text": "Elige subcarpetas (/es/) o subdominios (es.) e implementa hreflang para es-ES y x-default en cada página que tenga un equivalente en otro idioma."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Localiza — no solo traduzcas",
+        "text": "Reescribe las páginas en español para lectores españoles con terminología, ejemplos y contexto regulatorio propios de España (GDPR + AEPD). Nunca copies y pegues entre versiones de idioma."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Estructura el contenido para la extracción por IA",
+        "text": "Añade un bloque de definición de 40-60 palabras cerca de la parte superior de cada página. Usa tablas comparativas, listas de pasos y secciones FAQ independientes. Cada sección debe ser extraíble sin el contexto circundante."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Implementa el marcado de esquema",
+        "text": "Añade esquemas de Article, FAQPage y HowTo a las páginas relevantes. Usa el esquema Speakable en tus secciones más citables."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Haz seguimiento y audita trimestralmente",
+        "text": "Monitoriza el crecimiento de consultas conversacionales en Search Console, el aumento de búsquedas de marca, el tráfico de referencia de IA en GA4 y el rendimiento de conversión en tus páginas de citación. Realiza una auditoría de preparación para citaciones cada trimestre."
+      }
+    ]
+  }
+]
+</script>
+
+_______________________________________________________
+
+<div class="service-ctm blog-ctm">
+  <div class="service-ctm__body">
+
+    <p style="font-size: 13px; color: #888; margin: 0 0 12px; letter-spacing: 0.02em;">
+Por <strong>Mitch Chadban</strong> — Estratega SEO y Marketing, España  |  Actualizado abril de 2026
+    </p>
+
+    <h1>AEO en España: Cómo Aparecer en las Respuestas de IA (ChatGPT, Gemini, Perplexity)</h1>
+
+    <p>En 2026, una parte creciente de la «búsqueda» en España ya no es una lista de enlaces — es una respuesta: ChatGPT resume y cita fuentes, las funciones de IA de Google generan resúmenes con enlaces, y Perplexity devuelve síntesis con citaciones. El ganador no siempre es la página que ocupa el número 1. Es la página que el sistema elige citar.</p>
+
+    <p>Este cambio importa especialmente para los negocios que operan en España y quieren visibilidad en búsqueda de IA: los sitios multilingües o multirregionales son precisamente donde el AEO se rompe — versión incorrecta citada, contenido traducido pero no localizado que pierde credibilidad, señales de confianza locales débiles y bots bloqueados sin que te hayas dado cuenta de que has bloqueado tu visibilidad futura.</p>
+
+    <p>Esta guía te da un plan práctico para mejorar tus posibilidades de aparecer en las respuestas de IA a través de:</p>
+
+    <ul>
+      <li>ChatGPT (Search)</li>
+      <li>Funciones de IA de Google / AI Overviews + AI Mode</li>
+      <li>Perplexity</li>
+    </ul>
+
+    <p>Sin relleno. Solo qué hacer, qué evitar y cómo construir un sitio fácil de rastrear, entender, confiar y citar.</p>
+
+    <div class="code-pen">La Optimización para Motores de Respuesta (AEO) en España significa estructurar tu sitio para que las plataformas de IA — ChatGPT, las funciones de IA de Google y Perplexity — extraigan, citen y enlacen tu contenido cuando los usuarios hacen preguntas. Combina rastreabilidad técnica, configuración internacional correcta (hreflang + localización) y contenido formateado para la extracción por IA.
+    </div>
+
+    <h2>AEO vs SEO: qué cambia realmente en 2026</h2>
+
+    <p>Antes de entrar en las plataformas, aquí está la forma más clara de encuadrarlo:</p>
+
+    <table class="table-ctm">
+      <thead>
+        <tr>
+          <th>Área</th>
+          <th>SEO</th>
+          <th>AEO</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Objetivo</td>
+          <td>Posicionar alto y conseguir clics</td>
+          <td>Ser citado dentro de las respuestas generadas por IA</td>
+        </tr>
+        <tr>
+          <td>Métrica de éxito</td>
+          <td>Rankings, CTR, tráfico orgánico</td>
+          <td>Citaciones de IA, menciones de marca, inclusiones en respuestas</td>
+        </tr>
+        <tr>
+          <td>Formato de contenido</td>
+          <td>Páginas y clusters optimizados por keywords</td>
+          <td>Bloques citables: definiciones, pasos, comparativas</td>
+        </tr>
+        <tr>
+          <td>Señales de confianza</td>
+          <td>Backlinks, autoridad de dominio</td>
+          <td>E-E-A-T, fuentes primarias, claridad de entidad</td>
+        </tr>
+        <tr>
+          <td>Foco técnico</td>
+          <td>Rastreabilidad, velocidad, indexación</td>
+          <td>Acceso de bots, marcado de esquema, contenido estructurado</td>
+        </tr>
+        <tr>
+          <td>Localización</td>
+          <td>Hreflang + páginas traducidas</td>
+          <td>Hreflang + contenido genuinamente localizado y citable por mercado</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>El AEO se construye sobre el SEO — los fundamentos técnicos y de contenido siguen siendo importantes. El AEO añade una capa de estructura citable, señales de confianza y localización correcta para que los sistemas de IA puedan extraer y atribuir tu contenido con seguridad.</p>
+
+<details class="blog-menu" open="">
+  <summary class="blog-menu__header">
+    <span class="blog-menu__title">En esta página</span>
+    <span aria-hidden="true" class="blog-menu__toggle"></span>
+  </summary>
+
+  <div class="blog-menu__body">
+    <a class="blog-menu__item" href="#que-es" onclick="location.hash='que-es'; return false;">Qué significa el AEO en 2026 (y en qué se diferencia del SEO)</a>
+    <a class="blog-menu__item" href="#motores" onclick="location.hash='motores'; return false;">Cómo eligen sus fuentes los motores de respuesta de IA (un modelo mental sencillo)</a>
+    <a class="blog-menu__item" href="#plataformas" onclick="location.hash='plataformas'; return false;">Guías de actuación por plataforma</a>
+    <a class="blog-menu__item" href="#blueprint" onclick="location.hash='blueprint'; return false;">El blueprint AEO para España (dónde fallan la mayoría de los equipos)</a>
+    <a class="blog-menu__item" href="#plantillas" onclick="location.hash='plantillas'; return false;">Plantillas de contenido que la IA adora (y cita)</a>
+    <a class="blog-menu__item" href="#tecnico" onclick="location.hash='tecnico'; return false;">Fundamentos técnicos (no los saltes)</a>
+    <a class="blog-menu__item" href="#medir" onclick="location.hash='medir'; return false;">Cómo medir el AEO sin inventarte KPIs falsos</a>
+    <a class="blog-menu__item" href="#faq" onclick="location.hash='faq'; return false;">FAQ: AEO en España</a>
+  </div>
+</details>
+
+    <h2 id="que-es">Qué significa el AEO en 2026 (y en qué se diferencia del SEO)</h2>
+
+    <p>SEO: Optimiza para posicionar y conseguir clics.<br />
+AEO: Optimiza para ser utilizado como fuente dentro de una respuesta generada por IA — idealmente con una citación y un enlace.</p>
+
+    <p>La guía de Google para las funciones de IA es clara: estas experiencias pueden mostrar respuestas generadas por IA con enlaces para explorar más en la web. Esa es tu oportunidad: convertirte en una de esas fuentes.</p>
+
+    <p>La guía de publicadores de OpenAI también marca la dirección con claridad: si quieres que tu contenido aparezca en resúmenes y fragmentos en la experiencia de búsqueda de ChatGPT, necesitas permitir el acceso a su rastreador de búsqueda.</p>
+
+    <p>Así que el objetivo moderno no es «publicar más contenido». Es:</p>
+
+    <h3>Convertirte en la mejor fuente <i>citable</i> para la sub-pregunta</h3>
+
+    <p>Las respuestas de IA se ensamblan a partir de bloques más pequeños que los resultados tradicionales de búsqueda:</p>
+
+    <ul>
+      <li>definiciones</li>
+      <li>listas de pasos</li>
+      <li>comparativas</li>
+      <li>«qué hacer primero»</li>
+      <li>explicaciones claras con evidencia</li>
+    </ul>
+
+    <p>Si empaquetas tu experiencia en bloques citables, te haces más fácil de citar.</p>
+
+    <h2 id="motores">Cómo eligen sus fuentes los motores de respuesta de IA (un modelo mental sencillo)</h2>
+
+    <p>Las distintas plataformas tienen mecánicas diferentes, pero la selección tiende a reducirse a cuatro capas:</p>
+
+    <h3>1) Acceso: ¿puede el sistema recuperar tu página?</h3>
+    <p>Si los rastreadores no pueden llegar a tus páginas (bloqueos en robots.txt, bloqueos WAF, muros de autenticación), te has descalificado antes de que nada más importe.</p>
+
+    <p>OpenAI documenta los rastreadores que utiliza y cómo los webmasters pueden controlarlos mediante robots.txt.</p>
+
+    <h3>2) Comprensión: ¿puede parsear lo que realmente estás diciendo?</h3>
+    <p>Las cabeceras claras, las definiciones explícitas, las listas estructuradas y una jerarquía de página limpia facilitan la extracción. El marcado de esquema ayuda a los sistemas a interpretar el tipo de contenido y el contexto.</p>
+
+    <h3>3) Confianza: ¿tu página parece creíble en comparación con las alternativas?</h3>
+    <p>La postura de Google (y es la correcta independientemente de la plataforma): el contenido debe ser útil, creado para personas y lo suficientemente fiable como para sostenerse por sí solo. La experiencia del autor, las citas de fuentes primarias y las señales de entidad consistentes son factores clave.</p>
+
+    <h3>4) Utilidad: ¿responde <i>esta</i> pregunta con rapidez?</h3>
+    <p>Los motores de respuesta favorecen páginas que se pueden resumir con limpieza: respuesta directa → pasos → matices → fuentes.</p>
+
+    <p>Ten presentes esas cuatro capas y el AEO se convierte en un sistema, no en un juego de adivinanzas.</p>
+
+    <h2 id="plataformas">Guías de actuación por plataforma</h2>
+
+    <p>Cada plataforma tiene un comportamiento de rastreo, una lógica de citación y preferencias de contenido distintas. Aquí está la comparativa:</p>
+
+    <table class="table-ctm">
+      <thead>
+        <tr>
+          <th>Área</th>
+          <th>ChatGPT (OAI-SearchBot)</th>
+          <th>Funciones de IA de Google</th>
+          <th>Perplexity (PerplexityBot)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Control de rastreo</td>
+          <td>robots.txt — OAI-SearchBot independiente de GPTBot</td>
+          <td>Se aplican las reglas estándar de Googlebot</td>
+          <td>robots.txt — PerplexityBot documentado</td>
+        </tr>
+        <tr>
+          <td>Estilo de citación</td>
+          <td>Enlaces a fuentes con fragmentos en línea</td>
+          <td>Resumen de IA con enlaces para explorar más</td>
+          <td>Citaciones numeradas, tarjetas de fuente</td>
+        </tr>
+        <tr>
+          <td>Preferencia de contenido</td>
+          <td>Específico, estructurado, respaldado por fuentes</td>
+          <td>Útil, fiable, respuesta primero</td>
+          <td>Actualizado, con fuentes claras, estructurado</td>
+        </tr>
+        <tr>
+          <td>Señal de tráfico</td>
+          <td><code>utm_source=chatgpt.com</code> en referidos</td>
+          <td>Impresiones de funciones IA en Search Console</td>
+          <td>Dominio referido: perplexity.ai</td>
+        </tr>
+        <tr>
+          <td>¿Bloqueado = invisible?</td>
+          <td>Sí — si está bloqueado, sin citación</td>
+          <td>Sí — se requiere indexación estándar de Google</td>
+          <td>Parcial — el dominio/titular puede aparecer igualmente</td>
+        </tr>
+        <tr>
+          <td>Beneficio del esquema</td>
+          <td>Ayuda a la extracción de contenido</td>
+          <td>Usado directamente para elegibilidad en funciones IA</td>
+          <td>Facilita la interpretación estructurada</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>AEO para ChatGPT: cómo mejorar tus posibilidades de ser citado</h3>
+    <p>La documentación de OpenAI es tu punto de partida:</p>
+
+    <ul>
+      <li>Utiliza rastreadores con agentes de usuario específicos.</li>
+      <li>Los propietarios de sitios pueden gestionar el acceso mediante robots.txt.</li>
+      <li>OAI-SearchBot se usa para experiencias relacionadas con la búsqueda.</li>
+    </ul>
+
+    <h4>1) Asegúrate de que no estás bloqueando el bot equivocado</h4>
+    <p>Si quieres visibilidad en los resúmenes y fragmentos de búsqueda de ChatGPT, revisa tu robots.txt para OAI-SearchBot. OpenAI documenta explícitamente OAI-SearchBot y GPTBot como configuraciones independientes — bloquear uno no afecta al otro.</p>
+
+    <p>Una postura habitual que adoptan algunos publicadores:</p>
+
+    <ul>
+      <li>Permitir OAI-SearchBot (visibilidad/citaciones)</li>
+      <li>Bloquear GPTBot (rastreador de entrenamiento)</li>
+    </ul>
+
+    <div class="code-pen">
+      <button aria-label="Copiar código" class="code-pen__copy" type="button">Copiar</button>
+      <b>Ejemplo (solo ilustrativo — adapta a tu política):</b><br />
+      <pre><code>User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Disallow: /</code></pre>
+    </div>
+
+    <p>Las respuestas al estilo de ChatGPT tienden a citar contenido que es:</p>
+
+    <ul>
+      <li>específico</li>
+      <li>estructurado</li>
+      <li>respaldado por fuentes</li>
+    </ul>
+
+    <p>Patrones de página con mejor rendimiento:</p>
+
+    <ul>
+      <li>Bloque de definición (40–60 palabras)</li>
+      <li>Lista de pasos (5–9 pasos)</li>
+      <li>Reglas de decisión («Si solo España, haz X. Si España + otro mercado, haz Y.»)</li>
+      <li>Fuentes primarias (Search Central, reguladores, estándares, documentación de proveedores)</li>
+    </ul>
+
+    <h4>2) Rastrea lo que puedas</h4>
+    <p>Las notas de publicador de OpenAI indican que las URLs de referido incluyen <code>utm_source=chatgpt.com</code>, lo que puede ayudarte a identificar el tráfico en analítica.</p>
+
+    <h2>AEO para las funciones de IA de Google: cómo ser «digno de AI Overview»</h2>
+    <p>La guía de Google para propietarios de sitios sobre funciones de IA es clara: los AI Overviews y el AI Mode están diseñados para ayudar a los usuarios con respuestas de IA y proporcionar enlaces para explorar más.</p>
+
+    <p>¿Cuál es la estrategia?</p>
+
+    <h4>1) No «optimices para IA» — optimiza para la claridad y la fiabilidad</h4>
+    <p>Si tu contenido es vago, genérico o está lleno de afirmaciones sin respaldo, es más difícil (y más arriesgado) citarlo. La guía de funciones de IA de Google trata explícitamente sobre cómo funciona la inclusión y cómo enfocar el contenido para estas experiencias.</p>
+
+    <h4>2) Usa la estructura de respuesta-primero</h4>
+    <p>Para ser citable, haz que tu contenido sea fácil de extraer:</p>
+
+    <ul>
+      <li>Pon la respuesta primero</li>
+      <li>Usa cabeceras que coincidan con preguntas («Qué es…», «Cómo…», «Errores frecuentes…»)</li>
+      <li>Añade evidencia o ejemplos inmediatamente después de la respuesta</li>
+    </ul>
+
+    <h4>3) Crea páginas que puedan sostenerse solas</h4>
+    <p>Las respuestas de IA comprimen; tu página debe seguir siendo valiosa cuando alguien haga clic. Incluye implementación paso a paso, ejemplos, checklists dentro del artículo, y advertencias y casos límite. La propia guía de Google sobre AI Overviews y AI Mode hace hincapié en los enlaces para una exploración más profunda — tu «capa de profundidad» importa.</p>
+
+    <h2>AEO para Perplexity: citaciones, controles de rastreo y siendo realistas</h2>
+
+    <p>El centro de ayuda de Perplexity indica:</p>
+
+    <ul>
+      <li>Respeta las directivas de robots.txt para PerplexityBot y no indexará contenido completo o parcial si está bloqueado.</li>
+      <li>Sin embargo, aunque esté bloqueado, puede seguir indexando el dominio, el titular y un breve resumen factual.</li>
+    </ul>
+
+    <h4>Pasos prácticos de AEO para Perplexity</h4>
+    <ul>
+      <li>Permite que tus páginas de citación públicas (guías, explicaciones, documentación) sean rastreadas</li>
+      <li>Haz que esas páginas estén muy estructuradas con fuentes claras</li>
+      <li>Mantén tus mejores «bloques de respuesta» concisos y listos para ser citados</li>
+    </ul>
+
+    <h4>Matiz importante: protege el contenido sensible de forma adecuada</h4>
+    <p>Ha habido controversia pública sobre el comportamiento de rastreo de Perplexity, incluidas afirmaciones sobre rastreo más allá de los permisos de robots.txt. Sea cual sea tu postura al respecto, la conclusión operativa segura es sencilla:</p>
+
+    <p>Si algo debe ser privado, no confíes solo en robots.txt. Usa autenticación, reglas WAF y controles de acceso.</p>
+
+    <p>Para el AEO, quieres tus páginas <i>públicas</i> abiertas — y tus páginas <i>privadas</i> realmente aseguradas.</p>
+
+    <h2 id="blueprint">El blueprint AEO para España (dónde fallan la mayoría de los equipos)</h2>
+
+    <p>Si estás haciendo <a href="/marketing-for-it-service-providers-how-to-generate-more-qualified-leads/" >marketing</a> en España, tu mayor riesgo no es la «IA». Es una configuración internacional incorrecta combinada con una localización débil, lo que provoca:</p>
+
+    <ul>
+      <li>que se cite la versión en el idioma equivocado</li>
+      <li>que posicione la región incorrecta</li>
+      <li>páginas casi duplicadas que difuminan la autoridad</li>
+      <li>contenido que parece «traducido» y pierde confianza con la IA y los usuarios</li>
+    </ul>
+
+    <h3>Configuración para España: qué hacer y dónde</h3>
+
+    <table class="table-ctm">
+      <thead>
+        <tr>
+          <th>Área de configuración</th>
+          <th>España (es-ES)</th>
+          <th>Otros mercados (en-AU / en)</th>
+          <th>Ambos mercados</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Estructura de URL</td>
+          <td>Subcarpeta <code>/es/</code> o subdominio <code>es.</code></td>
+          <td>Subcarpeta <code>/au/</code> o subdominio <code>au.</code></td>
+          <td>Mantén la estructura consistente en ambos</td>
+        </tr>
+        <tr>
+          <td>Hreflang</td>
+          <td><code>hreflang="es-ES"</code></td>
+          <td><code>hreflang="en-AU"</code></td>
+          <td>Incluye el fallback <code>x-default</code> en ambos</td>
+        </tr>
+        <tr>
+          <td>Idioma</td>
+          <td>Español castellano — localiza, no traduzcas</td>
+          <td>Inglés australiano — usa ortografía AU</td>
+          <td>Nunca copies y pegues entre versiones</td>
+        </tr>
+        <tr>
+          <td>Ejemplos locales</td>
+          <td>Casos de España, herramientas de España, GDPR/AEPD</td>
+          <td>Casos de AU, herramientas de AU, ACCC/Ley de Privacidad</td>
+          <td>Nunca uses ejemplos de AU en contenido ES o viceversa</td>
+        </tr>
+        <tr>
+          <td>Acceso de bots</td>
+          <td>Confirma que los bots de IA pueden acceder a las páginas /es/</td>
+          <td>Confirma que los bots de IA pueden acceder a las páginas /au/</td>
+          <td>Revisa robots.txt y WAF para ambas rutas</td>
+        </tr>
+        <tr>
+          <td>Enlazado interno</td>
+          <td>Las páginas en ES solo enlazan a otras páginas en ES</td>
+          <td>Las páginas en AU solo enlazan a otras páginas en AU</td>
+          <td>Los enlaces entre locales diluyen las señales de localización</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>1) Configura bien tu estructura internacional (URLs + hreflang)</h3>
+    <p>La guía de Google sobre la gestión de sitios multiregionales y multilingües sigue siendo la mejor referencia de base.</p>
+
+    <p>Estructuras habituales:</p>
+
+    <ul>
+      <li>Subcarpetas: <code>example.com/es/</code></li>
+      <li>Subdominios: <code>es.example.com</code></li>
+      <li>Dominios separados (más carga de mantenimiento, señal geográfica más clara)</li>
+    </ul>
+
+    <p>Sea cual sea tu elección, implementa hreflang para que los sistemas entiendan qué versión deben servir y citar.</p>
+
+    <div class="code-pen">
+      <button aria-label="Copiar código" class="code-pen__copy" type="button">Copiar</button>
+      <b>Ejemplo (solo ilustrativo):</b><br />
+      <pre><code>&lt;link rel="alternate" hreflang="es-ES" href="https://example.com/es/guia-aeo/" /&gt;
+&lt;link rel="alternate" hreflang="en-AU" href="https://example.com/au/aeo-guide/" /&gt;
+&lt;link rel="alternate" hreflang="x-default" href="https://example.com/aeo/" /&gt;</code></pre>
+    </div>
+
+    <p>El beneficio para el AEO es sustancial: cuando un sistema de IA busca una fuente, el hreflang correcto aumenta tus posibilidades de que aterrice en — y cite — la versión en el idioma correcto para el usuario que hace la pregunta.</p>
+
+    <div class="img-full-ctm">
+      <div class="img-full-ctm">
+        <img class="zoomable" src="/images/Bots-at-the-Door-WAFrobots-blocking-your-future-visibility.jpeg" alt="Acceso: ¿puede el sistema recuperar tu página?" loading="lazy" decoding="async" width="800" height="533">
+      </div>
+    </div>
+
+    <h3>2) Traducción ≠ localización (especialmente para los motores de respuesta)</h3>
+    <p>Si traduces tu página al español sin reescribirla para España, generalmente obtienes:</p>
+
+    <ul>
+      <li>frases poco naturales que señalan traducción automática</li>
+      <li>ejemplos que no encajan (referencias extranjeras en contenido en español)</li>
+      <li>terminología incorrecta para el mercado español</li>
+      <li>señales de confianza local débiles que reducen la probabilidad de citación</li>
+    </ul>
+
+    <p>Localiza como si fuera en serio:</p>
+
+    <ul>
+      <li>Páginas en español: terminología española, contexto regulatorio de España (GDPR + AEPD), ejemplos españoles, referencias españolas</li>
+      <li>Páginas en inglés: terminología australiana, <a href="/mejores-canales-de-growth-marketing-2026-espana/" >ejemplos de AU</a>, contexto ACCC/Ley de Privacidad, referencias de AU</li>
+    </ul>
+
+    <p>El AEO se basa fundamentalmente en la confianza. «Suena nativo» es una señal de confianza — para los usuarios y para los sistemas de IA que evalúan si tu contenido es genuinamente relevante para el mercado.</p>
+
+    <h3>3) Construye señales de entidad local en tu mercado</h3>
+    <p>Los motores de respuesta no solo evalúan páginas — evalúan entidades (tu marca, tu experiencia, tus señales de ubicación). Cuanto más claramente señales quién eres y dónde operas, más confianza puede tener un sistema al atribuirte contenido.</p>
+
+    <p>Deja estas señales bien visibles:</p>
+
+    <ul>
+      <li>Identidad empresarial clara y alcance de servicios (a quién sirves en cada mercado)</li>
+      <li>Páginas de servicios específicas del mercado con contenido distinto</li>
+      <li>Testimonios o casos de estudio locales donde sea posible</li>
+      <li>Bios de autor con señales de credibilidad específicas del mercado</li>
+      <li>Menciones de marca consistentes en todo el sitio — no te escondas detrás de un vago «nosotros»</li>
+    </ul>
+
+    <p>Si trabajas en remoto pero sirves al mercado español: dilo claramente. «Trabajo con clientes en España» es una señal de entidad más fuerte que enterrarlo en metadatos. La claridad supera a la astucia.</p>
+
+    <h3>4) Investigación de keywords por mercado — no por traducción</h3>
+
+    <p>Un error frecuente: investigar keywords en inglés, traducirlas al español y asumir que la intención de búsqueda se transfiere. Rara vez lo hace con limpieza. Las consultas de búsqueda en español sobre AEO, marketing digital y SEO tienen sus propios patrones de volumen, terminología preferida y panorama competitivo.</p>
+
+    <p>Para España específicamente:</p>
+
+    <ul>
+      <li>«Optimización para motores de respuesta» y «SEO para IA» tienen una presencia creciente en búsqueda</li>
+      <li>El mercado español a menudo usa términos en inglés junto al español (AEO, ChatGPT, SEO) — investiga ambos</li>
+      <li>La intención de búsqueda en España tiende hacia el encuadre «cómo hacer» para temas B2B</li>
+    </ul>
+
+    <p>El contenido AEO en español es todavía relativamente poco competitivo — los ángulos específicos de España («AEO España», «búsqueda IA España 2026», «ChatGPT España empresa») siguen siendo nichos poco explotados. Las empresas españolas hacen preguntas prácticas primero — enmarca el contenido en torno a resultados concretos.</p>
+
+    <h2>¿Quieres que esto se implemente en tu sitio?</h2>
+
+    <p>Si tu negocio opera en España y quieres visibilidad en las respuestas de IA, el AEO se complica rápidamente: configuración de SEO internacional, localización, controles de acceso de bots y páginas genuinamente dignas de citación.</p>
+
+    <p>Si quieres que esto se haga correctamente (y sin meses de prueba y error), <a href="mailto:mitch.chadban@hotmail.com" >contáctame</a> para implementar el AEO en tu sitio. Entrego:</p>
+
+    <ul>
+      <li>Una auditoría de rastreo y acceso de bots de IA (consideraciones de ChatGPT / Perplexity)</li>
+      <li>Fundamentos de SEO internacional (hreflang + targeting por mercado)</li>
+      <li>Un conjunto de «páginas de citación» construidas para conseguir referencias de IA (definiciones, pasos, comparativas)</li>
+      <li>Un plan de despliegue para España para que sepas exactamente qué arreglar primero</li>
+    </ul>
+
+    <a href="mailto:mitch.chadban@hotmail.com" ><div class="custom-btn"><b>Contáctame</b></div></a> para AEO en España.
+
+    <div class="img-full-ctm">
+      <div class="img-full-ctm">
+        <img class="zoomable" src="/images/Hreflang-Disaster-Control-Room.jpeg" alt="Configura bien tu estructura internacional (URLs + hreflang)" loading="lazy" decoding="async" width="800" height="533">
+      </div>
+    </div>
+
+    <h2 id="plantillas">Plantillas de contenido que la IA adora (y cita)</h2>
+
+    <p>Esto es lo que funciona de forma consistente porque es fácil de extraer y difícil de malinterpretar.</p>
+
+    <h3>Plantilla 1: Definición + pasos + evidencia</h3>
+    <p>Estructura:</p>
+
+    <ol>
+      <li>Bloque de definición (50 palabras)</li>
+      <li>Cuándo usarlo (3 puntos)</li>
+      <li>Cómo hacerlo (7 pasos)</li>
+      <li>Errores frecuentes (5 puntos)</li>
+      <li>FAQs (pregunta → respuesta directa)</li>
+      <li>Fuentes (referencias primarias)</li>
+    </ol>
+
+    <p>Es «amigable para los motores de respuesta» por diseño: bloques de respuesta cortos + guía estructurada + señales de credibilidad.</p>
+
+    <h3>Plantilla 2: Secciones diferenciadas por mercado</h3>
+    <p>Si sirves a varios mercados, usa este patrón:</p>
+
+    <ul>
+      <li>Si solo te diriges a España: haz X (ejemplos de España + fuentes de España)</li>
+      <li>Si te diriges a otro mercado: haz Y (ejemplos + fuentes del otro mercado)</li>
+      <li>Si te diriges a ambos: haz Z (hreflang + flujo de trabajo de localización + contenido separado por página)</li>
+    </ul>
+
+    <p>Los motores de respuesta responden bien a esto porque coincide con la forma en que la gente formula las preguntas — condicional y específica.</p>
+
+    <h3>Plantilla 3: Bloques comparativos (alta tasa de citación)</h3>
+    <p>Usa tablas limpias en cualquier comparativa:</p>
+
+    <ul>
+      <li>«ChatGPT vs Funciones IA de Google vs Perplexity» — ver la tabla de plataformas más arriba</li>
+      <li>«AEO vs SEO» — ver la comparativa inicial</li>
+      <li>«Subcarpetas vs subdominios para mercados en español» — decisiones de configuración estructural</li>
+    </ul>
+
+    <p>Las tablas son fáciles de resumir, citar y validar. Se extraen limpiamente en respuestas generadas por IA sin necesitar el contexto circundante.</p>
+
+    <h2 id="tecnico">Fundamentos técnicos (no los saltes)</h2>
+
+    <h3>1) Acceso de rastreo y controles de bots</h3>
+    <p>Si quieres visibilidad, debes permitir el acceso a las partes de tu sitio que quieres que sean citadas.</p>
+
+    <ul>
+      <li>OpenAI documenta los rastreadores relevantes y los controles — OAI-SearchBot para búsqueda, GPTBot para entrenamiento.</li>
+      <li>Perplexity documenta cómo PerplexityBot sigue el robots.txt y qué puede mostrar aunque esté bloqueado.</li>
+      <li>Muchos sitios añadieron bloqueos agresivos de bots de IA en 2024–2025 y se olvidaron de ellos. Revisa ahora tu robots.txt y las reglas WAF.</li>
+    </ul>
+
+    <h3>2) Datos estructurados (esquema)</h3>
+    <p>El esquema no garantiza citaciones, pero ayuda a los sistemas a interpretar el tipo de contenido, extraer pares de Q&amp;A y entender la estructura de la página:</p>
+
+    <ul>
+      <li>Esquema Article para piezas editoriales — señala autor, fecha y tipo de contenido</li>
+      <li>Esquema FAQ donde las FAQs realmente ayudan — permite la extracción directa de pares Q&amp;A</li>
+      <li>Esquema HowTo si el contenido es verdaderamente basado en pasos — extracción estructurada de pasos</li>
+      <li>Esquema Speakable para tus secciones más citables — marca contenido para superficies de voz e IA</li>
+    </ul>
+
+    <p>Usa el esquema con honestidad. Añadir esquema FAQ a una página sin FAQs reales crea ruido, no señal.</p>
+
+    <h3>3) Controles editoriales (evita el «contenido IA genérico»)</h3>
+    <p>Si tu sitio se convierte en una fábrica de páginas genéricas, perderás confianza y visibilidad. La guía de Google sobre funciones de IA y calidad del contenido es un recordatorio claro: el valor, la claridad y la fiabilidad ganan.</p>
+
+    <blockquote>
+      <p>Cada página orientada al AEO debe incluir al menos uno de: un marco original, ejemplos reales, conocimiento de primera mano o síntesis de fuentes primarias.</p>
+    </blockquote>
+
+    <h2 id="medir">Cómo medir el AEO sin inventarte KPIs falsos</h2>
+
+    <p>La medición del AEO no siempre es limpia porque los datos de referido pueden ser inconsistentes. Pero puedes rastrear señales significativas:</p>
+
+    <h3>1) Google Search Console (sigue siendo tu línea base)</h3>
+    <ul>
+      <li>Crecimiento en consultas conversacionales (búsquedas en formato pregunta)</li>
+      <li>Cambios en impresiones y CTR en páginas elegibles para funciones de IA</li>
+      <li>Problemas de cobertura de índice y segmentación internacional (especialmente para páginas en mercados locales)</li>
+    </ul>
+
+    <h3>2) Aumento de búsquedas de marca</h3>
+    <p>Cuando empiezas a aparecer en respuestas de IA, sueles ver:</p>
+
+    <ul>
+      <li>más consultas de marca (personas buscando tu nombre después de haberlo visto citado)</li>
+      <li>más consultas de «marca + servicio»</li>
+      <li>más tráfico directo de usuarios que ya saben a quién buscan</li>
+    </ul>
+
+    <h3>3) Referidos de IA donde sean visibles</h3>
+    <p>Las notas de publicador de OpenAI señalan el etiquetado UTM que puede ayudar a identificar los referidos de ChatGPT en analítica. Trata los datos de referidos de IA como direccionales — no como un marcador perfecto. Las señales son reales pero incompletas.</p>
+
+    <h3>4) Auditorías de «preparación para citaciones» (trimestrales)</h3>
+    <ul>
+      <li>¿Están tus páginas clave actualizadas? Las estadísticas desactualizadas y las referencias antiguas reducen la confianza en la citación.</li>
+      <li>¿Siguen siendo válidas tus fuentes? Los enlaces rotos a fuentes primarias socavan la credibilidad.</li>
+      <li>¿Permanecen las páginas en español correctamente localizadas y enlazadas internamente dentro de su propio mercado?</li>
+    </ul>
+
+    <h3>Medición del AEO de un vistazo</h3>
+
+    <table class="table-ctm">
+      <thead>
+        <tr>
+          <th>Señal</th>
+          <th>Dónde rastrearla</th>
+          <th>Qué te dice</th>
+          <th>Fiabilidad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Consultas conversacionales</td>
+          <td>Google Search Console</td>
+          <td>Crecimiento de búsqueda con intención IA</td>
+          <td>Alta</td>
+        </tr>
+        <tr>
+          <td>Referidos de ChatGPT</td>
+          <td>GA4 — utm_source=chatgpt.com</td>
+          <td>Tráfico directo de citaciones de ChatGPT</td>
+          <td>Media (no todas las sesiones etiquetadas)</td>
+        </tr>
+        <tr>
+          <td>Referidos de Perplexity</td>
+          <td>GA4 — fuente de referido: perplexity.ai</td>
+          <td>Tráfico de citaciones de Perplexity</td>
+          <td>Media</td>
+        </tr>
+        <tr>
+          <td>Crecimiento de consultas de marca</td>
+          <td>Google Search Console + GA4</td>
+          <td>Aumento de notoriedad por citaciones de IA</td>
+          <td>Alta (señal indirecta)</td>
+        </tr>
+        <tr>
+          <td>Impresiones de AI Overview</td>
+          <td>Google Search Console (filtro Search Appearance)</td>
+          <td>Inclusión en funciones de IA de Google</td>
+          <td>Alta</td>
+        </tr>
+        <tr>
+          <td>Conversiones en páginas de citación</td>
+          <td>GA4 — objetivos completados en páginas AEO</td>
+          <td>Impacto en ingresos de la visibilidad AEO</td>
+          <td>Alta (la que importa)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="faq">FAQ: AEO en España</h2>
+
+    <h3>¿Qué es el AEO (Optimización para Motores de Respuesta)?</h3>
+    <p>El AEO consiste en optimizar el contenido y las señales de tu sitio para que sean citados y enlazados dentro de las respuestas generadas por IA — de ChatGPT, las funciones de IA de Google y Perplexity — en lugar de limitarse a posicionar en los resultados de búsqueda tradicionales. Se centra en la estructura del contenido, las señales de confianza y el acceso a los rastreadores, junto con los fundamentos del SEO convencional.</p>
+
+    <h3>¿El AEO está reemplazando al SEO?</h3>
+    <p>No. El AEO se construye sobre el SEO. Los fundamentos técnicos y el contenido útil siguen importando — el AEO añade el foco en la estructura citable, la confianza y la localización correcta. Las mismas señales que te ayudan a posicionar en Google también aumentan tus posibilidades de ser citado en las respuestas de IA. Arregla el SEO primero; el AEO viene después.</p>
+
+    <h3>¿Cómo aparecer en las respuestas de ChatGPT?</h3>
+    <p>Publica páginas rastreables y públicas estructuradas para la citación (definiciones, pasos, comparativas con enlaces a fuentes primarias) y confirma que no estás bloqueando OAI-SearchBot en robots.txt. La experiencia de búsqueda de ChatGPT cita contenido específico y respaldado por fuentes — las páginas vagas o pobres en contenido rara vez pasan el corte.</p>
+
+    <h3>¿Cómo aparecer en los AI Overviews y el AI Mode de Google?</h3>
+    <p>Sigue la guía de Google para propietarios de sitios sobre funciones de IA: crea contenido útil y fiable, estructurado con cabeceras claras que respondan a preguntas directamente, y con suficiente profundidad para que los usuarios obtengan valor real al hacer clic. El esquema FAQ y HowTo puede ayudar a Google a extraer respuestas estructuradas de tu página.</p>
+
+    <h3>¿Perplexity respeta el robots.txt?</h3>
+    <p>Perplexity indica que PerplexityBot respeta las directivas de robots.txt para indexar contenido completo o parcial, pero puede seguir indexando el dominio, el titular y un breve resumen factual aunque esté bloqueado. Para el AEO, permite que tus páginas de citación públicas sean rastreadas. Para contenido genuinamente privado, usa autenticación — no confíes solo en robots.txt.</p>
+
+    <h3>¿Qué formatos de contenido se citan con más frecuencia?</h3>
+    <p>Los formatos con mejor rendimiento para la citación de IA son:</p>
+
+    <ul>
+      <li>Bloques de definición cortos (40–60 palabras, colocados cerca de la parte superior de la página)</li>
+      <li>Instrucciones paso a paso (numeradas, cada paso autónomo)</li>
+      <li>Tablas comparativas (filas estructuradas con cabeceras de columna claras)</li>
+      <li>Secciones Q&amp;A / FAQ con respuestas directas de 2–4 frases</li>
+      <li>Secciones respaldadas por fuentes primarias con nombre</li>
+    </ul>
+
+    <h3>¿Necesito esquema para el AEO?</h3>
+    <p>El esquema ayuda a las máquinas a interpretar tu página y puede mejorar directamente la elegibilidad para funciones de IA en Google. Usa el esquema Article para contenido editorial, FAQPage para secciones Q&amp;A, HowTo para guías paso a paso, y Speakable para tus pasajes más citables. No uses tipos de esquema que no coincidan con tu contenido — crea ruido, no señal.</p>
+
+    <h3>¿Cómo estructurar un sitio para el mercado español?</h3>
+    <p>Usa estructuras de URL distintas para cada mercado (las subcarpetas como /es/ son el enfoque más habitual) e implementa anotaciones hreflang para que los sistemas sirvan y citen la versión en el idioma correcto. Trata el contenido de cada mercado como un proyecto editorial independiente — no como un flujo de trabajo de traducción. Las páginas en español deben estar construidas para lectores españoles.</p>
+
+    <h3>¿Es suficiente traducir el contenido al español para el AEO?</h3>
+    <p>No — y es uno de los errores de AEO más frecuentes. La traducción sin localización crea ejemplos que no encajan, frases poco naturales y señales de confianza débiles. Las páginas en español necesitan terminología relevante para España, contexto regulatorio español (GDPR + AEPD), y ejemplos españoles. Una página que «parece traducida» tiene menos probabilidades de ser citada, porque los sistemas de IA evalúan la relevancia contextual como parte de la selección de fuentes.</p>
+
+    <h3>¿Cómo medir el rendimiento del AEO?</h3>
+    <p>Usa una combinación de señales en lugar de una única métrica:</p>
+
+    <ul>
+      <li>Google Search Console — crecimiento de consultas conversacionales e impresiones de funciones de IA</li>
+      <li>Aumento de consultas de marca en Search Console (personas buscando tu nombre después de haberlo visto citado)</li>
+      <li>Tráfico de referidos de IA en GA4 — <code>utm_source=chatgpt.com</code> para ChatGPT, dominio de referido para Perplexity</li>
+      <li>Rendimiento de conversión en tus «páginas de citación» — en última instancia, las citaciones deben generar leads</li>
+    </ul>
+
+    <h3>¿Cuál es el mayor error de AEO para sitios orientados a España?</h3>
+    <p>Bloquear los rastreadores de IA sin darse cuenta. Muchos sitios añadieron reglas agresivas de bloqueo de bots en 2024–2025 para detener los scrapers de entrenamiento de IA — pero sin querer también bloquearon los rastreadores de búsqueda (OAI-SearchBot, PerplexityBot) que impulsan la visibilidad en citaciones. Revisa tu robots.txt y la configuración del WAF antes que cualquier otra cosa. Si los bots no pueden llegar a tus páginas, nada más de esta guía importa.</p>
+
+    <h2>¿Quieres aparecer en las respuestas de IA en España? Puedo construirlo para ti.</h2>
+
+    <p>La mayoría de los negocios no perderán porque «no usaron la IA». Perderán porque su sitio no está configurado para ser encontrado, confiable y citable — especialmente en el mercado español.</p>
+
+    <p>Si quieres el AEO implementado de principio a fin, contáctame. Entrego:</p>
+
+    <ul>
+      <li>Auditoría AEO + técnica (preparación para ChatGPT / Funciones IA de Google / Perplexity)</li>
+      <li>Correcciones de SEO internacional para España (hreflang + flujo de trabajo de localización)</li>
+      <li>Un cluster de contenido orientado a la citación (páginas diseñadas para ser citadas y referenciadas)</li>
+      <li>Un roadmap de 30–60 días vinculado a leads y conversiones</li>
+    </ul>
+
+    <a href="mailto:mitch.chadban@hotmail.com" ><div class="custom-btn"><b>Contáctame para AEO en España</b></div></a>
+
+    <div class="img-full-ctm">
+      <div class="img-full-ctm">
+        <img class="zoomable" src="/images/Wrong-Locale--Wrong-Life.jpeg" alt="Imagen representativa de contenido en el locale incorrecto para AEO en España" loading="lazy" decoding="async" width="800" height="533">
+      </div>
+    </div>
+
+    <div class="further-reading-ctm">
+      <h4>Lectura Adicional</h4>
+
+      <ul class="further-reading-ctm__list">
+        <li><a class="further-reading-ctm__link" href="/seo-con-ia-vs-seo-tradicional-que-ha-cambiado/" >SEO con IA vs SEO Tradicional: Qué ha Cambiado (y qué sigue funcionando)</a></li>
+        <li><a class="further-reading-ctm__link" href="/aeo-explained-how-to-rank-in-ai-answers/" >AEO Explicado: Cómo Posicionar en las Respuestas de IA (ChatGPT, Gemini, Perplexity)</a></li>
+        <li><a class="further-reading-ctm__link" href="/como-mejorar-el-e-e-a-t-en-2026/" >Las Mejores Formas de Mejorar el E-E-A-T en 2026 (Prueba, Activos Originales, Autoridad)</a></li>
+        <li><a class="further-reading-ctm__link" href="/checklist-de-seo-tecnico-en-lenguaje-claro/" >Checklist de SEO Técnico (en lenguaje claro): Velocidad, Indexación, Salud del Sitio</a></li>
+        <li><a class="further-reading-ctm__link" href="/best-demand-gen-content-for-2026/" >Mejor Contenido de Demand Gen para 2026: Qué Publicar para Conseguir Leads</a></li>
+      </ul>
+    </div>
+
+  </div>
+  <br />
+  <br />
+</div>`;
+---
+
+<BaseLayout lang="es" ogType="article"
+  title="AEO en España: Cómo Aparecer en las Respuestas de IA | Mitch Chadban"
+  description="AEO para España: una guía práctica para aparecer en ChatGPT, los AI Overviews de Google y Perplexity con hreflang, localización y contenido optimizado para citaciones de IA."
+  canonical="https://mitchchadban.com/aeo-espana-como-aparecer-en-respuestas-de-ia/"
+  alternates={[
+    { lang: 'en-AU', href: 'https://mitchchadban.com/aeo-australia-how-to-show-up-in-ai-answers/' },
+    { lang: 'es', href: 'https://mitchchadban.com/aeo-espana-como-aparecer-en-respuestas-de-ia/' },
+    { lang: 'x-default', href: 'https://mitchchadban.com/aeo-australia-how-to-show-up-in-ai-answers/' }
+  ]}
+>
+  <Fragment set:html={pageContent} />
+</BaseLayout>

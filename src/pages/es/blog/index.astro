@@ -1,6 +1,179 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 
+const tags = [
+  '2026',
+  'AEO',
+  'Branding',
+  'Checklist',
+  'Conversiones',
+  'Diseño',
+  'Embudo',
+  'España',
+  'IA',
+  'Marketing',
+  'Redes Sociales',
+  'SaaS',
+  'SEO',
+];
+
+const posts = [
+  {
+    href: '/mejor-flujo-de-trabajo-seo-con-ia-2026/',
+    title: 'El Mejor Flujo de Trabajo SEO + IA para 2026',
+    tags: ['SEO', 'IA', '2026'],
+    excerpt:
+      'Un manual práctico paso a paso para hacer SEO con IA en 2026 sin publicar contenido genérico: flujo de 8 etapas, prompts y reglas editoriales.',
+  },
+  {
+    href: '/aeo-espana-como-aparecer-en-respuestas-de-ia/',
+    title: 'AEO en España: Cómo Aparecer en las Respuestas de IA',
+    tags: ['AEO', 'IA', 'España'],
+    excerpt:
+      'Una guía práctica para mejorar tu visibilidad en ChatGPT, Google AI y Perplexity con localización para España, hreflang bien hecho y contenido citable.',
+  },
+  {
+    href: '/seo-para-saas-en-espana-que-funciona-en-2026/',
+    title: 'SEO para SaaS en España: Qué Funciona en 2026',
+    tags: ['SEO', 'SaaS', '2026'],
+    excerpt:
+      'Manual práctico de SEO para equipos SaaS en España en 2026: páginas money, clusters temáticos, señales de confianza, SEO técnico y distribución.',
+  },
+  {
+    href: '/seo-con-ia-vs-seo-tradicional-que-ha-cambiado/',
+    title: 'SEO con IA vs SEO Tradicional: Qué Ha Cambiado',
+    tags: ['SEO', 'IA', '2026'],
+    excerpt:
+      'Un desglose práctico de lo que ha cambiado con la IA en SEO y de lo que sigue funcionando para generar visibilidad, citas y resultados comerciales.',
+  },
+  {
+    href: '/como-elige-chatgpt-sus-fuentes/',
+    title: 'Cómo Elige ChatGPT sus Fuentes',
+    tags: ['IA', 'AEO', 'SEO'],
+    excerpt:
+      'Cómo ChatGPT interpreta consultas, recupera páginas, evalúa señales de confianza y decide qué fuentes citar dentro de sus respuestas.',
+  },
+  {
+    href: '/como-mejorar-el-e-e-a-t-en-2026/',
+    title: 'Cómo Mejorar el E-E-A-T en 2026',
+    tags: ['SEO', 'IA', '2026'],
+    excerpt:
+      'Guía práctica para reforzar confianza, prueba, activos originales y autoridad de marca con un plan claro que mejora rankings y citas.',
+  },
+  {
+    href: '/mejores-canales-de-growth-marketing-2026-espana/',
+    title: 'Mejores Canales de Growth Marketing para 2026 en España',
+    tags: ['Marketing', 'SaaS', 'Conversiones'],
+    excerpt:
+      'Los canales con mejor retorno para 2026 en España: dónde invertir tiempo y presupuesto para generar pipeline, demanda y mejores conversiones.',
+  },
+  {
+    href: '/de-trafico-a-demos-embudo-practico-para-saas-b2b/',
+    title: 'De Tráfico a Demos: Embudo Práctico para SaaS B2B',
+    tags: ['Embudo', 'Marketing', 'SaaS'],
+    excerpt:
+      'Un embudo paso a paso para SaaS B2B con benchmarks por etapa para detectar fugas y convertir más tráfico en demos reservadas.',
+  },
+  {
+    href: '/estrategia-de-growth-marketing-para-saas/',
+    title: 'Estrategia de Growth Marketing para SaaS',
+    tags: ['Marketing', 'SaaS'],
+    excerpt:
+      'Un sistema de growth marketing para SaaS: un objetivo claro, experimentos sensatos, cadencia semanal y las pocas métricas que importan.',
+  },
+  {
+    href: '/marketing-para-asesorias-y-despachos-contables/',
+    title: 'Marketing para Asesorías y Despachos Contables',
+    tags: ['Marketing', 'SEO', 'España'],
+    excerpt:
+      'Guía completa para ganar mejores clientes con posicionamiento claro, SEO, contenido útil, prueba de confianza y una captación menos dependiente del boca a boca.',
+  },
+  {
+    href: '/checklist-de-seo-tecnico-en-lenguaje-claro/',
+    title: 'Checklist de SEO Técnico en Lenguaje Claro',
+    tags: ['SEO', 'Checklist', 'España'],
+    excerpt:
+      'Una checklist útil para mejorar velocidad, indexación y salud del sitio sin jerga innecesaria ni auditorías infladas.',
+  },
+  {
+    href: '/cuanto-tarda-el-seo-en-dar-resultados-en-espana/',
+    title: '¿Cuánto Tarda el SEO en Dar Resultados en España?',
+    tags: ['SEO', 'España', 'Conversiones'],
+    excerpt:
+      'Un desglose honesto de plazos SEO para empresas en España: cuándo esperar movimiento inicial, resultados comerciales y qué suele ralentizar el progreso.',
+  },
+  {
+    href: '/por-que-estas-atascado-en-la-pagina-2-de-google/',
+    title: 'Por Qué Estás Atascado en la Página 2 de Google',
+    tags: ['SEO', 'España', 'Conversiones'],
+    excerpt:
+      'Los cinco problemas que mantienen páginas buenas fuera del top 10 y cómo diagnosticar el bloqueo real antes de seguir publicando más contenido.',
+  },
+  {
+    href: '/como-redactar-un-brief-para-un-consultor-seo/',
+    title: 'Cómo Redactar un Brief para un Consultor SEO',
+    tags: ['SEO', 'España', 'Conversiones'],
+    excerpt:
+      'Qué incluir en un brief SEO para conseguir trabajo útil, decisiones más rápidas y menos malentendidos caros desde el primer mes.',
+  },
+  {
+    href: '/diseno-para-redes-sociales-que-destaca/',
+    title: 'Diseño para Redes Sociales que Destaca',
+    tags: ['Diseño', 'Redes Sociales', 'España'],
+    excerpt:
+      'Un sistema repetible para crear piezas sociales reconocibles, coherentes y mucho menos genéricas que la media de Canva.',
+  },
+  {
+    href: '/cuanto-cuesta-un-logo-en-espana-que-incluye/',
+    title: '¿Cuánto Cuesta un Logo en España? Qué Incluye Según el Precio',
+    tags: ['Branding', 'Diseño', 'España'],
+    excerpt:
+      'Precios de logotipos en España por nivel: qué incluye cada rango, costes ocultos, licencias y las preguntas que evitan pagar dos veces.',
+  },
+  {
+    href: '/canva-vs-disenador-cuando-el-diy-te-cuesta-dinero/',
+    title: 'Canva vs Diseñador: Cuándo el DIY te Empieza a Costar Dinero',
+    tags: ['Branding', 'Diseño', 'España'],
+    excerpt:
+      'Un test de realidad sobre Canva vs contratar a un diseñador: el punto en el que el DIY empieza a costarte leads, confianza y tiempo.',
+  },
+  {
+    href: '/checklist-de-material-de-marketing-que-necesitas/',
+    title: 'Checklist de Material de Marketing: Los 10 Activos que Necesitas',
+    tags: ['Branding', 'Diseño', 'Marketing'],
+    excerpt:
+      'Un checklist sencillo del material de marketing que toda empresa necesita: qué priorizar primero y qué puedes dejar para después.',
+  },
+  {
+    href: '/freelance-vs-agencia-como-elegir/',
+    title: 'Freelance vs Agencia: Cómo Elegir la Opción Correcta',
+    tags: ['Branding', 'Diseño', 'España'],
+    excerpt:
+      'Guía práctica para elegir entre freelance y agencia según coste, velocidad, calidad y lo que tu proyecto realmente necesita.',
+  },
+];
+
+const tagButtonsHtml = tags
+  .map((tag) => `<button class="blog-ctm__tagbtn" data-tag="${tag}" type="button">${tag}</button>`)
+  .join('\n        ');
+
+const postCardsHtml = posts
+  .map(
+    (post) => `<a class="post-ctm c2-card" href="${post.href}" aria-label="Leer: ${post.title}">
+        <div class="post-ctm__top">
+          <h2 class="post-ctm__h">${post.title}</h2>
+          <div class="post-ctm__meta">
+            ${post.tags.map((tag) => `<span class="post-ctm__pill">${tag}</span>`).join('')}
+          </div>
+        </div>
+        <p class="post-ctm__p">${post.excerpt}</p>
+        <span class="post-ctm__link">
+          <span class="post-ctm__read">Leer más</span><span class="post-ctm__arrow">↗</span>
+        </span>
+      </a>`
+  )
+  .join('\n\n      ');
+
 const pageContent = `<!--  ARCHIVO DEL BLOG (ESPAÑOL — REFLEJA /blogs-resources/)  -->
 <section class="blog-ctm portfolio-ctm" id="blogArchive">
   <div class="portfolio-ctm__inner" style="padding-top:72px;">
@@ -13,115 +186,19 @@ const pageContent = `<!--  ARCHIVO DEL BLOG (ESPAÑOL — REFLEJA /blogs-resourc
     <div aria-label="Filtros del blog" class="blog-ctm__controls">
       <div aria-label="Filtrar por etiqueta" class="blog-ctm__tags" id="blogTags">
         <button class="blog-ctm__tagbtn is-active" data-tag="All" type="button">Todos</button>
-        <button class="blog-ctm__tagbtn" data-tag="2026" type="button">2026</button>
-        <button class="blog-ctm__tagbtn" data-tag="Branding" type="button">Branding</button>
-        <button class="blog-ctm__tagbtn" data-tag="Diseño" type="button">Diseño</button>
-        <button class="blog-ctm__tagbtn" data-tag="España" type="button">España</button>
-        <button class="blog-ctm__tagbtn" data-tag="IA" type="button">IA</button>
-        <button class="blog-ctm__tagbtn" data-tag="Marketing" type="button">Marketing</button>
-        <button class="blog-ctm__tagbtn" data-tag="SaaS" type="button">SaaS</button>
-        <button class="blog-ctm__tagbtn" data-tag="SEO" type="button">SEO</button>
+        ${tagButtonsHtml}
       </div>
     </div>
 
     <div class="blog-ctm__list" id="blogList">
-      <a class="post-ctm c2-card" href="/mejor-flujo-de-trabajo-seo-con-ia-2026/" aria-label="Leer: El Mejor Flujo de Trabajo SEO + IA para 2026">
-        <div class="post-ctm__top">
-          <h2 class="post-ctm__h">El Mejor Flujo de Trabajo SEO + IA para 2026</h2>
-          <div class="post-ctm__meta">
-            <span class="post-ctm__pill">SEO</span><span class="post-ctm__pill">IA</span><span class="post-ctm__pill">2026</span>
-          </div>
-        </div>
-        <p class="post-ctm__p">Un manual práctico paso a paso para hacer SEO con IA en 2026 sin publicar contenido genérico: flujo de 8 etapas, prompts y reglas editoriales.</p>
-        <span class="post-ctm__link">
-          <span class="post-ctm__read">Leer más</span><span class="post-ctm__arrow">↗</span>
-        </span>
-      </a>
-
-      <a class="post-ctm c2-card" href="/seo-para-saas-en-espana-que-funciona-en-2026/" aria-label="Leer: SEO para SaaS en España: Qué Funciona en 2026">
-        <div class="post-ctm__top">
-          <h2 class="post-ctm__h">SEO para SaaS en España: Qué Funciona en 2026</h2>
-          <div class="post-ctm__meta">
-            <span class="post-ctm__pill">SEO</span><span class="post-ctm__pill">SaaS</span><span class="post-ctm__pill">2026</span>
-          </div>
-        </div>
-        <p class="post-ctm__p">Manual práctico de SEO para equipos SaaS en España en 2026: páginas money, clusters temáticos, señales de confianza, SEO técnico y distribución + 30/60/90.</p>
-        <span class="post-ctm__link">
-          <span class="post-ctm__read">Leer más</span><span class="post-ctm__arrow">↗</span>
-        </span>
-      </a>
-
-      <a class="post-ctm c2-card" href="/estrategia-de-growth-marketing-para-saas/" aria-label="Leer: Estrategia de Growth Marketing para SaaS">
-        <div class="post-ctm__top">
-          <h2 class="post-ctm__h">Estrategia de Growth Marketing para SaaS</h2>
-          <div class="post-ctm__meta">
-            <span class="post-ctm__pill">Marketing</span><span class="post-ctm__pill">SaaS</span>
-          </div>
-        </div>
-        <p class="post-ctm__p">Un sistema de growth marketing para SaaS: un objetivo claro, experimentos sensatos, cadencia semanal y las pocas métricas que importan, con un plan a 30/60/90 días.</p>
-        <span class="post-ctm__link">
-          <span class="post-ctm__read">Leer más</span><span class="post-ctm__arrow">↗</span>
-        </span>
-      </a>
-
-      <a class="post-ctm c2-card" href="/cuanto-cuesta-un-logo-en-espana-que-incluye/" aria-label="Leer: ¿Cuánto Cuesta un Logo en España? Qué Incluye Según el Precio">
-        <div class="post-ctm__top">
-          <h2 class="post-ctm__h">¿Cuánto Cuesta un Logo en España? Qué Incluye Según el Precio</h2>
-          <div class="post-ctm__meta">
-            <span class="post-ctm__pill">Branding</span><span class="post-ctm__pill">Diseño</span><span class="post-ctm__pill">España</span>
-          </div>
-        </div>
-        <p class="post-ctm__p">Precios de logotipos en España por nivel: qué incluye cada rango, costes ocultos, licencias y las preguntas que evitan pagar dos veces.</p>
-        <span class="post-ctm__link">
-          <span class="post-ctm__read">Leer más</span><span class="post-ctm__arrow">↗</span>
-        </span>
-      </a>
-
-      <a class="post-ctm c2-card" href="/canva-vs-disenador-cuando-el-diy-te-cuesta-dinero/" aria-label="Leer: Canva vs Diseñador: Cuándo el DIY te Empieza a Costar Dinero">
-        <div class="post-ctm__top">
-          <h2 class="post-ctm__h">Canva vs Diseñador: Cuándo el DIY te Empieza a Costar Dinero</h2>
-          <div class="post-ctm__meta">
-            <span class="post-ctm__pill">Branding</span><span class="post-ctm__pill">Diseño</span><span class="post-ctm__pill">España</span>
-          </div>
-        </div>
-        <p class="post-ctm__p">Un test de realidad sobre Canva vs contratar a un diseñador: el punto en el que el DIY empieza a costarte leads, confianza y tiempo (y qué hacer en su lugar).</p>
-        <span class="post-ctm__link">
-          <span class="post-ctm__read">Leer más</span><span class="post-ctm__arrow">↗</span>
-        </span>
-      </a>
-
-      <a class="post-ctm c2-card" href="/checklist-de-material-de-marketing-que-necesitas/" aria-label="Leer: Checklist de Material de Marketing: Los 10 Activos que Necesitas">
-        <div class="post-ctm__top">
-          <h2 class="post-ctm__h">Checklist de Material de Marketing: Los 10 Activos que Necesitas</h2>
-          <div class="post-ctm__meta">
-            <span class="post-ctm__pill">Branding</span><span class="post-ctm__pill">Diseño</span><span class="post-ctm__pill">Marketing</span>
-          </div>
-        </div>
-        <p class="post-ctm__p">Un checklist sencillo del material de marketing que toda empresa necesita: qué priorizar primero y qué puedes dejar para después.</p>
-        <span class="post-ctm__link">
-          <span class="post-ctm__read">Leer más</span><span class="post-ctm__arrow">↗</span>
-        </span>
-      </a>
-
-      <a class="post-ctm c2-card" href="/freelance-vs-agencia-como-elegir/" aria-label="Leer: Freelance vs Agencia: Cómo Elegir la Opción Correcta">
-        <div class="post-ctm__top">
-          <h2 class="post-ctm__h">Freelance vs Agencia: Cómo Elegir la Opción Correcta</h2>
-          <div class="post-ctm__meta">
-            <span class="post-ctm__pill">Branding</span><span class="post-ctm__pill">Diseño</span><span class="post-ctm__pill">España</span>
-          </div>
-        </div>
-        <p class="post-ctm__p">Guía práctica para elegir entre freelance y agencia según coste, velocidad y calidad, y lo que tu proyecto realmente necesita.</p>
-        <span class="post-ctm__link">
-          <span class="post-ctm__read">Leer más</span><span class="post-ctm__arrow">↗</span>
-        </span>
-      </a>
+      ${postCardsHtml}
 
       <div class="blog-ctm__empty" id="blogEmpty" style="display:none;">No hay artículos para ese filtro.</div>
     </div>
 
     <div class="blog-ctm__more">
       <button class="blog-ctm__loadBtn" id="blogLoadMore" style="display: none;" type="button">
-              Cargar más
+        Cargar más
       </button>
     </div>
 

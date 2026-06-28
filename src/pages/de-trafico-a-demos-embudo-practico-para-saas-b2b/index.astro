@@ -1,0 +1,596 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const pageContent = `<!--  SCHEMA  -->
+<!-- <script>
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://mitchchadban.com/de-trafico-a-demos-embudo-practico-para-saas-b2b/#article",
+      "headline": "Embudo B2B SaaS: De Tráfico a Demos — Referencias y Benchmarks (2026)",
+      "description": "Benchmarks reales del embudo B2B SaaS para 2026: de visita a lead, conversión de landing page, tasa de reserva de demo, lead a oportunidad y demo a cierre — con un diagnóstico de 15 minutos para localizar tu mayor fuga.",
+      "image": "https://mitchchadban.com/path-to-hero-image.jpg",
+      "datePublished": "2025-11-01",
+      "dateModified": "2026-04-05",
+      "inLanguage": "es-ES",
+      "author": {
+        "@type": "Person",
+        "name": "Mitch Chadban",
+        "url": "https://mitchchadban.com/acerca-de/",
+        "jobTitle": "Especialista en SEO y Marketing",
+        "sameAs": ["https://www.linkedin.com/in/mitchchadban"]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "Mitch Chadban",
+        "url": "https://mitchchadban.com"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://mitchchadban.com/de-trafico-a-demos-embudo-practico-para-saas-b2b/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cuál es una buena tasa de conversión del embudo B2B SaaS en cada etapa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Para 2026: visita a lead promedia entre 1,4 % y 2,5 % en todo el tráfico, con el SEO convirtiendo al 2,1 % y el SEM al 0,7 %. Las landing pages independientes promedian un 5,89 % de conversión, con las mejores superando el 10 %. La tasa mediana de lead cualificado a reunión reservada es del 62 %. Lead a oportunidad ronda el 12 % en términos generales, y demo a cierre se sitúa entre el 22 % y el 30 % para la mayoría de empresas B2B SaaS, con los mejores equipos alcanzando el 40 %+."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Por qué recibo tráfico pero no consigo demos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Casi siempre es una fuga en el embudo, no un problema de volumen de tráfico. Las causas más comunes son: tráfico sin intención de compra, una landing page con poca coherencia entre el anuncio y el titular, ausencia de prueba social cerca del CTA, un proceso de solicitud de demo con demasiada fricción, o un seguimiento lento que deja enfriar los leads antes de que reserven. La solución más rápida es añadir agendado instantáneo en la página de confirmación de la demo: este único cambio eleva las reuniones reservadas de un ~30 % a un ~67 % de media."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuál es la forma más rápida de aumentar las demos sin aumentar el tráfico?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Arregla el paso de cumplimentación del formulario a reunión reservada. Añadir agendado inmediato tras el envío del formulario de demo —en lugar de un email de confirmación tipo 'nos pondremos en contacto'— eleva las reservas de inbound del ~30 % al ~67 % de media. Un seguimiento manual más rápido para leads de ACV alto amplifica aún más este resultado: responder en la primera hora hace que la probabilidad de conectar sea casi 7 veces mayor que si se responde más tarde."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuál es una buena tasa de conversión de lead a oportunidad en SaaS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La tasa media de conversión de lead a oportunidad en B2B SaaS ronda el 12 %, según datos agregados de OpenView y Gradient Works. Este número depende mucho de la intención del lead: los leads de solicitud de demo convierten a oportunidad a tasas significativamente superiores a los leads de descarga de contenido. Si tu fuente principal son leads inbound de alta intención —páginas de precios, comparativas, solicitudes de demo— tu tasa de lead a oportunidad debería superar el 12 % con comodidad."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo varían los benchmarks del embudo B2B SaaS según el tamaño de empresa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Las empresas SaaS para pymes (10–100 M€ ARR) convierten visitas a leads en torno al 1,4 %, pero suelen tener ciclos de venta más cortos y tasas de cierre de oportunidades más sólidas, de alrededor del 39 %. Las empresas SaaS enterprise (más de 1.000 M€ ARR) convierten visitas al 0,7 % —umbral de consideración más alto— pero alcanzan tasas MQL-a-SQL comparables, en torno al 40 %, porque los leads inbound que llegan están muy cualificados."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Debo filtrar las demos con preguntas de cualificación?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, pero de forma proporcionada. Pregunta lo suficiente para enrutar y priorizar —normalmente rol, tamaño de empresa y caso de uso— pero no tanto que compradores cualificados con poco tiempo abandonen el formulario. Un formulario de 2 a 4 preguntas es el rango adecuado para la mayoría de empresas B2B SaaS. El objetivo de la cualificación es el enrutamiento, no el filtrado."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script> -->
+
+_________________________________________________________
+
+<div class="service-ctm blog-ctm">
+  <div class="service-ctm__body">
+
+        <!--  BYLINE — add before H1, or position via CSS to suit your layout  -->
+    <p style="font-size: 13px; color: #888; margin: 0 0 12px; letter-spacing: 0.02em;">
+Por <strong>Mitch Chadban</strong> — Estratega SEO y Marketing, España  |  Actualizado abril de 2026
+    </p>
+
+<h1>Embudo B2B SaaS: De Tráfico a Demos — Benchmarks Reales (2026)</h1>
+
+<p><strong>La respuesta rápida:</strong> Un sitio B2B SaaS típico convierte entre el 1,4 % y el 2,5 % de sus visitas en leads. Las landing pages dedicadas promedian un 5,89 % de conversión. Los leads de demo cualificados reservados con agendado instantáneo convierten al 62–67 %, frente a un ~30 % sin él. Lead a oportunidad promedia un 12 %. El mayor asesino de demos no es el tráfico, sino el hueco entre el envío del formulario y la reunión reservada.</p>
+
+<p>Conseguir más demos en B2B SaaS casi nunca es un problema de «necesito más tráfico».</p>
+
+<p>Es un problema de fuga en el embudo:</p>
+
+<ul>
+  <li>el tráfico equivocado,</li>
+  <li>el mensaje equivocado,</li>
+  <li>la página equivocada,</li>
+  <li>seguimiento lento,</li>
+  <li>o fricción entre «me interesa» y «tengo la reunión reservada».</li>
+</ul>
+
+<p>Este artículo te ofrece un embudo completo con benchmarks reales para que puedas compararlo con tus propios números y dejes de adivinar qué etapa te está costando demos.</p>
+
+<div class="img-full-ctm">
+  <div class="img-full-ctm">
+    <img class="zoomable" src="/images/Leaky-Funnel-Emergency.jpg" alt="Embudo de demo B2B SaaS con fuga" loading="lazy" decoding="async" width="1536" height="1024">
+  </div>
+</div>
+
+<details class="blog-menu" open="">
+  <summary class="blog-menu__header">
+    <span class="blog-menu__title">En esta página</span>
+    <span aria-hidden="true" class="blog-menu__toggle"></span>
+  </summary>
+  <div class="blog-menu__body">
+    <a class="blog-menu__item" href="#reality" onclick="location.hash='reality'; return false;">La realidad de 2026: la conversión supera al tráfico</a>
+    <a class="blog-menu__item" href="#funnel" onclick="location.hash='funnel'; return false;">El embudo Tráfico → Demo (versión simple)</a>
+    <a class="blog-menu__item" href="#benchmarks" onclick="location.hash='benchmarks'; return false;">Benchmarks 2026: cada etapa, por canal y tamaño</a>
+    <a class="blog-menu__item" href="#ignored" onclick="location.hash='ignored'; return false;">El benchmark que todo el mundo ignora</a>
+    <a class="blog-menu__item" href="#build" onclick="location.hash='build'; return false;">Paso a paso: cómo construir el embudo</a>
+    <a class="blog-menu__item" href="#diagnostic" onclick="location.hash='diagnostic'; return false;">Diagnóstico para reparar el embudo</a>
+    <a class="blog-menu__item" href="#map-funnel" onclick="location.hash='map-funnel'; return false;">¿Quieres que mapee tu embudo?</a>
+    <a class="blog-menu__item" href="#faq" onclick="location.hash='faq'; return false;">FAQ: Embudo B2B SaaS y cómo aumentar demos</a>
+  </div>
+</details>
+
+
+<h2 id="reality">La realidad de 2026: el targeting y el tráfico son más fáciles que la conversión</h2>
+
+<p>En 2026, conseguir tráfico es rápido. Los clics pueden salir baratos (a veces).</p>
+
+<p>Pero convertir esos clics en demos requiere tres cosas:</p>
+
+<ul>
+  <li><strong>Claridad</strong> — tu posicionamiento y mensaje encajan con lo que el visitante ya cree que necesita</li>
+  <li><strong>Confianza</strong> — prueba de que ya lo has hecho antes y ha funcionado</li>
+  <li><strong>Velocidad</strong> — el tiempo entre el interés y una reunión reservada debe ser el mínimo posible</li>
+</ul>
+
+<p>Eso es el embudo completo. Toda mejora que hagas se mapeará en uno de esos tres elementos.</p>
+
+
+<h2 id="funnel">El embudo Tráfico → Demo (versión simple)</h2>
+
+<ol>
+  <li>Tráfico (atención)</li>
+  <li>Captura de intención (página correcta, CTA correcto)</li>
+  <li>Conversión (formulario / trial / solicitud de demo)</li>
+  <li>Velocidad de seguimiento + agendado (reunión reservada)</li>
+  <li>Cualificación + tasa de asistencia (demo celebrada)</li>
+  <li>Seguimiento post-demo (siguiente paso + pipeline)</li>
+</ol>
+
+<p>La mayoría de los equipos se obsesionan con el Paso 1 e ignoran los Pasos 4–6. Por eso sienten que los anuncios «no funcionan»: el problema casi nunca está en el anuncio.</p>
+
+
+<h2 id="benchmarks">Benchmarks 2026: cada etapa, por canal y tamaño</h2>
+
+<p>Los benchmarks solo son útiles cuando son específicos. Así es como rinde realmente el embudo según tamaño de empresa, canal de tráfico y etapa de demo — basado en datos agregados de FirstPageSage, RevenueHero, PoweredBySearch y OpenView.</p>
+
+<h3>Tabla 1: Benchmarks del embudo por etapa (2026)</h3>
+
+<table class="table-ctm">
+  <thead>
+    <tr>
+      <th>Etapa del embudo</th>
+      <th>Qué mides</th>
+      <th>Promedio</th>
+      <th>Fuerte</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Visita → Lead (todo el tráfico)</td>
+      <td>% de visitantes que se convierten en lead</td>
+      <td>1,4–2,5 %</td>
+      <td>8–15 %</td>
+    </tr>
+    <tr>
+      <td>Visita → Lead (tráfico SEO)</td>
+      <td>Conversión de visitante orgánico</td>
+      <td>2,1 %</td>
+      <td>4 %+</td>
+    </tr>
+    <tr>
+      <td>Visita → Lead (tráfico SEM)</td>
+      <td>Conversión de visitante de pago</td>
+      <td>0,7 %</td>
+      <td>1,5 %+</td>
+    </tr>
+    <tr>
+      <td>Conversión de landing page</td>
+      <td>CVR de landing page independiente</td>
+      <td>5,89 % prom.</td>
+      <td>10 %+</td>
+    </tr>
+    <tr>
+      <td>Formulario de demo → Lead cualificado</td>
+      <td>% de envíos que cumplen el ICP</td>
+      <td>52–84 %</td>
+      <td>85 %+</td>
+    </tr>
+    <tr>
+      <td>Cualificado → Reunión reservada</td>
+      <td>Tasa mediana de reserva de demo</td>
+      <td>62 %</td>
+      <td>73 %+</td>
+    </tr>
+    <tr>
+      <td>Formulario → Reservado (sin agendado instantáneo)</td>
+      <td>Sin agendado en la misma sesión</td>
+      <td>~30 %</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Formulario → Reservado (con agendado instantáneo)</td>
+      <td>Con agendado en la misma sesión</td>
+      <td>~67 %</td>
+      <td>75 %+</td>
+    </tr>
+    <tr>
+      <td>Lead → Oportunidad</td>
+      <td>Tasa lead-a-oportunidad del embudo completo</td>
+      <td>~12 %</td>
+      <td>20 %+</td>
+    </tr>
+    <tr>
+      <td>Demo → Cierre</td>
+      <td>Conversión demo a cliente</td>
+      <td>22–30 %</td>
+      <td>40 %+</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>Fuentes: FirstPageSage, RevenueHero (más de 1 M de envíos de formularios inbound), PoweredBySearch, OpenView / Gradient, WordStream</em></p>
+
+<h3>Tabla 2: Benchmarks por tamaño de empresa</h3>
+
+<table class="table-ctm">
+  <thead>
+    <tr>
+      <th>Etapa de la empresa</th>
+      <th>Visita → Lead</th>
+      <th>Lead → MQL</th>
+      <th>MQL → SQL</th>
+      <th>Oportunidad → Cierre</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SaaS para pymes (10–100 M€ ARR)</td>
+      <td>1,4 %</td>
+      <td>41 %</td>
+      <td>39 %</td>
+      <td>39 %</td>
+    </tr>
+    <tr>
+      <td>SaaS enterprise (más de 1.000 M€ ARR)</td>
+      <td>0,7 %</td>
+      <td>34 %</td>
+      <td>40 %</td>
+      <td>31 %</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>Fuente: FirstPageSage via PoweredBySearch, 2025–2026</em></p>
+
+<h3>Tabla 3: Benchmarks por vertical de demo (formulario → reunión reservada)</h3>
+
+<table class="table-ctm">
+  <thead>
+    <tr>
+      <th>Vertical SaaS</th>
+      <th>Tasa de cualificación</th>
+      <th>Tasa de reunión reservada</th>
+      <th>Señal de salud del embudo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software inmobiliario</td>
+      <td>93,84 %</td>
+      <td>73,78 %</td>
+      <td>Escalable — ambas tasas sólidas</td>
+    </tr>
+    <tr>
+      <td>Software B2B (varios)</td>
+      <td>84,11 %</td>
+      <td>54,56 %</td>
+      <td>Revisar el proceso de agendado</td>
+    </tr>
+    <tr>
+      <td>Software sanitario</td>
+      <td>52,11 %</td>
+      <td>61,26 %</td>
+      <td>Revisar targeting / ICP</td>
+    </tr>
+    <tr>
+      <td>Software de viajes</td>
+      <td>57,38 %</td>
+      <td>51,10 %</td>
+      <td>Revisión completa del embudo</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>Fuente: RevenueHero, datos de más de 1 M de envíos de formularios inbound en verticales de software B2B</em></p>
+
+<p>Dos conclusiones clave de los datos:</p>
+
+<ul>
+  <li>Si recibes tráfico pero no consigues demos, tu fuga casi siempre está en la conversión o el agendado, no en «más contenido» o «más presupuesto».</li>
+  <li>La diferencia entre la tasa de reserva promedio y la fuerte (30 % vs 67 %) se explica casi en su totalidad por si ofreces o no agendado instantáneo en la página de confirmación.</li>
+</ul>
+
+
+<h2 id="ignored">El benchmark que todo el mundo ignora — y que te cuesta más demos</h2>
+
+<p>Todos los equipos SaaS miden visita a lead (1,4–2,5 %). Casi ninguno mide formulario-enviado a reunión-reservada.</p>
+
+<p>Esto es un problema, porque formulario a reserva es el número de mayor palanca en todo el embudo — y el más reparable en menos tiempo.</p>
+
+<p>Por qué importa más que la tasa de top of funnel: una empresa que convierte al 3 % de visitas pero reserva el 70 % de sus formularios superará en demos a una empresa que convierte al 8 % de visitas pero solo reserva el 25 %. Siempre. Los números no dan lugar a duda.</p>
+
+<p>La mayoría de los equipos no lo arreglan porque no lo miden. Empieza ahí.</p>
+
+
+<h2 id="build">Paso a paso: cómo construir el embudo</h2>
+
+<h3>Paso 1: Tráfico capaz de convertir en demo</h3>
+
+<p>El tráfico que tiende a convertir en demos proviene de:</p>
+
+<ul>
+  <li>búsqueda de alta intención (páginas de comparativas, precios y alternativas)</li>
+  <li>campañas de retargeting con prueba social sólida</li>
+  <li>referencias de partners e integraciones</li>
+  <li>contenido en LinkedIn con un punto de vista concreto y pruebas reales</li>
+</ul>
+
+<p>Tráfico que rara vez convierte en demos:</p>
+
+<ul>
+  <li>SEO amplio de tipo «qué es...» (genera lecturas, no reservas)</li>
+  <li>redes sociales de awareness vaga</li>
+  <li>anuncios que apuntan a una homepage genérica</li>
+</ul>
+
+<p>Divide mentalmente tu tráfico en dos categorías:</p>
+
+<ul>
+  <li><strong>Captura de demanda</strong> → envía a páginas de demo, precios y comparativas</li>
+  <li><strong>Creación de demanda</strong> → envía a activos que construyen intención y nutren hacia la demo</li>
+</ul>
+
+<p>Mezclarlas —enviar tráfico de awareness a una página de demo, o tráfico de alta intención a un artículo de blog— es uno de los errores más habituales del embudo.</p>
+
+<div class="img-full-ctm">
+  <div class="img-full-ctm">
+    <img class="zoomable" src="/images/Form-Friction-Obstacle-Course.jpg" alt="Etapas del embudo de tráfico a demo" loading="lazy" decoding="async" width="1536" height="1024">
+  </div>
+</div>
+
+<h3>Paso 2: Captura de intención — la página importa más que el canal</h3>
+
+<p>Cuando un visitante de alta intención llega a tu página, se hace tres preguntas en unos cuatro segundos:</p>
+
+<ol>
+  <li>¿Estoy en el sitio correcto?</li>
+  <li>¿Ha funcionado esto para alguien como yo?</li>
+  <li>¿Qué hago ahora?</li>
+</ol>
+
+<p>Una página de demo que responde a las tres suele incluir:</p>
+
+<ul>
+  <li>Un titular orientado al resultado (no una descripción del producto — un resultado)</li>
+  <li>3–5 bullets de beneficio que abordan el dolor concreto del comprador</li>
+  <li>Bloques de prueba social cerca del CTA (logos, testimonios, fragmentos de casos de éxito)</li>
+  <li>Un CTA que encaja con la intención («Reservar una demo de 20 minutos» supera a «Empezar»)</li>
+  <li>FAQs que eliminan los últimos puntos de fricción antes de enviar el formulario</li>
+</ul>
+
+<p>La coherencia de mensaje —la alineación entre el texto de tu anuncio y el titular de tu landing page— es la palanca de conversión más infrautilizada. Si tu anuncio dice «reduce el churn un 40 %» y tu landing abre con el nombre del producto y un tagline, estás perdiendo personas en los primeros tres segundos.</p>
+
+<div class="img-full-ctm">
+  <div class="img-full-ctm">
+    <img class="zoomable" src="/images/Message-Match-Mirror-Test.jpg" alt="Coherencia de mensaje entre anuncio y landing page" loading="lazy" decoding="async" width="1536" height="1024">
+  </div>
+</div>
+
+<h3>Paso 3: Conversión — qué mueve realmente el número</h3>
+
+<p>Las tasas de conversión de landing page promedian ~5,89 % en todos los sectores, con el B2B SaaS situándose habitualmente entre el 2 % y el 5 % para la conversión de todo el sitio. Las páginas fuertes superan el 10 %.</p>
+
+<p>Las mejoras más rápidas suelen venir de cuatro lugares:</p>
+
+<ul>
+  <li><strong>Mejor coherencia de mensaje</strong> — alinea el titular de la página con la fuente de tráfico</li>
+  <li><strong>Prueba social cerca del CTA</strong> — un testimonio relevante junto a tu botón supera a una sección completa de testimonios enterrada debajo del fold</li>
+  <li><strong>Menor carga cognitiva</strong> — menos opciones, un CTA principal, sin distracciones de navegación en las landing pages</li>
+  <li><strong>Formularios más cortos</strong> — cada campo que eliminas aumenta los envíos; cualifica después del clic, no antes</li>
+</ul>
+
+
+<h3>Paso 4: El asesino de demos — seguimiento lento y sin agendado instantáneo</h3>
+
+<p>Aquí es donde la mayoría de los embudos B2B SaaS sangran demos en silencio.</p>
+
+<p>La investigación muestra que responder a una solicitud de demo en la primera hora hace que la probabilidad de tener una conversación significativa sea casi 7 veces mayor que si se responde después de esa hora — y la mayoría de los equipos tarda entre 24 y 48 horas en responder las solicitudes inbound.</p>
+
+<p>Las tres cosas que reparan esta etapa:</p>
+
+<ul>
+  <li><strong>Agendado instantáneo en la página de confirmación</strong> — no envíes un email de «gracias, nos pondremos en contacto». Muestra un calendario inmediatamente después del envío del formulario. Este único cambio eleva las reuniones reservadas del ~30 % al ~67 %.</li>
+  <li><strong>Próximos pasos claros en el email de confirmación</strong> — qué esperar, cuándo y qué preparar</li>
+  <li><strong>Seguimiento manual rápido para prospectos de ACV alto</strong> — la automatización gestiona la reserva; las personas cierran la brecha cuando el prospecto no agenda</li>
+</ul>
+
+
+<h3>Paso 5: Cualificación + tasa de asistencia</h3>
+
+<p>Una buena cualificación no filtra volumen — enruta correctamente y mejora las tasas de asistencia.</p>
+
+<p>Limita el formulario de cualificación a 2–4 preguntas: rol, tamaño de empresa, caso de uso, urgencia. Lo suficiente para enrutar y priorizar; no tanto como para ahuyentar a compradores cualificados que van con poco tiempo.</p>
+
+<p>Mejora las tasas de asistencia con:</p>
+
+<ul>
+  <li>Email de confirmación inmediato con invitación de calendario adjunta</li>
+  <li>Recordatorio 24 horas antes y 1 hora antes (automatizados)</li>
+  <li>Una agenda de una línea clara — «20 minutos: veremos X, Y, Z»</li>
+  <li>Enlace fácil de reagendado en cada recordatorio (reducir la fricción para reagendar evita los no-shows)</li>
+</ul>
+
+<p>La tasa mediana de cualificado a reservado en B2B SaaS es del 62 %. Si estás por debajo del 50 %, el problema casi siempre es fricción en el agendado, no la calidad del lead.</p>
+
+
+<h3>Paso 6: Seguimiento post-demo</h3>
+
+<p>La demo en sí no es el cierre. El seguimiento sí lo es.</p>
+
+<ul>
+  <li>Envía un email de resumen en las 2 horas siguientes — no al final del día, en las 2 horas siguientes</li>
+  <li>Incluye las 2–3 cosas que les has escuchado decir que más les importan</li>
+  <li>Adjunta un activo relevante (caso de éxito, calculadora de ROI o comparativa)</li>
+  <li>Reserva el siguiente paso antes de terminar la llamada — «¿podemos bloquear 30 minutos el jueves?» cierra antes que cualquier email de seguimiento</li>
+</ul>
+
+<div class="img-full-ctm">
+  <div class="img-full-ctm">
+    <img class="zoomable" src="/images/Post-Demo-Follow-Up-Relay.jpg" alt="Seguimiento post-demo y avance del pipeline" loading="lazy" decoding="async" width="1536" height="1024">
+  </div>
+</div>
+
+
+<h2 id="diagnostic">Diagnóstico del embudo: 15 minutos para encontrar la fuga</h2>
+
+<p>Extrae los datos de los últimos 30 días y rellena esta tabla:</p>
+
+<table class="table-ctm">
+  <thead>
+    <tr>
+      <th>Etapa</th>
+      <th>Tu número</th>
+      <th>Benchmark promedio</th>
+      <th>Diferencia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sesiones → Leads</td>
+      <td>____%</td>
+      <td>1,4–2,5 %</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CVR de landing page</td>
+      <td>____%</td>
+      <td>5,89 %</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Formulario enviado → Reunión reservada</td>
+      <td>____%</td>
+      <td>62 %</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reservado → Demo celebrada</td>
+      <td>____%</td>
+      <td>60–70 %</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lead → Oportunidad</td>
+      <td>____%</td>
+      <td>~12 %</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>La etapa con mayor diferencia entre tu número y el benchmark es tu prioridad. No tu presupuesto en anuncios. No tu calendario de contenidos. Esa diferencia.</p>
+
+<p>La mayoría de los equipos la encuentran en el Paso 3 (formulario enviado → reunión reservada). Arregla eso primero — es la ganancia más rápida con mayor palanca.</p>
+
+
+<h2 id="map-funnel">¿Quieres que mapee tu embudo?</h2>
+
+<p>Si compartes tu ACV / segmento, tus canales de adquisición principales y los números del último mes (tráfico → conversión → reservado → celebrado), mapearé tu embudo, identificaré la mayor fuga y te daré un plan de prioridades claro.</p><br />
+<a href="mailto:mitch.chadban@hotmail.com" ><div class="custom-btn"><b>Contáctame</b></div></a>
+<br /><br />
+
+
+<h2 id="faq">FAQ: Benchmarks del embudo B2B SaaS y cómo aumentar demos</h2>
+
+<h3>¿Cuál es una buena tasa de conversión del embudo B2B SaaS en cada etapa?</h3>
+<p>Depende de la calidad del tráfico y del ACV, pero estos son los benchmarks de referencia para 2026. Visita a lead promedia entre 1,4 % y 2,5 % en todo el tráfico, con el SEO convirtiendo al ~2,1 % y el SEM al ~0,7 %. Las landing pages independientes promedian un 5,89 % de conversión, con las mejores superando el 10 %. La tasa mediana de lead cualificado a reunión reservada es del 62 % — aquí es donde la mayoría de los equipos tienen más margen de mejora. Lead a oportunidad ronda el 12 % en general, y demo a cierre se sitúa entre el 22 % y el 30 % para la mayoría de empresas B2B SaaS, con los mejores alcanzando el 40 %+.</p>
+
+<h3>¿Por qué recibo tráfico pero no consigo demos?</h3>
+<p>Casi siempre es una fuga en el embudo, no un problema de volumen de tráfico. Las causas más comunes son: tráfico sin intención de compra (el contenido amplio «qué es...» atrae lectores, no compradores), una landing page con poca coherencia entre el anuncio y el titular, ausencia de prueba social cerca del CTA, un proceso de solicitud de demo con demasiada fricción, o un seguimiento lento que deja enfriar los leads antes de que reserven. La solución más rápida para la mayoría de empresas es añadir agendado instantáneo en la página de confirmación de la demo — solo este cambio eleva las reuniones reservadas del ~30 % al ~67 % de media, sin tocar el tráfico.</p>
+
+<h3>¿Cuál es la forma más rápida de aumentar demos sin aumentar el tráfico?</h3>
+<p>Arregla el paso de formulario enviado a reunión reservada. La mayoría de los equipos no mide esta tasa por separado, pero es el número de mayor palanca en todo el embudo. Añadir agendado inmediato tras el envío del formulario de demo —en lugar de un email de confirmación tipo «nos pondremos en contacto»— eleva las reservas inbound del ~30 % al ~67 % de media. Un seguimiento manual más rápido para leads de ACV alto amplifica aún más este resultado: responder en la primera hora hace que la probabilidad de conectar sea casi 7 veces mayor, según investigación citada por HBR.</p>
+
+<h3>¿Debo filtrar las demos con preguntas de cualificación?</h3>
+<p>Sí, pero de forma proporcionada. Pregunta lo suficiente para enrutar y priorizar —normalmente rol, tamaño de empresa y caso de uso— pero no tanto que compradores cualificados con poco tiempo abandonen el formulario. Un formulario de 2 a 4 preguntas es el rango adecuado para la mayoría de empresas B2B SaaS. El objetivo de la cualificación es el enrutamiento, no el filtrado: quieres saber a dónde enviar a alguien y con qué rapidez hacer el seguimiento, no si «merece tu tiempo». Sobrequalificar los formularios de demo es una razón habitual por la que visitantes de alta intención se van sin reservar.</p>
+
+<h3>¿Cuál es una buena tasa de conversión de lead a oportunidad en SaaS?</h3>
+<p>La tasa media de conversión de lead a oportunidad en B2B SaaS ronda el 12 %, según datos agregados de OpenView y fuentes recopiladas por Gradient Works. Este número depende mucho de la intención del lead: los leads de solicitud de demo convierten a oportunidad a tasas significativamente superiores a los leads de descarga de contenido, porque la intención de compra es fundamentalmente diferente. Si tu fuente principal son leads inbound de alta intención (páginas de precios, comparativas, solicitudes de demo), tu tasa de lead a oportunidad debería superar el 12 % con comodidad. Si estás por debajo de ese número con tráfico de alta intención, el problema suele ser el enrutamiento de la cualificación o la velocidad del seguimiento, no la calidad del lead.</p>
+
+<h3>¿Cómo varían los benchmarks del embudo B2B SaaS según el tamaño de empresa?</h3>
+<p>El tamaño de la empresa afecta significativamente al rendimiento de tu embudo. Las empresas SaaS para pymes (10–100 M€ ARR) convierten visitas a leads en torno al 1,4 %, pero suelen tener ciclos de venta más cortos y tasas de cierre de oportunidades más sólidas (~39 %). Las empresas SaaS enterprise (más de 1.000 M€ ARR) convierten visitas al ~0,7 % —menor top-of-funnel por el umbral de consideración más alto— pero alcanzan tasas MQL-a-SQL comparables (~40 %) porque los leads inbound que llegan están muy cualificados. La implicación práctica: no te compares con el promedio general si tu GTM es enterprise. Tu tasa de visita a lead siempre parecerá más débil, y eso es lo esperado.</p>
+
+
+<div class="further-reading-ctm">
+  <h4 class="further-reading-ctm__title">Lectura Adicional</h4>
+  <ul class="further-reading-ctm__list">
+    <li class="further-reading-ctm__item">
+      <a class="further-reading-ctm__link" href="/positioning-vs-messaging-why-your-ads-arent-working/" >Posicionamiento vs Mensaje</a>
+    </li>
+    <li class="further-reading-ctm__item">
+      <a class="further-reading-ctm__link" href="/mejores-canales-de-growth-marketing-2026-espana/" >Mejores Canales de Growth Marketing para 2026</a>
+    </li>
+    <li class="further-reading-ctm__item">
+      <a class="further-reading-ctm__link" href="/best-demand-gen-content-for-2026/" >Mejor Contenido de Demand Gen para 2026</a>
+    </li>
+    <li class="further-reading-ctm__item">
+      <a class="further-reading-ctm__link" href="/como-mejorar-el-e-e-a-t-en-2026/" >Las Mejores Formas de Mejorar el E-E-A-T en 2026</a>
+    </li>
+    <li class="further-reading-ctm__item">
+      <a class="further-reading-ctm__link" href="/aeo-explained-how-to-rank-in-ai-answers/" >AEO Explicado</a>
+    </li>
+    <li class="further-reading-ctm__item">
+      <a class="further-reading-ctm__link" href="/mejor-flujo-de-trabajo-seo-con-ia-2026/" >Mejor Flujo de Trabajo SEO + IA para 2026</a>
+    </li>
+  </ul>
+</div>
+
+</div>
+  <br />
+  <br />
+</div>`;
+---
+
+<BaseLayout lang="es" ogType="article"
+  title="De Tráfico a Demos: Embudo Práctico para SaaS B2B | Mitch Chadban"
+  description="Benchmarks reales del embudo B2B SaaS para 2026: de visita a lead, conversión de landing page, tasa de reserva de demo y demo a cierre. Diagnostica y repara tu mayor fuga."
+  canonical="https://mitchchadban.com/de-trafico-a-demos-embudo-practico-para-saas-b2b/"
+  alternates={[
+    { lang: 'en-AU', href: 'https://mitchchadban.com/from-traffic-to-demos-a-practical-funnel-for-b2b-saas/' },
+    { lang: 'es', href: 'https://mitchchadban.com/de-trafico-a-demos-embudo-practico-para-saas-b2b/' },
+    { lang: 'x-default', href: 'https://mitchchadban.com/from-traffic-to-demos-a-practical-funnel-for-b2b-saas/' }
+  ]}
+>
+  <Fragment set:html={pageContent} />
+</BaseLayout>

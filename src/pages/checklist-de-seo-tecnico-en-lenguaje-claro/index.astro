@@ -1,0 +1,353 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const pageContent = `<!--  SCHEMA  -->
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://mitchchadban.com/checklist-de-seo-tecnico-en-lenguaje-claro/#article",
+    "headline": "Checklist de SEO Técnico en Lenguaje Claro: Velocidad, Indexación y Salud del Sitio",
+    "description": "Un checklist de SEO técnico práctico para 2026 que cubre Core Web Vitals, control de rastreo e indexación, y salud del sitio web. Escrito en lenguaje claro para fundadores y marketers que necesitan gestionar el SEO técnico sin depender de un desarrollador.",
+    "datePublished": "2025-11-01",
+    "dateModified": "2026-04-05",
+    "inLanguage": "es-ES",
+    "author": {
+      "@type": "Person",
+      "name": "Mitch Chadban",
+      "url": "https://mitchchadban.com/acerca-de/",
+      "jobTitle": "Estratega SEO y Marketing",
+      "sameAs": ["https://www.linkedin.com/in/mitchchadban"]
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Mitch Chadban",
+      "url": "https://mitchchadban.com"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://mitchchadban.com/checklist-de-seo-tecnico-en-lenguaje-claro/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué es un checklist de SEO técnico?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Un checklist de SEO técnico es un conjunto estructurado de comprobaciones que confirman que tu sitio web puede ser rastreado por los motores de búsqueda, indexado correctamente y servido con suficiente rapidez para cumplir los estándares de rendimiento. Abarca tres áreas principales: velocidad (Core Web Vitals), indexación (acceso al rastreo, sitemaps, canonicals) y salud del sitio (errores, redirecciones, duplicación y HTTPS). Completar un checklist de SEO técnico identifica los bloqueos que impiden que tu contenido posicione, independientemente de la calidad del propio contenido."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué objetivos de Core Web Vitals debo alcanzar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Los objetivos actuales de Core Web Vitals de Google son: LCP (Largest Contentful Paint) de 2,5 segundos o menos, INP (Interaction to Next Paint) por debajo de 200 ms y CLS (Cumulative Layout Shift) por debajo de 0,1. El INP sustituyó al FID como métrica de respuesta. Estos umbrales se aplican a datos de usuarios reales, no a puntuaciones de laboratorio; consulta el informe de Core Web Vitals en Google Search Console para obtener datos de campo sobre páginas reales."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Por qué mis páginas no se están indexando?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Las causas más comunes son: un bloqueo en robots.txt que impide el acceso de Googlebot a la página, una etiqueta noindex aplicada por error, un enlazado interno débil que hace que el rastreador de Google nunca descubra la página, o una etiqueta canonical que apunta a una URL diferente. Revisa el informe de Indexación de páginas en Google Search Console y usa la Inspección de URL para ver el motivo exacto por el que Google no ha indexado una página concreta."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Debo enviar mi sitemap a Google?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Enviar un sitemap en Google Search Console ayuda a Google a descubrir tus páginas más rápido, pero no garantiza la indexación. Un sitemap le dice a Google qué páginas existen; Google sigue decidiendo si las indexa en función de señales de calidad, presupuesto de rastreo y accesibilidad. Envía tu sitemap y monitoriza el informe de Sitemaps para confirmar que se está procesando sin errores."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué debo hacer si he cambiado la estructura de URLs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Implementa redirecciones 301 en el servidor desde cada URL antigua a su nuevo equivalente. Una redirección 301 indica a Google que la página se ha movido permanentemente, transfiriendo la mayoría de las señales de posicionamiento a la nueva URL. Nunca elimines URLs antiguas sin redirigirlas: esto genera errores 404 que desperdician presupuesto de rastreo y destruyen cualquier autoridad acumulada por la página anterior."
+        }
+      }
+    ]
+  }
+]
+</script>
+
+_____________________________________________________
+
+<div class="service-ctm blog-ctm">
+  <div class="service-ctm__body">
+
+    <!--  BYLINE  -->
+    <p style="font-size: 13px; color: #888; margin: 0 0 12px; letter-spacing: 0.02em;">
+Por <strong>Mitch Chadban</strong> — Estratega SEO y Marketing, España  |  Actualizado abril de 2026
+    </p>
+
+  <h1>Checklist de SEO Técnico en Lenguaje Claro: Velocidad, Indexación y Salud del Sitio</h1>
+
+  <p>El SEO técnico es todo aquello que determina si tu sitio carga rápido, puede rastrearse y aparece realmente en los resultados de búsqueda, antes de que tu contenido y tus backlinks tengan siquiera una oportunidad real.</p>
+
+  <p>La buena noticia: no hace falta ser desarrollador para <i>gestionarlo</i>. Solo necesitas un checklist sencillo, unas pocas herramientas y la seguridad de detectar rápidamente los problemas que están bloqueando tu crecimiento.</p>
+
+  <p>Esta guía te da un checklist de SEO técnico práctico centrado en tres elementos que marcan la diferencia en 2026:</p>
+
+  <ol>
+    <li>Velocidad (Core Web Vitals)</li>
+    <li>Indexación (control de rastreo e indexación)</li>
+    <li>Salud del sitio (errores, duplicación, higiene técnica)</li>
+  </ol>
+
+  <details class="blog-menu" open="">
+  <summary class="blog-menu__header">
+    <span class="blog-menu__title">En esta página</span>
+    <span aria-hidden="true" class="blog-menu__toggle"></span>
+  </summary>
+
+  <div class="blog-menu__body">
+    <a class="blog-menu__item" href="#triage" onclick="location.hash='triage'; return false;">El diagnóstico de 10 minutos: qué comprobar primero</a>
+    <a class="blog-menu__item" href="#speed" onclick="location.hash='speed'; return false;">Parte 1 — Checklist de velocidad</a>
+    <a class="blog-menu__item" href="#indexing" onclick="location.hash='indexing'; return false;">Parte 2 — Checklist de indexación</a>
+    <a class="blog-menu__item" href="#site-health" onclick="location.hash='site-health'; return false;">Parte 3 — Checklist de salud del sitio</a>
+    <a class="blog-menu__item" href="#run-this" onclick="location.hash='run-this'; return false;">Puedo hacer esto por ti</a>
+    <a class="blog-menu__item" href="#founder-audit" onclick="location.hash='founder-audit'; return false;">La auditoría «versión fundador» (30 minutos)</a>
+    <a class="blog-menu__item" href="#faq" onclick="location.hash='faq'; return false;">FAQ: Checklist de SEO técnico</a>
+  </div>
+</details>
+
+<h2 id="triage">El diagnóstico de 10 minutos: qué comprobar primero</h2>
+
+  <p>Si tienes poco tiempo, hazlo en este orden:</p>
+
+  <ol>
+    <li>¿Puede Google acceder a tu sitio y a las páginas clave? (robots/noindex)</li>
+    <li>¿Están indexadas tus páginas importantes? (Search Console)</li>
+    <li>¿Son lentas o inestables tus páginas? (Core Web Vitals)</li>
+    <li>¿Hay errores graves en el sitio? (404s, redirecciones, canonicals, HTTPS)</li>
+  </ol>
+
+  <p>La mayoría de las situaciones en las que «el SEO no funciona» son alguna de estas.</p>
+
+  <div class="img-full-ctm">
+    <div class="img-full-ctm">
+      <img class="zoomable" src="/images/10-minute-triage--Triage-Clipboard-Panic.jpg" alt="Foto cómica sobre el checklist de diagnóstico técnico SEO" loading="lazy" decoding="async" width="1536" height="1024">
+    </div>
+  </div>
+
+  <h2 id="speed">Parte 1 — Checklist de velocidad</h2>
+
+  <p>Los objetivos de Core Web Vitals de Google siguen siendo los puntos de referencia de rendimiento más claros:</p>
+
+  <ul>
+    <li>LCP (carga): ≤ 2,5 s</li>
+    <li>INP (interactividad): &lt; 200 ms</li>
+    <li>CLS (estabilidad visual): &lt; 0,1</li>
+  </ul>
+
+  <p>El INP sustituyó al FID como métrica de respuesta.</p>
+
+  <h3>Checklist de velocidad (sin necesidad de ser técnico)</h3>
+
+  <p><strong>1) Comprueba los Core Web Vitals en Search Console</strong></p>
+  <p>Aquí encontrarás datos de rendimiento reales de tus usuarios.</p>
+
+  <p><strong>2) Ejecuta PageSpeed Insights en tus 5 páginas más importantes</strong></p>
+  <p>Busca problemas con el elemento LCP, scripts que bloquean el renderizado y fuentes pesadas.</p>
+
+  <p><strong>3) Corrige las 3 grandes causas de sitios lentos</strong></p>
+
+  <ul>
+    <li>Imágenes demasiado grandes (especialmente banners de cabecera)</li>
+    <li>Demasiados scripts de seguimiento</li>
+    <li>Hosting barato o servidores sobrecargados</li>
+  </ul>
+
+  <p><strong>4) Elimina el desplazamiento de diseño (CLS)</strong></p>
+
+  <ul>
+    <li>Define las dimensiones de imágenes y vídeos</li>
+    <li>Evita insertar banners encima del contenido</li>
+    <li>Carga las fuentes correctamente (o usa fuentes del sistema)</li>
+  </ul>
+
+  <p><strong>5) No optimices a ciegas</strong></p>
+  <p>La velocidad se mide página a página. Tu página de precios importa tanto como la portada.</p>
+
+  <h2 id="indexing">Parte 2 — Checklist de indexación</h2>
+
+  <p>Los problemas de indexación suelen ser autoinfligidos:</p>
+
+  <ul>
+    <li>robots.txt bloqueando áreas clave</li>
+    <li>noindex aplicado por error</li>
+    <li>enlazado interno débil</li>
+    <li>etiquetas canonical desordenadas</li>
+    <li>redirecciones rotas</li>
+  </ul>
+
+  <h3>Checklist de indexación</h3>
+
+  <p><strong>6) Confirma que no estás bloqueando a Googlebot (robots.txt)</strong></p>
+
+  <p><strong>7) Usa noindex correctamente</strong></p>
+  <p>El robots.txt no es la forma adecuada de impedir la indexación.</p>
+
+  <p><strong>8) Envía un sitemap</strong></p>
+  <p>Un sitemap ayuda al descubrimiento, pero no garantiza la indexación.</p>
+
+  <p><strong>9) Usa la Inspección de URL en Search Console</strong></p>
+
+  <p><strong>10) Enlaza internamente las páginas importantes</strong></p>
+
+  <p><strong>11) Controla las versiones duplicadas</strong></p>
+
+  <ul>
+    <li>/ e /index</li>
+    <li>http vs https</li>
+    <li>www vs sin www</li>
+    <li>versiones con parámetros UTM</li>
+    <li>archivos de categoría/etiqueta duplicados</li>
+  </ul>
+
+  <p><strong>12) Usa redirecciones 301 correctas al mover URLs</strong></p>
+
+  <div class="img-full-ctm">
+    <div class="img-full-ctm">
+      <img class="zoomable" src="/images/Indexing--Canonical-Doppelganger.jpg" alt="Foto cómica sobre contenido duplicado y etiquetas canonical" loading="lazy" decoding="async" width="1536" height="1024">
+    </div>
+  </div>
+
+  <h2 id="site-health">Parte 3 — Checklist de salud del sitio</h2>
+
+  <h3>Checklist de salud del sitio</h3>
+
+  <p><strong>13) Corrige los 404 que reciben tráfico o enlaces</strong></p>
+
+  <p><strong>14) Limpia las cadenas de redirecciones</strong></p>
+
+  <p><strong>15) Asegura la consistencia HTTPS</strong></p>
+
+  <p><strong>16) Prioriza la usabilidad en móvil</strong></p>
+
+  <p><strong>17) No indexes páginas delgadas o de utilidad</strong></p>
+
+  <ul>
+    <li>páginas de resultados de búsqueda interna</li>
+    <li>entornos de staging o desarrollo</li>
+    <li>combinaciones de filtros que generan miles de URLs</li>
+  </ul>
+
+  <p><strong>18) Usa los datos estructurados correctamente</strong></p>
+
+  <div class="img-full-ctm">
+    <div class="img-full-ctm">
+      <img class="zoomable" src="/images/Speed--Oversized-Hero-Image-Weightlifting.jpg" alt="Foto cómica sobre imágenes demasiado pesadas que ralentizan los sitios web" loading="lazy" decoding="async" width="1536" height="1024">
+    </div>
+  </div>
+
+  <h2 id="run-this">Puedo hacer esto por ti</h2>
+
+  <p>Si prefieres no gestionarlo tú mismo, puedo ejecutar este checklist de SEO técnico para tu sitio e identificar los bloqueos y priorizar las correcciones.</p>
+
+  <a href="mailto:mitch.chadban@hotmail.com"><div class="custom-btn"><b>Contáctame</b><br /></div></a>
+
+  <p>Comparte la URL de tu sitio y cuéntame qué es lo más importante ahora mismo: más leads, más demos o más tráfico orgánico.</p>
+
+  <h2 id="founder-audit">La auditoría «versión fundador» (30 minutos)</h2>
+
+  <ol>
+    <li>Revisa el informe de Indexación de páginas en busca de picos en «No indexadas»</li>
+    <li>Revisa el informe de Core Web Vitals en busca de plantillas con valoración «Deficiente»</li>
+    <li>Confirma que el sitemap está enviado y procesado</li>
+    <li>Ejecuta la Inspección de URL en una página clave con bajo rendimiento</li>
+  </ol>
+
+  <h2 id="faq">FAQ: Checklist de SEO técnico</h2>
+
+  <h3>¿Qué es un checklist de SEO técnico?</h3>
+  <p>Un conjunto de comprobaciones que garantizan que tu sitio puede rastrearse, indexarse y cargarse con rapidez.</p>
+
+  <h3>¿Qué objetivos de Core Web Vitals debo alcanzar?</h3>
+  <p>LCP ≤ 2,5 s, INP &lt; 200 ms, CLS &lt; 0,1.</p>
+
+  <h3>¿Por qué mis páginas no se están indexando?</h3>
+  <p>Causas habituales: bloqueos en robots.txt, etiquetas noindex, enlaces internos insuficientes o retrasos en el descubrimiento.</p>
+
+  <h3>¿Debo enviar mi sitemap?</h3>
+  <p>Sí. Facilita el descubrimiento, aunque la indexación no está garantizada.</p>
+
+  <h3>¿Qué hago si he cambiado las URLs?</h3>
+  <p>Usa redirecciones 301 en el servidor basadas en un mapeo de URLs.</p>
+
+  <h2>Puedo hacer esto por ti</h2>
+
+  <a href="mailto:mitch.chadban@hotmail.com"><div class="custom-btn"><b>Contáctame</b><br /></div></a>
+
+  <p>Comparte la URL de tu sitio y cuéntame qué es lo más importante ahora mismo: más leads, más demos o más tráfico orgánico.</p>
+
+  <div class="img-full-ctm">
+    <div class="img-full-ctm">
+      <img class="zoomable" src="/images/CTA--Technical-SEO-Mechanic-Workshop.jpg" alt="Foto cómica sobre un servicio de auditoría de SEO técnico" loading="lazy" decoding="async" width="1536" height="1024">
+    </div>
+  </div>
+
+  <div class="further-reading-ctm">
+    <h4 class="further-reading-ctm__title">Artículos relacionados</h4>
+
+    <ul class="further-reading-ctm__list">
+      <li class="further-reading-ctm__item">
+        <a class="further-reading-ctm__link" href="/seo-para-saas-en-espana-que-funciona-en-2026/">
+          SEO para SaaS en España: Qué Funciona de Verdad en 2026
+        </a>
+      </li>
+      <li class="further-reading-ctm__item">
+        <a class="further-reading-ctm__link" href="/seo-con-ia-vs-seo-tradicional-que-ha-cambiado/">
+          SEO con IA vs SEO Tradicional: Qué Ha Cambiado
+        </a>
+      </li>
+      <li class="further-reading-ctm__item">
+        <a class="further-reading-ctm__link" href="/mejor-flujo-de-trabajo-seo-con-ia-2026/">
+          El Mejor Flujo de Trabajo SEO + IA para 2026
+        </a>
+      </li>
+      <li class="further-reading-ctm__item">
+        <a class="further-reading-ctm__link" href="/mejores-canales-de-growth-marketing-2026-espana/">
+          Los Mejores Canales de Growth Marketing para 2026 en España
+        </a>
+      </li>
+      <li class="further-reading-ctm__item">
+        <a class="further-reading-ctm__link" href="/como-mejorar-el-e-e-a-t-en-2026/">
+          Las Mejores Formas de Mejorar el E-E-A-T en 2026
+        </a>
+      </li>
+      <li class="further-reading-ctm__item">
+        <a class="further-reading-ctm__link" href="/de-trafico-a-demos-embudo-practico-para-saas-b2b/">
+          De Tráfico a Demos: Un Embudo Práctico para SaaS B2B
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  </div>
+  <br />
+  <br />
+</div>`;
+---
+
+<BaseLayout lang="es" ogType="article"
+  title="Checklist de SEO Técnico en Lenguaje Claro | Mitch Chadban"
+  description="Checklist de SEO técnico para 2026: velocidad, indexación y salud del sitio en lenguaje claro. Detecta qué bloquea tu posicionamiento y corrígelo sin necesitar un desarrollador."
+  canonical="https://mitchchadban.com/checklist-de-seo-tecnico-en-lenguaje-claro/"
+  alternates={[
+    { lang: 'en-AU', href: 'https://mitchchadban.com/technical-seo-checklist-plain-english/' },
+    { lang: 'es', href: 'https://mitchchadban.com/checklist-de-seo-tecnico-en-lenguaje-claro/' },
+    { lang: 'x-default', href: 'https://mitchchadban.com/technical-seo-checklist-plain-english/' }
+  ]}
+>
+  <Fragment set:html={pageContent} />
+</BaseLayout>

@@ -1,0 +1,598 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const pageContent = `<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://mitchchadban.com/seo-con-ia-vs-seo-tradicional-que-ha-cambiado/#article",
+    "headline": "SEO con IA vs SEO tradicional en 2026: Qué ha cambiado (y qué sigue funcionando)",
+    "description": "SEO con IA vs SEO tradicional: qué cambió de verdad en 2026, qué sigue funcionando y cómo aparecer en los AI Overviews de Google, ChatGPT y Perplexity.",
+    "datePublished": "2025-01-01",
+    "dateModified": "2026-04-05",
+    "inLanguage": "es-ES",
+    "author": {
+      "@type": "Person",
+      "name": "Mitch Chadban",
+      "url": "https://mitchchadban.com/acerca-de/",
+      "jobTitle": "Especialista en SEO y Marketing",
+      "sameAs": ["https://www.linkedin.com/in/mitchchadban"]
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Mitch Chadban",
+      "url": "https://mitchchadban.com"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://mitchchadban.com/seo-con-ia-vs-seo-tradicional-que-ha-cambiado/"
+    },
+    "about": [
+      { "@type": "Thing", "name": "SEO con Inteligencia Artificial" },
+      { "@type": "Thing", "name": "SEO Tradicional" },
+      { "@type": "Thing", "name": "Optimización para Motores de Respuesta" },
+      { "@type": "Thing", "name": "Optimización para Motores Generativos" },
+      { "@type": "Thing", "name": "Google AI Overviews" }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "https://mitchchadban.com/seo-con-ia-vs-seo-tradicional-que-ha-cambiado/#faq",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Sigue mereciendo la pena el SEO tradicional en 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, y es la base de la que depende la visibilidad en la IA. Las directrices de Google para la búsqueda con IA siguen poniendo el énfasis en contenido útil y satisfactorio. Las buenas prácticas del SEO tradicional (salud técnica, intención de búsqueda, autoridad) siguen siendo lo que te da posicionamiento y citas. Sin ellas, no apareces en los resultados orgánicos ni en las respuestas de la IA."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuál es la diferencia entre el SEO con IA y el SEO tradicional?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El SEO tradicional se centra en posicionar en los resultados orgánicos de Google mediante optimización técnica, contenido en la página y enlaces. El SEO con IA se centra en conseguir que tu contenido sea citado y mostrado en respuestas generadas por IA de herramientas como los AI Overviews de Google, ChatGPT, Perplexity y Gemini. En 2026, necesitas ambos: son complementarios, no enfoques contrapuestos."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué es el AEO (Answer Engine Optimisation)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El AEO es la práctica de optimizar contenido específicamente para los motores de respuesta: herramientas de IA que responden preguntas directamente en lugar de devolver una lista de enlaces. Implica estructurar el contenido para que sea claramente extraíble, responder preguntas de forma directa y generar las señales de confianza que los sistemas de IA prefieren al seleccionar sus fuentes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Puede posicionar el contenido generado por IA en Google en 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El contenido asistido por IA puede posicionar si es genuinamente útil y aporta valor real. Las directrices de Google son claras: el problema no es cómo se creó el contenido, sino si satisface a los usuarios. Generar grandes volúmenes de páginas sin aportar valor puede infringir las políticas antispam sobre abuso de contenido a escala. La supervisión humana, la originalidad y la voz editorial son lo que separa el contenido que posiciona del que recibe penalizaciones."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué es el abuso de contenido a escala en SEO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Google define el abuso de contenido a escala como generar muchas páginas principalmente para manipular el posicionamiento en lugar de ayudar a los usuarios, con grandes cantidades de contenido no original independientemente de cómo se produzca. Se trata como una infracción de las políticas antispam y puede derivar en una penalización de todo el sitio."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo consigo que mi contenido aparezca en los AI Overviews de Google?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No existe una inscripción directa. Las directrices de Google indican que hay que seguir las buenas prácticas SEO, mantener el contenido accesible y hacerlo genuinamente útil. En la práctica: empieza cada sección con una respuesta directa, usa una estructura clara con encabezados, incluye definiciones y resúmenes, y asegúrate de que tus páginas estén indexadas y sean rastreables. Los altos rankings orgánicos tienen una fuerte correlación con la inclusión en los AI Overviews."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo aparezco en los resultados de búsqueda de ChatGPT y Perplexity?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ambas herramientas extraen contenido web indexado y usan señales de autoridad similares al SEO tradicional. Los mismos principios se aplican: contenido bien estructurado, señales de entidad claras (quién eres, de qué tratas, por qué eres fiable), enlaces externos de calidad y respuestas directas fáciles de extraer. Construir una presencia temática consistente en tu área de especialización es más eficaz que optimizar páginas individuales."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Siguen siendo importantes los backlinks en el SEO con IA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, pero son más valiosos como señales de confianza que como palancas de posicionamiento por sí solos. La autoridad de los enlaces sigue apoyando la inclusión tanto en los resultados orgánicos como en las respuestas de la IA. Lo que ha cambiado es la fuente de los enlaces más eficaces: la investigación original, los benchmarks, las herramientas y los marcos de trabajo generan enlaces de forma natural porque son genuinamente útiles, que es exactamente lo que los sistemas de IA prefieren como fuentes."
+        }
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://mitchchadban.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://mitchchadban.com/blog"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "SEO con IA vs SEO tradicional: qué ha cambiado",
+        "item": "https://mitchchadban.com/seo-con-ia-vs-seo-tradicional-que-ha-cambiado/"
+      }
+    ]
+  }
+]
+</script>
+
+<div class="service-ctm blog-ctm">
+  <div class="service-ctm__body">
+
+    <!--  BYLINE  -->
+    <p style="font-size: 13px; color: #888; margin: 0 0 12px; letter-spacing: 0.02em;">
+Por <strong>Mitch Chadban</strong> — Estratega SEO y Marketing, España  |  Actualizado abril de 2026
+    </p>
+
+    <h1>SEO con IA vs SEO tradicional en 2026: Qué ha cambiado (y qué sigue funcionando)</h1>
+
+    <!--  BLOQUE DE RESUMEN INICIAL — objetivo de extracción prioritario para los AI Overviews  -->
+    <p><strong>SEO con IA vs SEO tradicional en 2026:</strong> la IA no ha reemplazado al SEO tradicional, ha elevado el listón. Los fundamentos tradicionales (salud técnica, intención de búsqueda, enlaces, estructura) siguen siendo los que generan posicionamiento. Lo nuevo es que los AI Overviews de Google, ChatGPT, Perplexity y Gemini ahora muestran respuestas <em>antes</em> que los resultados orgánicos, y favorecen el contenido que es verdaderamente útil, está bien estructurado y genera confianza. El contenido genérico producido en masa es ahora una carga, no una estrategia de volumen. Los sitios que ganan en 2026 combinan bases SEO sólidas con mejor estructura, mayor originalidad y contenido que satisface consultas reales, no solo targets de palabras clave.</p>
+
+    <p>Si has oído «el SEO ha muerto» al menos una docena de veces en el último año, bienvenido al club.</p>
+
+    <p>Lo que <em>ha ocurrido realmente</em> es más sencillo y más útil: la búsqueda ha cambiado de forma.</p>
+
+    <p>Las respuestas de IA —los AI Overviews de Google, el AI Mode, ChatGPT, Perplexity, Gemini— ocupan ahora más espacio en el SERP, responden preguntas antes de que aparezca un solo resultado azul y están entrenadas exactamente con el tipo de contenido que publicas. Los usuarios hacen preguntas más largas y específicas. La web está inundada de contenido de IA que parece idéntico. Las directrices de Google se reducen básicamente a esto: crea contenido genuinamente útil y único que satisfaga a las personas, especialmente para consultas complejas.</p>
+
+    <p>Así que sí, las cosas han cambiado.<br />
+    No, los fundamentos no han dejado de funcionar mágicamente.</p>
+
+    <p>Este artículo lo desglosa con orientación práctica sobre qué hacer ahora: qué está posicionando, qué no, y por qué la brecha entre ambas estrategias es mayor en 2026 que hace dos años.</p>
+
+    <div class="img-full-ctm">
+      <img class="zoomable" src="/images/SEO-Is-Dead-Funeral.jpeg" alt="" loading="lazy" decoding="async" width="800" height="450">
+    </div>
+
+    <details class="blog-menu" open="">
+      <summary class="blog-menu__header">
+        <span class="blog-menu__title">En esta página</span>
+        <span aria-hidden="true" class="blog-menu__toggle"></span>
+      </summary>
+      <div class="blog-menu__body">
+        <a class="blog-menu__item" href="#que-es-el-seo-tradicional" onclick="location.hash='que-es-el-seo-tradicional'; return false;">¿Qué es el SEO tradicional?</a>
+        <a class="blog-menu__item" href="#que-es-el-seo-con-ia" onclick="location.hash='que-es-el-seo-con-ia'; return false;">¿Qué es el SEO con IA (AEO / GEO)?</a>
+        <a class="blog-menu__item" href="#que-ha-cambiado" onclick="location.hash='que-ha-cambiado'; return false;">Qué ha cambiado en la era de la búsqueda con IA</a>
+        <a class="blog-menu__item" href="#que-sigue-funcionando" onclick="location.hash='que-sigue-funcionando'; return false;">Qué sigue funcionando (fundamentos que no han muerto)</a>
+        <a class="blog-menu__item" href="#tabla-comparativa" onclick="location.hash='tabla-comparativa'; return false;">La tabla completa: qué cambió vs qué sigue igual</a>
+        <a class="blog-menu__item" href="#contenido-ia" onclick="location.hash='contenido-ia'; return false;">Contenido de IA: qué está permitido y qué es arriesgado</a>
+        <a class="blog-menu__item" href="#aparecer-en-ia" onclick="location.hash='aparecer-en-ia'; return false;">Cómo aparecer en las funciones de IA (sin perseguir fantasmas)</a>
+        <a class="blog-menu__item" href="#medicion" onclick="location.hash='medicion'; return false;">Qué medir ahora</a>
+        <a class="blog-menu__item" href="#plan-accion" onclick="location.hash='plan-accion'; return false;">El plan a 30 / 60 / 90 días para el SEO moderno</a>
+        <a class="blog-menu__item" href="#faq" onclick="location.hash='faq'; return false;">FAQ: SEO con IA vs SEO tradicional</a>
+      </div>
+    </details>
+
+
+    <!--  SECCIÓN 1: QUÉ ES EL SEO TRADICIONAL  -->
+    <h2 id="que-es-el-seo-tradicional">¿Qué es el SEO tradicional?</h2>
+
+    <p><strong>En pocas palabras:</strong> el SEO tradicional es la práctica de mejorar la visibilidad de un sitio web en las páginas de resultados de los motores de búsqueda (SERPs) mediante optimización técnica, contenido en la página y construcción de autoridad, para que los motores de búsqueda te posicionen más arriba para las consultas relevantes.</p>
+
+    <p>Los pilares fundamentales del SEO tradicional no han cambiado en años:</p>
+
+    <ul>
+      <li><strong>SEO técnico</strong> — rastreabilidad, indexación, velocidad del sitio, Core Web Vitals, datos estructurados</li>
+      <li><strong>SEO on-page</strong> — ubicación de palabras clave, etiquetas de título, encabezados, enlazado interno, calidad del contenido</li>
+      <li><strong>SEO off-page</strong> — backlinks, menciones de marca, señales de autoridad y confianza</li>
+    </ul>
+
+    <p>El SEO tradicional sigue muy vivo. Es lo que te hace posicionar en los resultados orgánicos de Google, que siguen generando la mayoría del tráfico de búsqueda comercial. También es la base en la que se apoyan los sistemas de IA para decidir de qué contenido extraen información.</p>
+
+    <p>Sin un SEO sólido, no posicionas. Y si no posicionas, los sistemas de IA tienen muchas menos probabilidades de usar tu contenido. Los dos están conectados, no son enfoques competidores.</p>
+
+
+    <!--  SECCIÓN 2: QUÉ ES EL SEO CON IA / AEO / GEO  -->
+    <h2 id="que-es-el-seo-con-ia">¿Qué es el SEO con IA? (¿Y qué son el AEO y el GEO?)</h2>
+
+    <p><strong>En pocas palabras:</strong> el SEO con IA es la práctica de optimizar contenido para que sea descubierto, comprendido, citado y mostrado por experiencias de búsqueda con IA, incluidos los AI Overviews de Google, ChatGPT, Perplexity y Gemini.</p>
+
+    <p>También lo encontrarás con estos nombres:</p>
+
+    <ul>
+      <li><strong>AEO (Answer Engine Optimisation)</strong> — optimizar para herramientas de IA que responden preguntas directamente</li>
+      <li><strong>GEO (Generative Engine Optimisation)</strong> — optimizar específicamente para resultados de búsqueda generados por IA</li>
+    </ul>
+
+    <p>La terminología varía, pero el objetivo es el mismo: hacer tu contenido fácil de entender, confiar y reutilizar como fuente por parte de las máquinas.</p>
+
+    <p>El SEO con IA no es:</p>
+    <ul>
+      <li>publicar grandes volúmenes de contenido de IA sin editar</li>
+      <li>saturar páginas con jerga sobre IA</li>
+      <li>perseguir cada nueva plataforma de IA</li>
+    </ul>
+
+    <p>Es los fundamentos del SEO + mejor estructura + mayor originalidad + señales de confianza más claras. El mismo objetivo, el listón más alto.</p>
+
+
+    <!--  SECCIÓN 3: QUÉ HA CAMBIADO  -->
+    <h2 id="que-ha-cambiado">Qué ha cambiado en la era de la búsqueda con IA</h2>
+
+    <h3>1) El SERP ya no son «10 resultados azules»</h3>
+
+    <p>Los AI Overviews y el AI Mode aparecen por encima de los resultados orgánicos y cambian la forma en que la gente hace clic. Las directrices de Google para propietarios de sitios enmarcan estas funciones como experiencias de IA que pueden incluir enlaces para «profundizar» en la web, pero muchas consultas obtienen ahora respuesta sin un solo clic.</p>
+
+    <p><strong>Impacto práctico:</strong> compites por atención <em>y</em> por extracción, no solo por la posición de ranking. Una página que está en el número 1 pero no es citada por el AI Overview pierde visibilidad frente a las páginas que sí lo son.</p>
+
+    <h3>2) Las búsquedas con IA ocurren en múltiples plataformas, no solo en Google</h3>
+
+    <p>ChatGPT, Perplexity, Gemini y Bing Copilot extraen contenido de la web. Los usuarios cada vez empiezan más las consultas de investigación compleja en estas herramientas. Si tu contenido no está estructurado para ser extraído, comprendido y citado, eres completamente invisible en esos canales.</p>
+
+    <p>Este es el nuevo problema del «zero-click». Solo que, en lugar de un fragmento destacado, es una respuesta de IA desde una plataforma que no puedes rastrear en Google Search Console.</p>
+
+    <h3>3) La gente hace preguntas más largas, más informales y más específicas</h3>
+
+    <p>Google ha señalado explícitamente que en las experiencias de búsqueda con IA, los usuarios hacen preguntas más largas, más específicas y de seguimiento. La naturaleza conversacional de las herramientas de IA empuja las consultas hacia el lenguaje natural, no hacia fragmentos de palabras clave.</p>
+
+    <p><strong>Impacto práctico:</strong> el contenido que solo apunta a términos cortos y genéricos («qué es X») se vuelve rápidamente una commodity. El valor está en satisfacer la cadena completa de intención, no solo la primera pregunta.</p>
+
+    <div class="img-full-ctm">
+      <img class="zoomable" src="/images/Long-Query-Therapy-Session.jpeg" alt="" loading="lazy" decoding="async" width="800" height="450">
+    </div>
+
+    <h3>4) La oferta de contenido se disparó y la mediocridad está penalizada</h3>
+
+    <p>Es más fácil que nunca publicar 1.000 «artículos SEO» que dicen todos lo mismo. Las directrices de Google sobre IA generativa advierten explícitamente que generar muchas páginas sin aportar valor puede infringir las políticas antispam sobre abuso de contenido a escala.</p>
+
+    <p><strong>Impacto práctico:</strong> el contenido «del montón» es ahora peor que inútil: es un riesgo de penalización y no tiene ninguna posibilidad de ser citado por la IA. Los sistemas de IA no citan la quinta mejor explicación de un concepto. Citan la más clara y la más fiable.</p>
+
+    <h3>5) Las señales de confianza importan más porque la web se ha vuelto más ruidosa</h3>
+
+    <p>Cuando se pueden generar un millón de páginas en un fin de semana, el diferenciador se convierte en:</p>
+    <ul>
+      <li>experiencia de primera mano,</li>
+      <li>perspectiva original,</li>
+      <li>fuentes claras,</li>
+      <li>y contenido que satisface genuinamente la consulta.</li>
+    </ul>
+
+    <p>Las directrices de Google para triunfar en la búsqueda con IA hacen hincapié en contenido único, no genérico, que sea útil y satisfactorio. El E-E-A-T (Experiencia, Especialización, Autoridad, Fiabilidad) ya no es un elemento de checklist: es el foso defensivo.</p>
+
+
+    <!--  SECCIÓN 4: QUÉ SIGUE FUNCIONANDO  -->
+    <h2 id="que-sigue-funcionando">Qué sigue funcionando (fundamentos del SEO tradicional que no han muerto)</h2>
+
+    <p>Seamos directos: la IA no ha cambiado las leyes de la física.</p>
+
+    <p>Esto sigue generando resultados en 2026:</p>
+
+    <ul>
+      <li><strong>Satisfacer la intención de búsqueda</strong> — responder lo que la gente realmente quiere, en el formato que lo quiere</li>
+      <li><strong>Rastreabilidad e indexabilidad</strong> — si Google no puede acceder a tu contenido e indexarlo, nada más importa</li>
+      <li><strong>Enlazado interno y arquitectura temática</strong> — demuestra profundidad y ayuda a la IA a entender tus áreas de especialización</li>
+      <li><strong>Señales de autoridad y reputación</strong> — los backlinks, las menciones y la credibilidad siguen apoyando la confianza</li>
+      <li><strong>Buena UX y arquitectura de información clara</strong> — reduce el rebote y señala satisfacción</li>
+      <li><strong>Etiquetas de título, meta descripciones, datos estructurados</strong> — siguen influyendo directamente en los clics y la elegibilidad de funciones</li>
+    </ul>
+
+    <p>El SEO con IA no es algo nuevo que reemplaza al SEO. Es SEO con estándares más exigentes, aplicado a un conjunto más amplio de superficies.</p>
+
+    <div class="img-full-ctm">
+      <img class="zoomable" src="/images/What-Still-Works--The-Old-Tools-Still-Work.jpeg" alt="" loading="lazy" decoding="async" width="800" height="450">
+    </div>
+
+
+    <!--  SECCIÓN 5: LA TABLA COMPARATIVA  -->
+    <h2 id="tabla-comparativa">La tabla completa: SEO con IA vs SEO tradicional — qué cambió y qué no</h2>
+
+    <table class="table-ctm">
+      <thead>
+        <tr>
+          <th>Área</th>
+          <th>Enfoque del SEO tradicional</th>
+          <th>Qué cambió en la era de la IA</th>
+          <th>Qué hacer ahora</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Estrategia de contenido</td>
+          <td>Publicar muchos artículos orientados a palabras clave</td>
+          <td>La mediocridad está en todas partes; la IA absorbe las consultas informativas básicas</td>
+          <td>Construir menos páginas pero mejores: perspectiva propia, ejemplos reales, datos originales, estructura clara</td>
+        </tr>
+        <tr>
+          <td>Palabras clave</td>
+          <td>Centrarse en términos cortos de alto volumen</td>
+          <td>Las consultas son más largas, en múltiples pasos y conversacionales</td>
+          <td>Optimizar para clústeres de preguntas, tareas, comparativas y flujos de decisión</td>
+        </tr>
+        <tr>
+          <td>SEO on-page</td>
+          <td>Etiquetas de título, H1/H2, densidad de palabras clave</td>
+          <td>La extracción y la claridad de entidades importan más</td>
+          <td>Usar estructura escaneable: respuestas directas al inicio, resúmenes, definiciones, bloques paso a paso</td>
+        </tr>
+        <tr>
+          <td>Contenido de IA</td>
+          <td>Debates sobre «¿puede posicionar el contenido de IA?»</td>
+          <td>Las páginas de IA masivas pueden activar políticas antispam de abuso de contenido a escala</td>
+          <td>Usar la IA como apoyo; añadir valor real; evitar el output masivo no original</td>
+        </tr>
+        <tr>
+          <td>SEO técnico</td>
+          <td>Indexación, velocidad, datos estructurados</td>
+          <td>Sigue siendo obligatorio; crítico para el acceso de los sistemas de IA</td>
+          <td>Mantener los fundamentos ajustados; asegurar que el contenido es accesible para Google y los crawlers de IA</td>
+        </tr>
+        <tr>
+          <td>Enlaces</td>
+          <td>Los backlinks generan autoridad</td>
+          <td>Siguen siendo importantes; «autoridad + utilidad» gana sobre volumen</td>
+          <td>Ganar enlaces mediante contenido destacado: benchmarks, herramientas, plantillas, investigación original</td>
+        </tr>
+        <tr>
+          <td>Visibilidad en plataformas de IA</td>
+          <td>No aplicaba — Google era el único SERP que importaba</td>
+          <td>ChatGPT, Perplexity, Gemini, Copilot son ahora superficies reales de tráfico y marca</td>
+          <td>Estructurar para la extracción: secciones autónomas, respuestas directas, señales de entidad claras</td>
+        </tr>
+        <tr>
+          <td>Medición</td>
+          <td>Rankings + sesiones</td>
+          <td>Los clics pueden desplazarse cuando las respuestas de IA aparecen por encima de los orgánicos</td>
+          <td>Rastrear conversiones, demanda de marca, pipeline influenciado por contenido y presencia de citas en IA</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <!--  SECCIÓN 6: RIESGO DEL CONTENIDO DE IA  -->
+    <h2 id="contenido-ia">Contenido de IA: qué está permitido y qué es arriesgado en 2026</h2>
+
+    <p>Aquí es donde la gente lo malinterpreta, en ambas direcciones.</p>
+
+    <h3>El contenido asistido por IA está bien, si aportas valor real</h3>
+
+    <p>Las directrices de Google sobre contenido de IA generativa afirman explícitamente que puede ser útil para la investigación, estructurar contenido original y mejorar la eficiencia. Advierten que usarlo para generar muchas páginas sin aportar valor puede infringir las políticas antispam.</p>
+
+    <p>La norma no es «no uses IA».</p>
+
+    <blockquote>
+      <p>La norma es: no publiques contenido no original, de bajo valor y producido a escala, independientemente de cómo se haya creado.</p>
+    </blockquote>
+
+    <h3>Qué es arriesgado (y está siendo cada vez más penalizado)</h3>
+    <ul>
+      <li>Cientos de artículos casi idénticos apuntando a variaciones mínimas de palabras clave</li>
+      <li>«Contenido SEO» sin detalle de primera mano, sin ejemplos, sin opinión, sin información original</li>
+      <li>Páginas creadas principalmente para manipular el posicionamiento en lugar de satisfacer a los usuarios (abuso de contenido a escala)</li>
+      <li>Páginas superficiales que reformulan con otras palabras lo que dicen todos los demás resultados</li>
+    </ul>
+
+    <h3>Qué es seguro (y gana)</h3>
+    <ul>
+      <li>La IA como apoyo para estructurar, resumir y dar formato</li>
+      <li>Contenido construido a partir de experiencia real, resultados de clientes, datos y preguntas reales de clientes</li>
+      <li>Páginas que incluyen pruebas: capturas de pantalla, plantillas, cálculos, comparativas o marcos de trabajo originales</li>
+      <li>Revisión humana, edición y voz editorial aplicadas al contenido redactado con IA</li>
+    </ul>
+
+
+    <!--  SECCIÓN 7: CÓMO APARECER EN LA IA  -->
+    <h2 id="aparecer-en-ia">Cómo aparecer en las funciones de IA, sin perseguir fantasmas</h2>
+
+    <p>Las directrices de Google sobre «funciones de IA y tu sitio web» se resumen básicamente en: sigue las buenas prácticas SEO y centra el contenido en que sea útil y accesible para ser incluido en las experiencias de IA. Aquí está la versión práctica.</p>
+
+    <h3>1) Haz el contenido «extraíble»</h3>
+
+    <p>Los sistemas de IA —los AI Overviews de Google, ChatGPT, Perplexity— extraen contenido estructurado y escaneable. No leen tu artículo de arriba abajo como lo haría una persona. Lo fragmentan.</p>
+
+    <p>Haz que cada sección funcione de forma autónoma:</p>
+    <ul>
+      <li>Empieza cada H2 con una respuesta directa o una definición</li>
+      <li>Usa frases tipo «En pocas palabras:» o resúmenes antes de explicaciones más largas</li>
+      <li>Añade secciones paso a paso, definiciones en bullets y bloques comparativos</li>
+      <li>Haz los encabezados lo suficientemente específicos para responder por sí solos una subconsulta</li>
+    </ul>
+
+    <h3>2) Sé verdaderamente útil, no solo correcto</h3>
+
+    <p>Google recomienda centrarse en contenido único y no genérico. Formas de conseguirlo sin empezar desde cero:</p>
+    <ul>
+      <li>Ejemplos originales con capturas de pantalla o flujos de trabajo reales</li>
+      <li>Mini casos de estudio con cifras reales</li>
+      <li>Benchmarks o rangos de precios (con matices)</li>
+      <li>Plantillas que la gente puede usar de inmediato</li>
+      <li>Reglas de decisión: marcos «si X, haz Y» específicos de tu experiencia</li>
+    </ul>
+
+    <h3>3) Refuerza las señales de confianza</h3>
+
+    <p>Incluso sin una marca grande, puedes señalar credibilidad:</p>
+    <ul>
+      <li>Biografía del autor con experiencia relevante y específica</li>
+      <li>Fechas claras de publicación y actualización</li>
+      <li>Fuentes para afirmaciones clave (enlaza hacia fuera cuando sea relevante)</li>
+      <li>Evidencias: ejemplos, procesos, resultados, no solo afirmaciones</li>
+    </ul>
+
+    <h3>4) No te bloquees a ti mismo</h3>
+
+    <p>Si tu contenido es difícil de rastrear o indexar, no aparecerás en ningún sitio, ni en los rankings ni en la IA. La documentación de funciones de IA de Google asume que se aplican las normas de inclusión habituales. Los datos estructurados (schema FAQ, HowTo, Article) siguen ayudando a las máquinas a entender el tipo y el contexto de tu contenido.</p>
+
+    <div class="img-full-ctm">
+      <img class="zoomable" src="/images/Scaled-Content-Factory-Emergency-Stop-Button.jpeg" alt="" loading="lazy" decoding="async" width="800" height="450">
+    </div>
+
+
+    <!--  CTA  -->
+    <h2>¿Quieres un plan práctico de SEO para la era de la IA para tu sitio?</h2>
+
+    <p>Puedo auditar tu sitio y darte una lista de prioridades clara:</p>
+    <ul>
+      <li>qué consolidar o eliminar (contenido fino y riesgo de duplicados),</li>
+      <li>qué páginas reconstruir para mejorar la confianza, la estructura y las citas en IA,</li>
+      <li>y qué clústeres de intención de compra desarrollar a continuación para generar pipeline real.</li>
+    </ul>
+
+    <p>Cuéntame tu sitio y qué vendes. Identificaré primero los movimientos de mayor apalancamiento.</p>
+    <a href="mailto:mitch.chadban@hotmail.com"><div class="custom-btn"><b>Contactar</b></div></a>
+
+
+    <!--  SECCIÓN 8: MEDICIÓN  -->
+    <h2 id="medicion">Qué medir ahora (porque las sesiones solas no contarán la historia)</h2>
+
+    <p>Las respuestas de IA cambian el comportamiento de clic. La medición necesita madurar con ellas.</p>
+
+    <p><strong>En pocas palabras:</strong> si solo estás reportando volumen de sesiones, te va a sorprender un cambio de tráfico que no refleja el impacto real en el negocio.</p>
+
+    <p>Mide esto en su lugar:</p>
+
+    <ol>
+      <li><strong>Conversiones orgánicas</strong> — leads, solicitudes de demo, ventas atribuidas a orgánico</li>
+      <li><strong>Tasa de conversión por página de aterrizaje</strong> — esto se vuelve fundamental cuando el volumen de clics se vuelve ruidoso</li>
+      <li><strong>Demanda de marca</strong> — el crecimiento en búsquedas de navegación y tráfico directo señala conciencia real</li>
+      <li><strong>Eficiencia del contenido</strong> — qué páginas influyen en el pipeline, no solo cuáles posicionan</li>
+      <li><strong>Presencia de citas en IA</strong> — verificaciones manuales en ChatGPT, Perplexity y Gemini para tus temas clave (no hay herramienta perfecta todavía, pero esto importa)</li>
+    </ol>
+
+
+    <!--  SECCIÓN 9: PLAN 30/60/90 DÍAS  -->
+    <h2 id="plan-accion">El plan a 30 / 60 / 90 días para el SEO moderno</h2>
+
+    <h3>Días 1–30: Arregla los fundamentos y mejora las páginas clave</h3>
+    <ul>
+      <li>Ajusta los fundamentos técnicos: indexación, enlaces internos, estructura del sitio, velocidad de página</li>
+      <li>Reescribe o mejora tus páginas más importantes para que sean más claras, con más pruebas y mejor estructuradas para la extracción</li>
+      <li>Elimina o fusiona páginas superficiales: reduce la mediocridad y el riesgo de contenido duplicado</li>
+      <li>Añade resúmenes del tipo «En pocas palabras:» a los posts existentes (ganancia rápida para las citas de la IA)</li>
+    </ul>
+
+    <h3>Días 31–60: Construye clústeres de intención de compra</h3>
+
+    <p>Crea clústeres de contenido que correspondan a etapas de toma de decisión, no solo de conciencia:</p>
+    <ul>
+      <li>Alternativas y comparativas de competidores</li>
+      <li>Páginas «mejor X para Y» con criterios de evaluación genuinos</li>
+      <li>Páginas de integración o casos de uso que muestren resultados específicos</li>
+      <li>Hubs de FAQ construidos en torno a preguntas reales de venta</li>
+    </ul>
+
+    <h3>Días 61–90: Publica activos únicos «generadores de enlaces»</h3>
+
+    <p>Así es como construyes un foso que la competencia no puede copiar fácilmente:</p>
+    <ul>
+      <li>Investigación original o benchmarks (incluso a pequeña escala, los datos reales ganan)</li>
+      <li>Calculadoras o herramientas interactivas</li>
+      <li>Plantillas que la gente puede usar de inmediato</li>
+      <li>Marcos de trabajo con ejemplos reales de tu trabajo</li>
+    </ul>
+
+    <p>Así es como dejas de competir en contenido de commodity y empiezas a ser la fuente que otros citan.</p>
+
+
+    <!--  SECCIÓN 10: FAQ  -->
+    <h2 id="faq">FAQ: SEO con IA vs SEO tradicional en 2026</h2>
+
+    <h3>¿Sigue mereciendo la pena el SEO tradicional en 2026?</h3>
+    <p>Sí, y es la base de la que depende la visibilidad en la IA. Las directrices de Google para la búsqueda con IA siguen poniendo el énfasis en contenido útil y satisfactorio. Las buenas prácticas del SEO tradicional (salud técnica, intención de búsqueda, autoridad) siguen siendo lo que te da posicionamiento y citas. Sin ellas, no apareces en los resultados orgánicos ni en las respuestas de la IA.</p>
+
+    <h3>¿Cuál es la diferencia entre el SEO con IA y el SEO tradicional?</h3>
+    <p>El SEO tradicional se centra en posicionar en los resultados orgánicos de Google mediante optimización técnica, contenido en la página y backlinks. El SEO con IA se centra en conseguir que tu contenido sea citado y mostrado en respuestas generadas por IA de herramientas como los AI Overviews de Google, ChatGPT, Perplexity y Gemini. En 2026, necesitas ambos: son complementarios, no enfoques contrapuestos.</p>
+
+    <h3>¿Qué es el AEO (Answer Engine Optimisation)?</h3>
+    <p>El AEO es la práctica de optimizar contenido específicamente para los motores de respuesta: herramientas de IA que responden preguntas directamente en lugar de devolver una lista de enlaces. Implica estructurar el contenido para que sea claramente extraíble, responder preguntas de forma directa y generar las señales de confianza que los sistemas de IA prefieren al seleccionar sus fuentes. Se solapa significativamente con el SEO con IA y el GEO.</p>
+
+    <h3>¿Puede posicionar el contenido generado por IA en Google en 2026?</h3>
+    <p>El contenido asistido por IA puede posicionar si es genuinamente útil y aporta valor real. Las directrices de Google son claras: el problema no es cómo se creó el contenido, sino si satisface a los usuarios. Generar grandes volúmenes de páginas sin aportar valor puede infringir las políticas antispam sobre abuso de contenido a escala. La supervisión humana, la originalidad y la voz editorial son lo que separa el contenido que posiciona del que recibe penalizaciones.</p>
+
+    <h3>¿Qué es el «abuso de contenido a escala» en SEO?</h3>
+    <p>Google define el abuso de contenido a escala como generar muchas páginas principalmente para manipular el posicionamiento en lugar de ayudar a los usuarios, con grandes cantidades de contenido no original independientemente de cómo se produzca. Se trata como una infracción de las políticas antispam y puede derivar en una penalización de todo el sitio. La solución es simple en teoría: crear menos páginas y mejores, con valor real.</p>
+
+    <h3>¿Cómo consigo que mi contenido aparezca en los AI Overviews de Google?</h3>
+    <p>No existe una inscripción directa. Las directrices de Google indican que hay que seguir las buenas prácticas SEO, mantener el contenido accesible y hacerlo genuinamente útil. En la práctica: empieza cada sección con una respuesta directa, usa una estructura clara con encabezados, incluye definiciones y resúmenes, y asegúrate de que tus páginas estén indexadas y sean rastreables. Los altos rankings orgánicos tienen una fuerte correlación con la inclusión en los AI Overviews: más del 90% de las citas de los AI Overviews provienen de los 10 primeros resultados orgánicos.</p>
+
+    <h3>¿Cómo aparezco en los resultados de búsqueda de ChatGPT y Perplexity?</h3>
+    <p>Ambas herramientas extraen contenido web indexado y usan señales de autoridad similares al SEO tradicional. Los mismos principios se aplican: contenido bien estructurado, señales de entidad claras (quién eres, de qué tratas, por qué eres fiable), enlaces externos de calidad y respuestas directas fáciles de extraer. Construir una presencia temática consistente en tu área de especialización es más eficaz que optimizar páginas individuales.</p>
+
+    <h3>¿Siguen siendo importantes los backlinks en el SEO con IA?</h3>
+    <p>Sí, pero son más valiosos como señales de confianza que como palancas de posicionamiento por sí solos. La autoridad de los enlaces sigue apoyando la inclusión tanto en los resultados orgánicos como en las respuestas de la IA. Lo que ha cambiado es la fuente de los enlaces más eficaces: la investigación original, los benchmarks, las herramientas y los marcos de trabajo generan enlaces de forma natural porque son genuinamente útiles, que es exactamente lo que los sistemas de IA prefieren como fuentes.</p>
+
+
+    <!--  CONCLUSIÓN  -->
+    <h2>Conclusión</h2>
+
+    <p>La IA cambió el formato de la búsqueda, no el objetivo de la búsqueda.<br />
+    El objetivo sigue siendo: <em>dar a las personas la mejor respuesta, la más satisfactoria.</em></p>
+
+    <p>Si tu estrategia es «publicar más posts de IA», perderás.<br />
+    Si tu estrategia es «construir menos páginas, mejores, con valor real y estructura clara», ganarás: en los resultados orgánicos, en los AI Overviews y en ChatGPT y Perplexity.</p>
+
+    <p>La brecha entre esas dos estrategias es más grande en 2026 que en cualquier momento anterior. Elige la correcta.</p>
+
+    <h2>¿Quieres un plan práctico de SEO para la era de la IA para tu sitio?</h2>
+
+    <p>Puedo auditar tu sitio y darte una lista de prioridades clara:</p>
+    <ul>
+      <li>qué consolidar o eliminar (contenido fino y riesgo de duplicados),</li>
+      <li>qué páginas reconstruir para mejorar la confianza, la estructura y las citas en IA,</li>
+      <li>y qué clústeres de intención de compra desarrollar a continuación para generar pipeline real.</li>
+    </ul>
+
+    <p>Cuéntame tu sitio y qué vendes. Identificaré primero los movimientos de mayor apalancamiento.</p>
+    <a href="mailto:mitch.chadban@hotmail.com"><div class="custom-btn"><b>Contactar</b></div></a>
+
+
+    <!--  LECTURA ADICIONAL  -->
+    <div class="further-reading-ctm">
+      <h4 class="further-reading-ctm__title">Lectura adicional</h4>
+      <ul class="further-reading-ctm__list">
+        <li class="further-reading-ctm__item">
+          <a class="further-reading-ctm__link" href="/mejor-flujo-de-trabajo-seo-con-ia-2026/">Mejor flujo de trabajo SEO + IA para 2026 (Cómo usar la IA sin sonar como IA)</a>
+        </li>
+        <li class="further-reading-ctm__item">
+          <a class="further-reading-ctm__link" href="/aeo-explained-how-to-rank-in-ai-answers/">AEO explicado: cómo posicionar en las respuestas de IA (ChatGPT, Gemini, Perplexity)</a>
+        </li>
+        <li class="further-reading-ctm__item">
+          <a class="further-reading-ctm__link" href="/best-demand-gen-content-for-2026/">Mejor contenido de Demand Gen para 2026: qué publicar para conseguir leads</a>
+        </li>
+        <li class="further-reading-ctm__item">
+          <a class="further-reading-ctm__link" href="/como-mejorar-el-e-e-a-t-en-2026/">Cómo mejorar el E-E-A-T en 2026 (Pruebas, activos originales, autoridad)</a>
+        </li>
+        <li class="further-reading-ctm__item">
+          <a class="further-reading-ctm__link" href="/checklist-de-seo-tecnico-en-lenguaje-claro/">Checklist de SEO técnico (en lenguaje claro): velocidad, indexación, salud del sitio</a>
+        </li>
+        <li class="further-reading-ctm__item">
+          <a class="further-reading-ctm__link" href="/seo-para-saas-en-espana-que-funciona-en-2026/">SEO para SaaS en España: qué funciona de verdad en 2026</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+  <br />
+  <br />
+</div>`;
+---
+
+<BaseLayout lang="es" ogType="article"
+  title="SEO con IA vs SEO tradicional: Qué ha cambiado | Mitch Chadban"
+  description="SEO con IA vs SEO tradicional en 2026: qué cambió de verdad, qué sigue funcionando y cómo aparecer en los AI Overviews de Google, ChatGPT y Perplexity."
+  canonical="https://mitchchadban.com/seo-con-ia-vs-seo-tradicional-que-ha-cambiado/"
+  alternates={[
+    { lang: 'en-AU', href: 'https://mitchchadban.com/ai-seo-vs-traditional-seo-whats-changed/' },
+    { lang: 'es', href: 'https://mitchchadban.com/seo-con-ia-vs-seo-tradicional-que-ha-cambiado/' },
+    { lang: 'x-default', href: 'https://mitchchadban.com/ai-seo-vs-traditional-seo-whats-changed/' }
+  ]}
+>
+  <Fragment set:html={pageContent} />
+</BaseLayout>

@@ -1,0 +1,62 @@
+# Spanish Blog Inventory - 2026-06-28
+
+## Summary
+
+- English blog posts in `/blogs-resources/`: 39
+- Spanish blog posts live in `/es/blog/` before this batch: 7
+- New Spanish blog posts wired live in this batch: 12
+- Spanish blog posts now live in `/es/blog/`: 19
+- English blog posts still missing a Spanish version: 20
+
+## Batch 1 status
+
+This workspace already contained a larger in-progress Spanish batch when work resumed. Rather than creating duplicate translations, this pass:
+
+- finished reciprocal `hreflang` on the current English/Spanish pairs
+- added the translated set to `/es/blog/`
+- replaced broken Spanish internal links with English fallbacks where no Spanish page exists yet
+- verified the batch with `npm run build`
+
+## Inventory
+
+| English post title | English slug/path | Spanish slug/path | Status |
+| --- | --- | --- | --- |
+| Best SEO + AI Workflow for 2026 | `/best-seo-and-ai-workflow-for-2026/` | `/mejor-flujo-de-trabajo-seo-con-ia-2026/` | already translated and live |
+| AEO Australia: How to Show Up in AI Answers | `/aeo-australia-how-to-show-up-in-ai-answers/` | `/aeo-espana-como-aparecer-en-respuestas-de-ia/` | already translated and live |
+| SEO for SaaS Australia: What Works in 2026 | `/seo-for-saas-australia-what-works-in-2026/` | `/seo-para-saas-en-espana-que-funciona-en-2026/` | already translated and live |
+| Growth Marketing Strategy for SaaS | `/growth-marketing-strategy-for-saas/` | `/estrategia-de-growth-marketing-para-saas/` | already translated and live |
+| Logo Design Cost in Australia: What You Actually Get | `/logo-design-cost-in-australia-what-you-actually-get/` | `/cuanto-cuesta-un-logo-en-espana-que-incluye/` | already translated and live |
+| Canva vs Designer: When DIY Starts Costing You | `/canva-vs-designer-when-diy-starts-costing-you/` | `/canva-vs-disenador-cuando-el-diy-te-cuesta-dinero/` | already translated and live |
+| The Marketing Collateral Checklist: What Every Business Actually Needs | `/the-marketing-collateral-checklist-what-you-need/` | `/checklist-de-material-de-marketing-que-necesitas/` | already translated and live |
+| How to Choose the Right Freelancer vs Agency (Cost, Speed, Quality) | `/how-to-choose-the-right-freelancer-vs-agency/` | `/freelance-vs-agencia-como-elegir/` | already translated and live |
+| AI SEO vs Traditional SEO: What's Changed? (and What Still Works?) | `/ai-seo-vs-traditional-seo-whats-changed/` | `/seo-con-ia-vs-seo-tradicional-que-ha-cambiado/` | already translated and live |
+| AEO Explained: How to Rank in AI Answers | `/aeo-explained-how-to-rank-in-ai-answers/` |  | missing Spanish version |
+| Social Media Design That Doesn’t Look Like Everyone Else | `/social-media-design-that-doesnt-look-like-everyone-else/` | `/diseno-para-redes-sociales-que-destaca/` | already translated and live |
+| Best Growth Marketing Channels for 2026 (Australia) | `/best-growth-marketing-channels-australia-2026/` | `/mejores-canales-de-growth-marketing-2026-espana/` | already translated and live |
+| Best Ways to Build E-E-A-T in 2026 | `/best-ways-to-build-e-e-a-t-in-2026/` | `/como-mejorar-el-e-e-a-t-en-2026/` | already translated and live |
+| Best Demand Gen Content for 2026 | `/best-demand-gen-content-for-2026/` |  | missing Spanish version |
+| Positioning vs Messaging: Why Your Ads Aren’t Working | `/positioning-vs-messaging-why-your-ads-arent-working/` |  | missing Spanish version |
+| From Traffic to Demos: A Practical Funnel for B2B SaaS | `/from-traffic-to-demos-a-practical-funnel-for-b2b-saas/` | `/de-trafico-a-demos-embudo-practico-para-saas-b2b/` | already translated and live |
+| The 12-Point Brand Consistency Checklist | `/the-12-point-brand-consistency-checklist/` |  | missing Spanish version |
+| Technical SEO Checklist (Plain English) | `/technical-seo-checklist-plain-english/` | `/checklist-de-seo-tecnico-en-lenguaje-claro/` | already translated and live |
+| SEO for Professional Services in Australia: What’s Different About Ranking When You Sell Expertise | `/seo-for-professional-services-in-australia-whats-different-about-ranking-when-you-sell-expertise/` |  | missing Spanish version |
+| How to Brief an SEO Consultant (And Actually Get Results) | `/how-to-brief-an-seo-consultant/` | `/como-redactar-un-brief-para-un-consultor-seo/` | already translated and live |
+| Why You’re Stuck on Page 2: The 5 SEO Problems Keeping Good Pages Off Page 1 | `/why-youre-stuck-on-page-2-the-5-seo-problems-keeping-good-pages-off-page-1/` | `/por-que-estas-atascado-en-la-pagina-2-de-google/` | already translated and live |
+| The SEO Audit Checklist Australian Businesses Actually Need | `/the-seo-audit-checklist-australian-businesses-actually-need/` |  | missing Spanish version |
+| What to Do When Your Google Rankings Drop Suddenly | `/what-to-do-when-your-google-rankings-drop-suddenly/` |  | missing Spanish version |
+| How Long Does SEO Take? (Honest Answer for Australian Businesses) | `/how-long-does-seo-take-an-honest-answer-for-australian-businesses/` | `/cuanto-tarda-el-seo-en-dar-resultados-en-espana/` | already translated and live |
+| Service Page SEO: The Exact Structure That Gets Enquiries | `/service-page-seo-the-exact-structure-that-gets-enquiries/` |  | missing Spanish version |
+| The Complete AI Search Strategy Guide (2026) | `/the-complete-ai-search-strategy-guide-2026/` |  | missing Spanish version |
+| How ChatGPT Chooses Sources | `/how-chatgpt-chooses-sources/` | `/como-elige-chatgpt-sus-fuentes/` | already translated and live |
+| How Perplexity Chooses Sources (And How to Get Cited More Often) | `/how-perplexity-chooses-sources/` |  | missing Spanish version |
+| How Google AI Overviews Choose Sources | `/how-google-ai-overviews-choose-sources/` |  | missing Spanish version |
+| Why Some Brands Get Mentioned by AI and Others Don't | `/why-some-brands-get-mentioned-by-ai-and-others-dont/` |  | missing Spanish version |
+| How to Measure AI Search Traffic in GA4 | `/how-to-measure-ai-search-traffic-in-ga4/` |  | missing Spanish version |
+| The Difference Between Mentions, Citations and Rankings | `/the-difference-between-mentions-citations-and-rankings/` |  | missing Spanish version |
+| AI Citation Tracking for Small Businesses: How to Measure AI Search Visibility | `/ai-citation-tracking-for-small-businesses-how-to-measure-ai-search-visibility/` |  | missing Spanish version |
+| Marketing for Accountants: The Complete Guide | `/marketing-for-accountants-the-complete-guide/` | `/marketing-para-asesorias-y-despachos-contables/` | already translated and live |
+| Marketing for Architects: How Architecture Firms Win Clients | `/marketing-for-architects-how-architecture-firms-win-clients/` |  | missing Spanish version |
+| Marketing for Consultants: How to Build a Client Pipeline | `/marketing-for-consultants-how-to-build-a-client-pipeline/` |  | missing Spanish version |
+| Marketing for Engineers: How Technical Experts Win More Clients | `/marketing-for-engineers-how-technical-experts-win-more-clients/` |  | missing Spanish version |
+| Marketing for Financial Advisers: How to Attract More Clients | `/marketing-for-financial-advisers-how-to-attract-more-clients/` |  | missing Spanish version |
+| Marketing for IT Service Providers: How to Generate More Qualified Leads | `/marketing-for-it-service-providers-how-to-generate-more-qualified-leads/` |  | missing Spanish version |
