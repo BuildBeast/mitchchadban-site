@@ -2,11 +2,11 @@
 
 ## Summary
 
-- English blog posts in `/blogs-resources/`: 39
+- English blog posts in `/blogs-resources/`: 40
 - Spanish blog posts live in `/es/blog/` before this batch: 7
-- New Spanish blog posts wired live across batches 1 and 2: 17
-- Spanish blog posts now live in `/es/blog/`: 24
-- English blog posts still missing a Spanish version: 15
+- New Spanish blog posts wired live across batches 1, 2 and 3: 22
+- Spanish blog posts now live in `/es/blog/`: 29
+- English blog posts still missing a Spanish version: 11
 
 ## Batch 1 status
 
@@ -27,6 +27,16 @@ This batch adds five more Spain-localised AI search posts, wires them into `/es/
 - `How Perplexity Chooses Sources`
 - `How to Measure AI Search Traffic in GA4`
 
+## Batch 3 status
+
+This batch adds five more Spain-localised AI visibility posts, replaces the batch 2 English fallback links that now have Spanish equivalents, and adds the previously missing English source page for `entity-seo-and-why-it-matters-for-ai-search` so the requested reciprocal `hreflang` pair exists.
+
+- `Why Some Brands Get Mentioned by AI and Others Don't`
+- `AI Citation Tracking for Small Businesses: How to Measure AI Search Visibility`
+- `The Difference Between Mentions, Citations and Rankings`
+- `Entity SEO and Why It Matters for AI Search`
+- `Best Demand Gen Content for 2026`
+
 ## Inventory
 
 | English post title | English slug/path | Spanish slug/path | Status |
@@ -44,7 +54,7 @@ This batch adds five more Spain-localised AI search posts, wires them into `/es/
 | Social Media Design That Doesn’t Look Like Everyone Else | `/social-media-design-that-doesnt-look-like-everyone-else/` | `/diseno-para-redes-sociales-que-destaca/` | already translated and live |
 | Best Growth Marketing Channels for 2026 (Australia) | `/best-growth-marketing-channels-australia-2026/` | `/mejores-canales-de-growth-marketing-2026-espana/` | already translated and live |
 | Best Ways to Build E-E-A-T in 2026 | `/best-ways-to-build-e-e-a-t-in-2026/` | `/como-mejorar-el-e-e-a-t-en-2026/` | already translated and live |
-| Best Demand Gen Content for 2026 | `/best-demand-gen-content-for-2026/` |  | missing Spanish version |
+| Best Demand Gen Content for 2026 | `/best-demand-gen-content-for-2026/` | `/mejor-contenido-de-demand-gen-para-2026/` | translated and live |
 | Positioning vs Messaging: Why Your Ads Aren’t Working | `/positioning-vs-messaging-why-your-ads-arent-working/` |  | missing Spanish version |
 | From Traffic to Demos: A Practical Funnel for B2B SaaS | `/from-traffic-to-demos-a-practical-funnel-for-b2b-saas/` | `/de-trafico-a-demos-embudo-practico-para-saas-b2b/` | already translated and live |
 | The 12-Point Brand Consistency Checklist | `/the-12-point-brand-consistency-checklist/` |  | missing Spanish version |
@@ -60,10 +70,11 @@ This batch adds five more Spain-localised AI search posts, wires them into `/es/
 | How ChatGPT Chooses Sources | `/how-chatgpt-chooses-sources/` | `/como-elige-chatgpt-sus-fuentes/` | already translated and live |
 | How Perplexity Chooses Sources (And How to Get Cited More Often) | `/how-perplexity-chooses-sources/` | `/como-elige-perplexity-sus-fuentes/` | translated and live |
 | How Google AI Overviews Choose Sources | `/how-google-ai-overviews-choose-sources/` | `/como-elige-google-ai-overviews-sus-fuentes/` | translated and live |
-| Why Some Brands Get Mentioned by AI and Others Don't | `/why-some-brands-get-mentioned-by-ai-and-others-dont/` |  | missing Spanish version |
+| Why Some Brands Get Mentioned by AI and Others Don't | `/why-some-brands-get-mentioned-by-ai-and-others-dont/` | `/por-que-algunas-marcas-aparecen-en-la-ia-y-otras-no/` | translated and live |
 | How to Measure AI Search Traffic in GA4 | `/how-to-measure-ai-search-traffic-in-ga4/` | `/como-medir-el-trafico-de-busqueda-con-ia-en-ga4/` | translated and live |
-| The Difference Between Mentions, Citations and Rankings | `/the-difference-between-mentions-citations-and-rankings/` |  | missing Spanish version |
-| AI Citation Tracking for Small Businesses: How to Measure AI Search Visibility | `/ai-citation-tracking-for-small-businesses-how-to-measure-ai-search-visibility/` |  | missing Spanish version |
+| The Difference Between Mentions, Citations and Rankings | `/the-difference-between-mentions-citations-and-rankings/` | `/diferencia-entre-menciones-citas-y-rankings/` | translated and live |
+| Entity SEO and Why It Matters for AI Search | `/entity-seo-and-why-it-matters-for-ai-search/` | `/seo-de-entidades-y-por-que-importa-en-la-busqueda-con-ia/` | translated and live |
+| AI Citation Tracking for Small Businesses: How to Measure AI Search Visibility | `/ai-citation-tracking-for-small-businesses-how-to-measure-ai-search-visibility/` | `/seguimiento-de-citas-de-ia-para-pequenas-empresas/` | translated and live |
 | Marketing for Accountants: The Complete Guide | `/marketing-for-accountants-the-complete-guide/` | `/marketing-para-asesorias-y-despachos-contables/` | already translated and live |
 | Marketing for Architects: How Architecture Firms Win Clients | `/marketing-for-architects-how-architecture-firms-win-clients/` |  | missing Spanish version |
 | Marketing for Consultants: How to Build a Client Pipeline | `/marketing-for-consultants-how-to-build-a-client-pipeline/` |  | missing Spanish version |
