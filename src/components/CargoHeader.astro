@@ -2,6 +2,7 @@
 type Props = { lang?: string };
 const { lang = 'en-AU' } = Astro.props;
 const isEs = lang.startsWith('es');
+const homeHref = isEs ? '/servicios-de-diseno-seo-y-marketing-en-espana/' : '/';
 
 const nav = isEs
   ? {
@@ -21,7 +22,7 @@ const instagram = 'https://www.instagram.com/mitch_chadban/?hl=en';
 
 <header class="header-web" role="banner">
   <div class="header-web__inner">
-    <a class="header-web__brand" href="/">MITCH CHADBAN</a>
+    <a class="header-web__brand" href={homeHref}>MITCH CHADBAN</a>
 
     <nav aria-label="Primary" class="header-web__nav">
       <a class="header-web__link" href={nav.portfolio.href}>{nav.portfolio.label}</a>
@@ -41,7 +42,7 @@ const instagram = 'https://www.instagram.com/mitch_chadban/?hl=en';
 <header class="header-mob" role="banner">
   <details class="mobnav">
     <summary class="mobnav__bar">
-      <a class="mobnav__brand" href="/">MITCH CHADBAN</a>
+      <a class="mobnav__brand" href={homeHref}>MITCH CHADBAN</a>
 
       <span aria-hidden="true" class="mobnav__btn">
         <span class="mobnav__icon"></span>
