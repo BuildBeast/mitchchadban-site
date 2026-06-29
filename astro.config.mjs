@@ -10,7 +10,6 @@ export default defineConfig({
     sitemap({
       // Exclude utility / non-content pages from the sitemap
       filter: (page) =>
-        !page.includes('/archive/') &&
         !page.includes('/404/') &&
         !page.includes('/proximamente/'),
     }),
