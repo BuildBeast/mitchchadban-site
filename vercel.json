@@ -133,6 +133,16 @@
       "permanent": true
     },
     {
+      "source": "/positioning-vs-messaging-why-your-ads-aren%E2%80%99t-working",
+      "destination": "/positioning-vs-messaging-why-your-ads-arent-working/",
+      "permanent": true
+    },
+    {
+      "source": "/positioning-vs-messaging-why-your-ads-aren%E2%80%99t-working/",
+      "destination": "/positioning-vs-messaging-why-your-ads-arent-working/",
+      "permanent": true
+    },
+    {
       "source": "/seo-for-professional-services-in-australia-what%E2%80%99s-different-about-ranking-when-you-sell-expertise",
       "destination": "/seo-for-professional-services-in-australia-whats-different-about-ranking-when-you-sell-expertise/",
       "permanent": true
