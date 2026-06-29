@@ -2,19 +2,19 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 
 const projects = [
-  { year: '2026', title: 'Tribal Habits', code: 'COD.MC00', type: 'SEO / Content Marketing / AEO', href: '/tribal-habits/' },
-  { year: '2026', title: 'Kryoz Gardening', code: 'COD.MC01', type: 'Branding / Web / Servicios Locales', href: '/kryoz/' },
-  { year: '2026', title: 'Pino’s Restaurant', code: 'COD.MC02', type: 'Hospitality / Branding / Marketing', href: '/pinos-restaurant/' },
-  { year: '2026', title: 'The Star Hotel', code: 'COD.MC03', type: 'Hospitality / Diseño / Materiales', href: '/the-star-hotel/' },
-  { year: '2025', title: 'Paragon BM', code: 'COD.MC04', type: 'Branding / Diseño de Negocio', href: '/paragon-bm/' },
-  { year: '2025', title: 'Yellow Billy & The Sty', code: 'COD.MC05', type: 'Hospitality / Branding / Creatividad', href: '/yellow-billy-the-sty/' },
-  { year: '2025', title: 'Karl Jacobs', code: 'COD.MC06', type: 'Branding / Diseño Digital', href: '/karl-jacobs/' },
-  { year: '2025', title: 'Johnny Bird', code: 'COD.MC07', type: 'Branding / Activos de Marketing', href: '/johnny-bird/' },
-  { year: '2025', title: 'MonoDuo', code: 'COD.MC08', type: 'Identidad / Sistema de Diseño', href: '/monoduo/' },
-  { year: '2024', title: 'Newy Fried Chicken', code: 'COD.MC09', type: 'Hospitality / Marca / Diseño de Campaña', href: '/newy-fried-chicken/' },
-  { year: '2024', title: 'Empowered Community Services', code: 'COD.MC10', type: 'Comunidad / Web / Apoyo de Marca', href: '/empowered-community-services/' },
-  { year: '2024', title: 'Biggs', code: 'COD.MC11', type: 'Branding / Trabajo Creativo', href: '/biggs/' },
-  { year: 'Varios', title: 'Various Posters', code: 'COD.MC12', type: 'Carteles / Experimental / Trabajo Visual', href: '/various-posters/' }
+  { year: '2026', title: 'Tribal Habits', code: 'COD.MC00', type: 'SEO / Content Marketing / AEO', href: '/es/portfolio/tribal-habits/' },
+  { year: '2026', title: 'Kryoz Gardening', code: 'COD.MC01', type: 'Branding / Web / Servicios Locales', href: '/es/portfolio/kryoz/' },
+  { year: '2026', title: 'Pino’s Restaurant', code: 'COD.MC02', type: 'Hospitality / Branding / Marketing', href: '/es/portfolio/pinos-restaurant/' },
+  { year: '2026', title: 'The Star Hotel', code: 'COD.MC03', type: 'Hospitality / Diseño / Materiales', href: '/es/portfolio/the-star-hotel/' },
+  { year: '2025', title: 'Paragon BM', code: 'COD.MC04', type: 'Branding / Diseño de Negocio', href: '/es/portfolio/paragon-bm/' },
+  { year: '2025', title: 'Yellow Billy & The Sty', code: 'COD.MC05', type: 'Hospitality / Branding / Creatividad', href: '/es/portfolio/yellow-billy-the-sty/' },
+  { year: '2025', title: 'Karl Jacobs', code: 'COD.MC06', type: 'Branding / Diseño Digital', href: '/es/portfolio/karl-jacobs/' },
+  { year: '2025', title: 'Johnny Bird', code: 'COD.MC07', type: 'Branding / Activos de Marketing', href: '/es/portfolio/johnny-bird/' },
+  { year: '2025', title: 'MonoDuo', code: 'COD.MC08', type: 'Identidad / Sistema de Diseño', href: '/es/portfolio/monoduo/' },
+  { year: '2024', title: 'Newy Fried Chicken', code: 'COD.MC09', type: 'Hospitality / Marca / Diseño de Campaña', href: '/es/portfolio/newy-fried-chicken/' },
+  { year: '2024', title: 'Empowered Community Services', code: 'COD.MC10', type: 'Comunidad / Web / Apoyo de Marca', href: '/es/portfolio/empowered-community-services/' },
+  { year: '2024', title: 'Biggs', code: 'COD.MC11', type: 'Branding / Trabajo Creativo', href: '/es/portfolio/biggs/' },
+  { year: 'Varios', title: 'Various Posters', code: 'COD.MC12', type: 'Carteles / Experimental / Trabajo Visual', href: '/es/portfolio/various-posters/' }
 ];
 ---
 
@@ -44,8 +44,8 @@ const projects = [
             <tr>
               <td class="portfolio-ctm__year">{project.year}</td>
               <td class="portfolio-ctm__project">
-                <span>{project.title}</span>
-                <a class="portfolio-ctm__english-link" href={project.href} lang="en">Ver caso en inglés</a>
+                <a href={project.href}>{project.title}</a>
+                <a class="portfolio-ctm__projectCta" href={project.href}>Ver caso</a>
                 <span>{project.code}</span>
               </td>
               <td class="portfolio-ctm__type">{project.type}</td>

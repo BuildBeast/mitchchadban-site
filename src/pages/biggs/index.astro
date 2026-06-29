@@ -8,6 +8,11 @@ const pageContent = "<div class=\"portfolio-project-ctm portfolio-project-ctm--b
   title="Biggs | Mitch Chadban"
   description="See the Biggs Coffee branding project: a Hamilton NSW cafe identity with a scalable logo and visual system across menus, signage and packaging."
   canonical="https://mitchchadban.com/biggs/"
+  alternates={[
+    { lang: 'en-AU', href: 'https://mitchchadban.com/biggs/' },
+    { lang: 'es', href: 'https://mitchchadban.com/es/portfolio/biggs/' },
+    { lang: 'x-default', href: 'https://mitchchadban.com/biggs/' }
+  ]}
 >
   <Fragment set:html={pageContent} />
 </BaseLayout>
