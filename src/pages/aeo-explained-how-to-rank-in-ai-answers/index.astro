@@ -1,12 +1,405 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
-const pageContent = "<!--  =======================================================================\n     PAGE 10: AEO EXPLAINED (How to Rank in AI Answers)\n     Issue: No meta tags. No live schema.\n=======================================================================  -->\n\n \n<!--  SCHEMA  -->\n<!--  script>\n{\n  \"@context\": \"https://schema.org\",\n  \"@graph\": [\n    {\n      \"@type\": \"Article\",\n      \"@id\": \"https://mitchchadban.com/aeo-explained-how-to-rank-in-ai-answers/#article\",\n      \"headline\": \"AEO Explained: How to Rank in AI Answers (ChatGPT, Gemini, Perplexity)\",\n      \"description\": \"Answer Engine Optimisation explained: what AEO is, how the RAG pipeline works, AEO vs GEO, the 5-layer AEO Stack, platform playbooks for ChatGPT, Gemini, and Perplexity, and a 30/60/90-day plan.\",\n      \"datePublished\": \"2025-01-01\",\n      \"dateModified\": \"2026-04-05\",\n      \"author\": {\n        \"@type\": \"Person\",\n        \"name\": \"Mitch Chadban\",\n        \"url\": \"https://mitchchadban.com/about\",\n        \"jobTitle\": \"SEO & Marketing Specialist\",\n        \"sameAs\": [\"https://www.linkedin.com/in/mitchchadban\"]\n      },\n      \"publisher\": {\n        \"@type\": \"Person\",\n        \"name\": \"Mitch Chadban\",\n        \"url\": \"https://mitchchadban.com\"\n      },\n      \"mainEntityOfPage\": {\n        \"@type\": \"WebPage\",\n        \"@id\": \"https://mitchchadban.com/aeo-explained-how-to-rank-in-ai-answers/\"\n      }\n    },\n    {\n      \"@type\": \"FAQPage\",\n      \"mainEntity\": [\n        {\n          \"@type\": \"Question\",\n          \"name\": \"What is AEO?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Answer Engine Optimisation (AEO) is the practice of structuring content so AI-powered platforms like ChatGPT, Perplexity, and Gemini can retrieve it, extract it, and surface it as a direct answer — often with a citation back to your site. It builds on SEO fundamentals but measures success through citations and assisted conversions rather than rankings and clicks.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Is AEO different from SEO?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Yes and no. AEO builds on SEO fundamentals (crawlability, authority, relevance) but adds an additional layer: making every section independently extractable and every key fact independently citable. SEO optimises the page; AEO optimises individual claims within the page.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"What is the difference between AEO and GEO?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"AEO (Answer Engine Optimisation) focuses specifically on getting cited in AI-generated answers. GEO (Generative Engine Optimisation) is the broader discipline — covering all AI interactions including brand mentions, entity recognition, and training data presence. Start with AEO; GEO scales from there.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"How do AI answer engines actually select content?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Answer engines use a process called Retrieval-Augmented Generation (RAG): the engine interprets the query semantically, retrieves candidate pages, ranks them by relevance, authority, recency, and structure, synthesises an answer, and cites sources. AI-cited URLs are on average 25.7% fresher than Google's top search results — recency is a genuine selection signal.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"How long does AEO take to show results?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Typically a few weeks to a few months, with faster outcomes for sites that already have strong SEO foundations. Pages with established authority, clean indexation, and well-structured content can start appearing in AI citations within weeks of structural improvements. Tracking citation frequency monthly gives the most direct feedback on what is working.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Does Perplexity always cite sources?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Perplexity states that each answer includes numbered citations linking to original sources — citation is a core feature of its product, not an afterthought. That makes Perplexity one of the most directly measurable AEO channels: if you are getting cited, you will see referral traffic from perplexity.ai in your analytics.\"\n          }\n        }\n      ]\n    }\n  ]\n}\n</script -->\n\n___________________________________________________\n\n<div class=\"service-ctm blog-ctm\">\n  <div class=\"service-ctm__body\">\n    \n        <!--  BYLINE — add before H1, or position via CSS to suit your layout  -->\n    <p style=\"font-size: 13px; color: #888; margin: 0 0 12px; letter-spacing: 0.02em;\">\nBy <strong>Mitch Chadban</strong> — SEO &#x26; Marketing Strategist, Australia  |  Updated April 2026\n    </p>\n\n    <h1>AEO Explained: How to Rank in AI Answers (ChatGPT, Gemini, Perplexity)</h1>\n\n    <!--  ═══════════════════════════════════════\n         STANDALONE DEFINITION BLOCK — NEW\n         AI engines extract this first.\n         ═══════════════════════════════════════  -->\n    <blockquote>\n      <p><strong>Answer Engine Optimisation (<a href=\"/aeo-australia-how-to-show-up-in-ai-answers/\" >AEO</a>)</strong> is the practice of structuring and formatting content so that AI-powered platforms — ChatGPT, Perplexity, Gemini, and Google AI Overviews — can retrieve it, extract it, and surface it as a direct answer, often with a citation or link back to your site. It builds on SEO fundamentals but the success metric shifts from rankings and clicks to citations and assisted conversions.</p>\n    </blockquote>\n\n    <p>If you&#x27;ve noticed your best content getting fewer clicks while AI answers take up more space, you&#x27;re not imagining it. Search is shifting from &#x22;ten blue links&#x22; to direct answers + suggested sources — and the numbers make the scale of that shift hard to ignore.</p>\n\n    <div class=\"img-full-ctm\">\n      <div class=\"img-full-ctm\">\n        <img class=\"zoomable\" src=\"/images/Mock-funeral-for-the-blue-links.jpg\" alt=\"A corporate funeral in a bright office for a stack of \" loading=\"lazy\" decoding=\"async\" width=\"1536\" height=\"1024\">\n      </div>\n    </div>\n\n    <p>That doesn&#x27;t mean websites don&#x27;t matter. It means the win condition is changing:</p>\n\n    <ul>\n      <li>You still want rankings and organic traffic.</li>\n      <li>But you also want your pages to be selected, summarised, and cited inside AI answers.</li>\n    </ul>\n\n    <p>That&#x27;s where AEO comes in. In this guide, you&#x27;ll get a practical, no-fluff breakdown of what AEO is, how AI answer engines actually select content, what changes on your site matter, and how to measure results when clicks don&#x27;t tell the full story.</p>\n\n    <details class=\"blog-menu\" open=\"\">\n      <summary class=\"blog-menu__header\">\n        <span class=\"blog-menu__title\">On this page</span>\n        <span aria-hidden=\"true\" class=\"blog-menu__toggle\"></span>\n      </summary>\n      <div class=\"blog-menu__body\">\n        <a class=\"blog-menu__item\" href=\"#why-aeo-matters\" onclick=\"location.hash='why-aeo-matters'; return false;\">Why AEO matters right now (the numbers)</a>\n        <a class=\"blog-menu__item\" href=\"#what-is-aeo\" onclick=\"location.hash='what-is-aeo'; return false;\">What is AEO?</a>\n        <a class=\"blog-menu__item\" href=\"#aeo-vs-seo\" onclick=\"location.hash='aeo-vs-seo'; return false;\">AEO vs SEO (what&#x27;s different, what&#x27;s the same)</a>\n        <a class=\"blog-menu__item\" href=\"#how-ai-selects-content\" onclick=\"location.hash='how-ai-selects-content'; return false;\">How AI answer engines actually select content (the RAG pipeline)</a>\n        <a class=\"blog-menu__item\" href=\"#aeo-vs-geo\" onclick=\"location.hash='aeo-vs-geo'; return false;\">AEO vs GEO: what&#x27;s the difference?</a>\n        <a class=\"blog-menu__item\" href=\"#how-ai-answers-rank-content\" onclick=\"location.hash='how-ai-answers-rank-content'; return false;\">How do AI answers &#x22;rank&#x22; content?</a>\n        <a class=\"blog-menu__item\" href=\"#the-aeo-stack\" onclick=\"location.hash='the-aeo-stack'; return false;\">The AEO Stack: a simple system that actually works</a>\n        <a class=\"blog-menu__item\" href=\"#layer-1-access\" onclick=\"location.hash='layer-1-access'; return false;\">Layer 1: Access</a>\n        <a class=\"blog-menu__item\" href=\"#layer-2-answer\" onclick=\"location.hash='layer-2-answer'; return false;\">Layer 2: Answer</a>\n        <a class=\"blog-menu__item\" href=\"#layer-3-authority\" onclick=\"location.hash='layer-3-authority'; return false;\">Layer 3: Authority</a>\n        <a class=\"blog-menu__item\" href=\"#layer-4-attribution\" onclick=\"location.hash='layer-4-attribution'; return false;\">Layer 4: Attribution</a>\n        <a class=\"blog-menu__item\" href=\"#layer-5-amplification\" onclick=\"location.hash='layer-5-amplification'; return false;\">Layer 5: Amplification</a>\n        <a class=\"blog-menu__item\" href=\"#schema-markup\" onclick=\"location.hash='schema-markup'; return false;\">Schema markup for AEO</a>\n        <a class=\"blog-menu__item\" href=\"#aeo-for-platforms\" onclick=\"location.hash='aeo-for-platforms'; return false;\">AEO for ChatGPT, Gemini, and Perplexity</a>\n        <a class=\"blog-menu__item\" href=\"#measurement\" onclick=\"location.hash='measurement'; return false;\">Measurement: tracking AEO when clicks don&#x27;t tell the story</a>\n        <a class=\"blog-menu__item\" href=\"#aeo-plan\" onclick=\"location.hash='aeo-plan'; return false;\">A simple 30/60/90-day AEO plan</a>\n        <a class=\"blog-menu__item\" href=\"#aeo-faq\" onclick=\"location.hash='aeo-faq'; return false;\">FAQ: Answer Engine Optimisation</a>\n      </div>\n    </details>\n\n\n    <!--  ═══════════════════════════════════════\n         NEW SECTION: WHY AEO MATTERS (STATS)\n         ═══════════════════════════════════════  -->\n    <h2 id=\"why-aeo-matters\">Why AEO matters right now (the numbers)</h2>\n\n    <p>This isn&#x27;t a trend to watch. It&#x27;s a shift already happening — and the data makes it hard to argue otherwise.</p>\n\n    <p><strong>AI search adoption is accelerating fast.</strong> ChatGPT now handles over 2 billion queries daily and reaches 883 million monthly users. AI-referred sessions to websites grew 527% year-over-year through mid-2025. ChatGPT Search alone accounts for 87.4% of all AI referral traffic to websites.</p>\n\n    <p><strong>Zero-click search is the new normal.</strong> 58.5% of Google searches in the US now end without a click to any external site (SparkToro, 2024). Google AI Overviews appear in around 55% of all Google searches. Gartner predicts traditional search volume will drop 25% by 2026 due to AI chatbots and virtual agents.</p>\n\n    <p><strong>Being cited costs you organic traffic if you&#x27;re not in it.</strong> Ahrefs&#x27; December 2025 study of 300,000 keywords found that position 1 click-through rate drops 58% when a Google AI Overview is present. For every 100 clicks a top-ranking page historically earned, Google now keeps 58 of them inside the AI answer.</p>\n\n    <p><strong>AI-referred visitors are more valuable.</strong> Studies show AI-driven visitors convert at 4.4x the rate of standard organic visitors and spend 68% more time on site. They&#x27;ve already done research inside the AI before clicking — they arrive further along the decision process.</p>\n\n    <p><strong>The adoption gap is the opportunity.</strong> 70% of organisations believe AEO will significantly impact their digital strategy within 1–3 years. Only 20% have started implementing it (Acquia). That gap is your window — especially for Australian businesses, where AEO is even less contested than in the US or UK.</p>\n\n    <table class=\"table-ctm\">\n      <thead>\n        <tr>\n          <th>Stat</th>\n          <th>Number</th>\n          <th>Source</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>ChatGPT daily queries</td>\n          <td>2 billion+</td>\n          <td>Exposure Ninja, 2025</td>\n        </tr>\n        <tr>\n          <td>AI referral traffic growth YoY</td>\n          <td>+527%</td>\n          <td>Position Digital, mid-2025</td>\n        </tr>\n        <tr>\n          <td>US Google searches ending without a click</td>\n          <td>58.5%</td>\n          <td>SparkToro, 2024</td>\n        </tr>\n        <tr>\n          <td>Position 1 CTR drop with AI Overview present</td>\n          <td>-58%</td>\n          <td>Ahrefs, Dec 2025</td>\n        </tr>\n        <tr>\n          <td>AI visitor conversion rate vs organic</td>\n          <td>4.4× higher</td>\n          <td>Superlines, 2025</td>\n        </tr>\n        <tr>\n          <td>Organisations yet to implement AEO</td>\n          <td>80%</td>\n          <td>Acquia, 2025</td>\n        </tr>\n        <tr>\n          <td>Google searches showing AI Overviews</td>\n          <td>~55%</td>\n          <td>WordStream, 2025</td>\n        </tr>\n      </tbody>\n    </table>\n\n\n    <!--  ═══════════════════════════════════════\n         EXISTING SECTION: WHAT IS AEO\n         (upgraded with tighter opening)\n         ═══════════════════════════════════════  -->\n    <h2 id=\"what-is-aeo\">What is AEO?</h2>\n\n    <p>Answer Engine Optimisation (AEO) is the practice of creating and formatting content so answer engines can understand it, extract it, and surface it as a direct answer — often with citations or links back to your site.</p>\n\n    <p>It overlaps heavily with SEO, but the emphasis shifts toward:</p>\n\n    <ul>\n      <li>extractability (can the answer be pulled cleanly?),</li>\n      <li>citation-worthiness (is your page a strong source?),</li>\n      <li>trust signals (do you look credible enough to reference?),</li>\n      <li>and coverage of conversational intent (multi-step questions and follow-ups).</li>\n    </ul>\n\n    <p>Google has explicitly noted that AI search experiences lead users to ask longer, more specific questions and follow-up questions, and advises creators to focus on unique, non-commodity content that users find helpful and satisfying.</p>\n\n\n    <!--  ═══════════════════════════════════════\n         EXISTING SECTION: AEO VS SEO\n         (expanded table — 10 rows vs original 5)\n         ═══════════════════════════════════════  -->\n    <h2 id=\"aeo-vs-seo\">AEO vs SEO (what&#x27;s different, what&#x27;s the same)</h2>\n\n    <p>AEO doesn&#x27;t replace SEO. It&#x27;s a layer on top of modern SEO, because most answer engines still rely on crawlable pages, clear topical relevance, and credibility signals. The win conditions are just different.</p>\n\n    <table class=\"table-ctm\">\n      <thead>\n        <tr>\n          <th>Dimension</th>\n          <th>Traditional SEO</th>\n          <th>AEO (Answer Engine Optimisation)</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr>\n          <td>Primary goal</td>\n          <td>Rank pages in search results</td>\n          <td>Get cited in AI-generated answers + still rank</td>\n        </tr>\n        <tr>\n          <td>Success metric</td>\n          <td>Rankings, clicks, traffic</td>\n          <td>AI citations, brand mentions, assisted conversions</td>\n        </tr>\n        <tr>\n          <td>Optimisation unit</td>\n          <td>Page-level (title, headings, content)</td>\n          <td>Fact-level (individual claims, definitions, statistics)</td>\n        </tr>\n        <tr>\n          <td>Content style</td>\n          <td>Keyword + intent match</td>\n          <td>Intent match + direct answers + extractable blocks</td>\n        </tr>\n        <tr>\n          <td>Content structure</td>\n          <td>Helpful headings and UX</td>\n          <td>Semantically chunked, independently citable sections</td>\n        </tr>\n        <tr>\n          <td>Keyword strategy</td>\n          <td>Search volume, keyword difficulty</td>\n          <td>Question patterns, conversational queries</td>\n        </tr>\n        <tr>\n          <td>Link building</td>\n          <td>Backlinks for domain authority</td>\n          <td>Backlinks + entity recognition for AI trust</td>\n        </tr>\n        <tr>\n          <td>Freshness signal</td>\n          <td>Periodic updates</td>\n          <td>Continuous freshness (AI-cited URLs are 25.7% fresher than Google&#x27;s)</td>\n        </tr>\n        <tr>\n          <td>Technical requirements</td>\n          <td>Core Web Vitals, crawlability</td>\n          <td>Schema markup, structured data, clear hierarchy</td>\n        </tr>\n        <tr>\n          <td>Measurement tools</td>\n          <td>Google Search Console, analytics</td>\n          <td>AI citation tracking, manual prompt testing, branded search lift</td>\n        </tr>\n      </tbody>\n    </table>\n\n    <p>Both SEO and AEO reward high-quality, well-structured, authoritative content. The key difference: AEO requires every section to be independently understandable and every key fact to be independently citable — not just the page as a whole.</p>\n\n\n    <!--  ═══════════════════════════════════════\n         NEW SECTION: HOW AI SELECTS CONTENT (RAG)\n         This is the biggest structural gap vs competitors.\n         ═══════════════════════════════════════  -->\n    <h2 id=\"how-ai-selects-content\">How AI answer engines actually select content (the RAG pipeline)</h2>\n\n    <p>Most AEO advice tells you what to do. Almost none of it explains why. Understanding how AI answer engines actually work makes every other tactic make more sense — and makes it obvious why generic, poorly structured content never gets cited.</p>\n\n    <p>Answer engines use a process called <strong>Retrieval-Augmented Generation (RAG)</strong> to find, evaluate, and synthesise content from across the web. There are five stages, and each one is an optimisation opportunity.</p>\n\n    <div class=\"img-full-ctm\">\n      <div class=\"img-full-ctm\">\n        <img class=\"zoomable\" src=\"/images/Factory-workers-streamline-document-processing.jpg\" alt=\"A factory conveyor with four stations labeled only by icons: magnifying glass (retrieve), checkmark (select), blender (synthesize), bookmark (cite). Workers look absurdly proud.\" loading=\"lazy\" decoding=\"async\" width=\"1536\" height=\"1024\">\n      </div>\n    </div>\n\n    <h3>Stage 1: Query interpretation</h3>\n    <p>When a user submits a question, the AI engine parses the intent and converts it into a semantic representation. This isn&#x27;t keyword matching — the engine identifies the underlying concepts, entities, and relationships in the query. A page about &#x22;AEO strategy for 2026&#x22; can surface for a query about &#x22;how to rank in AI answers&#x22; without containing those exact words.</p>\n\n    <h3>Stage 2: Retrieval</h3>\n    <p>The system searches its index for documents semantically relevant to the query. It pulls candidate pages based on conceptual similarity and entity recognition. Your page needs to be discoverable (indexed, crawlable) and clearly &#x22;about&#x22; the topic at a conceptual level — not just keyword-stuffed.</p>\n\n    <h3>Stage 3: Ranking and selection</h3>\n    <p>Retrieved documents are scored on relevance, authority, recency, and structural quality. Research analysing 17 million AI citations found that AI-surfaced URLs are 25.7% fresher than traditional Google search results — recency is a genuine signal. Additionally, 38% of AI Overview citations now come from pages ranked in the top 10 on Google (down from 76% in earlier studies), meaning AI engines are increasingly diversifying their sources. Strong content can get cited even without a #1 ranking.</p>\n\n    <h3>Stage 4: Answer generation</h3>\n    <p>The AI reads the top-ranked source documents and synthesises a coherent response. It doesn&#x27;t copy text verbatim — it extracts key facts, statistics, and explanations, then rewrites them in natural language. This is why clear, extractable structure matters more than elegant prose. If your key insight is buried in paragraph 8 of a 2,000-word section, it won&#x27;t get pulled.</p>\n\n    <h3>Stage 5: Citation</h3>\n    <p>The engine attributes specific claims to their source documents. This is where AEO pays off: content that provides clear, citable facts with supporting data is more likely to earn a citation than content that makes the same points vaguely. Statistics, definitions, step-by-step processes, and comparison tables are the formats most reliably cited.</p>\n\n    <h3>What answer engines prioritise when selecting sources</h3>\n    <ul>\n      <li>Clear, direct answers to the question implied by each heading</li>\n      <li>Statistics and data points with cited, authoritative sources</li>\n      <li>Logical structure with headings and semantic chunking</li>\n      <li>Authority signals: backlinks, domain reputation, E-E-A-T</li>\n      <li>Content freshness (a visible &#x22;last updated&#x22; date helps)</li>\n      <li>Schema markup and structured data</li>\n      <li>Entity clarity: the page clearly identifies people, tools, concepts</li>\n    </ul>\n\n\n    <!--  ═══════════════════════════════════════\n         NEW SECTION: AEO VS GEO\n         ═══════════════════════════════════════  -->\n    <h2 id=\"aeo-vs-geo\">AEO vs GEO: what&#x27;s the difference?</h2>\n\n    <p>You&#x27;ll see AEO and GEO (Generative Engine Optimisation) used interchangeably in a lot of content. They&#x27;re closely related but not identical.</p>\n\n    <p><strong>AEO</strong> focuses specifically on the answer-retrieval layer: getting your content selected as a cited source when an AI engine needs to answer a specific question. The emphasis is on extractability, structure, and citation-worthiness.</p>\n\n    <p><strong>GEO</strong> is the broader discipline — optimising across all generative AI interactions, including brand mentions, product recommendations, training data presence, and entity recognition. Where AEO asks &#x22;will this page get cited?&#x22;, GEO asks &#x22;how does AI describe our brand across every context?&#x22;</p>\n\n    <p>In practice: start with AEO. Get your pages structured for citation. GEO becomes relevant as you scale — building entity authority, pursuing earned media, and tracking brand mentions across platforms. The two reinforce each other: the authority signals that drive AEO citations are built on the content quality GEO demands.</p>\n\n    <p>Alternative terms you&#x27;ll encounter for the same space: LLMO (Large Language Model Optimisation), AI Search Optimisation, and Generative Search Optimisation. Same core goal — be the source AI engines trust.</p>\n\n\n    <!--  ═══════════════════════════════════════\n         EXISTING SECTION: HOW AI ANSWERS RANK CONTENT\n         ═══════════════════════════════════════  -->\n    <h2 id=\"how-ai-answers-rank-content\">How do AI answers &#x22;rank&#x22; content?</h2>\n\n    <p>Unlike classic search rankings, AI answer systems often work like this:</p>\n\n    <ol>\n      <li>Retrieve: find a set of candidate sources (web pages, knowledge bases, trusted references).</li>\n      <li>Select: choose the best sources to support the answer.</li>\n      <li>Synthesize: generate the answer based on those sources.</li>\n      <li>Cite (sometimes): show references so users can verify and explore.</li>\n    </ol>\n\n    <p>Some platforms make citations a first-class feature:</p>\n\n    <ul>\n      <li>Perplexity explicitly states that answers include numbered citations linking to sources.</li>\n      <li>ChatGPT&#x27;s search feature includes inline citations and a Sources view for responses that use web search.</li>\n      <li>Gemini models can be &#x22;grounded&#x22; with Google Search to cite verifiable sources in supported setups.</li>\n    </ul>\n\n    <p>So your job isn&#x27;t just &#x22;rank page #1.&#x22; Your job is to become an obvious candidate source when the system retrieves and selects.</p>\n\n\n    <!--  ═══════════════════════════════════════\n         EXISTING SECTION: AEO STACK\n         ═══════════════════════════════════════  -->\n    <h2 id=\"the-aeo-stack\">The AEO Stack: a simple system that actually works</h2>\n\n    <p>If you want a reliable AEO approach (not random tips), use this 5-layer stack:</p>\n\n    <h3>1) Access</h3>\n    <p>Your content must be crawlable, indexable, and renderable.</p>\n\n    <h3>2) Answer</h3>\n    <p>Your pages must present direct answers in structures an AI can extract.</p>\n\n    <h3>3) Authority</h3>\n    <p>You need proof and credibility signals to be reference-worthy.</p>\n\n    <h3>4) Attribution</h3>\n    <p>You need unique value that makes your page the best source to cite.</p>\n\n    <h3>5) Amplification</h3>\n    <p>You need off-site reinforcement: mentions, links, partnerships, distribution.</p>\n\n    <p>Google&#x27;s own guidance for succeeding in AI search aligns strongly with Layers 2–4: create unique, helpful content that satisfies users, especially for more complex questions. Let&#x27;s break each layer down with practical actions.</p>\n\n\n    <!--  ═══════════════════════════════════════\n         EXISTING: LAYER 1 — ACCESS\n         ═══════════════════════════════════════  -->\n    <h2 id=\"layer-1-access\">Layer 1: Access (the technical foundations you can&#x27;t skip)</h2>\n\n    <p>If your pages aren&#x27;t accessible, you can&#x27;t be referenced — full stop.</p>\n\n    <h3>Access checklist</h3>\n    <ul>\n      <li>Your key pages aren&#x27;t accidentally set to <code>noindex</code></li>\n      <li>Canonicals are correct (no duplicate/competing versions)</li>\n      <li>Robots.txt isn&#x27;t blocking important crawling</li>\n      <li>Pages render properly (especially on mobile)</li>\n      <li>Internal linking clearly signals priority pages</li>\n      <li>A visible &#x22;Last updated&#x22; date is shown on each post</li>\n    </ul>\n\n    <p>If you&#x27;re experimenting with bot controls, do it on specific sections or pages, not site-wide, with clear documentation, and with measurement tied to outcomes. A common 2026 mistake is blocking too broadly and then wondering why AI visibility drops.</p>\n\n\n    <!--  ═══════════════════════════════════════\n         EXISTING: LAYER 2 — ANSWER\n         ═══════════════════════════════════════  -->\n    <h2 id=\"layer-2-answer\">Layer 2: Answer (make your content easy to extract)</h2>\n\n    <p>Most sites lose AEO because they make answers hard to pull out. AI answers love clean definitions, concise summaries, steps, comparison tables, decision rules, and FAQs.</p>\n\n    <h3>The &#x22;extractable&#x22; page pattern</h3>\n    <ol>\n      <li>Direct answer near the top (40–80 words)</li>\n      <li>Short summary bullets (&#x22;what to do&#x22;)</li>\n      <li>Steps or framework</li>\n      <li>Examples / proof</li>\n      <li>FAQ</li>\n    </ol>\n\n    <p>AI engines parse content by sections, not by page. Each section must be a self-contained unit that can be understood and cited independently. Keep sections to 200–400 words with clear semantic boundaries — don&#x27;t mix definitions with how-to instructions in the same block.</p>\n\n    <h3>3 AEO content blocks that work on almost any page</h3>\n\n    <p><strong>Block 1 — Definition (40–60 words)</strong></p>\n    <blockquote>\n      <p>Answer Engine Optimisation (AEO) is the practice of structuring content so AI answer systems can understand it, extract it, and surface it as a direct response — often with citations. It builds on SEO fundamentals (crawlability, relevance, authority) but prioritises clear answers, proof, and formats that are easy to reference.</p>\n    </blockquote>\n\n    <p><strong>Block 2 — Steps</strong></p>\n    <blockquote>\n      <p>How to improve your chances of showing up in AI answers:</p>\n      <ol>\n        <li>Publish a direct answer near the top of the page.</li>\n        <li>Use clear headings, bullets, and step-by-step sections.</li>\n        <li>Add proof (examples, sources, screenshots, outcomes).</li>\n        <li>Create at least one uniquely useful asset (template, benchmark, criteria table).</li>\n        <li>Strengthen internal links so your site clearly owns the topic.</li>\n      </ol>\n    </blockquote>\n\n    <p><strong>Block 3 — Decision rules</strong></p>\n    <blockquote>\n      <ul>\n        <li>If the query is &#x22;what is X,&#x22; lead with a short definition + examples.</li>\n        <li>If the query is &#x22;how do I do X,&#x22; lead with steps + a checklist.</li>\n        <li>If the query is &#x22;which option is best,&#x22; lead with a comparison table + trade-offs.</li>\n      </ul>\n    </blockquote>\n\n\n    <!--  ═══════════════════════════════════════\n         EXISTING: LAYER 3 — AUTHORITY\n         ═══════════════════════════════════════  -->\n    <h2 id=\"layer-3-authority\">Layer 3: Authority (the trust signals that get you cited)</h2>\n\n    <p>When the web is flooded with content, credibility becomes the moat. Authority isn&#x27;t just backlinks — it&#x27;s a stack of &#x22;do you look real and reliable?&#x22; signals.</p>\n\n    <h3>Authority signals that matter in AEO</h3>\n    <ul>\n      <li>Author transparency: name, role, relevant experience, contactability</li>\n      <li>Proof: screenshots, outcomes, examples, mini case studies</li>\n      <li>Freshness: &#x22;Last updated&#x22; + actual updates (AI-cited URLs are 25.7% fresher on average)</li>\n      <li>Sourcing: cite key claims and link to the original source, not a summary</li>\n      <li>Consistency: internal links and topical clusters that reinforce expertise</li>\n      <li>Statistics: include at least one data point per 150–200 words</li>\n    </ul>\n\n    <p>Google explicitly recommends focusing on unique, non-commodity content that visitors find helpful and satisfying. Authority signals help your content stand out as worth referencing over the hundred other pages on the same topic.</p>\n\n\n    <!--  ═══════════════════════════════════════\n         CTA (existing, preserved)\n         ═══════════════════════════════════════  -->\n    <h2>Want an AEO plan that actually drives leads?</h2>\n\n    <p>If you want to show up in AI answers <em>and</em> turn that visibility into enquiries, I can help with:</p>\n\n    <ul>\n      <li>an AEO content + site audit (access, structure, proof gaps),</li>\n      <li>a page-by-page plan for your top revenue pages,</li>\n      <li>and a citation-focused content strategy (templates + comparisons + proof assets).</li>\n    </ul>\n\n    <br />\nIf you&#x27;re serious about AEO,\n     <a href=\"mailto:mitch.chadban@hotmail.com\" ><div class=\"custom-btn\"><b>Reach out</b></div></a>\n     and I&#x27;ll map your fastest path to getting referenced — and getting paid.\n     <br />\n\n\n    <!--  ═══════════════════════════════════════\n         EXISTING: LAYER 4 — ATTRIBUTION\n         ═══════════════════════════════════════  -->\n    <h2 id=\"layer-4-attribution\">Layer 4: Attribution (be the best source to cite)</h2>\n\n    <blockquote>\n      <p>Don&#x27;t just write content. Write reference material.</p>\n    </blockquote>\n\n    <p>AI systems cite sources that provide clear definitions, unique facts, strong examples, structured comparisons, and trustworthy proof. Generic content that restates what&#x27;s already everywhere isn&#x27;t cite-worthy — it&#x27;s invisible.</p>\n\n    <div class=\"img-full-ctm\">\n      <div class=\"img-full-ctm\">\n        <img class=\"zoomable\" src=\"/images/Librarian-guides-robot-through-reference-materials.jpg\" alt=\"A librarian in a suit presents \" loading=\"lazy\" decoding=\"async\" width=\"1536\" height=\"1024\">\n      </div>\n    </div>\n\n    <h3>Content types that earn citations more often</h3>\n    <ol>\n      <li><strong>Comparisons and alternatives</strong> — &#x22;X vs Y&#x22;, &#x22;best alternatives&#x22;, &#x22;best option for [use case]&#x22;</li>\n      <li><strong>Glossaries / &#x22;how it works&#x22; hubs</strong> — definitional content that others reference</li>\n      <li><strong>Templates and checklists</strong> — structured assets people bookmark and share</li>\n      <li><strong>Original research / benchmarks</strong> — even small datasets work if methodology is clear</li>\n      <li><strong>Pricing/criteria pages with context</strong> — where relevant and accurate</li>\n    </ol>\n\n    <h3>Avoid &#x22;scaled sameness&#x22;</h3>\n    <p>If your AEO content strategy is publishing AI-written posts that add no value, you&#x27;re walking into a known risk area. Google&#x27;s guidance on generative AI content warns that generating many pages without adding value may violate spam policies around scaled content abuse. That same principle applies directly to AEO: generic content isn&#x27;t cite-worthy.</p>\n\n\n    <!--  ═══════════════════════════════════════\n         EXISTING: LAYER 5 — AMPLIFICATION\n         ═══════════════════════════════════════  -->\n    <h2 id=\"layer-5-amplification\">Layer 5: Amplification (how you compound your cite-ability)</h2>\n\n    <p>You can do everything on-site and still struggle if no one references you. Amplification increases your chance of being selected as a source because it builds reputation signals off-site.</p>\n\n    <h3>Practical amplification loops</h3>\n    <ul>\n      <li>Partnerships and co-marketing (earn mentions + links)</li>\n      <li>Guest content/podcasts (credibility + entity association)</li>\n      <li>Community distribution (niche groups &#x3E; broad social)</li>\n      <li>Data-led PR (benchmarks and studies are easiest to pitch)</li>\n      <li>&#x22;Reference assets&#x22; people bookmark and share</li>\n    </ul>\n\n\n    <!--  ═══════════════════════════════════════\n         NEW SECTION: SCHEMA MARKUP\n         ═══════════════════════════════════════  -->\n    <h2 id=\"schema-markup\">Schema markup for AEO</h2>\n\n    <p>Schema markup provides machine-readable context that helps AI engines understand your content type, structure, and key claims. It&#x27;s one of the few technical changes with a direct, measurable impact on citation likelihood.</p>\n\n    <p>Three schema types matter most for AEO:</p>\n\n    <p><strong>Article schema (BlogPosting)</strong> tells AI engines this is an article with a specific author, publication date, and topic. The <code>author</code> and <code>dateModified</code> fields matter — they feed the freshness and E-E-A-T signals that affect selection.</p>\n\n    <p><strong>FAQPage schema</strong> marks up your FAQ section so AI engines can directly extract question-answer pairs. This is one of the highest-impact AEO optimisations: FAQ content maps directly to how users query AI engines, and marked-up Q&#x26;A pairs are structurally ideal for RAG extraction.</p>\n\n    <p><strong>HowTo schema</strong> marks up step-by-step processes. If your post contains a &#x22;how to do X&#x22; section (like the 30/60/90-day plan below), HowTo schema makes those steps machine-readable and directly citable.</p>\n\n    <p>Validate your schema using Google&#x27;s Rich Results Test before publishing. Schema errors reduce trust signals rather than adding them.</p>\n\n\n    <!--  ═══════════════════════════════════════\n         EXISTING: AEO FOR PLATFORMS\n         ═══════════════════════════════════════  -->\n    <h2 id=\"aeo-for-platforms\">AEO for ChatGPT, Gemini, and Perplexity: what to optimise for</h2>\n\n    <p>These platforms differ in UX, but the content principles overlap significantly. You don&#x27;t &#x22;optimise for one platform&#x22; — you build source-quality content that works everywhere.</p>\n\n    <div class=\"img-full-ctm\">\n      <div class=\"img-full-ctm\">\n        <img class=\"zoomable\" src=\"/images/Mascots-face-off-in-the-wrestling-ring.jpg\" alt=\"Three mascots in a cheesy wrestling ring, each holding a different icon: chat bubble (ChatGPT), sparkle star (Gemini), question mark (Perplexity). Referee holds \" loading=\"lazy\" decoding=\"async\" width=\"1536\" height=\"1024\">\n      </div>\n    </div>\n\n    <h3>ChatGPT</h3>\n    <p>ChatGPT Search accounts for 87.4% of all AI referral traffic to websites. When it uses web search, it shows inline citations and a Sources view. Your content should be clearly structured, easy to reference, and obviously credible. The <code>dateModified</code> signal in your schema is especially relevant here — ChatGPT search weights recency.</p>\n\n    <h3>Gemini</h3>\n    <p>Gemini can be connected to Google Search for &#x22;grounding,&#x22; enabling answers that cite verifiable sources. Your content should align with Google&#x27;s crawl and index fundamentals, strong topical relevance, and clear, extractable answers. If your page ranks well on Google, Gemini is more likely to cite it.</p>\n\n    <h3>Perplexity</h3>\n    <p>Perplexity highlights citations as a core part of its product — answers include numbered citations to sources. Your content should aim to be a clean primary source for definitions, steps, and comparisons, with strong proof and clear structure. Perplexity rewards concise, directly answerable content over long narrative.</p>\n\n    <h3>Google AI Overviews / AI Mode</h3>\n    <p>AI Overviews now appear in around 55% of all Google searches. They pull from indexed pages and weight E-E-A-T signals, schema, and topical authority. Pages already ranking in the top 10 still account for 38% of AI Overview citations — so strong SEO and strong AEO compound here.</p>\n\n\n    <!--  ═══════════════════════════════════════\n         EXISTING: MEASUREMENT\n         ═══════════════════════════════════════  -->\n    <h2 id=\"measurement\">Measurement: how to track AEO when clicks don&#x27;t tell the story</h2>\n\n    <p>If you measure success purely on organic traffic, AEO will feel confusing. Traffic can stay flat or drop while AI citation value is growing. You need a broader measurement stack.</p>\n\n    <h3>1) Conversions from organic landing pages</h3>\n    <p>Leads, demo requests, enquiries. This is the real win — and AI-driven visitors convert at 4.4x the rate of standard organic visitors, so even modest AI citation can move revenue.</p>\n\n    <h3>2) Assisted conversions</h3>\n    <p>AI answers can influence a buyer without being the last click. Check your attribution paths — &#x22;organic / AI referral → direct&#x22; journeys are common and valuable.</p>\n\n    <h3>3) Branded search lift</h3>\n    <p>If your AEO content is working, you&#x27;ll often see more &#x22;brand + category&#x22; searches in Google Search Console. Someone sees you cited in ChatGPT, then Googles you to verify. That&#x27;s the signal.</p>\n\n    <h3>4) Citation tracking (manual but effective)</h3>\n    <p>Pick 20 priority queries. Once per month, test them across ChatGPT, Perplexity, and Gemini. Note whether you&#x27;re cited, which page got picked, and what format the answer took. This gives direct feedback on which content structures are winning. It&#x27;s low-tech but it&#x27;s the most honest read on AEO performance available right now.</p>\n\n    <h3>5) GA4 AI referral source tracking</h3>\n    <p>Configure GA4 to monitor traffic coming from LLMs by filtering sessions from domains like <code>chat.openai.com</code>, <code>perplexity.ai</code>, and <code>gemini.google.com</code>. Even at low volume today, baseline this now — the trend line is what matters.</p>\n\n\n    <!--  ═══════════════════════════════════════\n         EXISTING: 30/60/90 PLAN\n         ═══════════════════════════════════════  -->\n    <h2 id=\"aeo-plan\">A simple 30/60/90-day AEO plan</h2>\n\n    <h3>Days 1–30: Fix access + upgrade your key pages</h3>\n    <ul>\n      <li>Clean up indexation, canonicals, internal links</li>\n      <li>Add &#x22;Last updated&#x22; dates to key posts</li>\n      <li>Rewrite your top money pages using the extractable structure</li>\n      <li>Add FAQs and proof sections</li>\n      <li>Implement Article, FAQPage, and HowTo schema where relevant</li>\n      <li>Consolidate thin/duplicate content to reduce &#x22;sameness&#x22;</li>\n    </ul>\n\n    <h3>Days 31–60: Publish &#x22;answer assets&#x22;</h3>\n    <p>Create 6–10 pages built for conversational intent:</p>\n    <ul>\n      <li>comparisons (&#x22;X vs Y&#x22;)</li>\n      <li>alternatives (&#x22;best alternatives to X&#x22;)</li>\n      <li>&#x22;best X for Y&#x22; pages (with real criteria, not vague recommendations)</li>\n      <li>glossary/how-it-works hubs</li>\n      <li>templates/checklists</li>\n    </ul>\n\n    <h3>Days 61–90: Build proof + amplification</h3>\n    <ul>\n      <li>Publish one standout proof asset (benchmark, dataset, teardown)</li>\n      <li>Pitch it through partnerships or niche PR</li>\n      <li>Strengthen internal linking across the topic cluster</li>\n      <li>Begin monthly citation tracking across ChatGPT, Perplexity, Gemini</li>\n      <li>Refresh pages that start getting traction</li>\n    </ul>\n\n\n    <!--  ═══════════════════════════════════════\n         EXISTING + EXPANDED: FAQ\n         ═══════════════════════════════════════  -->\n    <h2 id=\"aeo-faq\">FAQ: Answer Engine Optimisation (AEO)</h2>\n\n    <h3>What is AEO?</h3>\n    <p>Answer Engine Optimisation (AEO) is the practice of structuring content so AI-powered platforms like ChatGPT, Perplexity, and Gemini can retrieve it, extract it, and surface it as a direct answer — often with a citation back to your site. It builds on SEO fundamentals but measures success through citations and assisted conversions rather than rankings and clicks.</p>\n\n    <h3>Is AEO different from SEO?</h3>\n    <p>Yes and no. AEO builds on SEO fundamentals (crawlability, authority, relevance) but adds an additional layer: making every section independently extractable and every key fact independently citable. SEO optimises the page; AEO optimises individual claims within the page.</p>\n\n    <h3>What&#x27;s the difference between AEO and GEO?</h3>\n    <p>AEO (Answer Engine Optimisation) focuses specifically on getting cited in AI-generated answers. GEO (Generative Engine Optimisation) is the broader discipline — covering all AI interactions including brand mentions, entity recognition, and training data presence. Start with AEO; GEO scales from there.</p>\n\n    <h3>How do I get cited in AI answers?</h3>\n    <p>Structure your pages so every section leads with a direct answer (40–60 words), add comparison tables and step-by-step formats, include statistics from authoritative sources, implement FAQPage and Article schema, and publish uniquely useful assets like templates or benchmarks. AI engines prioritise clarity, recency, and trust — not length or keyword density.</p>\n\n    <h3>How do AI answer engines select content?</h3>\n    <p>Through a process called Retrieval-Augmented Generation (RAG): the engine interprets the query semantically, retrieves candidate pages, ranks them by relevance/authority/recency/structure, synthesises an answer, and cites sources. AI-cited URLs are on average 25.7% fresher than Google&#x27;s top search results — recency is a genuine selection signal.</p>\n\n    <h3>Can I use AI to write AEO content?</h3>\n    <p>You can use AI as a tool, but publishing large volumes of unoriginal pages is counterproductive. Google warns that generating many pages without adding value may violate spam policies around scaled content abuse. Generic content isn&#x27;t cite-worthy regardless of how it was produced.</p>\n\n    <h3>Does Perplexity always cite sources?</h3>\n    <p>Perplexity states that each answer includes numbered citations linking to original sources — citation is a core feature of its product, not an afterthought. That makes Perplexity one of the most directly measurable AEO channels: if you&#x27;re getting cited, you&#x27;ll see referral traffic from perplexity.ai in your analytics.</p>\n\n    <h3>How long does AEO take to show results?</h3>\n    <p>Typically a few weeks to a few months, with faster outcomes for sites that already have strong SEO foundations. Pages with established authority, clean indexation, and well-structured content can start appearing in AI citations within weeks of structural improvements. Tracking citation frequency monthly gives the most direct feedback on what&#x27;s working.</p>\n\n\n    <!--  ═══════════════════════════════════════\n         CLOSING CTA (existing, preserved)\n         ═══════════════════════════════════════  -->\n    <h2>Want an AEO plan that actually drives leads?</h2>\n\n    <p>If you want to show up in AI answers <em>and</em> turn that visibility into enquiries, I can help with:</p>\n\n    <ul>\n      <li>an AEO content + site audit (access, structure, proof gaps),</li>\n      <li>a page-by-page plan for your top revenue pages,</li>\n      <li>and a citation-focused content strategy (templates + comparisons + proof assets).</li>\n    </ul>\n\n    <br />\nIf you&#x27;re serious about AEO,\n     <a href=\"mailto:mitch.chadban@hotmail.com\" ><div class=\"custom-btn\"><b>Reach out</b></div></a>\n     and I&#x27;ll map your fastest path to getting referenced — and getting paid.<br />\n\n    <div class=\"further-reading-ctm\">\n      <h4 class=\"further-reading-ctm__title\">Further Reading</h4>\n      <ul class=\"further-reading-ctm__list\">\n        <li class=\"further-reading-ctm__item\">\n          <a class=\"further-reading-ctm__link\" href=\"/best-seo-and-ai-workflow-for-2026/\" >Best SEO + AI Workflow for 2026 (How to Use AI Without Sounding Like AI)</a>\n        </li>\n        <li class=\"further-reading-ctm__item\">\n          <a class=\"further-reading-ctm__link\" href=\"/ai-seo-vs-traditional-seo-whats-changed/\" >AI SEO vs Traditional SEO: What&#x27;s Changed? (and What Still Works?)</a>\n        </li>\n        <li class=\"further-reading-ctm__item\">\n          <a class=\"further-reading-ctm__link\" href=\"/best-demand-gen-content-for-2026/\" >Best Demand Gen Content for 2026: What to Publish to Win Leads</a>\n        </li>\n        <li class=\"further-reading-ctm__item\">\n          <a class=\"further-reading-ctm__link\" href=\"/best-ways-to-build-e-e-a-t-in-2026/\" >Best Ways to Build E-E-A-T in 2026 (Proof, Original Assets, Authority)</a>\n        </li>\n        <li class=\"further-reading-ctm__item\">\n          <a class=\"further-reading-ctm__link\" href=\"/technical-seo-checklist-plain-english/\" >Technical SEO Checklist (Plain English): Speed, Indexing, Site Health</a>\n        </li>\n        <li class=\"further-reading-ctm__item\">\n          <a class=\"further-reading-ctm__link\" href=\"/seo-for-saas-australia-what-works-in-2026/\" >SEO for SaaS in Australia: What Actually Works in 2026</a>\n        </li>\n      </ul>\n    </div>\n\n  </div>\n  <br />\n  <br />\n</div>\n\n<!--  ═══════════════════════════════════════════════════════\n     SEO METADATA — paste into WordPress SEO plugin fields\n     ═══════════════════════════════════════════════════════\n\nSEO TITLE (55 chars):\nAnswer Engine Optimisation (AEO) Guide 2026 | Mitch Chadban\n\nMETA DESCRIPTION (150 chars):\nAEO explained: what answer engine optimisation is, how AI answers select content, and a practical system to get cited in ChatGPT, Gemini, and Perplexity.\n\nFOCUS KEYWORD:\nAnswer Engine Optimisation\n\nSECONDARY KEYWORDS:\nAEO, how to rank in AI answers, ChatGPT SEO, Perplexity citations, GEO, generative engine optimisation\n\nSUGGESTED SLUG:\n/aeo-answer-engine-optimisation-guide\n\nNOTE — add a visible \"Last updated: April 2026\" line near the top of the post.\nThis feeds the freshness signal: AI-cited URLs are 25.7% fresher on average\nthan Google's top results. A stale-looking date hurts citation selection.\n═══════════════════════════════════════════════════════════  -->";
+const pageContent = `
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mitchchadban.com/aeo-explained-how-to-rank-in-ai-answers/#article",
+      "headline": "AEO Explained: How to Rank in AI Answers",
+      "description": "Answer Engine Optimisation explained: what AEO is, how AI answer systems retrieve and cite sources, and how to build a practical AEO plan.",
+      "datePublished": "2025-01-01",
+      "dateModified": "2026-07-01",
+      "author": {
+        "@type": "Person",
+        "name": "Mitch Chadban",
+        "url": "https://mitchchadban.com/about",
+        "jobTitle": "SEO & Marketing Strategist"
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "Mitch Chadban",
+        "url": "https://mitchchadban.com"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://mitchchadban.com/aeo-explained-how-to-rank-in-ai-answers/"
+      },
+      "inLanguage": "en-AU"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is AEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Answer Engine Optimisation is the practice of making your content easy for AI answer systems to retrieve, understand, quote and cite. It builds on SEO, but the goal is not only rankings. The goal is to become a source AI systems trust when generating answers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is AEO different from SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SEO focuses on earning visibility in search results and driving clicks. AEO focuses on earning inclusion inside AI-generated answers. Strong SEO still matters, but AEO also depends on extractable definitions, structured sections, proof, and citation-friendly formatting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between AEO and GEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AEO is the practical subset focused on getting your content surfaced and cited in AI answers. GEO is broader and includes how your brand, site and entities appear across generative systems more generally. For most businesses, AEO is the most useful place to start."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do AI answer engines choose sources?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI answer systems typically interpret the query, retrieve relevant pages, compare source quality, extract the most useful passages, and then generate an answer with or without citations. Pages that are clear, current, technically accessible and supported by evidence are easier to select."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you measure AEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Measure AEO using a mix of AI referral traffic, assisted conversions, branded search lift, prompt-level citation checks and performance on the pages most likely to be referenced. Rankings alone do not tell the full story."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://mitchchadban.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "AEO Explained: How to Rank in AI Answers",
+          "item": "https://mitchchadban.com/aeo-explained-how-to-rank-in-ai-answers/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<div class="service-ctm blog-ctm">
+  <div class="service-ctm__body">
+    <p style="font-size: 13px; color: #888; margin: 0 0 12px; letter-spacing: 0.02em;">
+      By <strong>Mitch Chadban</strong> — SEO &amp; Marketing Strategist, Australia | Updated July 2026
+    </p>
+
+    <h1>AEO Explained: How to Rank in AI Answers</h1>
+
+    <blockquote>
+      <p><strong>Answer Engine Optimisation (AEO)</strong> is the practice of making your content easy for AI answer systems to retrieve, understand, quote and cite. In practical terms, that means publishing pages with direct definitions, clear structure, evidence, useful formatting, and strong technical foundations so platforms like ChatGPT, Gemini, Perplexity and Google AI results are more likely to use your site as a source.</p>
+    </blockquote>
+
+    <p>AEO matters because more discovery now happens inside AI-assisted search experiences, not only in traditional search results. If your business publishes useful content but that content is hard to extract, weakly structured, or thin on proof, AI systems are more likely to summarise a competitor instead.</p>
+
+    <div class="img-full-ctm">
+      <div class="img-full-ctm">
+        <img class="zoomable" src="/images/Mock-funeral-for-the-blue-links.jpg" alt="Illustration of AI answers replacing some traditional search clicks while websites still compete to be cited as sources." loading="lazy" decoding="async" width="1536" height="1024">
+      </div>
+    </div>
+
+    <details class="blog-menu" open>
+      <summary class="blog-menu__header">
+        <span class="blog-menu__title">On this page</span>
+        <span aria-hidden="true" class="blog-menu__toggle"></span>
+      </summary>
+      <div class="blog-menu__body">
+        <a class="blog-menu__item" href="#what-is-aeo" onclick="location.hash='what-is-aeo'; return false;">What AEO is</a>
+        <a class="blog-menu__item" href="#why-aeo-matters" onclick="location.hash='why-aeo-matters'; return false;">Why AEO matters now</a>
+        <a class="blog-menu__item" href="#aeo-vs-seo" onclick="location.hash='aeo-vs-seo'; return false;">AEO vs SEO</a>
+        <a class="blog-menu__item" href="#aeo-vs-geo" onclick="location.hash='aeo-vs-geo'; return false;">AEO vs GEO</a>
+        <a class="blog-menu__item" href="#how-ai-systems-work" onclick="location.hash='how-ai-systems-work'; return false;">How AI answer systems retrieve, select and cite</a>
+        <a class="blog-menu__item" href="#aeo-stack" onclick="location.hash='aeo-stack'; return false;">The AEO stack</a>
+        <a class="blog-menu__item" href="#content-formats" onclick="location.hash='content-formats'; return false;">Content formats that get cited</a>
+        <a class="blog-menu__item" href="#technical-basics" onclick="location.hash='technical-basics'; return false;">Schema and technical basics</a>
+        <a class="blog-menu__item" href="#measure-aeo" onclick="location.hash='measure-aeo'; return false;">How to measure AEO</a>
+        <a class="blog-menu__item" href="#thirty-sixty-ninety" onclick="location.hash='thirty-sixty-ninety'; return false;">30/60/90 day action plan</a>
+        <a class="blog-menu__item" href="#faq" onclick="location.hash='faq'; return false;">FAQ</a>
+      </div>
+    </details>
+
+    <h2 id="what-is-aeo">What AEO is</h2>
+
+    <p>AEO is not a separate channel from SEO. It is an additional optimisation layer for a search environment where users increasingly ask full questions and expect a direct answer. Your page still needs to be discoverable and relevant, but it also needs to be easy for a machine to lift a useful answer from it without confusion.</p>
+
+    <p>The practical shift is this: instead of optimising only for rankings and clicks, you also optimise for extractability, citation-worthiness, and trust. Good AEO content gives the answer early, explains the reasoning clearly, and supports key claims with examples, comparisons, or proof.</p>
+
+    <h2 id="why-aeo-matters">Why AEO matters now</h2>
+
+    <p>AI answer systems are already changing how people discover vendors, compare options and sanity-check decisions. For commercial queries, that means your buyer may encounter your expertise inside an AI answer before they ever land on your site.</p>
+
+    <p>That changes the job of a strong content page. It no longer exists only to win the click. It also needs to function as a source that can be quoted, cited and trusted in an AI-generated response.</p>
+
+    <ul>
+      <li>AI answers compress research and reduce the number of clicks needed to compare options.</li>
+      <li>Pages with weak structure are easier for AI systems to ignore or misread.</li>
+      <li>Businesses that publish clear source-quality content are more likely to be referenced during evaluation-stage searches.</li>
+      <li>AEO improves commercial pages by forcing more clarity, proof and stronger internal linking.</li>
+    </ul>
+
+    <p>If you are already investing in SEO, AEO is not a reinvention. It is the practical upgrade that helps your best pages stay useful as search behaviour changes. The related workflow question is covered in <a href="/best-seo-and-ai-workflow-for-2026/">Best SEO + AI Workflow for 2026</a>.</p>
+
+    <h2 id="aeo-vs-seo">AEO vs SEO</h2>
+
+    <p>SEO and AEO overlap heavily, but they optimise for slightly different outcomes.</p>
+
+    <table class="table-ctm">
+      <thead>
+        <tr>
+          <th>Area</th>
+          <th>SEO</th>
+          <th>AEO</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Primary goal</td>
+          <td>Earn rankings and organic clicks</td>
+          <td>Earn citations, mentions and AI-assisted visits</td>
+        </tr>
+        <tr>
+          <td>Main optimisation unit</td>
+          <td>The page</td>
+          <td>The answer block, section and proof point</td>
+        </tr>
+        <tr>
+          <td>Content pattern</td>
+          <td>Intent match and depth</td>
+          <td>Intent match plus extractable structure</td>
+        </tr>
+        <tr>
+          <td>Success signals</td>
+          <td>Rankings, CTR, sessions</td>
+          <td>Citations, referrals, assisted conversions, branded lift</td>
+        </tr>
+        <tr>
+          <td>Common failure mode</td>
+          <td>Page ranks but does not convert</td>
+          <td>Page ranks but is not selected as a source</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Strong SEO is usually the base. Crawlability, topical relevance, authority and a clean site architecture still matter. AEO builds on that by making the page easier to quote and safer to trust.</p>
+
+    <h2 id="aeo-vs-geo">AEO vs GEO</h2>
+
+    <p>AEO is the practical discipline focused on helping your pages appear in AI answers. GEO, or generative engine optimisation, is the broader umbrella covering how your business is represented across generative systems more generally.</p>
+
+    <p>In simple terms:</p>
+
+    <ul>
+      <li>AEO is about becoming a citable source.</li>
+      <li>GEO is about becoming a recognisable and trusted entity across AI systems.</li>
+    </ul>
+
+    <p>For most businesses, AEO is the better operational starting point because it ties directly to page quality, technical accessibility, and measurable demand generation.</p>
+
+    <h2 id="how-ai-systems-work">How AI answer systems retrieve, select and cite content</h2>
+
+    <p>Most AI answer systems follow a similar pattern. They interpret the query, retrieve possible sources, compare which ones look most useful, extract the most relevant passages, then generate an answer. Some systems cite visibly, some cite inconsistently, and some influence the user without sending an immediate click.</p>
+
+    <h3>1. Retrieve</h3>
+    <p>The system first needs to find your page. If a page is poorly linked, blocked, stale, ambiguous, or diluted by near-duplicate content, it is harder to retrieve in the first place.</p>
+
+    <h3>2. Select</h3>
+    <p>Once candidate pages are found, the system looks for pages that appear relevant, trustworthy and easy to extract from. This is where clean headings, direct definitions, concise tables, FAQs, examples and proof matter.</p>
+
+    <h3>3. Cite</h3>
+    <p>If a platform shows citations, it usually prefers source material that is specific, well-scoped and clearly attributable. Pages that make vague claims or bury the answer under long generic intros are harder to cite cleanly.</p>
+
+    <p>That is why AEO content should answer the question near the top, then support the answer with context, evidence and useful formatting. If you want the analytics side of this tracked properly, link the content layer with <a href="/how-to-measure-ai-search-traffic-in-ga4/">How to Measure AI Search Traffic in GA4</a>.</p>
+
+    <h2 id="aeo-stack">The AEO stack</h2>
+
+    <p>A simple AEO stack keeps the work practical.</p>
+
+    <h3>1. Access</h3>
+    <p>Make sure the right pages can be crawled, indexed, rendered and discovered through internal links. Canonicals, crawl health and clean page targeting still matter.</p>
+
+    <h3>2. Answer structure</h3>
+    <p>Lead each important section with a direct answer. Use descriptive headings, comparison tables, FAQs, steps and short paragraphs so key ideas can be extracted cleanly.</p>
+
+    <h3>3. Evidence</h3>
+    <p>Support claims with examples, criteria, proof points, concrete outcomes, and commercially relevant detail. Generic advice is easy to ignore.</p>
+
+    <h3>4. Attribution signals</h3>
+    <p>Show who wrote the content, when it was updated, and why the page should be trusted. Clear authorship, dates and contextual expertise reduce ambiguity.</p>
+
+    <h3>5. Distribution and cluster support</h3>
+    <p>Reinforce the page with related content, internal links and off-site mentions. AI systems are more confident when a topic is supported by a broader cluster rather than an isolated post.</p>
+
+    <p>That cluster logic matters commercially too. For example, if you sell SaaS SEO, your AEO pillar should connect naturally to <a href="/seo-for-saas-australia-what-works-in-2026/">SEO for SaaS in Australia: What Actually Works in 2026</a> rather than sitting alone.</p>
+
+    <h2 id="content-formats">Content formats that get cited</h2>
+
+    <p>Some formats are easier for AI systems to use because they package information in a way that maps naturally to direct answers.</p>
+
+    <ul>
+      <li>Definition pages that answer a core term clearly and early.</li>
+      <li>Comparison pages with structured differences, criteria and verdicts.</li>
+      <li>Checklists and frameworks that break a task into named steps.</li>
+      <li>Benchmarks, pricing explainers and original research with explicit methodology.</li>
+      <li>FAQ sections that answer real buyer questions in plain language.</li>
+    </ul>
+
+    <p>The key is not word count. It is structure plus usefulness. A short page with a sharp comparison table can be more citable than a longer page full of recycled commentary.</p>
+
+    <!-- TODO: Add internal link to /how-comparison-content-affects-aeo-rankings/ once live. -->
+    <!-- TODO: Add internal link to /how-to-get-cited-in-ai-generated-answers/ once live. -->
+
+    <h2 id="technical-basics">Schema and technical basics</h2>
+
+    <p>Technical basics do not replace good content, but they make good content easier for machines to interpret and trust.</p>
+
+    <ul>
+      <li>Use a stable canonical so all authority points to the clean URL.</li>
+      <li>Keep bylines and updated dates visible on important pages.</li>
+      <li>Use structured headings that match the questions a buyer would ask.</li>
+      <li>Implement relevant schema such as <code>BlogPosting</code>, <code>FAQPage</code> and, where appropriate, <code>BreadcrumbList</code>.</li>
+      <li>Make sure important pages are internally linked from related commercial and educational pages.</li>
+    </ul>
+
+    <p>Schema helps clarify what the page is, but it does not rescue weak content. Treat it as machine-readable support for an already strong page, not as the strategy itself.</p>
+
+    <h2 id="measure-aeo">How to measure AEO</h2>
+
+    <p>AEO measurement needs more than rankings. A page may influence revenue through citations, mentions and assisted journeys even when the click path is indirect.</p>
+
+    <table class="table-ctm">
+      <thead>
+        <tr>
+          <th>Metric</th>
+          <th>Why it matters</th>
+          <th>How to check it</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>AI referral traffic</td>
+          <td>Shows direct visits from answer engines</td>
+          <td>GA4 source and referral analysis</td>
+        </tr>
+        <tr>
+          <td>Prompt-level citations</td>
+          <td>Shows whether you are being used as a source</td>
+          <td>Monthly manual checks across priority queries</td>
+        </tr>
+        <tr>
+          <td>Assisted conversions</td>
+          <td>Shows whether source pages influence leads</td>
+          <td>GA4 paths and CRM review</td>
+        </tr>
+        <tr>
+          <td>Branded search lift</td>
+          <td>Shows whether AI visibility creates demand</td>
+          <td>Search Console branded queries</td>
+        </tr>
+        <tr>
+          <td>Page engagement and CTA action</td>
+          <td>Shows whether the page is commercially useful</td>
+          <td>Scroll depth, contact starts, enquiries</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>The most honest AEO reporting stack combines prompt checks, analytics, Search Console and conversion data. The deeper analytics setup is covered in <a href="/how-to-measure-ai-search-traffic-in-ga4/">How to Measure AI Search Traffic in GA4</a>.</p>
+
+    <h2 id="thirty-sixty-ninety">A practical 30/60/90 day AEO action plan</h2>
+
+    <h3>Days 1 to 30: Fix the source pages</h3>
+    <ul>
+      <li>Audit your highest-value pages for direct definitions, structure and proof.</li>
+      <li>Clean up canonicals, internal links, stale sections and duplicate overlap.</li>
+      <li>Add FAQ blocks, comparison sections and stronger commercial CTAs where relevant.</li>
+      <li>Implement or validate core schema on pillar and money pages.</li>
+    </ul>
+
+    <h3>Days 31 to 60: Build the support cluster</h3>
+    <ul>
+      <li>Publish comparison, measurement and implementation-support content around the core topic.</li>
+      <li>Strengthen internal links between the pillar page, service pages and related guides.</li>
+      <li>Add examples, benchmarks or proof assets that competitors are not offering.</li>
+    </ul>
+
+    <h3>Days 61 to 90: Measure and improve</h3>
+    <ul>
+      <li>Run monthly prompt checks on priority commercial and informational queries.</li>
+      <li>Track AI referrals, branded search movement and assisted conversions.</li>
+      <li>Refresh the pages that are starting to surface and strengthen the ones that are still invisible.</li>
+    </ul>
+
+    <h2>Want to know if your site can actually get cited in AI answers?</h2>
+
+    <p>If you want a practical AEO plan rather than another speculative AI think-piece, I can audit the pages most likely to influence revenue, show where structure and proof are weak, and map the fastest path to stronger AI visibility.</p>
+
+    <a href="/contact-form/"><div class="custom-btn"><b>Book an AEO / AI visibility audit</b></div></a>
+
+    <p>The goal is not just to appear in AI answers. It is to make the right pages easier to cite, easier to trust and more likely to turn visibility into enquiries. If that is the job, start with the audit at <a href="/contact-form/">/contact-form/</a>.</p>
+
+    <h2 id="faq">FAQ: AEO</h2>
+
+    <h3>What is AEO?</h3>
+    <p>AEO is the practice of making your content easier for AI answer systems to retrieve, understand and cite. It builds on SEO, but it is designed for a search environment where direct answers matter as much as rankings.</p>
+
+    <h3>Is AEO replacing SEO?</h3>
+    <p>No. AEO depends on strong SEO foundations. Crawlability, indexing, relevance, trust and internal linking still matter. AEO adds a stronger focus on extractable answers, proof and citation-friendly formatting.</p>
+
+    <h3>What is the difference between AEO and GEO?</h3>
+    <p>AEO focuses on pages and citations inside AI answers. GEO is broader and includes how your brand is represented across generative systems at an entity level.</p>
+
+    <h3>What types of pages are easiest for AI systems to cite?</h3>
+    <p>Definition pages, comparison pages, structured explainers, FAQs, checklists and benchmark-style content are usually easier to cite because they present information in a clean, quotable format.</p>
+
+    <h3>How do I measure whether AEO is working?</h3>
+    <p>Track prompt-level citations, AI referral traffic, assisted conversions, branded search lift and performance on the pages most likely to be used as sources. AEO performance usually appears across several signals rather than one headline metric.</p>
+
+    <div class="further-reading-ctm">
+      <h4 class="further-reading-ctm__title">Further Reading</h4>
+      <ul class="further-reading-ctm__list">
+        <li class="further-reading-ctm__item">
+          <a class="further-reading-ctm__link" href="/best-seo-and-ai-workflow-for-2026/">Best SEO + AI Workflow for 2026</a>
+        </li>
+        <li class="further-reading-ctm__item">
+          <a class="further-reading-ctm__link" href="/how-to-measure-ai-search-traffic-in-ga4/">How to Measure AI Search Traffic in GA4</a>
+        </li>
+        <li class="further-reading-ctm__item">
+          <a class="further-reading-ctm__link" href="/seo-for-saas-australia-what-works-in-2026/">SEO for SaaS in Australia: What Actually Works in 2026</a>
+        </li>
+        <li class="further-reading-ctm__item">
+          <a class="further-reading-ctm__link" href="/contact-form/">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <br />
+  <br />
+</div>
+`;
 ---
 
-<BaseLayout ogType="article"
+<BaseLayout
+  ogType="article"
   title="AEO Explained: How to Rank in AI Answers | Mitch Chadban"
-  description="AEO explained: how AI answer engines select content via RAG, plus a 5-layer stack and 30/60/90 plan to get cited in ChatGPT, Gemini and Perplexity answers."
+  description="Answer Engine Optimisation explained: what AEO is, how AI answers choose sources, and how to structure content for AI visibility."
   canonical="https://mitchchadban.com/aeo-explained-how-to-rank-in-ai-answers/"
   alternates={[
     {
