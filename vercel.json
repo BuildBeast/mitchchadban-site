@@ -391,6 +391,216 @@
       "source": "/About/",
       "destination": "/about/",
       "permanent": true
+    },
+    {
+      "source": "/Social-Media-Design-That-Doesn-t-Look-Like-Everyone-Else",
+      "destination": "/social-media-design-that-doesnt-look-like-everyone-else/",
+      "permanent": true
+    },
+    {
+      "source": "/Social-Media-Design-That-Doesn-t-Look-Like-Everyone-Else/",
+      "destination": "/social-media-design-that-doesnt-look-like-everyone-else/",
+      "permanent": true
+    },
+    {
+      "source": "/Portrait-Commissions-Digital-Print",
+      "destination": "/portrait-commissions-digital-and-print/",
+      "permanent": true
+    },
+    {
+      "source": "/Portrait-Commissions-Digital-Print/",
+      "destination": "/portrait-commissions-digital-and-print/",
+      "permanent": true
+    },
+    {
+      "source": "/Portrait-Commissions-Digital-Print-Mitch-Chadban",
+      "destination": "/portrait-commissions-digital-and-print/",
+      "permanent": true
+    },
+    {
+      "source": "/Portrait-Commissions-Digital-Print-Mitch-Chadban/",
+      "destination": "/portrait-commissions-digital-and-print/",
+      "permanent": true
+    },
+    {
+      "source": "/Commercial-Illustration-Digital-Print",
+      "destination": "/commercial-illustration-digital-and-print/",
+      "permanent": true
+    },
+    {
+      "source": "/Commercial-Illustration-Digital-Print/",
+      "destination": "/commercial-illustration-digital-and-print/",
+      "permanent": true
+    },
+    {
+      "source": "/Branding-Designer-Logos-Visual-Identity",
+      "destination": "/branding-designer-logos-and-visual-identity/",
+      "permanent": true
+    },
+    {
+      "source": "/Branding-Designer-Logos-Visual-Identity/",
+      "destination": "/branding-designer-logos-and-visual-identity/",
+      "permanent": true
+    },
+    {
+      "source": "/The-Marketing-Collateral-Checklist-What-You-Need",
+      "destination": "/the-marketing-collateral-checklist-what-you-need/",
+      "permanent": true
+    },
+    {
+      "source": "/The-Marketing-Collateral-Checklist-What-You-Need/",
+      "destination": "/the-marketing-collateral-checklist-what-you-need/",
+      "permanent": true
+    },
+    {
+      "source": "/SEO-for-SaaS-Startups-Mitch-Chadban",
+      "destination": "/seo-for-saas-startups/",
+      "permanent": true
+    },
+    {
+      "source": "/SEO-for-SaaS-Startups-Mitch-Chadban/",
+      "destination": "/seo-for-saas-startups/",
+      "permanent": true
+    },
+    {
+      "source": "/About-3",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/About-3/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/Graphic-Designer-for-Modern-Brands",
+      "destination": "/graphic-designer-for-modern-brands/",
+      "permanent": true
+    },
+    {
+      "source": "/Graphic-Designer-for-Modern-Brands/",
+      "destination": "/graphic-designer-for-modern-brands/",
+      "permanent": true
+    },
+    {
+      "source": "/Biggs",
+      "destination": "/biggs/",
+      "permanent": true
+    },
+    {
+      "source": "/Biggs/",
+      "destination": "/biggs/",
+      "permanent": true
+    },
+    {
+      "source": "/Best-Demand-Gen-Content-for-2026",
+      "destination": "/best-demand-gen-content-for-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/Best-Demand-Gen-Content-for-2026/",
+      "destination": "/best-demand-gen-content-for-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/Best-SEO-AI-Workflow-for-2026",
+      "destination": "/best-seo-and-ai-workflow-for-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/Best-SEO-AI-Workflow-for-2026/",
+      "destination": "/best-seo-and-ai-workflow-for-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/Growth-Marketing-Consultant-for-SaaS-Startups",
+      "destination": "/growth-marketing-consultant-for-saas-startups/",
+      "permanent": true
+    },
+    {
+      "source": "/Growth-Marketing-Consultant-for-SaaS-Startups/",
+      "destination": "/growth-marketing-consultant-for-saas-startups/",
+      "permanent": true
+    },
+    {
+      "source": "/Best-Ways-to-Build-E-E-A-T-in-2026",
+      "destination": "/best-ways-to-build-e-e-a-t-in-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/Best-Ways-to-Build-E-E-A-T-in-2026/",
+      "destination": "/best-ways-to-build-e-e-a-t-in-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/AI-SEO-vs-Traditional-SEO-What-s-Changed",
+      "destination": "/ai-seo-vs-traditional-seo-whats-changed/",
+      "permanent": true
+    },
+    {
+      "source": "/AI-SEO-vs-Traditional-SEO-What-s-Changed/",
+      "destination": "/ai-seo-vs-traditional-seo-whats-changed/",
+      "permanent": true
+    },
+    {
+      "source": "/Custom-Pet-Portraits-Digital-Print",
+      "destination": "/custom-pet-portraits-digital-and-print/",
+      "permanent": true
+    },
+    {
+      "source": "/Custom-Pet-Portraits-Digital-Print/",
+      "destination": "/custom-pet-portraits-digital-and-print/",
+      "permanent": true
+    },
+    {
+      "source": "/Positioning-vs-Messaging-Why-Your-Ads-Aren-t-Working",
+      "destination": "/positioning-vs-messaging-why-your-ads-arent-working/",
+      "permanent": true
+    },
+    {
+      "source": "/Positioning-vs-Messaging-Why-Your-Ads-Aren-t-Working/",
+      "destination": "/positioning-vs-messaging-why-your-ads-arent-working/",
+      "permanent": true
+    },
+    {
+      "source": "/AEO-Australia-How-to-Show-Up-in-AI-Answers",
+      "destination": "/aeo-australia-how-to-show-up-in-ai-answers/",
+      "permanent": true
+    },
+    {
+      "source": "/AEO-Australia-How-to-Show-Up-in-AI-Answers/",
+      "destination": "/aeo-australia-how-to-show-up-in-ai-answers/",
+      "permanent": true
+    },
+    {
+      "source": "/Homepage",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/Homepage/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/Front-page",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/Front-page/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/Blog-Feed",
+      "destination": "/blogs-resources/",
+      "permanent": true
+    },
+    {
+      "source": "/Blog-Feed/",
+      "destination": "/blogs-resources/",
+      "permanent": true
     }
   ],
   "headers": [
