@@ -1,8 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
-const pageContent = `<script type="application/ld+json">
-{
+const schema = {
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -66,10 +65,9 @@ const pageContent = `<script type="application/ld+json">
       ]
     }
   ]
-}
-</script>
+};
 
-<div class="service-ctm blog-ctm">
+const pageContent = `<div class="service-ctm blog-ctm">
   <div class="service-ctm__body">
     <p style="font-size: 13px; color: #888; margin: 0 0 12px; letter-spacing: 0.02em;">
       By <strong>Mitch Chadban</strong> — SEO &amp; Marketing Strategist, Australia | Updated June 2026
@@ -377,5 +375,8 @@ const pageContent = `<script type="application/ld+json">
     { lang: 'x-default', href: 'https://mitchchadban.com/best-growth-marketing-channels-australia-2026/' },
   ]}
 >
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  </Fragment>
   <Fragment set:html={pageContent} />
 </BaseLayout>
