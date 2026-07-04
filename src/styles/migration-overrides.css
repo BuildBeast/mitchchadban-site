@@ -111,3 +111,79 @@ footer {
   height: 0 !important;
   margin: 0 !important;
 }
+
+/* =========================================
+   Shared Tribal Habits proof block (.mc-proof)
+   Honest social proof reused across commercial
+   pages. Matches the case-study/site aesthetic.
+   ========================================= */
+.mc-proof {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem 1.75rem;
+  background: #fff;
+  border: 1px solid rgba(0, 200, 83, .22);
+  border-left: 4px solid var(--mc-green);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, .045);
+}
+
+.mc-proof__label {
+  margin: 0 0 1rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--mc-green);
+}
+
+.mc-proof__stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.mc-proof__stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.mc-proof__num {
+  font-size: 1.6rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #111;
+}
+
+.mc-proof__lbl {
+  margin-top: 0.25rem;
+  font-size: 0.82rem;
+  line-height: 1.35;
+  color: #555;
+}
+
+.mc-proof__link {
+  display: inline-block;
+  font-weight: 700;
+  color: var(--mc-green);
+  text-decoration: none;
+}
+
+.mc-proof__link:hover {
+  text-decoration: underline;
+}
+
+/* Compact inline variant for the featured Tribal Habits card */
+.mc-proof-stat {
+  display: block;
+  margin-top: 0.4rem;
+  font-weight: 700;
+  color: var(--mc-green);
+}
+
+@media (max-width: 640px) {
+  .mc-proof__stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
