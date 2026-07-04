@@ -34,6 +34,32 @@ const {
 const ogImageUrl = ogImage.startsWith('http')
   ? ogImage
   : new URL(ogImage, 'https://mitchchadban.com').href;
+
+// Site-wide entity graph: WebSite + Person (Mitch Chadban), connected via stable @id.
+// sameAs lists only confirmed public profiles already present in site config.
+const siteSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': 'https://mitchchadban.com/#website',
+      url: 'https://mitchchadban.com/',
+      name: 'Mitch Chadban',
+      description:
+        'Design, SEO and marketing for brands, SaaS companies and service businesses that need sharper websites, stronger content and cleaner growth systems.',
+      publisher: { '@id': 'https://mitchchadban.com/#person' },
+      inLanguage: lang
+    },
+    {
+      '@type': 'Person',
+      '@id': 'https://mitchchadban.com/#person',
+      name: 'Mitch Chadban',
+      url: 'https://mitchchadban.com/',
+      jobTitle: 'Designer, SEO & Marketing Specialist',
+      sameAs: ['https://www.instagram.com/mitch_chadban/?hl=en']
+    }
+  ]
+};
 ---
 
 <!doctype html>
@@ -67,6 +93,8 @@ const ogImageUrl = ogImage.startsWith('http')
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImageUrl} />
+
+    <script type="application/ld+json" set:html={JSON.stringify(siteSchema)} />
 
     <slot name="head" />
     <script is:inline defer src="/scripts-cursor.js"></script>
