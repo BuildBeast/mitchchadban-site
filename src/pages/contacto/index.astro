@@ -1,13 +1,11 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-
-const pageContent = "<div class=\"c2-hero\" id=\"c2Hero\">\n  <!--  Lava lamp canvas (single)  -->\n  <canvas aria-hidden=\"true\" height=\"1464\" id=\"mcLava\" style=\"width: 1339px; height: 732px;\" width=\"2678\"></canvas>\n\n  <!--  Optional: extra “mouse halo” layer (driven by CSS vars)  -->\n  <div aria-hidden=\"true\" class=\"lava-follow\" style=\"--mx: 644.1328125000003px; --my: 220.92187500000009px;\">    </div>\n\n  <div class=\"c2-hero__inner\">\n    <div class=\"c2-hero__top\">\n      <h1 class=\"c2-hero__pill\">Mitch Chadban</h1>\n      <div class=\"c2-hero__who\">Diseño + marketing para marcas en las zonas horarias AEST, CET y GMT.</div>\n\n      <!--  ✅ Featured tile (NOW uses the exact same card markup as 04/05)  -->\n      <a class=\"c2-hero__item c2-hero__item--featured\" href=\"/es/portfolio/\" >\n        <span class=\"c2-hero__num\">00</span>\n        <span class=\"c2-hero__title\">Destacado</span>\n        <span class=\"c2-hero__desc\"><strong>Tribal Habits</strong> — SEO + AEO para una marca SaaS australiana</span>\n      </a>\n    </div>\n\n    <nav aria-label=\"Main\" class=\"c2-hero__nav\">\n      <a class=\"c2-hero__item\" href=\"/es/portfolio/\" >\n        <span class=\"c2-hero__num\">01</span>\n        <span class=\"c2-hero__title\">Portfolio</span>\n        <span class=\"c2-hero__desc\">Trabajo seleccionado</span>\n      </a>\n\n      <a class=\"c2-hero__item\" href=\"/es/blog/\" >\n        <span class=\"c2-hero__num\">02</span>\n        <span class=\"c2-hero__title\">Blog</span>\n        <span class=\"c2-hero__desc\">Notas + proceso</span>\n      </a>\n\n      <a class=\"c2-hero__item\" href=\"/servicios-de-diseno-seo-y-marketing-en-espana/\" >\n        <span class=\"c2-hero__num\">03</span>\n        <span class=\"c2-hero__title\">Servicios</span>\n        <span class=\"c2-hero__desc\">Lo que hago</span>\n      </a>\n\n      <a class=\"c2-hero__item\" href=\"/acerca-de/\" >\n        <span class=\"c2-hero__num\">04</span>\n        <span class=\"c2-hero__title\">Sobre mí</span>\n        <span class=\"c2-hero__desc\">Mi historia</span>\n      </a>\n    </nav>\n\n<div class=\"c2-hero__bottom\">\n  <a class=\"c2-hero__cta c2-hero__cta--secondary\" href=\"/contact-form/\" lang=\"en\" >English</a>\n  <a class=\"c2-hero__cta\" href=\"mailto:mitch.chadban@hotmail.com\" >Escríbeme</a>\n</div>\n  </div>\n\n  <script>\n    (() => {\n      // Remove any legacy full-page wrapper you no longer use\n      const oldBg = document.getElementById(\"mc-bg\");\n      if (oldBg) oldBg.remove();\n\n      const hero = document.getElementById(\"c2Hero\");\n      const c = document.getElementById(\"mcLava\");\n      if (!hero || !c) return;\n\n      // Respect reduced motion\n      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;\n\n      const ctx = c.getContext(\"2d\", { alpha: true });\n      let w = 0, h = 0, dpr = 1;\n\n      function resize(){\n        dpr = Math.max(1, Math.min(2, window.devicePixelRatio || 1));\n        w = hero.clientWidth;\n        h = hero.clientHeight;\n\n        c.width  = Math.floor(w * dpr);\n        c.height = Math.floor(h * dpr);\n        c.style.width = w + \"px\";\n        c.style.height = h + \"px\";\n\n        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);\n      }\n\n      const ro = new ResizeObserver(resize);\n      ro.observe(hero);\n      window.addEventListener(\"resize\", resize, { passive:true });\n      resize();\n\n      // Mouse tracking relative to hero\n      const mouse = { x: w*0.5, y: h*0.5, tx: w*0.5, ty: h*0.5, active:false };\n\n      function setMouse(e){\n        const r = hero.getBoundingClientRect();\n        mouse.tx = e.clientX - r.left;\n        mouse.ty = e.clientY - r.top;\n        mouse.active = true;\n      }\n\n      hero.addEventListener(\"pointermove\", setMouse, { passive:true });\n      hero.addEventListener(\"pointerenter\", setMouse, { passive:true });\n      hero.addEventListener(\"pointerleave\", () => { mouse.active = false; }, { passive:true });\n\n      // Blobs\n      const GREEN = \"rgba(0,200,83,\";\n      const blobCount = 10;\n\n      function rand(min,max){ return min + Math.random()*(max-min); }\n\n      const blobs = Array.from({length: blobCount}, () => {\n        const r = rand(Math.min(w,h)*0.10, Math.min(w,h)*0.20);\n        return {\n          x: rand(0,w), y: rand(0,h),\n          vx: rand(-0.35,0.35), vy: rand(-0.35,0.35),\n          r,\n          seed: Math.random()*1000\n        };\n      });\n\n      function drawBlob(x,y,r,alpha){\n        const g = ctx.createRadialGradient(x,y, r*0.10, x,y, r);\n        g.addColorStop(0, `${GREEN}${alpha})`);\n        g.addColorStop(1, `${GREEN}0)`);\n        ctx.fillStyle = g;\n        ctx.beginPath();\n        ctx.arc(x,y,r,0,Math.PI*2);\n        ctx.fill();\n      }\n\n      let t = 0;\n\n      function tick(){\n        t += 0.008;\n\n        // Ease mouse for nicer lag\n        mouse.x += (mouse.tx - mouse.x) * 0.08;\n        mouse.y += (mouse.ty - mouse.y) * 0.08;\n\n        ctx.clearRect(0,0,w,h);\n\n        // Soft base haze\n        ctx.globalCompositeOperation = \"source-over\";\n        drawBlob(w*0.35, h*0.55, Math.min(w,h)*0.42, 0.10);\n        drawBlob(w*0.72, h*0.45, Math.min(w,h)*0.38, 0.08);\n\n        // Blobs: additive + blur to merge\n        ctx.globalCompositeOperation = \"screen\";\n        ctx.filter = \"blur(18px)\";\n\n        for (const b of blobs){\n          // organic drift\n          b.x += b.vx + Math.sin(t + b.seed) * 0.12;\n          b.y += b.vy + Math.cos(t + b.seed) * 0.12;\n\n          // wrap edges\n          if (b.x < -b.r) b.x = w + b.r;\n          if (b.x > w + b.r) b.x = -b.r;\n          if (b.y < -b.r) b.y = h + b.r;\n          if (b.y > h + b.r) b.y = -b.r;\n\n          // attraction to mouse (only when active)\n          if (mouse.active){\n            const dx = mouse.x - b.x;\n            const dy = mouse.y - b.y;\n            const dist = Math.hypot(dx,dy) || 1;\n\n            const pullRadius = 520;\n            if (dist < pullRadius){\n              const pull = (1 - dist/pullRadius) * 0.22;\n              b.vx += (dx / dist) * pull * 0.02;\n              b.vy += (dy / dist) * pull * 0.02;\n            }\n          }\n\n          // damping\n          b.vx *= 0.985;\n          b.vy *= 0.985;\n\n          // draw\n          const pulse = 1 + Math.sin(t*1.8 + b.seed) * 0.05;\n          drawBlob(b.x, b.y, b.r * pulse, 0.22);\n        }\n\n        ctx.filter = \"none\";\n        ctx.globalCompositeOperation = \"source-over\";\n\n        requestAnimationFrame(tick);\n      }\n\n      requestAnimationFrame(tick);\n    })();\n\n    // Mouse halo for .lava-follow (optional)\n    (() => {\n      const el = document.querySelector('#c2Hero .lava-follow');\n      if (!el) return;\n\n      let targetX = window.innerWidth * 0.5;\n      let targetY = window.innerHeight * 0.5;\n      let currentX = targetX;\n      let currentY = targetY;\n\n      const ease = 0.14;\n\n      function animate(){\n        currentX += (targetX - currentX) * ease;\n        currentY += (targetY - currentY) * ease;\n\n        el.style.setProperty('--mx', currentX + 'px');\n        el.style.setProperty('--my', currentY + 'px');\n\n        requestAnimationFrame(animate);\n      }\n      animate();\n\n      window.addEventListener('pointermove', (e) => {\n        targetX = e.clientX;\n        targetY = e.clientY;\n      }, { passive: true });\n\n      window.addEventListener('resize', () => {\n        targetX = window.innerWidth * 0.5;\n        targetY = window.innerHeight * 0.5;\n      });\n    })();\n  </script>\n  <br />\n  <br />\n</div>";
 ---
 
 <BaseLayout
   lang="es"
-  title="Contacto | Mitch Chadban"
-  description="Contacta con Mitch Chadban para proyectos de diseño, SEO y marketing en AEST, CET y GMT. Revisa servicios, portfolio o escribe directamente."
+  title="Contacto | Proyectos de diseño, SEO y marketing — Mitch Chadban"
+  description="Escribe a Mitch Chadban sobre proyectos de diseño, SEO, AEO y marketing. Qué incluir en tu consulta, para quién encaja el trabajo y disponibilidad en AEST, CET y GMT."
   canonical="https://mitchchadban.com/contacto/"
   alternates={[
     { lang: 'en-AU', href: 'https://mitchchadban.com/contact-form/' },
@@ -15,5 +13,96 @@ const pageContent = "<div class=\"c2-hero\" id=\"c2Hero\">\n  <!--  Lava lamp ca
     { lang: 'x-default', href: 'https://mitchchadban.com/contact-form/' }
   ]}
 >
-  <Fragment set:html={pageContent} />
+  <section class="mc-about" aria-labelledby="contacto-heading">
+
+    <h1 id="contacto-heading">Contacta con Mitch Chadban</h1>
+
+    <h2>
+Cuéntame qué necesitas resolver y te diré con claridad el alcance, los plazos y si soy la persona indicada para hacerlo.
+    </h2>
+
+    <p>
+Soy diseñador y consultor de marketing freelance, y trabajo con marcas, empresas SaaS y negocios de servicios. Casi todas las consultas entran en uno de estos cuatro terrenos, y la mayoría de los proyectos combinan dos o tres.
+    </p>
+
+    <ul>
+      <li><strong>SEO</strong> — limpieza técnica, arquitectura del sitio, estrategia de contenidos y palabras clave, e informes que enseñan qué se ha movido de verdad.</li>
+      <li><strong>AEO</strong> — conseguir citas en los resúmenes de IA de Google, ChatGPT y Perplexity, en lugar de esperar a que te encuentren por su cuenta.</li>
+      <li><strong>Diseño</strong> — sistemas de marca, logotipos, ilustración, landing pages y las plantillas que después mantienen la coherencia.</li>
+      <li><strong>Marketing</strong> — posicionamiento, mensaje, embudos y campañas que convierten la atención en consultas reales.</li>
+    </ul>
+
+    <h3>Para quién encaja este trabajo</h3>
+
+    <ul>
+      <li>Empresas SaaS y de software que necesitan que la búsqueda orgánica sea un canal estable y no un buen trimestre suelto.</li>
+      <li>Negocios de servicios que venden conocimiento: consultores, asesorías, ingenierías, estudios de arquitectura y asesores financieros.</li>
+      <li>Marcas que se ven genéricas al lado de su competencia y ya lo saben.</li>
+      <li>Equipos con alguien de marketing en plantilla que necesitan un especialista al lado, no un sustituto.</li>
+    </ul>
+
+    <p>
+Encaja mal si esperas posicionar en dos semanas, montar una identidad completa por cuatro duros o publicar contenido escrito por IA en cantidad. Te lo diré antes de empezar en vez de aceptar el encargo.
+    </p>
+
+    <h3>Qué incluir en tu consulta</h3>
+
+    <p>
+Cuanto más cubras en el primer correo, antes podré darte una respuesta concreta sin necesidad de una llamada previa solo para reunir datos.
+    </p>
+
+    <ol>
+      <li><strong>Tu web</strong> y, si ya lo tienes localizado, las páginas concretas que no están rindiendo.</li>
+      <li><strong>Qué quieres conseguir</strong>: más consultas cualificadas, un rebranding, visibilidad en respuestas de IA o un lanzamiento concreto.</li>
+      <li><strong>Qué has probado ya</strong>, incluido lo que no funcionó.</li>
+      <li><strong>Los plazos</strong>: una fecha de lanzamiento, un trimestre objetivo o «sin fecha fija» me sirven igual.</li>
+      <li><strong>Una horquilla de presupuesto</strong>, aunque sea aproximada. Nos ahorra a los dos una ronda de suposiciones.</li>
+      <li><strong>Quién participa</strong>: quién aprueba el trabajo y con quién trataré en el día a día.</li>
+    </ol>
+
+    <h3>Disponibilidad en AEST, CET y GMT</h3>
+
+    <p>
+Trabajo desde Australia, en remoto, con clientes y equipos de Australia, Europa y Reino Unido. Los horarios de las reuniones se coordinan según el proyecto y se confirman al reservar.
+    </p>
+
+    <h3>Escríbeme</h3>
+
+    <p>
+Aquí no hay formulario, y es a propósito. El correo llega directamente a mí, conserva los enlaces y los archivos que adjuntes, y te deja constancia de lo que hemos hablado.
+    </p>
+
+    <a href="mailto:mitch.chadban@hotmail.com">
+      <div class="custom-btn"><b>Escríbeme directamente</b></div>
+    </a>
+
+    <address class="mc-about__note">
+      <small>O copia la dirección: <a href="mailto:mitch.chadban@hotmail.com">mitch.chadban@hotmail.com</a></small>
+    </address>
+
+    <div class="further-reading-ctm">
+      <h4 class="further-reading-ctm__title">Antes de escribirme</h4>
+
+      <ul class="further-reading-ctm__list">
+        <li class="further-reading-ctm__item">
+          <a class="further-reading-ctm__link" href="/servicios-de-diseno-seo-y-marketing-en-espana/">
+            Servicios de diseño, SEO y marketing
+          </a>
+        </li>
+        <li class="further-reading-ctm__item">
+          <a class="further-reading-ctm__link" href="/es/portfolio/">
+            Portfolio — trabajo seleccionado
+          </a>
+        </li>
+        <li class="further-reading-ctm__item">
+          <a class="further-reading-ctm__link" href="/es/portfolio/tribal-habits/">
+            Tribal Habits — SEO y AEO para una marca SaaS australiana
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <br />
+    <br />
+  </section>
 </BaseLayout>

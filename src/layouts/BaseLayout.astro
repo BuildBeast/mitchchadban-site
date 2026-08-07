@@ -22,13 +22,24 @@ type Props = {
 const {
   title = 'Mitch Chadban | Design, SEO and Marketing Services Australia',
   description = 'Design, SEO and marketing for brands, SaaS companies and service businesses that need sharper websites, stronger content and cleaner growth systems.',
-  canonical = 'https://mitchchadban.com/',
+  canonical,
   ogImage = 'https://mitchchadban.com/images/og-default.jpg',
   ogType = 'website',
   lang = 'en-AU',
   noindex = false,
   alternates = []
 } = Astro.props;
+
+// Canonical: explicit prop wins. Otherwise derive it from the current route so a
+// page without an explicit canonical points at itself, not at the homepage.
+// Root stays "/", every other route gets the trailing-slash form.
+const canonicalPath =
+  Astro.url.pathname === '/'
+    ? '/'
+    : `${Astro.url.pathname.replace(/\/+$/, '')}/`;
+
+const resolvedCanonical =
+  canonical ?? new URL(canonicalPath, 'https://mitchchadban.com').href;
 
 // Ensure absolute URL for OG image
 const ogImageUrl = ogImage.startsWith('http')
@@ -85,7 +96,7 @@ const siteSchema = {
 
     <title>{title}</title>
     <meta name="description" content={description} />
-    <link rel="canonical" href={canonical} />
+    <link rel="canonical" href={resolvedCanonical} />
     {noindex && <meta name="robots" content="noindex, nofollow" />}
 
     {alternates.map((alt) => (
@@ -95,7 +106,7 @@ const siteSchema = {
     <meta property="og:type" content={ogType} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:url" content={canonical} />
+    <meta property="og:url" content={resolvedCanonical} />
     <meta property="og:image" content={ogImageUrl} />
     <meta property="og:site_name" content="Mitch Chadban" />
 

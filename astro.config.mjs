@@ -6,6 +6,7 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://mitchchadban.com',
+  trailingSlash: 'always',
   integrations: [
     sitemap({
       // Exclude utility / non-content pages from the sitemap
