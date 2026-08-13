@@ -113,7 +113,7 @@ footer {
 }
 
 /* =========================================
-   Shared Tribal Habits proof block (.mc-proof)
+   Shared proof block (.mc-proof)
    Honest social proof reused across commercial
    pages. Matches the case-study/site aesthetic.
    ========================================= */
@@ -174,7 +174,7 @@ footer {
   text-decoration: underline;
 }
 
-/* Compact inline variant for the featured Tribal Habits card */
+/* Compact inline variant for the featured project card */
 .mc-proof-stat {
   display: block;
   margin-top: 0.4rem;

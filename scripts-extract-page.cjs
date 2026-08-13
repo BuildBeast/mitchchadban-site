@@ -31,7 +31,6 @@ function getKnownSlugs() {
   slugs.push('pricing-and-packages');
   slugs.push('privacy-policy');
   slugs.push('terms-of-service');
-  slugs.push('tribal-habits');
 
   return [...new Set(slugs)].sort((a, b) => b.length - a.length);
 }

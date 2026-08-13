@@ -140,7 +140,6 @@ fs.writeFileSync(
 ---
 
 ${homeContent
-  .replaceAll('href="tribal-habits" rel="history"', 'href="/tribal-habits/"')
   .replaceAll('href="portfolio-1" rel="history"', 'href="/portfolio-1/"')
   .replaceAll('href="archive" rel="history"', 'href="/archive/"')
   .replaceAll('href="blogs-resources" rel="history"', 'href="/blogs-resources/"')

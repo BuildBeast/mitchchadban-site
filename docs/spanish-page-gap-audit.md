@@ -83,7 +83,7 @@ All core pairs exist:
 
 ## 4. Pages that should stay English for now
 
-- **Portfolio project pages (13):** `biggs`, `johnny-bird`, `karl-jacobs`, `kryoz`, `monoduo`, `newy-fried-chicken`, `paragon-bm`, `pinos-restaurant`, `the-star-hotel`, `tribal-habits`, `various-posters`, `yellow-billy-the-sty`, `empowered-community-services` — visual work, minimal copy.
+- **Portfolio project pages (12):** `biggs`, `johnny-bird`, `karl-jacobs`, `kryoz`, `monoduo`, `newy-fried-chicken`, `paragon-bm`, `pinos-restaurant`, `the-star-hotel`, `various-posters`, `yellow-billy-the-sty`, `empowered-community-services` — visual work, minimal copy.
 - **`archive`** and **`portfolio-1`** — gallery/index pages.
 - **`blogs-resources`** (blog index) + **all 39 blog posts** — AU-targeted SEO/AEO content; English is the strategy.
 - **`index.astro`** (EN root homepage) — stays the English entry point.

@@ -15,8 +15,7 @@ const skip = new Set([
   'contact-form.html',
   'pricing-and-packages.html',
   'privacy-policy.html',
-  'terms-of-service.html',
-  'tribal-habits.html'
+  'terms-of-service.html'
 ]);
 
 const files = fs
