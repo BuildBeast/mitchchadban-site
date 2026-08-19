@@ -851,6 +851,26 @@
       "source": "/dise%C3%B1o-gr%C3%A1fico-para-empresas-\\(limpio,-premium-y-listo-para-usar\\)/",
       "destination": "/diseno-grafico-para-empresas/",
       "permanent": true
+    },
+    {
+      "source": "/custom-pet-portraits",
+      "destination": "/custom-pet-portraits-digital-and-print/",
+      "permanent": true
+    },
+    {
+      "source": "/custom-pet-portraits/",
+      "destination": "/custom-pet-portraits-digital-and-print/",
+      "permanent": true
+    },
+    {
+      "source": "/complete-ai-search-strategy-guide",
+      "destination": "/the-complete-ai-search-strategy-guide-2026/",
+      "permanent": true
+    },
+    {
+      "source": "/complete-ai-search-strategy-guide/",
+      "destination": "/the-complete-ai-search-strategy-guide-2026/",
+      "permanent": true
     }
   ],
   "headers": [
