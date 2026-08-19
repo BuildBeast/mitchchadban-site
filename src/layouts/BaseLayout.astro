@@ -50,7 +50,10 @@ const ogImageUrl = ogImage.startsWith('http')
   : new URL(ogImage, 'https://mitchchadban.com').href;
 
 // Site-wide entity graph: WebSite + Person (Mitch Chadban), connected via stable @id.
-// sameAs lists only confirmed public profiles already present in site config.
+// sameAs lists only confirmed public profiles that identify the same person.
+// The travel entry is There & Back Again's author page — which names Mitch
+// Chadban and carries its own Person node pointing back here — not that
+// publication's homepage, which is a property he owns rather than an identity.
 const siteSchema = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -70,7 +73,10 @@ const siteSchema = {
       name: 'Mitch Chadban',
       url: 'https://mitchchadban.com/',
       jobTitle: 'Designer, SEO & Marketing Specialist',
-      sameAs: ['https://www.instagram.com/mitch_chadban/?hl=en']
+      sameAs: [
+        'https://www.instagram.com/mitch_chadban/',
+        'https://travel.mitchchadban.com/about-the-traveller/'
+      ]
     }
   ]
 };
