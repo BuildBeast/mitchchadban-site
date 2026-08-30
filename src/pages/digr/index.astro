@@ -1,13 +1,97 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-
-const pageContent = "<div class=\"portfolio-project-ctm\">\n  <div class=\"portfolio-project-ctm__inner\">\n\n    <div class=\"portfolio-project-ctm__head\">\n      <div class=\"portfolio-project-ctm__meta\">Product Strategy / SEO / Content / UX / Brand / GTM</div>\n      <h1>Digr</h1>\n      <p class=\"portfolio-project-ctm__intro\">Building a local-first music product, its brand and its organic growth foundation from zero.</p>\n    </div>\n\n    <hr />\n\n    <div class=\"portfolio-project-ctm__body\">\n      <div class=\"portfolio-project-ctm__main\">\n        <h2>The opportunity</h2>\n        <p><strong>Digr</strong> is an independently developed desktop music player for people who still own their music. Modern music software increasingly assumes that music lives inside a streaming service, but many listeners still maintain collections made up of ripped CDs, downloads, lossless files and music accumulated over decades.</p>\n        <p>Those collections carry more than metadata. They hold taste, memory and years of careful organisation. The software around them often sits at one of two extremes: highly technical tools built for audiophile workflows, or capable desktop library software with a dated visual language. Digr began by exploring the space between them.</p>\n\n        <h2>Defining the product</h2>\n        <p>The product strategy is built around ownership first, local-first architecture, no mandatory account, expressive interaction and large libraries as a first-class use case. The library should work from the user’s own files and folders without first being uploaded to a proprietary cloud. Useful interoperability, including Google Cast, keeps local music from feeling trapped on one machine.</p>\n        <p>The result is a <a href=\"https://getdigr.app/\" rel=\"noopener\" target=\"_blank\">local-first music player for Mac</a> designed to feel modern without sterilising the experience or turning it into another generic SaaS interface.</p>\n\n        <h2>Building the brand</h2>\n        <p>The product evolved through earlier naming and concept exploration before Digr became the final name. The identity draws from early-2000s desktop music culture, Y2K interfaces, physical audio hardware, record collecting and music discovery.</p>\n        <p>The aim was not literal nostalgia. It was to take the personality of Winamp-era software without reproducing its limitations. Tactile controls, expressive skins, display references, a dark interface and an Acid Lime accent give the system character while keeping it credible in a contemporary software environment.</p>\n\n        <h2>Product and engineering</h2>\n        <p>Digr is being developed with Tauri 2, React, TypeScript, a Rust/Tauri backend and SQLite/local library architecture. Product areas include library scanning, folder watching, artwork management, playback, queues, media keys, EQ, visualisers, skins, external-drive reconnection and casting.</p>\n        <p>The important point is that the positioning influences the architecture. If local-first is part of the promise, the application has to work locally rather than simply marketing a cloud product as privacy-friendly.</p>\n\n        <h2>Designing search into launch</h2>\n        <p>SEO was considered before public launch. The strategy builds topical relevance around the problems Digr is intended to solve: local music players, Mac music players, large music libraries, FLAC and ALAC playback, library organisation, ripping and owning music, local versus cloud libraries, casting and privacy-conscious software.</p>\n        <p>The content architecture covers category education, problem-led help, comparison research and product-adjacent education. Articles need to be useful in their own right rather than becoming a series of product advertisements.</p>\n\n        <h2>The product-truth rule</h2>\n        <p>Content cannot imply that Digr supports something it does not currently support. Sometimes the honest answer is to explain a capability that is planned, constrained or not implemented yet. This keeps editorial governance, product development and brand trust aligned.</p>\n\n        <h2>Technical SEO foundation</h2>\n        <p>The marketing site is built in Astro with static HTML and minimal hydration, hosted on Vercel. The foundation includes unique canonical URLs, titles and descriptions, Open Graph metadata, an XML sitemap, a separate image sitemap, RSS, structured data, accessible heading hierarchy and internal-link validation.</p>\n        <p>Preview environments are deliberately noindex and nofollow. Structured data is kept truthful too: the site does not fabricate <code>SoftwareApplication.offers</code> while the product is not purchasable.</p>\n\n        <h2>Building conversion before launch</h2>\n        <p>The marketing site bridges the gap between interest and availability with a native branded waitlist form, a Brevo-backed list, clear success and error states, analytics for signup completion, privacy copy and a support contact. SEO traffic before launch should create a useful way to learn.</p>\n\n        <h2>What exists today</h2>\n        <p>At the time of writing, Digr’s marketing site is live, the desktop application is under active development, the waitlist is open and the initial organic content architecture is in place. Search Console has begun its discovery and indexing phase.</p>\n        <p>No acquisition results are being claimed yet. This case study captures the starting line and will be updated as meaningful product and search data becomes available.</p>\n\n        <h2>What I’ll measure next</h2>\n        <p>The next questions are which search clusters earn impressions first, how comparison content performs against informational content, what converts organic interest into waitlist signups, which product problems drive the strongest demand, and whether search behaviour can help prioritise future product development.</p>\n        <p>Digr is an experiment in treating product, positioning, brand, content and distribution as one system from the beginning. The interesting result at this stage is that the infrastructure for learning is already present before launch.</p>\n      </div>\n\n      <aside class=\"portfolio-project-ctm__side\">\n        <div class=\"portfolio-project-ctm__card\"><div class=\"portfolio-project-ctm__label\">Project</div><div class=\"portfolio-project-ctm__value\">Digr / Independent product</div></div>\n        <div class=\"portfolio-project-ctm__card\"><div class=\"portfolio-project-ctm__label\">Industry</div><div class=\"portfolio-project-ctm__value\">Consumer software / Music</div></div>\n        <div class=\"portfolio-project-ctm__card\"><div class=\"portfolio-project-ctm__label\">Market</div><div class=\"portfolio-project-ctm__value\">Global</div></div>\n        <div class=\"portfolio-project-ctm__card\"><div class=\"portfolio-project-ctm__label\">Stage</div><div class=\"portfolio-project-ctm__value\">Pre-launch / Early access</div></div>\n        <div class=\"portfolio-project-ctm__card\"><div class=\"portfolio-project-ctm__label\">Role</div><div class=\"portfolio-project-ctm__value\">Product / Brand / UX / SEO / Content / GTM</div></div>\n      </aside>\n    </div>\n\n    <div class=\"portfolio-project-ctm__footer\"><a class=\"portfolio-project-ctm__back\" href=\"/portfolio-1/\">Back to Portfolio</a></div>\n    <div class=\"portfolio-project-ctm__nav\"><a class=\"portfolio-project-ctm__nav-item portfolio-project-ctm__nav-item--prev\" href=\"/kryoz/\"><span class=\"portfolio-project-ctm__nav-label\">Previous Project</span><span class=\"portfolio-project-ctm__nav-title\">Kryoz Gardening</span></a><a class=\"portfolio-project-ctm__nav-item portfolio-project-ctm__nav-item--next\" href=\"/pinos-restaurant/\"><span class=\"portfolio-project-ctm__nav-label\">Next Project</span><span class=\"portfolio-project-ctm__nav-title\">Pino’s Restaurant</span></a></div>\n  </div>\n+</div>";
 ---
 
-<BaseLayout title="Digr: Product, SEO & Growth Case Study | Mitch Chadban" description="How I built the product strategy, brand, technical SEO and organic growth foundation for Digr, a local-first music player for Mac." canonical="https://mitchchadban.com/digr/" ogType="article" alternates={[
-  { lang: 'en-AU', href: 'https://mitchchadban.com/digr/' },
-  { lang: 'es', href: 'https://mitchchadban.com/es/portfolio/digr/' },
-  { lang: 'x-default', href: 'https://mitchchadban.com/digr/' }
-]}>
-  <Fragment set:html={pageContent} />
+<BaseLayout
+  title="Digr: Building a product and its organic growth foundation from zero | Mitch Chadban"
+  description="How I built the product strategy, brand, technical SEO and organic growth foundation for Digr, a local-first music player for Mac."
+  canonical="https://mitchchadban.com/digr/"
+  ogType="article"
+  alternates={[
+    { lang: 'en-AU', href: 'https://mitchchadban.com/digr/' },
+    { lang: 'es', href: 'https://mitchchadban.com/es/portfolio/digr/' },
+    { lang: 'x-default', href: 'https://mitchchadban.com/digr/' }
+  ]}
+>
+  <div class="portfolio-project-ctm portfolio-project-ctm--digr">
+    <div class="portfolio-project-ctm__inner">
+      <div class="portfolio-project-ctm__head">
+        <div class="portfolio-project-ctm__meta">Product Strategy / SEO / Content / UX / Brand / GTM</div>
+        <h1>Digr: Building a product and its organic growth foundation from zero</h1>
+        <p class="portfolio-project-ctm__intro">An independently developed local-first music player for people who still own their music — and an exercise in building product, positioning, brand and distribution as one connected system.</p>
+      </div>
+
+      <hr />
+
+      <div class="portfolio-project-ctm__two portfolio-project-ctm__two--summary">
+        <div class="portfolio-project-ctm__card"><div class="portfolio-project-ctm__label">Challenge</div><div class="portfolio-project-ctm__value">Launch a new music product into an established category with zero domain authority, zero users and no existing search footprint.</div></div>
+        <div class="portfolio-project-ctm__card"><div class="portfolio-project-ctm__label">Approach</div><div class="portfolio-project-ctm__value">Develop product positioning, brand, technical SEO, content architecture and conversion infrastructure together before launch.</div></div>
+      </div>
+
+      <div class="portfolio-project-ctm__body">
+        <div class="portfolio-project-ctm__main">
+          <h2>The opportunity</h2>
+          <p><strong>Digr</strong> is an independently developed desktop music player for people who still own their music. Modern music software increasingly assumes that music lives inside a streaming service, but many listeners still maintain collections made up of ripped CDs, downloads, lossless files and music accumulated over decades.</p>
+          <p>Those collections carry more than metadata. They hold taste, memory and years of careful organisation. The software around them often sits at one of two extremes: highly technical tools built for audiophile workflows, or capable desktop library software with a dated visual language. Digr began by exploring the space between them.</p>
+
+          <h2>Defining the product</h2>
+          <p>The product strategy is built around ownership first, local-first architecture, no mandatory account, expressive interaction and large libraries as a first-class use case. The library should work from the user’s own files and folders without first being uploaded to a proprietary cloud. Useful interoperability, including Google Cast, keeps local music from feeling trapped on one machine.</p>
+          <p>The result is a <a href="https://getdigr.app/" rel="noopener" target="_blank">local-first music player for Mac</a> designed to feel modern without sterilising the experience or turning it into another generic SaaS interface.</p>
+
+          <h2>Building the brand</h2>
+          <p>The product evolved through earlier naming and concept exploration before Digr became the final name. The identity draws from early-2000s desktop music culture, Y2K interfaces, physical audio hardware, record collecting and music discovery.</p>
+          <p>The aim was not literal nostalgia. It was to take the personality of Winamp-era software without reproducing its limitations. Tactile controls, expressive skins, display references, a dark interface and an Acid Lime accent give the system character while keeping it credible in a contemporary software environment.</p>
+
+          <h2>Product and engineering</h2>
+          <p>Digr is being developed with Tauri 2, React, TypeScript, a Rust/Tauri backend and SQLite/local library architecture. Product areas include library scanning, folder watching, playback, queues, EQ, skins and casting.</p>
+          <p>The important point is that the positioning influences the architecture. If local-first is part of the promise, the application has to work locally rather than simply marketing a cloud product as privacy-friendly. The <a href="https://getdigr.app/features/" rel="noopener" target="_blank">feature roadmap</a> follows the same constraint.</p>
+
+          <h2>Designing search into launch</h2>
+          <p>SEO was considered before public launch. The strategy builds topical relevance around the problems Digr is intended to solve: local music players, Mac music players, large music libraries, FLAC and ALAC playback, library organisation, ripping and owning music, local versus cloud libraries, casting and privacy-conscious software.</p>
+          <p>The content architecture covers category education, problem-led help, comparison research and product-adjacent education. Articles need to be useful in their own right rather than becoming a series of product advertisements.</p>
+
+          <h2>The product-truth rule</h2>
+          <p>Content cannot imply that Digr supports something it does not currently support. Sometimes the honest answer is to explain a capability that is planned, constrained or not implemented yet. This keeps editorial governance, product development and brand trust aligned.</p>
+
+          <h2>Technical SEO foundation</h2>
+          <p>The marketing site is built in Astro with static HTML and minimal hydration, hosted on Vercel. The foundation includes unique canonical URLs, titles and descriptions, Open Graph metadata, an XML sitemap, a separate image sitemap, RSS, structured data, accessible heading hierarchy and internal-link validation.</p>
+          <p>Preview environments are deliberately noindex and nofollow. Structured data is kept truthful too: the site does not fabricate <code>SoftwareApplication.offers</code> while the product is not purchasable.</p>
+
+          <h2>Building conversion before launch</h2>
+          <p>The marketing site bridges the gap between interest and availability with a branded on-site waitlist form, a Brevo-backed list, clear success and error states, analytics for signup completion, privacy copy and a support contact. SEO traffic before launch should create a useful way to learn.</p>
+
+          <h2>What exists today</h2>
+          <p>At the time of writing, Digr’s marketing site is live, the desktop application is under active development, the waitlist is open and the initial organic content architecture is in place. Search Console is now collecting the first discovery and indexing data.</p>
+          <p>No acquisition results are being claimed yet. This case study captures the starting line and will be updated as meaningful product and search data becomes available.</p>
+
+          <h2>What I’ll measure next</h2>
+          <p>The next questions are which search clusters earn impressions first, how comparison content performs against informational content, what converts organic interest into waitlist signups, which product problems drive the strongest demand, and whether search behaviour can help prioritise future product development.</p>
+          <p>Digr is an experiment in treating product, positioning, brand, content and distribution as one system from the beginning. The interesting result at this stage is that the infrastructure for learning is already present before launch.</p>
+        </div>
+
+        <aside class="portfolio-project-ctm__side">
+          <div class="portfolio-project-ctm__card"><div class="portfolio-project-ctm__label">Project</div><div class="portfolio-project-ctm__value">Digr / Independent product</div></div>
+          <div class="portfolio-project-ctm__card"><div class="portfolio-project-ctm__label">Industry</div><div class="portfolio-project-ctm__value">Consumer software / Music</div></div>
+          <div class="portfolio-project-ctm__card"><div class="portfolio-project-ctm__label">Market</div><div class="portfolio-project-ctm__value">Global</div></div>
+          <div class="portfolio-project-ctm__card"><div class="portfolio-project-ctm__label">Stage</div><div class="portfolio-project-ctm__value">Pre-launch / Early access</div></div>
+          <div class="portfolio-project-ctm__card"><div class="portfolio-project-ctm__label">Role</div><div class="portfolio-project-ctm__value">Product / Brand / UX / SEO / Content / GTM</div></div>
+        </aside>
+      </div>
+
+      <div class="portfolio-project-ctm__footer"><a class="portfolio-project-ctm__back" href="/portfolio-1/">Back to Portfolio</a></div>
+      <div class="portfolio-project-ctm__nav">
+        <a class="portfolio-project-ctm__nav-item portfolio-project-ctm__nav-item--prev" href="/kryoz/"><span class="portfolio-project-ctm__nav-label">Previous Project</span><span class="portfolio-project-ctm__nav-title">Kryoz Gardening</span></a>
+        <a class="portfolio-project-ctm__nav-item portfolio-project-ctm__nav-item--next" href="/pinos-restaurant/"><span class="portfolio-project-ctm__nav-label">Next Project</span><span class="portfolio-project-ctm__nav-title">Pino’s Restaurant</span></a>
+      </div>
+    </div>
+  </div>
 </BaseLayout>
+
+<style>
+  .portfolio-project-ctm--digr .portfolio-project-ctm__head h1 { max-width: 950px; }
+  .portfolio-project-ctm--digr .portfolio-project-ctm__two--summary { margin-bottom: 48px; }
+  .portfolio-project-ctm--digr .portfolio-project-ctm__two--summary .portfolio-project-ctm__card { background: rgba(0,200,83,.04); }
+  .portfolio-project-ctm--digr .portfolio-project-ctm__main h2 { margin-top: 46px; }
+  .portfolio-project-ctm--digr .portfolio-project-ctm__main h2:first-child { margin-top: 0; }
+  @media (max-width: 800px) { .portfolio-project-ctm--digr .portfolio-project-ctm__two--summary { grid-template-columns: 1fr; } }
+</style>
