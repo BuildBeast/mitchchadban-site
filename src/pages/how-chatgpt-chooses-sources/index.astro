@@ -14,5 +14,5 @@ const pageContent = "<!--  =====================================================
     { lang: 'x-default', href: 'https://mitchchadban.com/how-chatgpt-chooses-sources/' }
   ]}
 >
-  <Fragment set:html={pageContent} />
+  <Fragment set:html={pageContent.replace('the complete AI search strategy guide, AEO explained, GEO explained', 'the complete AI search strategy guide, <a href="/aeo-explained-how-to-rank-in-ai-answers/">AEO explained</a>, GEO explained')} />
 </BaseLayout>
