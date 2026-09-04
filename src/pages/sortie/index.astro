@@ -1,0 +1,128 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Sortie: Building a travel planner where product, data and discovery compound | Mitch Chadban"
+  description="How I am designing Sortie, a planning-first travel product that connects itinerary building, destination discovery, structured place data and organic growth."
+  canonical="https://mitchchadban.com/sortie/"
+  ogType="article"
+  alternates={[
+    { lang: 'en-AU', href: 'https://mitchchadban.com/sortie/' },
+    { lang: 'x-default', href: 'https://mitchchadban.com/sortie/' }
+  ]}
+>
+  <div class="portfolio-project-ctm portfolio-project-ctm--sortie">
+    <div class="portfolio-project-ctm__inner">
+      <div class="portfolio-project-ctm__head">
+        <div class="portfolio-project-ctm__meta">Product Strategy / UX / Product Design / Search / SEO / AI Systems / Growth</div>
+        <h1>Sortie: Building a travel planner where product, data and discovery compound</h1>
+        <p class="portfolio-project-ctm__intro">A planning-first travel product built around a simple idea: planning a good trip should feel less like managing twenty browser tabs and more like building something coherent.</p>
+      </div>
+
+      <hr />
+
+      <div class="portfolio-project-ctm__two portfolio-project-ctm__two--summary">
+        <div class="portfolio-project-ctm__card"><div class="portfolio-project-ctm__label">Challenge</div><div class="portfolio-project-ctm__value">Support real multi-day, multi-city holidays while making discovery, bookings, hotels and detailed itineraries feel like one connected product.</div></div>
+        <div class="portfolio-project-ctm__card"><div class="portfolio-project-ctm__label">Approach</div><div class="portfolio-project-ctm__value">Treat the itinerary as a living object, retain place knowledge in the database, and design product architecture and organic discovery together.</div></div>
+      </div>
+
+      <figure class="sortie-media">
+        <img src="/images/sortie/multi-city-planner.png" alt="Sortie itinerary workspace showing a seven-city South America trip with booked transport segments, day planner and map panel" width="2880" height="2002" loading="eager" decoding="async" />
+        <figcaption>Sortie’s itinerary workspace with a populated multi-city route and transport handoffs. Captured from the real app in July 2026.</figcaption>
+      </figure>
+
+      <div class="portfolio-project-ctm__body">
+        <div class="portfolio-project-ctm__main">
+          <h2>The challenge</h2>
+          <p>Travel products are very good at giving people things to search, save and book. The harder problem is what happens between inspiration and actually knowing what you are doing on Tuesday.</p>
+          <p>I started Sortie to work on that problem: a travel planning product capable of supporting real holidays, including multi-day and multi-city trips, discovery, bookings, hotels and detailed itineraries, while creating a data and search architecture that becomes more useful as the product grows.</p>
+          <p>That meant solving several problems at once: making complex itineraries simple to manipulate; supporting multi-segment trips without flattening them into one generic destination; understanding hotels, transport and other fixed anchors; making discovery useful during planning; avoiding repeated paid place lookups; and maintaining quality as the destination catalogue grows.</p>
+
+          <h2>The product bet: planning first</h2>
+          <p>The core product decision was to treat the itinerary as a living object.</p>
+          <p>A trip is not just a list of attractions. It contains fixed moments and flexible ones. A flight happens at a particular time. A hotel gives the traveller a geographic anchor. A restaurant booking cannot casually move three hours. A museum visit probably can.</p>
+          <p>That distinction affects almost every part of the product. Stops need to be added, removed and reordered. Days need to remain understandable as they become dense. Travel between cities needs to exist as part of the journey rather than disappearing between two destination pages. Bookings and documents need to relate to what the traveller is actually doing.</p>
+          <p>The goal is not to generate the maximum number of recommendations. It is to help someone build a trip they would actually want to take. That principle shapes how I think about <a href="/digr/">product strategy and product design</a> and the role of AI inside useful software: automation is valuable when it improves the decision. Generating more material is not the same thing.</p>
+
+          <h2>The architectural decision that changed the product</h2>
+          <p>The easiest architecture would be to ask Google for an answer whenever the interface needs one. It is also an architecture where every autocomplete, place lookup and discovery interaction can become another paid request.</p>
+          <p>Where possible, Sortie fetches place information once, stores it and reuses it. The database becomes the first source for future searches, while external providers become fallbacks for information Sortie does not already know.</p>
+          <div class="sortie-flow" aria-label="Fetch, understand, store, reuse"><span>FETCH</span><b>→</b><span>UNDERSTAND</span><b>→</b><span>STORE</span><b>→</b><span>REUSE</span></div>
+          <p>That is partly an engineering decision, but it is also a <a href="/growth-marketing-strategy-for-saas/">growth marketing</a> decision. Every place added to the system can improve what the product already knows. Destination coverage becomes reusable infrastructure. Search can become cheaper. Discovery has a stronger local dataset to work from. Public destination pages can draw from the same underlying entities instead of becoming a separate content project.</p>
+          <p>The useful asset is not the API request. It is the knowledge retained after the request.</p>
+
+          <h2>Designing discovery to feed planning</h2>
+          <p>Discovery inside a travel product is easy to make beautiful and surprisingly easy to make useless. A grid of landmarks can look excellent without answering the question the traveller actually has: <em>would this work in my trip?</em></p>
+          <p>Sortie’s discovery system is designed around the handoff between finding something and doing something with it. A traveller should be able to explore a destination, understand a place, save it, and eventually move it into an itinerary without repeatedly starting from zero.</p>
+          <div class="sortie-loop"><span>DISCOVER</span><span>EVALUATE</span><span>SAVE</span><span>PLAN</span><span>TRAVEL</span></div>
+          <figure class="sortie-media sortie-media--in-body">
+            <img src="/images/sortie/discover-barcelona.png" alt="Sortie Discover interface showing searchable places in Barcelona with place cards, filters and bookable experiences" width="1440" height="5320" loading="lazy" decoding="async" />
+            <figcaption>The Discover surface connects place exploration with evaluation and saving. Captured from the real app in May 2026.</figcaption>
+          </figure>
+
+          <h2>SEO as a product surface</h2>
+          <p>Travel has enormous organic demand, but automatically generating thousands of thin destination and itinerary pages would be the fastest way to turn a useful product system into content landfill.</p>
+          <p>Public search surfaces therefore need a quality threshold. A generated itinerary should not automatically become an indexed itinerary. A destination should not receive a richer editorial surface simply because a route technically exists. Thin states can exist inside the product without pretending to be authoritative travel guides.</p>
+          <p>This creates a useful separation between coverage and publishable quality. The longer-term system is designed around destination coverage, structured place data, itinerary quality scoring and approval gates so organic growth can scale without requiring every city to be manually assembled one at a time. It is close to the logic behind <a href="/entity-seo-and-why-it-matters-for-ai-search/">entity SEO</a>: useful entities and relationships should exist before the page is asked to rank.</p>
+          <p>Search is not bolted onto Sortie after the product is built. It influences what information is worth structuring in the first place, just as <a href="/technical-seo-checklist-plain-english/">technical SEO</a> influences what a site can reliably expose.</p>
+          <figure class="sortie-media sortie-media--in-body">
+            <img src="/images/sortie/destinations-europe.png" alt="Sortie public Europe destinations page showing destination coverage organised by country" width="1440" height="13349" loading="lazy" decoding="async" />
+            <figcaption>A public destination surface showing how structured coverage can become useful search content. Captured from the real app in May 2026.</figcaption>
+          </figure>
+          <figure class="sortie-media sortie-media--in-body">
+            <img src="/images/sortie/public-itinerary-new-york.png" alt="Sortie public New York itinerary page showing a four-day landmarks itinerary with day-by-day stops" width="1440" height="6202" loading="lazy" decoding="async" />
+            <figcaption>A public itinerary page with route context, trip details and day-by-day stops. Captured from the real app in May 2026.</figcaption>
+          </figure>
+
+          <h2>Building the system, not just the screens</h2>
+          <p>Sortie is being built with Next.js and Supabase, with structured systems for trips, itinerary items, places, destination coverage, images, public itineraries and search data. The product and content layer follows the same product-led approach I use when thinking about <a href="/seo-for-saas-startups/">SEO for SaaS startups</a>.</p>
+          <p>But the more interesting work sits between the database and the interface.</p>
+          <p>A hotel is a database record, but it is also the geographic centre of a traveller’s morning. A destination is a route, but it is also a discovery surface. A place is a reusable entity, but it can also become a recommendation, an itinerary stop and part of an organic landing page. A booking is structured data, but the traveller experiences it as <em>the thing I absolutely cannot miss at 4:30pm</em>.</p>
+          <p>Getting those relationships right is the product. It should also make it easier to earn visibility in <a href="/aeo-explained-how-to-rank-in-ai-answers/">AI-generated answers</a>, where clear entities, useful pages and evidence of relevance matter together.</p>
+
+          <h2>Where the case study goes next</h2>
+          <p>Sortie is still an active product build, so this case study deliberately starts before the neat ending. As the product moves towards launch, I’ll add measurable results around destination coverage and enrichment, the percentage of place and search requests served database-first, reduction in external API dependency, itinerary generation and quality-gate performance, indexed destination and itinerary coverage, organic discovery, signup and trip-creation conversion.</p>
+          <p>The useful question is not whether I can build another travel app. It is whether product architecture, UX, structured data and organic discovery can be designed together so that each new piece makes the entire system more valuable.</p>
+          <p>That is the experiment behind Sortie.</p>
+        </div>
+
+        <aside class="portfolio-project-ctm__side">
+          <div class="portfolio-project-ctm__card"><div class="portfolio-project-ctm__label">Project</div><div class="portfolio-project-ctm__value">Sortie / Independent product</div></div>
+          <div class="portfolio-project-ctm__card"><div class="portfolio-project-ctm__label">Industry</div><div class="portfolio-project-ctm__value">Travel / Consumer software</div></div>
+          <div class="portfolio-project-ctm__card"><div class="portfolio-project-ctm__label">Market</div><div class="portfolio-project-ctm__value">Global</div></div>
+          <div class="portfolio-project-ctm__card"><div class="portfolio-project-ctm__label">Stage</div><div class="portfolio-project-ctm__value">Active build / Pre-launch</div></div>
+          <div class="portfolio-project-ctm__card"><div class="portfolio-project-ctm__label">Role</div><div class="portfolio-project-ctm__value">Product / UX / SEO / Growth / AI systems</div></div>
+        </aside>
+      </div>
+
+      <div class="portfolio-project-ctm__footer"><a class="portfolio-project-ctm__back" href="/portfolio-1/">Back to Portfolio</a></div>
+      <div class="portfolio-project-ctm__nav">
+        <a class="portfolio-project-ctm__nav-item portfolio-project-ctm__nav-item--prev" href="/archive/"><span class="portfolio-project-ctm__nav-label">Previous Project</span><span class="portfolio-project-ctm__nav-title">Archive</span></a>
+        <a class="portfolio-project-ctm__nav-item portfolio-project-ctm__nav-item--next" href="/digr/"><span class="portfolio-project-ctm__nav-label">Next Project</span><span class="portfolio-project-ctm__nav-title">Digr</span></a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .portfolio-project-ctm--sortie .portfolio-project-ctm__head h1 { max-width: 980px; }
+  .portfolio-project-ctm--sortie .portfolio-project-ctm__two--summary { margin-bottom: 48px; }
+  .portfolio-project-ctm--sortie .portfolio-project-ctm__two--summary .portfolio-project-ctm__card { background: rgba(0,200,83,.04); }
+  .portfolio-project-ctm--sortie .portfolio-project-ctm__main h2 { margin-top: 46px; }
+  .portfolio-project-ctm--sortie .portfolio-project-ctm__main h2:first-child { margin-top: 0; }
+  .sortie-media { margin: 0 0 56px; }
+  .sortie-media img { width: 100%; height: auto; border: 1px solid var(--mc-line); }
+  .sortie-media figcaption { margin-top: 10px; color: var(--mc-muted); font: 700 11px/1.45 var(--font-mono); letter-spacing: .03em; }
+  .sortie-media--in-body { margin-top: 28px; }
+  .sortie-flow, .sortie-loop { display: flex; align-items: center; gap: 14px; margin: 28px 0; font: 700 11px/1.2 var(--font-mono); letter-spacing: .08em; }
+  .sortie-flow span, .sortie-loop span { border: 1px solid var(--mc-line); padding: 10px 12px; }
+  .sortie-flow b { color: var(--mc-muted); }
+  .sortie-loop { flex-wrap: wrap; gap: 8px; }
+  .sortie-loop span:not(:last-child)::after { content: '→'; margin-left: 14px; color: var(--mc-muted); }
+  @media (max-width: 800px) {
+    .portfolio-project-ctm--sortie .portfolio-project-ctm__two--summary { grid-template-columns: 1fr; }
+    .sortie-flow { gap: 7px; }
+    .sortie-flow b { display: none; }
+  }
+</style>
