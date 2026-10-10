@@ -1,0 +1,448 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const url = 'https://mitchchadban.com/aeo-audit-australia/';
+
+// Offer details mirror the SEO + AEO Audit on /pricing-and-packages/.
+// Keep price, inclusions and exclusions in sync with that page.
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      '@id': `${url}#service`,
+      name: 'SEO + AEO Audit (Search + AI Answers)',
+      serviceType: 'Answer Engine Optimisation audit',
+      description:
+        'A one-off SEO and AEO audit for Australian businesses: technical and structure review, extractable content fixes, E-E-A-T and proof gaps, and a 30/60/90 rollout plan. Content writing, page builds, ongoing monitoring and implementation are not included.',
+      url,
+      provider: { '@id': 'https://mitchchadban.com/#person' },
+      areaServed: { '@type': 'Country', name: 'Australia' },
+      offers: {
+        '@type': 'Offer',
+        price: '1290',
+        priceCurrency: 'AUD',
+        url
+      }
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Home',
+          item: 'https://mitchchadban.com/'
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'AEO Audit Australia',
+          item: url
+        }
+      ]
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="AEO Audit Australia: SEO + AI Search Visibility | Mitch Chadban"
+  description="An SEO + AEO audit for Australian businesses: technical and structure review, extractable content fixes, proof gaps and a 30/60/90 plan. $1,290 AUD."
+  canonical={url}
+  alternates={[
+    { lang: 'en-AU', href: url },
+    { lang: 'x-default', href: url }
+  ]}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  </Fragment>
+
+  <section class="mc-about mc-audit" aria-labelledby="audit-heading">
+    <div class="mc-audit__eyebrow">SEO + AEO Audit · Australia</div>
+    <h1 id="audit-heading">AEO audit for Australian businesses</h1>
+
+    <p class="mc-audit__lede">
+      Find out whether your site is in a position to be found, understood and cited when people ask Google's AI Overviews, ChatGPT search or Perplexity about what you do. I review the technical setup, the structure of your key pages and the proof behind them, then give you a prioritised 30/60/90 day plan to fix what's holding them back.
+    </p>
+
+    <div class="mc-audit__actions">
+      <a href="/contact-form/"><div class="custom-btn"><b>Enquire about an audit</b></div></a>
+      <p class="mc-audit__price-note"><strong>$1,290 AUD</strong> · <a href="#pricing">What's included</a></p>
+    </div>
+
+    <h2 id="who">Who it's for</h2>
+    <p>The audit suits Australian businesses whose site already gets some search traffic and who want to know how it holds up as more research happens inside AI answers. In practice that's usually:</p>
+    <ul>
+      <li>Service businesses selling expertise — consultants, accountants, engineers, architects, advisers — where being named in an answer carries real weight.</li>
+      <li>SaaS and software companies that rely on organic search for demos and signups.</li>
+      <li>Teams with a marketer or developer who can act on a clear plan, rather than needing someone to implement everything.</li>
+    </ul>
+    <p>It's a poor fit if your site is brand new with no search visibility yet — a <a href="/pricing-and-packages/">Technical SEO Audit</a> or a build is the better starting point — or if you're looking for someone to guarantee placements in AI answers. Nobody can honestly do that.</p>
+
+    <h2 id="what-it-covers">What the audit examines</h2>
+    <p>Four areas, applied to the pages that matter most to your enquiries.</p>
+
+    <div class="mc-audit__grid">
+      <div class="mc-audit__card">
+        <div class="mc-audit__label">01 · Technical + structure</div>
+        <h3>Can your pages be reached and understood?</h3>
+        <p>Whether search engines and AI search crawlers can reach, render and index your key pages, and whether your site structure, internal links and canonicals point them at the right ones.</p>
+      </div>
+      <div class="mc-audit__card">
+        <div class="mc-audit__label">02 · Extractable content</div>
+        <h3>Is the answer easy to lift?</h3>
+        <p>Where your pages bury the answer under long intros, and where clear summaries, FAQs and tables would make them easier to quote accurately.</p>
+      </div>
+      <div class="mc-audit__card">
+        <div class="mc-audit__label">03 · E-E-A-T + proof</div>
+        <h3>Would a system trust this source?</h3>
+        <p>Gaps in authorship, evidence, sources and the signals that show who is behind the page and why they're worth citing over a competitor.</p>
+      </div>
+      <div class="mc-audit__card">
+        <div class="mc-audit__label">04 · 30/60/90 plan</div>
+        <h3>What should you fix first?</h3>
+        <p>A rollout plan that puts the findings in order, so your team knows what to do in the first month and what can wait.</p>
+      </div>
+    </div>
+
+    <h2 id="process">How the process works</h2>
+    <ol class="mc-audit__steps">
+      <li>
+        <strong>Send me your site and goals.</strong>
+        Your website, the pages that matter most, what you want to achieve and what you've already tried. The <a href="/contact-form/">contact page</a> lists what's useful to include.
+      </li>
+      <li>
+        <strong>Fit check.</strong>
+        I'll tell you straight whether the SEO + AEO audit is the right starting point, or whether something else — like a technical-only audit — makes more sense first.
+      </li>
+      <li>
+        <strong>The review.</strong>
+        I work through the four areas above against your priority pages.
+      </li>
+      <li>
+        <strong>Your plan.</strong>
+        You get the findings and a 30/60/90 rollout plan your team can work through, or that we can work through together.
+      </li>
+    </ol>
+
+    <h2 id="pricing">What you receive, and what it costs</h2>
+
+    <div class="mc-audit__offer">
+      <div class="mc-audit__offer-head">
+        <h3>SEO + AEO Audit (Search + AI Answers)</h3>
+        <div class="mc-audit__offer-price">$1,290 AUD</div>
+      </div>
+      <p>Make your site easier to rank <em>and</em> easier to be cited in AI answers.</p>
+      <div class="mc-audit__offer-cols">
+        <div>
+          <div class="mc-audit__label">Includes</div>
+          <ul>
+            <li>Technical + structure review</li>
+            <li>Extractable content fixes (summaries/FAQs/tables)</li>
+            <li>E-E-A-T/proof gaps</li>
+            <li>30/60/90 rollout plan</li>
+          </ul>
+        </div>
+        <div>
+          <div class="mc-audit__label">Does not include</div>
+          <ul>
+            <li>Content writing or page builds</li>
+            <li>Ongoing monitoring or implementation</li>
+          </ul>
+        </div>
+      </div>
+      <a href="/contact-form/"><div class="custom-btn"><b>Enquire about an audit</b></div></a>
+    </div>
+
+    <p>If you need help acting on the plan, writing and implementation are available separately as <a href="/pricing-and-packages/">monthly SEO support or a buyer-intent page build</a>.</p>
+
+    <h2 id="seo-and-aeo">Why it's an SEO and AEO audit, not one or the other</h2>
+    <p>Most of what makes a page citable in AI answers is the same work that makes it rank. Google says there are no special requirements or markup for AI Overviews and AI Mode: a page has to be indexed and eligible to appear in Search with a snippet, and normal SEO practice applies. ChatGPT search and Perplexity use their own crawlers, so access rules in your robots.txt or firewall decide whether they can read your pages at all.</p>
+    <p>Where AEO adds something is in the shape of the page: how quickly it answers the question, how cleanly a section can be quoted on its own, and how clearly it shows who wrote it and what it's based on. Auditing both together avoids fixing one while quietly undermining the other.</p>
+    <p>If you'd rather start with the background, <a href="/aeo-explained-how-to-rank-in-ai-answers/">AEO explained</a> covers the definitions, and the <a href="/aeo-australia-how-to-show-up-in-ai-answers/">AEO guide for Australia and Spain</a> walks through the do-it-yourself version.</p>
+
+    <h2 id="limits">What an audit can't do</h2>
+    <ul>
+      <li><strong>It can't guarantee citations.</strong> AI answers change with the question, the platform and over time. The audit improves your odds; it doesn't buy a placement.</li>
+      <li><strong>It isn't perfect measurement.</strong> AI referral data is incomplete, so I'll be clear about what can and can't be tracked rather than inventing a visibility score.</li>
+      <li><strong>It doesn't change anything on its own.</strong> The value comes from implementing the plan, whether that's your team or me.</li>
+    </ul>
+
+    <div class="mc-faq mc-audit__faq">
+      <h2 id="faq">Questions before you book</h2>
+
+      <div class="mc-faq__item">
+        <h3>How much does the audit cost?</h3>
+        <p>The SEO + AEO audit is $1,290 AUD. If you only need the technical side — speed, indexing, duplication and site health — the Technical SEO Audit is $790 AUD. Both are listed on the <a href="/pricing-and-packages/">pricing page</a>.</p>
+      </div>
+
+      <div class="mc-faq__item">
+        <h3>Can you guarantee my business will appear in ChatGPT or AI Overviews?</h3>
+        <p>No, and you should be wary of anyone who does. No one controls which sources an AI system cites for a given question. What the audit does is remove the problems that make your pages harder to find, quote and trust.</p>
+      </div>
+
+      <div class="mc-faq__item">
+        <h3>How is this different from the Technical SEO Audit?</h3>
+        <p>The Technical SEO Audit focuses on what blocks rankings: Search Console and crawl review, Core Web Vitals, indexation and canonicals, with a dev-ready action plan. The SEO + AEO audit also looks at whether your content is structured to be quoted and whether it shows enough proof to be trusted, and ends with a 30/60/90 rollout plan.</p>
+      </div>
+
+      <div class="mc-faq__item">
+        <h3>Do you implement the fixes?</h3>
+        <p>Not as part of the audit — content writing, page builds and ongoing implementation are outside its scope. Plenty of teams implement the plan themselves. If you want help, monthly SEO support and buyer-intent page builds are available separately.</p>
+      </div>
+
+      <div class="mc-faq__item">
+        <h3>Do you work with businesses outside my city?</h3>
+        <p>Yes. I'm based in Australia and work remotely, so it doesn't matter whether you're in Sydney, Melbourne, Canberra or anywhere else.</p>
+      </div>
+
+      <div class="mc-faq__item">
+        <h3>How soon can you start?</h3>
+        <p>Usually within a week, depending on workload. If you have a deadline, include it in your enquiry.</p>
+      </div>
+    </div>
+
+    <div class="mc-audit__final">
+      <h2>Want to know where your site stands?</h2>
+      <p>Send me your website and the pages that matter most. I'll come back with a straight answer on whether the audit is the right fit.</p>
+      <a href="/contact-form/"><div class="custom-btn"><b>Enquire about an audit</b></div></a>
+      <p class="mc-audit__price-note">Or compare every option on the <a href="/pricing-and-packages/">pricing and packages</a> page.</p>
+    </div>
+
+    <div class="further-reading-ctm">
+      <h4 class="further-reading-ctm__title">Further reading</h4>
+      <ul class="further-reading-ctm__list">
+        <li class="further-reading-ctm__item">
+          <a class="further-reading-ctm__link" href="/aeo-australia-how-to-show-up-in-ai-answers/">AEO for Australia + Spain: How to Show Up in AI Answers</a>
+        </li>
+        <li class="further-reading-ctm__item">
+          <a class="further-reading-ctm__link" href="/how-to-get-cited-in-ai-generated-answers/">How to Get Cited in AI-Generated Answers</a>
+        </li>
+        <li class="further-reading-ctm__item">
+          <a class="further-reading-ctm__link" href="/how-to-measure-ai-search-traffic-in-ga4/">How to Measure AI Search Traffic in GA4</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .mc-audit h2 {
+    margin-top: 64px;
+  }
+
+  .mc-audit__eyebrow,
+  .mc-audit__label {
+    margin: 0 0 10px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: var(--w-black);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+  .mc-audit__eyebrow {
+    margin-bottom: 18px;
+  }
+
+  .mc-audit__lede {
+    max-width: 46rem;
+    font-size: var(--t-lg);
+    line-height: 1.4;
+  }
+
+  .mc-audit__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px 24px;
+    margin: 28px 0 0;
+  }
+
+  .mc-audit__price-note {
+    margin: 0;
+    font-size: var(--t-sm);
+  }
+
+  .mc-audit__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+  }
+
+  .mc-audit__card {
+    padding: 22px 22px 18px;
+    border: 1px solid var(--mc-line);
+    border-radius: 18px;
+    background: var(--mc-soft);
+  }
+
+  .mc-audit__card h3 {
+    margin: 0 0 10px;
+    font-size: var(--t-lg);
+  }
+
+  .mc-audit__card p:last-child {
+    margin-bottom: 0;
+  }
+
+  .mc-audit__steps {
+    margin: 20px 0 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: audit-step;
+  }
+
+  .mc-audit__steps li {
+    position: relative;
+    margin: 0;
+    padding: 18px 0 18px 56px;
+    border-top: 1px solid var(--mc-line);
+    counter-increment: audit-step;
+  }
+
+  .mc-audit__steps li:last-child {
+    border-bottom: 1px solid var(--mc-line);
+  }
+
+  .mc-audit__steps li::before {
+    content: counter(audit-step, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    top: 18px;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    font-weight: var(--w-black);
+    letter-spacing: 0.12em;
+  }
+
+  .mc-audit__steps strong {
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .mc-audit__offer {
+    margin: 24px 0;
+    padding: 28px;
+    background: #fff;
+    border: 1px solid var(--mc-line);
+    border-left: 4px solid var(--mc-green);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.045);
+  }
+
+  .mc-audit__offer-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px 24px;
+    margin-bottom: 12px;
+  }
+
+  .mc-audit__offer-head h3 {
+    margin: 0;
+    font-size: var(--t-lg);
+  }
+
+  .mc-audit__offer-price {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: var(--t-xl);
+    font-weight: var(--w-black);
+    letter-spacing: var(--ls-tight);
+  }
+
+  .mc-audit__offer-cols {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px 32px;
+    margin: 8px 0 24px;
+  }
+
+  .mc-audit__offer-cols .mc-audit__label {
+    margin-top: 12px;
+  }
+
+  .mc-audit__offer ul {
+    margin: 0 0 0 18px;
+  }
+
+  .mc-audit__faq {
+    margin-top: 64px;
+  }
+
+  .mc-audit__faq h2 {
+    margin-top: 0;
+  }
+
+  .mc-audit__faq .mc-faq__item {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--mc-line);
+  }
+
+  .mc-audit__faq .mc-faq__item:last-child {
+    border-bottom: 0;
+  }
+
+  .mc-audit__faq .mc-faq__item h3 {
+    margin: 0 0 8px;
+    font-size: var(--t-lg);
+  }
+
+  .mc-audit__faq .mc-faq__item p {
+    margin: 0;
+  }
+
+  .mc-audit__final {
+    margin-top: 48px;
+    padding: 32px 28px;
+    border-radius: 18px;
+    background: var(--mc-soft);
+    border: 1px solid var(--mc-line);
+  }
+
+  .mc-audit__final h2 {
+    margin-top: 0;
+  }
+
+  .mc-audit__final .custom-btn {
+    margin: 4px 0 16px;
+  }
+
+  .mc-audit a:focus-visible {
+    outline: 2px solid var(--mc-green);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  .mc-audit a:has(.custom-btn):focus-visible {
+    border-radius: 999px;
+  }
+
+  @media (max-width: 768px) {
+    /* The global mobile .mc-about h2 rule resets margins with !important,
+       so section spacing comes from padding instead. */
+    .mc-audit > h2 {
+      padding-top: 36px;
+    }
+
+    .mc-audit__grid,
+    .mc-audit__offer-cols {
+      grid-template-columns: 1fr;
+    }
+
+    .mc-audit__offer,
+    .mc-audit__final {
+      padding: 22px 18px;
+    }
+
+    .mc-audit__steps li {
+      padding-left: 44px;
+    }
+  }
+</style>
