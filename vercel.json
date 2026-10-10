@@ -13,6 +13,16 @@
       "permanent": true
     },
     {
+      "source": "/Portfolio",
+      "destination": "/portfolio-1/",
+      "permanent": true
+    },
+    {
+      "source": "/Portfolio/",
+      "destination": "/portfolio-1/",
+      "permanent": true
+    },
+    {
       "source": "/ai-seo-vs-traditional-seo-what's-changed",
       "destination": "/ai-seo-vs-traditional-seo-whats-changed/",
       "permanent": true
